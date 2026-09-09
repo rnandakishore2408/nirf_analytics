@@ -52,9 +52,9 @@ def p(t, st=BODY):
 
 
 def section(num, title, col=NAVY):
-    numcell = Paragraph(f"<font color='white'><b>{num}</b></font>", ParagraphStyle("n", parent=BODY, fontSize=14, leading=16, alignment=TA_CENTER))
+    numcell = Paragraph(f"<font color='white'><b>{num}</b></font>", ParagraphStyle("n", parent=BODY, fontSize=12, leading=14, alignment=TA_CENTER))
     tcell = Paragraph(f"<b>{title}</b>", ParagraphStyle("t", parent=BODY, fontSize=17, leading=20, textColor=C(NAVY)))
-    t = Table([[numcell, tcell]], colWidths=[0.95 * cm, 16.4 * cm], rowHeights=[0.95 * cm])
+    t = Table([[numcell, tcell]], colWidths=[1.15 * cm, 16.2 * cm], rowHeights=[0.95 * cm])
     t.setStyle(TableStyle([("BACKGROUND", (0, 0), (0, 0), C(col)), ("VALIGN", (0, 0), (-1, -1), "MIDDLE"), ("LEFTPADDING", (1, 0), (1, 0), 8),
                            ("LINEBELOW", (0, 0), (-1, 0), 1.2, C(col)), ("BOTTOMPADDING", (0, 0), (-1, -1), 4), ("TOPPADDING", (0, 0), (-1, -1), 2)]))
     return KeepTogether([Spacer(1, 6), t, Spacer(1, 8)])
@@ -320,7 +320,6 @@ S += [table(erows, align="CENTER")]
 S += [p(f"A useful check: the 2025 filing comes out at {e25['total_est']:.1f}, which sits inside the 201-300 band NIRF actually announced. The model was never told that. "
         "The 2026 filing shows genuine progress: graduation rate 61% → 81%, placements 92% → 97%, operating spend per student Rs 80k → Rs 1.1 lakh, PhDs 9 → 12 a year.")]
 S += [KeepTogether([fig("compare", 16 * cm), p("Our estimated parameters (coloured) against institutes ranked 76-100 and 1-10 in 2025. Four of the five bars are close to the 76-100 tier. RPC is not.", SMALL)])]
-S += [p(" (coloured) against institutes ranked 76-100 and 1-10 in 2025. Four of the five bars are close to the 76-100 tier. RPC is not.", SMALL)]
 
 # 4 data
 S += [section("4", "What we collected", TEAL)]
@@ -338,7 +337,6 @@ S += [tech("Data quality fixes. The 2016 pages on nirfindia.org silently return 
            "'151-200' actually hold ranks 201-250 and 251-300; they are relabelled. Band pages carry no institute IDs, so band rows are linked to institutions through a normalised name key. "
            "PDFs are converted with pdftotext -layout and parsed with regular expressions; every numeric field the model uses has over 96% coverage. Faculty lists appear only in our own PDFs, "
            "not in the NIRF-hosted ones, so faculty PhD share is unavailable for other institutes.")]
-S += [p("Our raw numbers next to the top 100 (2025)", H2)]
 prof = pd.DataFrame(A["raw_profile_2025"]).set_index("metric")
 show = ["students_total", "faculty_entered", "students_per_faculty", "phd_pursuing_ft", "phd_grad_3y_avg", "graduation_rate", "placement_rate", "median_salary_ug",
         "capex_per_student", "opex_per_student", "sponsored_amount_3y_avg", "consultancy_amount_3y_avg", "women_students_pct", "outside_state_pct"]
@@ -359,14 +357,12 @@ for k in show:
     rw = prof.loc[k]; v26 = fmtv(rw.saveetha_2026_filing, k)
     prows.append([lab[k], fmtv(rw.top10_median, k), fmtv(rw.rank76_100_median, k), fmtv(rw.colleges_top100_median, k), fmtv(rw.saveetha_2025_filing, k),
                   f"<font color='{CORAL if k in weak else TEAL}'><b>{v26}</b></font>"])
-S += [table(prows, widths=[4.2 * cm, 2.6 * cm, 2.8 * cm, 2.8 * cm, 2.5 * cm, 2.5 * cm], align="CENTER", headcol=TEAL)]
+S += [KeepTogether([p("Our raw numbers next to the top 100 (2025)", H2), table(prows, widths=[4.2 * cm, 2.6 * cm, 2.8 * cm, 2.8 * cm, 2.5 * cm, 2.5 * cm], align="CENTER", headcol=TEAL)])]
 S += [p(f"<font color='{CORAL}'><b>Red</b></font> = well below the 76-100 tier. <font color='{TEAL}'><b>Green</b></font> = at or above it. The pattern is hard to miss: everything to do with "
         "research, PhDs and money per student is red; everything to do with students, placements and inclusion is green.", SMALL)]
-S += [PageBreak()]
 
 # 5 architecture
-S += [section("5", "How the system works", GOLD)]
-S += [fig("architecture", 16.8 * cm)]
+S += [KeepTogether([section("5", "How the system works", GOLD), fig("architecture", 16.8 * cm)])]
 S += [p("Think of it as a pipeline. Scripts fetch the public data (1) and turn web tables and PDFs into clean rows (2), which land in one database file (3). "
         "The models (4) learn from the 700 institutes where we know both the raw data and the published score, then score us. The analysis step (5) produces the comparisons "
         "and gap figures, and the app (6) shows all of it, lets staff enter live numbers, and answers questions through an AI assistant. When NIRF 2026 comes out, one command refreshes everything.")]
@@ -395,8 +391,7 @@ S += [callout("Publications and citations are 75 of RPC's 100 marks and are not 
               "The model is trained on institutes ranked 1-200, so it is most reliable there, which is where our 2026 filing sits.", col=GOLD, label="Known limits")]
 
 # 7 results
-S += [section("7", "The 2025 picture", SKY)]
-S += [fig("tiers", 16 * cm)]
+S += [KeepTogether([section("7", "The 2025 picture", SKY), fig("tiers", 16 * cm)])]
 S += [p(f"Research (RPC) and Perception climb steeply with rank; TLR, GO and OI are much flatter. In 2025 the top 100 held {A['type_mix']['2025']['University']} universities, "
         f"{A['type_mix']['2025']['College']} colleges and {A['type_mix']['2025']['Institute (deemed / national importance)']} deemed or national institutes. The number of colleges fell from 12 in 2023 to 9 in 2025. "
         "It is getting harder for a college to be there at all.", SMALL)]
@@ -416,8 +411,7 @@ S += [table(grows, align="CENTER")]
 S += [p(f"Research alone accounts for about {wgap['rpc']:.1f} of the roughly {sum(v for v in wgap.values() if v > 0):.1f} weighted points between us and the rank-100 line. TLR and OI (students from other states) cover most of the rest. GO is nearly level.", SMALL)]
 
 # 8 prediction
-S += [section("8", "What 2026 probably looks like", PLUM)]
-S += [fig("bands", 15.5 * cm)]
+S += [KeepTogether([section("8", "What 2026 probably looks like", PLUM), fig("bands", 15.5 * cm)])]
 S += [tiles([(f"{s['total_score']['median']}", f"Estimated total. 80% of the time between {s['total_score']['p10']} and {s['total_score']['p90']}", PLUM),
              (f"≈ rank {s['expected_rank']}", "Expected position on the 2026 threshold curve", SKY),
              (f"{100 * top200:.0f}%", "Chance of being in the top 200", TEAL),
@@ -433,8 +427,7 @@ S += [p("<b>Reading the probabilities.</b> The wide range is honest. Most of it 
         "If our Scopus output is strong, the real result will sit towards the top of the range.")]
 
 # 9 levers
-S += [section("9", "What moves the score, and what we should do", CORAL)]
-S += [fig("levers", 16 * cm)]
+S += [KeepTogether([section("9", "What moves the score, and what we should do", CORAL), fig("levers", 16 * cm)])]
 S += [p("Each bar is one change applied on its own to the 2026 filing. They add up roughly, so a programme can be sized from this chart.", SMALL)]
 S += [p("Priorities, in order", H2)]
 S += [Paragraph(x_, BUL, bulletText="•") for x_ in [
@@ -450,7 +443,6 @@ S += [Paragraph(x_, BUL, bulletText="•") for x_ in [
 ]]
 S += [callout("The gap is about 7 points today and grows about 1.5 a year. A programme that delivers PhDs → 40 a year, spend per student → Rs 2 lakh, median salary → Rs 8 lakh, scholars → 200 and a visible "
               "publication push is worth an estimated 6-8 points, plus whatever the publications add. That puts the top 150 within reach next year and the top 100 within two to three cycles.", col=TEAL, label="Sizing the goal")]
-S += [PageBreak()]
 
 # 10 app
 S += [section("10", "The app, and where things live", TEAL)]
