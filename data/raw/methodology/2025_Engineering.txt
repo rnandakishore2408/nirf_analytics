@@ -1,0 +1,344 @@
+              INDIA RANKINGS 2025
+
+
+
+
+NATIONAL INSTITUTIONAL RANKING FRAMEWORK
+
+ Methodology for Ranking of Academic Institutions in India
+
+        (RANKING METRICS FOR ENGINEERING)
+
+
+
+
+              Ministry of Education
+           Summary of Ranking Parameters and Weightages- 2025
+
+                                 (Engineering)
+
+Sr.                      Parameter                   Marks      Weightage
+No.
+1     Teaching, Learning & Resources                  100         0.30
+2     Research and Professional Practice              100         0.30
+3     Graduation Outcomes                             100         0.20
+4     Outreach and Inclusivity                        100         0.10
+5     Perception                                      100         0.10
+                                     Engineering
+S.No.                                   Parameters                                   Marks
+  1.    Teaching, Learning & Resources (TLR)                                          100
+        Ranking weight: 0.30
+           A. Student Strength including Doctoral Students(SS): 20 marks
+           B. Faculty-student ratio with emphasis on permanent faculty (FSR): 30
+              marks
+           C. Combined metric for Faculty with PhD (or equivalent) and
+              Experience (FQE): 20 marks
+           D. Financial Resources and their Utilisation (FRU): 30 marks
+
+ 2.     Research and Professional Practice (RP)                                       100
+        Ranking weight: 0.30
+           A. Combined metric for Publications (PU): 35 marks
+           B. Combined metric for Quality of Publications (QP): 40 marks
+           C. IPR and Patents: Published and Granted (IPR): 15 marks
+           D. Footprint of Projects and Professional Practice (FPPP): 10 marks
+
+ 3.     Graduation Outcomes (GO)                                                      100
+        Ranking weight: 0.20
+           A. Combined metric for Placement and Higher Studies (GPH): 40 marks
+           B. Metric for University Examinations (GUE): 15 marks
+           C. Median Salary (GMS): 25 marks
+           D. Metric for Number of Ph.D. Students Graduated (GPHD): 20 marks
+
+ 4.     Outreach and Inclusivity (OI)                                                 100
+        Ranking weight: 0.10
+           A. Percentage of Students from other States/Countries (Region Diversity
+              RD): 30 marks
+           B. Percentage of Women (Women Diversity WD): 30 marks
+           C. Economically and Socially Challenged Students (ESCS): 20 marks
+           D. Facilities for Physically Challenged Students (PCS): 20 marks
+
+ 5.     Perception (PR)                                                               100
+        Ranking weight: 0.10
+           A. Peer Perception: Employers & Academic Peer (PR): 100 marks
+1. Teaching, Learning & Resources (TLR): 100 marks
+  •   Ranking weight: 0.30
+
+  •   Overall Assessment Metric:
+
+      TLR = SS (20) + FSR (30) + FQE (20) + FRU (30)
+
+  •   Component metrics based on :
+
+         A. Student Strengths, including Ph.D. Students: SS
+         B. Faculty-Student Ratio with emphasis on permanent faculty: FSR
+         C. Combined metric for Faculty with PhD (or equivalent) and Experience:
+            FQE
+         D. Financial Resources and Their Utilisation: FRU
+A. Student Strength, including Ph.D. students (SS): 20 Marks
+
+  •   SS = f(NT, NE) × 15 + f(NP) × 5
+
+
+  •   The functions f(NT ,NE) and f(Np) are functions to be determined by NIRF.
+  •   NT: Total sanctioned approved intake in the institution, considering all UG and PG
+      programs of the institution.
+  •   NE: Total number of students enrolled in the institution, considering all UG and PG
+      Programs of the institution.
+  •   Np = Total number of students enrolled for the doctoral program till the previous
+      academic year.
+
+
+  •   Primary Data: To be provided in a prescribed Format.
+B. Faculty-Student Ratio with emphasis on permanent faculty (FSR): 30 marks
+
+   •   FSR = 30 × [15 × (F/N)]
+
+   •   N =NT+ Np
+   •   F: Full-time regular faculty in the institution in the previous year.
+   •   Regular appointment means Faculty on a full-time basis. Faculty on a contract basis/ad-
+       hoc basis means Faculty which have taught in both semesters.
+
+   •   Faculty will be considered if the concerned faculty has taught in both semesters of the
+       academic year 2023-24.
+
+   •   Faculty members with Ph.D. and M.E./M.Tech. will be considered and counted here.
+       Faculty members with a Bachelor’s degree will not be counted.
+
+   •   Expected ratio is 1:15 to score maximum marks.
+
+   •   For F/N < 1:50, FSR will be set to zero.
+
+
+
+
+   •   Primary Data: Faculty List to be provided in the Prescribed Format.
+C. Combined Metric for Faculty with PhD (or equivalent) and Experience (FQE): 20 marks
+
+    •   FQ = 10 × (FRA/95) , FRA < 95%;
+    •   FQ = 10, FRA ≥ 95%.
+
+    •   Here, FRA is the percentage of Faculty with Ph.D. (or equivalent qualification) with
+        respect to the total no. of faculty required or actual faculty, whichever is higher, in the
+        previous year.
+
+
+        F1=Fraction with Experience up to 8 years;
+
+        F2= Fraction with Experience between 8+ to 15 years;
+
+        F3=Fraction with Experience > 15 years.
+
+    •   FE = 3min(3F1, 1) + 3 min(3F2, 1) + 4 min(3F3, 1)
+
+        Rationale: Full marks for a ratio of 1:1:1
+
+    •   FQE = FQ + FE
+
+
+
+    •   Primary Data: Faculty List in the Prescribed Format.
+D: Financial Resources and their Utilisation (FRU): 30 Marks
+
+   •   FRU = 7.5×f(BC) + 22.5×f(BO)
+
+   •   BC: Average Annual Capital Expenditure per student for the previous three years
+       pertaining to the engineering discipline only. (Excluding expenditure on construction
+       of new buildings)
+
+   •   BO: Average Annual Operational(or Recurring) Expenditure per student for the previous
+       three years pertaining to the engineering discipline only. (Excluding maintenance of
+       hostels and allied services)
+
+
+
+   •   Primary Data: Figures in the prescribed format for each.
+2. Research and Professional Practice (RP): 100 marks
+  •   Ranking weight: 0.30
+
+  •   Overall Assessment Metric:
+
+      RP = PU(35) + QP(40) + IPR(15) + FPPP(10)
+
+  •   The component metrics are explained on the following pages.
+
+       A. Combined Metric for Publications: PU
+       B. Combined Metric for Quality of Publications: QP
+       C. IPR and Patents: Patents Published and Granted: IPR
+       D. Footprint of Projects and Professional Practice: FPPP
+A.Combined metric for Publications (PU): 35 marks
+
+   •   PU = 35 × f(P/FRQ) - 5 × f(Pret)
+   •   P is the weighted number of publications as acertained from suitable third-party
+       sources.
+   •   Pret is the number of retracted publications.
+   •   FRQ is the maximum of the nominal number of faculty members as calculated based on a
+       required FSR of 1:15 or the available faculty in the institution.
+
+
+   •   Sources: Third-party sources.
+B.Combined metric for Quality of Publications (QP): 40 Marks
+
+
+   •   QP = {20 × f (CC/FRQ) + 20× f (TOP25P/P)}- 5 × f(Cret)
+
+
+   •   Here, CC is the Total Citation Count over the previous three years.
+   •   P is as computed for PU.
+   •   TOP25P: Number of citations in the top 25 percentile averaged over the previous three
+       years.
+   •   Cret is the Total retracted citations count over the previous three years.
+
+   •   FRQ is the maximum of the nominal number of faculty members as calculated based on a
+       required FSR of 1:15 or the available faculty in the institution.
+
+   •   Primary Data: Third Party Sources.
+C. IPR and Patents: Patents Published and Granted (IPR): 15 marks
+
+   •   IPR = IPG + IPP
+
+       IPG = 10× f (PG)
+
+   •   PG is the number of patents granted over the previous three years.
+
+
+
+       IPP = 5 × f (PP)
+
+   •   PP: No. of patents published over the previous three years.
+
+   •   Primary Data: Third Party Sources.
+D. Footprint of Projects and Professional Practice (FPPP): 10 marks
+
+   •   FPPP = FPR + FPC
+
+   •   FPR = 7.5 × f (RF)
+
+   •   RF is the average annual research funding earnings (amount actually received in rupees)
+       per faculty at the institute level in the previous three years.
+
+   •   FPC = 2.5 × f (CF)
+
+   •   CF is the average annual consultancy amount (amount actually received in rupees) per
+       faculty at the institute level in the previous three years.
+3. Graduation Outcome (GO):100 marks
+
+  •   Ranking weight: 0.20
+
+  •   Overall Assessment Metric:
+
+  •   GO = GPH(40) + GUE(15) + GMS(25) + GPHD(20)
+
+  •   The component metrics are explained on the following pages:
+
+      A. Combined metric for Placement and Higher Studies: GPH
+      B. Metric for University Examinations: GUE
+      C. Median Salary: GMS
+      D. Metric for Number of Ph.D. Students Graduated: GPHD
+A. Combined Metric for Placement and Higher Studies (GPH): 40 marks
+
+
+   •   GPH = 40 × (Np/100 +Nhs/100)
+
+
+   •   Np = Percentage of graduating students (in UG/ PG programs) placed in the previous
+       three years.
+   •   Nhs = Percentage of graduating students (in UG/ PG programs) who have been selected
+       for higher studies in the previous three years.
+
+
+   •   Primary Data: To be provided in the prescribed format.
+B. Metric for University Examinations (GUE): 15 Marks
+
+   •   GUE = 15 × min [(Ng/80), 1]
+
+   •   Ng is the percentage of Students (as a fraction of the approved intake), averaged over
+       the previous three years, passing the respective university examinations in the
+       stipulated time for the program in which they are enrolled.
+
+
+   •   Primary Data: To be provided in the prescribed format.
+C. Median Salary(GMS): 25 Marks
+
+
+   •   GMS = 25 × f (MS)
+
+
+   •   MS = Median salary of graduates (in UG/PG program) in the previous three years from
+       an institution.
+
+
+   •   Primary Data: To be provided in the prescribed format.
+D. Metric for Number of Ph.D Students Graduated (GPHD): 20 Marks
+
+   •   GPHD = 20 × f(Nphd)
+
+   •   Nphd = Average number of Ph.D students graduated (awarded Ph.D) over the previous
+       three years.
+
+   •   Primary Data: Number of graduating Ph.D. Students as reflected in the approved
+       Annual Report/Convocation Report to be provided in the prescribed format.
+4. Outreach and Inclusivity (OI): 100 marks
+  •   Ranking weight: 0.10
+
+  •   Overall Assessment Metric: OI = RD(30) + WD(30) +ESCS(20) + PCS(20)
+
+  •   The component metrics are explained on the following pages:
+
+      A. Percentage of Students from other States/ Countries (Region Diversity): RD
+      B. Percentage of Women (Women Diversity): WD
+      C. Economically and Socially Challenged Students: ESCS
+      D. Facilities for Physically Challenged Students: PCS
+A. Percentage of Students from other States/ Countries (Region Diversity RD): 30 marks
+
+   •   RD = 25 × fraction of total students enrolled from other states + 5 × fraction of
+       students enrolled from other countries
+
+
+   •   Primary Data: To be provided in the prescribed format.
+B. Percentage of Women (Women Diversity WD): 30 marks
+
+   •   WD = 15 × (NWS/50) + 15 × (NWF/20)
+
+   •   NWS is the percentage of Women students.
+
+   •   NWF is the percentage of Women Faculty, including the women members in senior
+       administrative positions, such as Heads of Departments, Deans, or Institute Heads.
+
+   •   Expectation: 50% women students and 20% women faculty.
+
+   •   Primary Data: To be provided in the prescribed format.
+C.Economically and Socially Challenged Students (ESCS): 20 marks
+
+   •   ESCS = 20 × f(Nesc)
+
+   •   Nesc is the percentage of UG students being provided full tuition fee rembursement by
+       the institution to pursue their degree programs.
+   •   Primary Data: To be provided by the institution in the prescribed format.
+D. Facilities for Physically Challenged Students (PCS): 20 marks
+
+   •   PCS = 20 marks, if the Institute provides full facilities for physically challenged
+       students, as outlined.
+
+       Else, in proportion to facilities.
+
+   •   Basis: Verifiable Responses to Questions.
+
+   •   Primary Data: To be provided in a prescribed format.
+5. Perception (PR) – 100 marks
+  •   Ranking weight: 0.1
+
+  •   Overall Assessment Metric: PR = 100
+
+  •   Component metrics are explained in the following pages:
+
+      A. Peer Perception: Employers & Academic Peers: (PR)
+A. Peer Perception: Employers & Academic Peer (PR): 100 marks
+
+•   This is to be done through a survey conducted over a large category of Employers,
+    Professionals from Reputed Organizations, and a large category of academics to
+    ascertain their preference for graduates of different institutions.
+
+•   A comprehensive list will be prepared, taking into account various sectors, regions, etc.
+
+•   Lists to be updated periodically.
+

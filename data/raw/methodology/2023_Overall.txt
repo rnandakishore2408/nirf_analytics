@@ -1,0 +1,553 @@
+             INDIA RANKINGS 2023
+
+
+
+
+NATIONAL INSTITUTIONAL RANKING FRAMEWORK
+
+Methodology for Ranking of Academic Institutions in India
+
+        (RANKING METRICS FOR OVERALL)
+
+
+
+
+Ministry of Human Resource Development
+1. Salient Features
+
+
+
+   1.1 Methodology is based on developing a set of metrics for ranking of academic
+       institutions, based on the parameters agreed upon by the core committee.
+
+   1.2 These parameters are organized into five broad heads, and have been further
+       elaborated into suitable sub-heads. Each broad head has an overall weight
+       assigned to it. Within each head, the various sub-heads also have an
+       appropriate weight distribution.
+
+   1.3 An attempt is also made to identify the relevant data needed to suitably
+       measure the performance score under each sub-head. Emphasis here is on
+       identifying data that the institution can easily provide or is easy to obtain from
+       third party sources and easily verifiable, where verification is needed. This is
+       important in the interest of transparency.
+
+   1.4 A suitable metric is then proposed based on this data, which computes a score
+       under each sub-head. The sub-head scores are then added to obtain scores for
+       each individual head. The overall score is computed based on the weights allotted
+       to each head. The overall score can take a maximum value of 100.
+   1.5 The institutions can then be rank-ordered based on their scores.
+
+
+   2. Eligibility for Overall and Discipline Specific Rankings
+
+   2.1 Learning from our experience of the earlier ranking excercises, it is proposed
+       to have the following different ways of Ranking.
+
+        (i)     This year, all candidate institutions, independent of their discipline or
+                nature (comprehensive or otherwise) will be given overall rank1, if they
+                satisfy the criteria that they have a total of atleast 1000 student intake
+                or enrolled students in UG and PG programs.
+
+
+
+
+1 The parameters have been chosen in such a manner that these are equally relevant for
+various kinds of educational institutions. Data format is designed to ensure that the
+diversity of disciplines and their separate character are accounted for.
+        (ii) Institutions will also be given a discipline specific rank as relevant.
+
+        (iii) Highly focussed institutions with a single main discipline (Engineering,
+        Medical, Law, Management, Pharmacy, Architecture or UG degree colleges in
+        Arts, Science and Commerce, etc.) with less than 1000 total sanctioned
+        approved intake or enrolled students will be given only a discipline specific
+        rank.
+        (iv) Schools or Departments of Universities or Institutions (such as
+        Architecture, Engineering, Law Faculty, Management Departments, Pharmacy
+        etc.) will have to register separately and provide additional data (in the format)
+        pertaining to the respective School or Department, if they desire to be included
+        in the discipline specific ranking list. All institutions should seriously consider
+        this option, if they wish to position their important Faculties/Schools at the
+        national level. Only options available on the registration portal will be
+
+        considered for discipline specific rankings2.
+
+
+        (v) Undergraduate Teaching institutions (including degree colleges affiliated to
+        a university) are also invited to participate.
+
+
+
+2 If an engineering school of a University consists of a single engineering discipline with
+very few students, they would not be eligible for ranking even under the discipline specific
+category. Thus, if the engineering faculty of a University has only the Department of
+Electronics Engineering as its Engineering School, it need not apply for a separate discipline
+specific ranking under the engineering category.
+   (vi) Discipline specific ranks will be announced only in those disciplines where
+   a significant number of institutions offer themselves for ranking, and the List
+   includes some of the prominent institutions in that discipline, with an
+   acceptable ranking score. The final decision on ranking of a discipline will
+   therefore be decided by NIRF after analysing the data.
+
+
+   (vii) Open Universities and Affiliating Universities (whether State or Centre
+   approved/funded) will not be considered for ranking. However, if these
+   universities have a teaching or research campus of their own, they are welcome
+   to participate with data pertaining only to their physical campuses. Data
+   pertaining to their function as open or affiliating universities cannot be
+   included in the submitted data.
+
+
+   (viii) Rankings will be considered only for those institutions that have graduated
+   at least three batches of students in full time UG or PG programs, where the
+   duration is not less than three years for the UG programs and two years for the
+   PG programs.
+
+
+2.2 While score computations for the parameters are similar for both kinds of
+   rankings (i.e., overall or discipline specific) on most counts, the weights are
+   somewhat different on a few parameters, to take into account discipline
+   specific issues.
+3. Data Collection
+
+3.1 In view of the absence of a reliable and comprehensive third-party Data-Base
+   that could supply all relevant information (as needed for computing the said
+   scores), it is imperative that the institutions that are desirous of participating
+   in the ranking exercise, supply the data in the given format that is being made
+   available on the NIRF portal, before the last date specified for this purpose. The
+   deadlines will be separately announced on the NIRF portal.
+
+
+3.2 It is required that the institutions upload the submitted data also on their own,
+   publicly visible website in the interest of transparency. The access to this data
+   should be through a prominent link named NIRF in the homepage itself.It is
+   mandatory that institutions should host the data submitted for India Rankings
+   2023 on their website post the final submission and they should also provide
+   an email address where they would receive comments and feedback.
+   Institutions should pro-actively and objectively examine the comments and
+   feedback received to effect corrections, if so warranted (within the time slot to
+   be announced by NIRF on its website). All institutions have to mandatory host
+   data submitted for India Rankings 2023 for a period of three years.
+
+
+
+
+3.3 Institutions who fail to post the data submitted to NIRF on their own websites (as
+   indicated in 3.2), or those who do not have institution website, will be given
+   intial notice and afterwards an appropriate action will be taken.
+
+
+3.4 NIRF has been empowered to take up physical checks on the institution records
+   and audited accounts where needed, to ensure that the principles of ethical
+   behaviour are being adhered to. In case an institution is approached for
+   carrying out any physical check, they are expected to co-operate. Non-
+   cooperation may lead to debarring the institution from participation in the
+   ranking exercise.
+3.5 For some of the parameters (like Research, Patents etc.) the data will be populated
+   from internationally available Data Bases. However, NIRF reserves the right not to
+   use the data from any of these sources or include other sources, if so warranted.
+   NIRF shall directly access data from these resources, or seek help from the
+   resource publishers, as necessary.
+
+3.6 NIRF also reserves the right to modify any of the metrics if it deems fit to do so
+   in the interest of rationalisation necessitated by the exigencies or the nature of
+   the data encountered. Any changes so made will be notified at the time of
+   announcing the rankings.
+
+
+3.7 If any participating institution is found sending promotional/canvassing emails
+   during the Ranking Exercise, then all the votes received in the survey will be
+   made zero.
+4. Implementation Details
+
+4.1 As in the previous year, the National Board of Accreditation (NBA) will continue
+   to be the Ranking Agency on behalf of NIRF for 2023.
+
+
+4.2 NIRF shall invite institutions interested to participate in the ranking exercise to
+   register on the NIRF portal. The data should be submitted on an on-line facility
+   created for this purpose.
+
+
+4.3 NIRF, by itself or with the help of other suitably identified partner agencies will
+   also undertake authentication of data, wherever felt necessary, and where
+   feasible.
+
+
+4.4 NIRF will extract the relevant information from this data and through software,
+   compute the various metrics and rank institutions based on this data. This
+   process is expected to be completed in about 3 months, and rankings published
+   on the first Monday of April 2023.
+
+
+5. Errors and Correction Policy
+
+5.1 All efforts will be made to display the raw data on the NIRF website after due
+   processing by NIRF for cross-checking by the institution. This is the data on
+   which rankings would be finally computed. It will be the Institution’s
+   responsibility to ensure that the data published by NIRF accurately reflects the
+   submissions by it. The institution will also be invited to check out the data
+   supplied by or taken from third sources. If the Institution does not give any
+   comments or feedback within a specified period on the displayed data, it will
+   be assumed that this data is accurate. No petitions for corrections will be
+   accepted after the declared deadline, or after the rankings have been
+   announced.
+
+
+5.2 It is the responsibility of the Nodal officer to ensure that the data updated
+   during data verification is correct. And if data updated is incorrect, Nodal
+   Officer should send an email before rankings are announced. No such
+   complaints will be entertained after the release of ranks.
+
+
+5.3 If it is found that an institution has deliberately manipulated the submitted
+   data, causing erroneous rankings, NIRF will remove the institution from the
+   ranking list and future rankings and publish a suitable note to this effect.
+               Summary of Ranking Parameters and Weightages- 2023
+                                   (Overall)
+Sr. No.                   Parameter                      Marks    Weightage
+
+  1       Teaching, Learning & Resources                  100       0.30
+  2       Research and Professional Practice              100       0.30
+  3       Graduation Outcomes                             100       0.20
+  4       Outreach and Inclusivity                        100       0.10
+  5       Perception                                      100       0.10
+ S.No.                                Parameters                                  Marks
+ 1.      Teaching, Learning & Resources (TLR)                                     100
+         Ranking weight: 0.30
+            A. Student Strength including Doctoral Students(SS): 20 marks
+            B. Faculty-student ratio with emphasis on permanent faculty (FSR):
+               25 marks
+            C. Combined metric for Faculty with PhD (or equivalent) and
+               Experience (FQE): 20 marks
+            D. Financial Resources and their Utilisation (FRU): 20 marks
+            E. Online Education: Online Completion of Syllabus & Exams and
+               Swayam (OE): 15 marks
+
+ 2.      Research and Professional Practice (RP)                                  100
+         Ranking weight: 0.30
+            A. Combined metric for Publications (PU): 35 marks
+            B. Combined metric for Quality of Publications (QP): 35 marks
+            C. IPR and Patents: Published and Granted (IPR): 15 marks
+            D. Footprint of Projects and Professional Practice (FPPP): 15 marks
+
+ 3.      Graduation Outcomes (GO)                                                 100
+         Ranking weight: 0.20
+            A. Metric for University Examinations(GUE): 60 marks
+            B. Metric for Number of Ph.D. Students Graduated (GPHD):
+               40 marks
+
+ 4.      Outreach and Inclusivity (OI)                                            100
+         Ranking weight: 0.10
+            A. Percentage of Students from Other States/Countries (Region
+               Diversity RD): 30 marks
+            B. Percentage of Women (Women Diversity WD): 30 marks
+            C. Economically and Socially Challenged Students (ESCS):
+               20 marks
+            D. Facilities for Physically Challenged Students (PCS): 20 marks
+
+ 5.      Perception (PR)*                                                         100
+         Ranking weight: 0.10
+            A. Peer Perception: Academic Peers and Employers (PR): 100
+               marks
+
+
+*However for universities in the PR parameter, 70% weight was given to Peer Perception and
+30% to Accreditation.
+1. Teaching, Learning & Resources (TLR): 100 marks
+  •   Ranking weight: 0.30
+
+  •   Overall Assessment Metric:
+
+      TLR = SS (20) + FSR (25) + FQE (20) + FRU (20) + OE (15)
+
+  •   Component metrics based on :
+
+         A. Student Strength including Ph.D. Students: SS
+         B. Faculty-Student Ratio with emphasis on permanent faculty: FSR
+         C. Combined metric for Faculty with PhD (or equivalent) and Experience:
+            FQE
+         D. Financial Resources and Their Utilisation: FRU
+         E. Online Education: Online Completion of Syllabus & Exams and Swayam:
+            OE
+A. Student Strength including Ph.D. students (SS): 20 Marks
+
+  •   SS = f(NT, NE) × 15 + f(NP) × 5
+
+
+  •   The functions f(NT ,NE) and f(Np) are functions to be determined by NIRF.
+  •   NT: Total sanctioned approved intake in the institution considering all UG and PG
+      programs of the institution.
+  •   NE: Total number of students enrolled in the institution considering all UG and PG
+      programs of the institution.
+  •   Np = Total number of students enrolled for the doctoral program till previous
+      academic year.
+
+
+  •   Primary Data: To be provided in a prescribed Format.
+B. Faculty-Student Ratio with emphasis on permanent faculty (FSR): 25 marks
+
+   •   FSR = 25 × [15 × (F/N)]
+
+   •   N =NT+ Np
+
+   •   F: Full time regular faculty in the institution in the previous year.
+
+   •   Regular appointment means Faculty on Full time basis. Faculty on contract basis/ad-
+       hoc basis will be considered if the concerned faculty has taught in both the semesters
+       of academic year 2021-22.
+
+   •   Faculty members with Ph.D. and Masters degree will be considered and counted here.
+       Faculty member with a Bachelor’s degree will not be counted.
+
+
+   •   Expected ratio is 1:15 to score maximum marks.
+
+   •   For F/N < 1: 50, FSR will be set to zero.
+
+
+
+
+   •   Primary Data: Faculty List to be provided in the Prescribed Format.
+C. Combined Metric for Faculty with PhD (or equivalent) and Experience (FQE): 20 marks
+
+    •   FQ = 10 × (FRA/95) , FRA < 95%;
+
+    •   FQ = 10, FRA ≥ 95%.
+
+
+    •   Here FRA is the percentage of Faculty with Ph.D. (or equivalent qualification) with respect
+        to the total no. of faculty required or actual faculty whichever is higher, in the previous
+        year.
+
+.
+
+        F1=Fraction with Experience up to 8 years;
+
+        F2= Fraction with Experience between 8+ to 15years;
+
+        F3=Fraction with Experience > 15 years.
+
+
+
+        FE = 3min(3F1, 1) + 3 min(3F2, 1) + 4 min(3F3, 1)
+
+        Rationale: Full marks for a ratio of 1:1:1
+
+
+
+    •   FQE = FQ + FE
+
+
+
+    •   Primary Data: Faculty List in the Prescribed Format.
+D: Financial Resources and their Utilisation (FRU): 20 Marks
+
+   •   FRU = 5×f(BC) + 15×f(BO)
+
+   •   BC: Average Annual Capital Expenditure per student for the previous three years.
+       (Excluding expenditure on construction of new buildings)
+
+   •   BO: Average Annual Operational (or Recurring) Expenditure per student for
+       the previous three years. (Excluding maintenance of hostels and allied
+       services)
+
+
+
+   •   Primary Data: Figures in prescribed format for each.
+E: Online Education: Online Completion of Syllabus & Exams and Swayam (OE): 15
+   marks
+
+   •   OE = f(OE)
+2.Research and Professional Practice (RP): 100 marks
+  •   Ranking weight: 0.30
+
+  •   Overall Assessment Metric:
+
+      RP = PU(35) + QP(35) + IPR(15) + FPPP(15)
+
+  •   The component metrics explained on following pages.
+
+
+
+  A. Combined Metric for Publications: PU
+  B. Combined Metric for Quality of Publications: QP
+  C. IPR and Patents: Published and Granted: IPR
+  D. Footprint of Projects, Professional Practice and Executive
+     Development Programs: FPPP
+A.Combined metric for Publications (PU): 35 marks
+
+   •   PU = 35 × f(P/FRQ)
+
+
+   •   P is weighted number of publications as acertained from suitable third party sources.
+   •   FRQ is the maximum of nominal number of faculty members as calculated on the basis
+       of a required FSR of 1:15 or the available faculty in the institution.
+   •   Sources: Third party sources.
+B.Combined metric for Quality of Publications (QP): 35 Marks
+
+
+   •   QP = 20 × f (CC/FRQ) + 15× f (TOP25P/P)
+
+
+   •   Here CC is Total Citation Count over previous three years.
+   •   P is as computed for PU.
+   •   TOP25P: Number of citations in top 25 percentile averaged over the previous three
+       years.
+
+   •   FRQ is the maximum of nominal number of faculty members as calculated on the basis
+       of a required FSR of 1:15 or the available faculty in the institution.
+
+   •   Primary Data: Third Party Sources.
+C. IPR and Patents: Patents Published & Granted (IPR): 15 marks
+
+       IPR = IPG + IPP
+
+       IPG = 10× f (PG)
+
+   •   PG is the number of patents granted over the previous three years.
+
+
+       IPP = 5 × f (PP)
+   •   PP: No. of patents published over the previous three years.
+
+   •   Primary Data: Third Party Sources
+D. Footprint of Projects, Professional Practice and Executive Development Programs
+/Management Development Programs (FPPP): 15 marks
+
+   •   FPPP = FPR + FPC + EDP/MDP
+
+   •   FPR = 5 × f(RF)
+
+   •   RF is the average annual research funding earnings (amount received in rupees) at
+       institute level in previous three years.
+
+
+   •   FPC =5 × f(CF)
+
+   •   CF is the average annual consultancy amount (amount actually received in rupees)
+       at institute level in previous three years.
+
+   •   EDP/MDP = 5 × f(EP)
+
+   •   EP = Average annual earnings from Executive Development Programs/Management
+       Development Programs in previous three years.
+
+   •   Primary Data: To be provided by the institution in prescribed format.
+3. Graduation Outcome (GO):100 marks
+
+  •   Ranking weight: 0.20
+
+  •   Overall Assessment Metric:
+
+  •   GO = GUE(60) +GPHD(40)
+
+  •   The component metrics are explained on the following pages:
+
+
+      A. Metric for University Examinations: GUE
+      B. Metric for Number of Ph.D. Students Graduated: GPHD
+A. Metric for University Examinations (GUE): 60 Marks
+
+   •   GUE = 60 × min [(Ng/80), 1]
+
+
+
+   •   Ng is the percentage of Students (as a fraction of the approved intake),
+       averaged over the previous three years, passing the respective university
+       examinations in stipulated time for the program in which enrolled.
+
+
+
+   •   Primary Data: To be provided in a prescribed format
+B. Metric for Number of Ph.D Students Graduated (GPHD): 40 Marks
+
+   •   GPHD = 40 × f(Nphd)
+
+
+   •   Nphd = Average number of Ph.D students graduated (awarded Ph.D) over the
+       previous three years.
+
+
+
+   •   Primary Data: Number of graduating Ph.D. Students as reflected in the
+       approved Annual Report/Convocation Report to be provided in the prescribed
+       format.
+4. Outreach and Inclusivity (OI): 100 marks
+  •   Ranking weight: 0.10
+
+  •   Overall Assessment Metric: OI = RD(30) + WD(30) +ESCS(20) + PCS(20)
+
+  •   The component metrics are explained on following pages:
+
+      A. Percentage of Students from Other States/ Countries (Region Diversity): RD
+      B. Percentage of Women (Women Diversity): WD
+      C. Economically and Socially Challenged Students: ESCS
+      D. Facilities for Physically Challenged Students: PCS
+A. Percentage of Students from Other States/ Countries (Region Diversity RD): 30 marks
+
+  RD = 25 × fraction of total students enrolled from other states + 5 × fraction of
+  students enrolled from other countries
+
+
+
+  Primary Data: To be provided in the prescribed format.
+B. Percentage of Women (Women Diversity WD): 30 marks
+
+   •   WD = 15 × (NWS/50) + 15 × (NWF/20)
+
+
+
+   •   NWS are the percentage of Women students.
+
+   •   NWF are the percentage of Women Faculty including women members in senior
+       administrative positions, such as Heads of Departments, Deans or Institute Heads.
+
+   •   Expectation: 50% women students and 20% women faculty.
+
+
+
+   •   Primary Data: To be provided in the prescribed format.
+C. Economically and Socially Challenged Students (ESCS) : 20 marks
+
+
+
+   •   ESCS = 20 × f(Nesc)
+
+   •   Nesc is the percentage of students being provided full tuition fee rembursement by the
+       institution to pursue their degree programs.
+
+   •   Primary Data: To be provided by the institution in a prescribed format.
+D. Facilities for Physically Challenged Students (PCS): 20 marks
+
+   •   PCS = 20 marks, if the Institute provides full facilities for physically
+       challenged students, as outlined.
+
+       Else, in proportion to facilities.
+
+
+
+   •   Basis: Verifiable Responses to Questions.
+
+
+
+   •   Primary Data: To be provided in a prescribed format.
+5. Perception (PR) – 100 marks
+
+  •   Ranking weight: 0.1
+
+  •   Overall Assessment Metric: PR = PR(100)
+
+  •   Component metrics are explained in the following pages:
+
+      A. Peer Perception: Employers & Academic Peer: (PR)
+A. Peer Perception: Employers & Academic Peer (PR): 100 marks
+
+
+•   This is to be done through a survey conducted over a large category of Employers,
+    Professionals from Reputed Organizations and a large category of academics to
+    ascertain their preference for graduates of different institutions.
+
+•   Comprehensive list will be prepared taking into account various sectors, regions, etc.
+
+•   Lists to be updated periodically.
+

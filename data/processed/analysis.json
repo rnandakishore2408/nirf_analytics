@@ -1,0 +1,1349 @@
+{
+  "cutoffs": {
+    "2023": {
+      "rank1": 89.79,
+      "rank10": 67.04,
+      "rank50": 51.47,
+      "rank100": 41.93,
+      "mean": 54.06
+    },
+    "2024": {
+      "rank1": 89.46,
+      "rank10": 66.69,
+      "rank50": 54.16,
+      "rank100": 43.95,
+      "mean": 55.79
+    },
+    "2025": {
+      "rank1": 88.72,
+      "rank10": 67.24,
+      "rank50": 55.91,
+      "rank100": 45.55,
+      "mean": 56.82
+    }
+  },
+  "tier_profile_2025": [
+    {
+      "tier": "1-10",
+      "tlr": 82.4,
+      "rpc": 75.3,
+      "go": 83.3,
+      "oi": 61.3,
+      "pr": 72.9,
+      "score": 77.4
+    },
+    {
+      "tier": "11-25",
+      "tlr": 78.1,
+      "rpc": 55.9,
+      "go": 74.0,
+      "oi": 62.4,
+      "pr": 31.8,
+      "score": 64.4
+    },
+    {
+      "tier": "26-50",
+      "tlr": 74.1,
+      "rpc": 48.8,
+      "go": 68.2,
+      "oi": 62.6,
+      "pr": 16.8,
+      "score": 58.4
+    },
+    {
+      "tier": "51-75",
+      "tlr": 70.0,
+      "rpc": 34.2,
+      "go": 64.6,
+      "oi": 59.2,
+      "pr": 17.3,
+      "score": 51.8
+    },
+    {
+      "tier": "76-100",
+      "tlr": 65.2,
+      "rpc": 29.8,
+      "go": 59.6,
+      "oi": 59.9,
+      "pr": 9.8,
+      "score": 47.4
+    }
+  ],
+  "parameter_discrimination_2025": {
+    "tlr": {
+      "std": 8.9,
+      "corr_with_score": 0.67,
+      "weighted_std": 2.67
+    },
+    "rpc": {
+      "std": 16.9,
+      "corr_with_score": 0.866,
+      "weighted_std": 5.08
+    },
+    "go": {
+      "std": 10.7,
+      "corr_with_score": 0.647,
+      "weighted_std": 2.13
+    },
+    "oi": {
+      "std": 7.5,
+      "corr_with_score": 0.123,
+      "weighted_std": 0.75
+    },
+    "pr": {
+      "std": 20.6,
+      "corr_with_score": 0.841,
+      "weighted_std": 2.06
+    }
+  },
+  "type_mix": {
+    "2023": {
+      "University": 84,
+      "College": 12,
+      "Institute (deemed / national importance)": 4
+    },
+    "2024": {
+      "University": 84,
+      "College": 12,
+      "Institute (deemed / national importance)": 4
+    },
+    "2025": {
+      "University": 87,
+      "College": 9,
+      "Institute (deemed / national importance)": 4
+    }
+  },
+  "state_counts_2025": {
+    "Tamil Nadu": 14,
+    "Uttar Pradesh": 7,
+    "Karnataka": 7,
+    "Punjab": 7,
+    "Delhi": 6,
+    "Maharashtra": 6,
+    "Telangana": 6,
+    "Rajasthan": 5,
+    "Odisha": 5,
+    "West Bengal": 4,
+    "Andhra Pradesh": 4,
+    "Uttarakhand": 3
+  },
+  "tamil_nadu_2025": [
+    {
+      "rank": 1,
+      "name": "Indian Institute of Technology Madras",
+      "type_label": "University",
+      "score": 88.72,
+      "tlr": 95.7,
+      "rpc": 90.74,
+      "go": 82.29,
+      "oi": 63.25,
+      "pr": 100.0
+    },
+    {
+      "rank": 9,
+      "name": "National Institute of Technology Tiruchirappalli",
+      "type_label": "University",
+      "score": 68.14,
+      "tlr": 73.26,
+      "rpc": 57.64,
+      "go": 78.69,
+      "oi": 64.76,
+      "pr": 66.54
+    },
+    {
+      "rank": 14,
+      "name": "S.R.M. Institute of Science and Technology",
+      "type_label": "University",
+      "score": 65.83,
+      "tlr": 78.69,
+      "rpc": 68.93,
+      "go": 65.43,
+      "oi": 67.09,
+      "pr": 17.45
+    },
+    {
+      "rank": 16,
+      "name": "Vellore Institute of Technology",
+      "type_label": "University",
+      "score": 65.25,
+      "tlr": 66.77,
+      "rpc": 67.6,
+      "go": 72.22,
+      "oi": 61.01,
+      "pr": 43.97
+    },
+    {
+      "rank": 20,
+      "name": "Anna University",
+      "type_label": "University",
+      "score": 63.51,
+      "tlr": 69.43,
+      "rpc": 62.8,
+      "go": 63.28,
+      "oi": 51.12,
+      "pr": 60.73
+    },
+    {
+      "rank": 23,
+      "name": "Amrita Vishwa Vidyapeetham",
+      "type_label": "University",
+      "score": 62.46,
+      "tlr": 80.74,
+      "rpc": 51.78,
+      "go": 67.71,
+      "oi": 64.19,
+      "pr": 27.53
+    },
+    {
+      "rank": 33,
+      "name": "Kalasalingam Academy of Research and Education",
+      "type_label": "University",
+      "score": 59.03,
+      "tlr": 78.03,
+      "rpc": 42.46,
+      "go": 72.16,
+      "oi": 77.18,
+      "pr": 7.27
+    },
+    {
+      "rank": 40,
+      "name": "Shanmugha Arts Science Technology & Research Academy",
+      "type_label": "University",
+      "score": 58.02,
+      "tlr": 80.47,
+      "rpc": 35.94,
+      "go": 73.7,
+      "oi": 72.8,
+      "pr": 10.76
+    },
+    {
+      "rank": 45,
+      "name": "Saveetha Institute of Medical and Technical Sciences",
+      "type_label": "Institute (deemed / national importance)",
+      "score": 56.55,
+      "tlr": 75.77,
+      "rpc": 61.58,
+      "go": 40.58,
+      "oi": 71.22,
+      "pr": 1.07
+    },
+    {
+      "rank": 47,
+      "name": "Sri Sivasubramaniya Nadar College of Engineering",
+      "type_label": "College",
+      "score": 56.08,
+      "tlr": 71.29,
+      "rpc": 43.96,
+      "go": 70.01,
+      "oi": 57.78,
+      "pr": 17.21
+    },
+    {
+      "rank": 67,
+      "name": "Sathyabama Institute of Science and Technology",
+      "type_label": "University",
+      "score": 50.64,
+      "tlr": 70.44,
+      "rpc": 36.38,
+      "go": 51.69,
+      "oi": 71.85,
+      "pr": 10.76
+    },
+    {
+      "rank": 67,
+      "name": "PSG College of Technology",
+      "type_label": "College",
+      "score": 50.64,
+      "tlr": 70.17,
+      "rpc": 26.31,
+      "go": 60.36,
+      "oi": 47.52,
+      "pr": 48.83
+    },
+    {
+      "rank": 87,
+      "name": "Vel Tech Rangarajan Dr. Sagunthala R & D Institute of Science and Technology",
+      "type_label": "University",
+      "score": 47.43,
+      "tlr": 66.71,
+      "rpc": 35.76,
+      "go": 46.01,
+      "oi": 67.33,
+      "pr": 7.57
+    },
+    {
+      "rank": 100,
+      "name": "Sri Krishna College of Engineering and Technology",
+      "type_label": "College",
+      "score": 45.55,
+      "tlr": 68.47,
+      "rpc": 22.35,
+      "go": 63.4,
+      "oi": 49.25,
+      "pr": 6.97
+    }
+  ],
+  "colleges_in_top100": {
+    "2023": 12,
+    "2024": 12,
+    "2025": 9
+  },
+  "private_colleges_2025": [
+    {
+      "rank": 47,
+      "name": "Sri Sivasubramaniya Nadar College of Engineering",
+      "state": "Tamil Nadu",
+      "score": 56.08,
+      "tlr": 71.29,
+      "rpc": 43.96,
+      "go": 70.01,
+      "oi": 57.78,
+      "pr": 17.21
+    },
+    {
+      "rank": 59,
+      "name": "Manipal Institute of Technology",
+      "state": "Karnataka",
+      "score": 52.55,
+      "tlr": 68.27,
+      "rpc": 41.71,
+      "go": 60.77,
+      "oi": 58.59,
+      "pr": 15.5
+    },
+    {
+      "rank": 67,
+      "name": "PSG College of Technology",
+      "state": "Tamil Nadu",
+      "score": 50.64,
+      "tlr": 70.17,
+      "rpc": 26.31,
+      "go": 60.36,
+      "oi": 47.52,
+      "pr": 48.83
+    },
+    {
+      "rank": 70,
+      "name": "Netaji Subhas University of Technology (NSUT)",
+      "state": "Delhi",
+      "score": 50.43,
+      "tlr": 68.09,
+      "rpc": 27.14,
+      "go": 73.77,
+      "oi": 51.97,
+      "pr": 19.08
+    },
+    {
+      "rank": 75,
+      "name": "M. S. Ramaiah Institute of Technology",
+      "state": "Karnataka",
+      "score": 49.26,
+      "tlr": 70.38,
+      "rpc": 28.02,
+      "go": 62.77,
+      "oi": 56.51,
+      "pr": 15.5
+    },
+    {
+      "rank": 88,
+      "name": "AU College of Engineering (A)",
+      "state": "Andhra Pradesh",
+      "score": 47.37,
+      "tlr": 76.16,
+      "rpc": 13.15,
+      "go": 61.81,
+      "oi": 78.27,
+      "pr": 3.79
+    },
+    {
+      "rank": 91,
+      "name": "SR University",
+      "state": "Telangana",
+      "score": 47.16,
+      "tlr": 73.64,
+      "rpc": 21.78,
+      "go": 55.79,
+      "oi": 64.97,
+      "pr": 8.76
+    },
+    {
+      "rank": 95,
+      "name": "C.V. Raman Global University, Odisha",
+      "state": "Odisha",
+      "score": 46.62,
+      "tlr": 77.56,
+      "rpc": 10.31,
+      "go": 59.54,
+      "oi": 71.59,
+      "pr": 11.86
+    },
+    {
+      "rank": 100,
+      "name": "Sri Krishna College of Engineering and Technology",
+      "state": "Tamil Nadu",
+      "score": 45.55,
+      "tlr": 68.47,
+      "rpc": 22.35,
+      "go": 63.4,
+      "oi": 49.25,
+      "pr": 6.97
+    }
+  ],
+  "top_movers_up": [
+    {
+      "name": "Indian Institute of Technology Patna",
+      "rank_2023": 41,
+      "rank_2025": 19,
+      "score_2023": 55.03,
+      "score_2025": 64.52,
+      "rank_change": 22
+    },
+    {
+      "name": "Saveetha Institute of Medical and Technical Sciences",
+      "rank_2023": 64,
+      "rank_2025": 45,
+      "score_2023": 49.3,
+      "score_2025": 56.55,
+      "rank_change": 19
+    },
+    {
+      "name": "Manipal University Jaipur",
+      "rank_2023": 76,
+      "rank_2025": 58,
+      "score_2023": 46.39,
+      "score_2025": 52.69,
+      "rank_change": 18
+    },
+    {
+      "name": "International Institute of Information Technology Hyderabad",
+      "rank_2023": 55,
+      "rank_2025": 38,
+      "score_2023": 50.33,
+      "score_2025": 58.45,
+      "rank_change": 17
+    },
+    {
+      "name": "Birla Institute of Technology  & Science -Pilani",
+      "rank_2023": 25,
+      "rank_2025": 11,
+      "score_2023": 59.52,
+      "score_2025": 67.02,
+      "rank_change": 14
+    },
+    {
+      "name": "S.R.M. Institute of Science and Technology",
+      "rank_2023": 28,
+      "rank_2025": 14,
+      "score_2023": 58.56,
+      "score_2025": 65.83,
+      "rank_change": 14
+    },
+    {
+      "name": "UPES",
+      "rank_2023": 54,
+      "rank_2025": 43,
+      "score_2023": 50.63,
+      "score_2025": 56.99,
+      "rank_change": 11
+    },
+    {
+      "name": "Indian Institute of Technology Jammu",
+      "rank_2023": 67,
+      "rank_2025": 56,
+      "score_2023": 48.15,
+      "score_2025": 53.08,
+      "rank_change": 11
+    },
+    {
+      "name": "Graphic Era University",
+      "rank_2023": 62,
+      "rank_2025": 52,
+      "score_2023": 49.59,
+      "score_2025": 55.26,
+      "rank_change": 10
+    },
+    {
+      "name": "National Institute of Technology Srinagar",
+      "rank_2023": 82,
+      "rank_2025": 73,
+      "score_2023": 45.7,
+      "score_2025": 50.23,
+      "rank_change": 9
+    }
+  ],
+  "top_movers_down": [
+    {
+      "name": "Defence Institute of Advanced Technology",
+      "rank_2023": 57,
+      "rank_2025": 92,
+      "score_2023": 50.14,
+      "score_2025": 46.98,
+      "rank_change": -35
+    },
+    {
+      "name": "National Institute of Technology Kurukshetra",
+      "rank_2023": 58,
+      "rank_2025": 85,
+      "score_2023": 49.89,
+      "score_2025": 47.98,
+      "rank_change": -27
+    },
+    {
+      "name": "Sri Krishna College of Engineering and Technology",
+      "rank_2023": 77,
+      "rank_2025": 100,
+      "score_2023": 46.03,
+      "score_2025": 45.55,
+      "rank_change": -23
+    },
+    {
+      "name": "Indian Institute of Engineering Science and Technology, Shibpur",
+      "rank_2023": 35,
+      "rank_2025": 54,
+      "score_2023": 56.12,
+      "score_2025": 53.63,
+      "rank_change": -19
+    },
+    {
+      "name": "Institute of Chemical Technology",
+      "rank_2023": 24,
+      "rank_2025": 41,
+      "score_2023": 59.7,
+      "score_2025": 57.96,
+      "rank_change": -17
+    },
+    {
+      "name": "National Institute of Technology, Raipur",
+      "rank_2023": 70,
+      "rank_2025": 86,
+      "score_2023": 47.69,
+      "score_2025": 47.59,
+      "rank_change": -16
+    },
+    {
+      "name": "National Institute of Technology Delhi",
+      "rank_2023": 51,
+      "rank_2025": 65,
+      "score_2023": 51.41,
+      "score_2025": 50.79,
+      "rank_change": -14
+    },
+    {
+      "name": "Indian Institute of Space Science and Technology",
+      "rank_2023": 48,
+      "rank_2025": 61,
+      "score_2023": 52.04,
+      "score_2025": 52.44,
+      "rank_change": -13
+    },
+    {
+      "name": "Motilal Nehru National Institute of Technology",
+      "rank_2023": 49,
+      "rank_2025": 62,
+      "score_2023": 51.89,
+      "score_2025": 52.15,
+      "rank_change": -13
+    },
+    {
+      "name": "National Institute of Technology Meghalaya",
+      "rank_2023": 72,
+      "rank_2025": 83,
+      "score_2023": 47.27,
+      "score_2025": 48.21,
+      "rank_change": -11
+    }
+  ],
+  "entered_top100_2025": [
+    {
+      "rank": 46,
+      "name": "Symbiosis International",
+      "state": "Maharashtra",
+      "score": 56.22
+    },
+    {
+      "rank": 77,
+      "name": "Indian Institute of Technology Dharwad",
+      "state": "Karnataka",
+      "score": 48.61
+    },
+    {
+      "rank": 82,
+      "name": "National Institute of Technology, Jamshedpur",
+      "state": "Jharkhand",
+      "score": 48.25
+    },
+    {
+      "rank": 90,
+      "name": "COEP Technological University",
+      "state": "Maharashtra",
+      "score": 47.31
+    },
+    {
+      "rank": 93,
+      "name": "Panjab University",
+      "state": "Chandigarh",
+      "score": 46.9
+    },
+    {
+      "rank": 96,
+      "name": "Atal Bihari Vajpayee Indian Institute of Information Technology and Management",
+      "state": "Madhya Pradesh",
+      "score": 46.25
+    },
+    {
+      "rank": 97,
+      "name": "National Institute of Technology Hamirpur",
+      "state": "Himachal Pradesh",
+      "score": 46.1
+    },
+    {
+      "rank": 98,
+      "name": "Pandit Deendayal Energy University",
+      "state": "Gujarat",
+      "score": 45.97
+    }
+  ],
+  "dropped_from_top100_2025": [
+    {
+      "rank": 69,
+      "name": "Visvesvaraya Technological University",
+      "state": "Karnataka",
+      "score": 49.8
+    },
+    {
+      "rank": 77,
+      "name": "COEP Technological University",
+      "state": "Maharashtra",
+      "score": 47.89
+    },
+    {
+      "rank": 82,
+      "name": "National Institute of Technology Agartala",
+      "state": "Tripura",
+      "score": 46.69
+    },
+    {
+      "rank": 87,
+      "name": "Indian Institute of Information Technology Allahabad",
+      "state": "Uttar Pradesh",
+      "score": 45.84
+    },
+    {
+      "rank": 89,
+      "name": "Guru Gobind Singh Indraprastha University",
+      "state": "Delhi",
+      "score": 45.64
+    },
+    {
+      "rank": 92,
+      "name": "Shoolini University of Biotechnology and Management Sciences",
+      "state": "Himachal Pradesh",
+      "score": 45.4
+    },
+    {
+      "rank": 99,
+      "name": "R.V. College of Engineering",
+      "state": "Karnataka",
+      "score": 44.26
+    },
+    {
+      "rank": 100,
+      "name": "Siddaganga Institute of Technology",
+      "state": "Karnataka",
+      "score": 43.95
+    }
+  ],
+  "raw_profile_2025": [
+    {
+      "metric": "students_total",
+      "top10_median": 6442.5,
+      "top100_median": 4751.5,
+      "rank76_100_median": 4040.0,
+      "colleges_top100_median": 5242.0,
+      "saveetha_2025_filing": 5196,
+      "saveetha_2026_filing": 5961
+    },
+    {
+      "metric": "faculty_entered",
+      "top10_median": 590.0,
+      "top100_median": 318.0,
+      "rank76_100_median": 237.0,
+      "colleges_top100_median": 404.0,
+      "saveetha_2025_filing": NaN,
+      "saveetha_2026_filing": NaN
+    },
+    {
+      "metric": "students_per_faculty",
+      "top10_median": 14.68,
+      "top100_median": 14.2,
+      "rank76_100_median": 14.62,
+      "colleges_top100_median": 13.02,
+      "saveetha_2025_filing": 13.46,
+      "saveetha_2026_filing": 14.87
+    },
+    {
+      "metric": "phd_pursuing_ft",
+      "top10_median": 2107.0,
+      "top100_median": 341.5,
+      "rank76_100_median": 163.0,
+      "colleges_top100_median": 232.0,
+      "saveetha_2025_filing": 54.0,
+      "saveetha_2026_filing": 61.0
+    },
+    {
+      "metric": "phd_grad_3y_avg",
+      "top10_median": 235.3,
+      "top100_median": 65.5,
+      "rank76_100_median": 24.0,
+      "colleges_top100_median": 44.7,
+      "saveetha_2025_filing": 9.0,
+      "saveetha_2026_filing": 12.0
+    },
+    {
+      "metric": "placement_rate",
+      "top10_median": 0.772,
+      "top100_median": 0.739,
+      "rank76_100_median": 0.695,
+      "colleges_top100_median": 0.773,
+      "saveetha_2025_filing": 0.9211,
+      "saveetha_2026_filing": 0.9745
+    },
+    {
+      "metric": "placed_or_hs_rate",
+      "top10_median": 0.943,
+      "top100_median": 0.905,
+      "rank76_100_median": 0.88,
+      "colleges_top100_median": 0.921,
+      "saveetha_2025_filing": 0.9443,
+      "saveetha_2026_filing": 0.985
+    },
+    {
+      "metric": "graduation_rate",
+      "top10_median": 0.806,
+      "top100_median": 0.85,
+      "rank76_100_median": 0.874,
+      "colleges_top100_median": 0.887,
+      "saveetha_2025_filing": 0.614,
+      "saveetha_2026_filing": 0.8091
+    },
+    {
+      "metric": "median_salary_ug",
+      "top10_median": 1944000.0,
+      "top100_median": 1000000.0,
+      "rank76_100_median": 728000.0,
+      "colleges_top100_median": 700000.0,
+      "saveetha_2025_filing": 520000.0,
+      "saveetha_2026_filing": 550000.0
+    },
+    {
+      "metric": "capex_per_student",
+      "top10_median": 222008.5,
+      "top100_median": 69287.0,
+      "rank76_100_median": 48944.0,
+      "colleges_top100_median": 31954.0,
+      "saveetha_2025_filing": 15666.0,
+      "saveetha_2026_filing": 18299.0
+    },
+    {
+      "metric": "opex_per_student",
+      "top10_median": 1007476.0,
+      "top100_median": 366201.0,
+      "rank76_100_median": 266079.0,
+      "colleges_top100_median": 204086.0,
+      "saveetha_2025_filing": 80210.0,
+      "saveetha_2026_filing": 110595.0
+    },
+    {
+      "metric": "sponsored_amount_3y_avg",
+      "top10_median": 1548713755.5,
+      "top100_median": 106402180.0,
+      "rank76_100_median": 36638967.0,
+      "colleges_top100_median": 20566009.0,
+      "saveetha_2025_filing": 2523587.0,
+      "saveetha_2026_filing": 2982862.0
+    },
+    {
+      "metric": "consultancy_amount_3y_avg",
+      "top10_median": 436071919.0,
+      "top100_median": 35831131.5,
+      "rank76_100_median": 20055119.0,
+      "colleges_top100_median": 12772747.0,
+      "saveetha_2025_filing": 3415333.0,
+      "saveetha_2026_filing": 2004000.0
+    },
+    {
+      "metric": "women_students_pct",
+      "top10_median": 19.8,
+      "top100_median": 22.2,
+      "rank76_100_median": 25.0,
+      "colleges_top100_median": 35.7,
+      "saveetha_2025_filing": 31.2,
+      "saveetha_2026_filing": 32.6
+    },
+    {
+      "metric": "outside_state_pct",
+      "top10_median": 78.65,
+      "top100_median": 67.75,
+      "rank76_100_median": 57.0,
+      "colleges_top100_median": 35.2,
+      "saveetha_2025_filing": 10.4,
+      "saveetha_2026_filing": 7.6
+    },
+    {
+      "metric": "full_fee_reimb_pct",
+      "top10_median": 51.15,
+      "top100_median": 41.55,
+      "rank76_100_median": 47.2,
+      "colleges_top100_median": 30.8,
+      "saveetha_2025_filing": 58.4,
+      "saveetha_2026_filing": 51.7
+    }
+  ],
+  "saveetha_history": [
+    {
+      "year": 2017,
+      "category": "Engineering",
+      "status": "ranked",
+      "rank_or_band_low": 91,
+      "rank_or_band_high": 91,
+      "score": 36.88,
+      "tlr": 49.94,
+      "rpc": 4.73,
+      "go": 64.45,
+      "oi": 70.27,
+      "pr": 5.64
+    },
+    {
+      "year": 2018,
+      "category": "Engineering",
+      "status": "band",
+      "rank_or_band_low": 101,
+      "rank_or_band_high": 150,
+      "score": NaN,
+      "tlr": NaN,
+      "rpc": NaN,
+      "go": NaN,
+      "oi": NaN,
+      "pr": NaN
+    },
+    {
+      "year": 2018,
+      "category": "Overall",
+      "status": "band",
+      "rank_or_band_low": 151,
+      "rank_or_band_high": 200,
+      "score": NaN,
+      "tlr": NaN,
+      "rpc": NaN,
+      "go": NaN,
+      "oi": NaN,
+      "pr": NaN
+    },
+    {
+      "year": 2019,
+      "category": "Engineering",
+      "status": "ranked",
+      "rank_or_band_low": 124,
+      "rank_or_band_high": 124,
+      "score": 34.14,
+      "tlr": 55.68,
+      "rpc": 2.99,
+      "go": 55.82,
+      "oi": 53.45,
+      "pr": 0.41
+    },
+    {
+      "year": 2019,
+      "category": "Overall",
+      "status": "band",
+      "rank_or_band_low": 151,
+      "rank_or_band_high": 200,
+      "score": NaN,
+      "tlr": NaN,
+      "rpc": NaN,
+      "go": NaN,
+      "oi": NaN,
+      "pr": NaN
+    },
+    {
+      "year": 2020,
+      "category": "Engineering",
+      "status": "band",
+      "rank_or_band_low": 201,
+      "rank_or_band_high": 250,
+      "score": NaN,
+      "tlr": NaN,
+      "rpc": NaN,
+      "go": NaN,
+      "oi": NaN,
+      "pr": NaN
+    },
+    {
+      "year": 2024,
+      "category": "Engineering",
+      "status": "band",
+      "rank_or_band_low": 201,
+      "rank_or_band_high": 300,
+      "score": NaN,
+      "tlr": NaN,
+      "rpc": NaN,
+      "go": NaN,
+      "oi": NaN,
+      "pr": NaN
+    },
+    {
+      "year": 2025,
+      "category": "Engineering",
+      "status": "band",
+      "rank_or_band_low": 201,
+      "rank_or_band_high": 300,
+      "score": NaN,
+      "tlr": NaN,
+      "rpc": NaN,
+      "go": NaN,
+      "oi": NaN,
+      "pr": NaN
+    }
+  ],
+  "saveetha_participation": [
+    {
+      "year": 2017,
+      "category": "Engineering"
+    },
+    {
+      "year": 2018,
+      "category": "Engineering"
+    },
+    {
+      "year": 2018,
+      "category": "Overall"
+    },
+    {
+      "year": 2019,
+      "category": "Engineering"
+    },
+    {
+      "year": 2019,
+      "category": "Overall"
+    },
+    {
+      "year": 2020,
+      "category": "Engineering"
+    },
+    {
+      "year": 2020,
+      "category": "Overall"
+    },
+    {
+      "year": 2021,
+      "category": "Engineering"
+    },
+    {
+      "year": 2021,
+      "category": "Overall"
+    },
+    {
+      "year": 2022,
+      "category": "Engineering"
+    },
+    {
+      "year": 2022,
+      "category": "Overall"
+    },
+    {
+      "year": 2023,
+      "category": "Engineering"
+    },
+    {
+      "year": 2024,
+      "category": "Engineering"
+    },
+    {
+      "year": 2025,
+      "category": "Engineering"
+    }
+  ],
+  "saveetha_estimated_scores": [
+    {
+      "year": 2025,
+      "tlr": 55.54999923706055,
+      "rpc": 11.630000114440918,
+      "go": 52.90999984741211,
+      "oi": 52.31999969482422,
+      "pr_assumed": 11.86,
+      "total_est": 37.15
+    },
+    {
+      "year": 2026,
+      "tlr": 59.349998474121094,
+      "rpc": 13.430000305175781,
+      "go": 58.41999816894531,
+      "oi": 49.810001373291016,
+      "pr_assumed": 11.86,
+      "total_est": 39.68
+    }
+  ],
+  "saveetha_gap_vs_rank90_100_avg": {
+    "tlr": 5.2,
+    "rpc": 13.7,
+    "go": 2.3,
+    "oi": 7.8,
+    "pr": -1.1
+  },
+  "saveetha_gap_total_vs_2025_cutoff": 5.87,
+  "saveetha_weighted_gap_by_param": {
+    "tlr": 1.56,
+    "rpc": 4.11,
+    "go": 0.46,
+    "oi": 0.78,
+    "pr": -0.11
+  },
+  "tn_college_paths": {
+    "PSG College of Technology": [
+      {
+        "year": 2018,
+        "rank": 29,
+        "score": 50.31,
+        "tlr": 69.82,
+        "rpc": 23.64,
+        "go": 55.96,
+        "oi": 49.87,
+        "pr": 60.95
+      },
+      {
+        "year": 2019,
+        "rank": 44,
+        "score": 47.28,
+        "tlr": 68.97,
+        "rpc": 17.4,
+        "go": 53.37,
+        "oi": 48.73,
+        "pr": 58.35
+      },
+      {
+        "year": 2020,
+        "rank": 49,
+        "score": 47.21,
+        "tlr": 69.35,
+        "rpc": 19.73,
+        "go": 52.14,
+        "oi": 48.69,
+        "pr": 51.77
+      },
+      {
+        "year": 2021,
+        "rank": 53,
+        "score": 47.91,
+        "tlr": 68.57,
+        "rpc": 23.58,
+        "go": 48.35,
+        "oi": 48.89,
+        "pr": 57.14
+      },
+      {
+        "year": 2022,
+        "rank": 57,
+        "score": 47.68,
+        "tlr": 66.5,
+        "rpc": 24.91,
+        "go": 50.8,
+        "oi": 48.09,
+        "pr": 52.94
+      },
+      {
+        "year": 2023,
+        "rank": 63,
+        "score": 49.43,
+        "tlr": 64.51,
+        "rpc": 29.98,
+        "go": 54.9,
+        "oi": 47.21,
+        "pr": 53.86
+      },
+      {
+        "year": 2024,
+        "rank": 67,
+        "score": 49.92,
+        "tlr": 68.19,
+        "rpc": 24.56,
+        "go": 59.97,
+        "oi": 46.77,
+        "pr": 54.15
+      },
+      {
+        "year": 2025,
+        "rank": 67,
+        "score": 50.64,
+        "tlr": 70.17,
+        "rpc": 26.31,
+        "go": 60.36,
+        "oi": 47.52,
+        "pr": 48.83
+      }
+    ],
+    "Sri Krishna College of Engineering and Technology": [
+      {
+        "year": 2019,
+        "rank": 97,
+        "score": 35.97,
+        "tlr": 57.92,
+        "rpc": 2.29,
+        "go": 63.51,
+        "oi": 46.64,
+        "pr": 5.44
+      },
+      {
+        "year": 2020,
+        "rank": 83,
+        "score": 38.83,
+        "tlr": 62.69,
+        "rpc": 4.26,
+        "go": 63.05,
+        "oi": 48.54,
+        "pr": 12.79
+      },
+      {
+        "year": 2021,
+        "rank": 78,
+        "score": 41.29,
+        "tlr": 62.23,
+        "rpc": 10.86,
+        "go": 63.26,
+        "oi": 49.71,
+        "pr": 17.35
+      },
+      {
+        "year": 2022,
+        "rank": 73,
+        "score": 44.16,
+        "tlr": 62.4,
+        "rpc": 17.13,
+        "go": 64.51,
+        "oi": 50.18,
+        "pr": 23.82
+      },
+      {
+        "year": 2023,
+        "rank": 77,
+        "score": 46.03,
+        "tlr": 63.67,
+        "rpc": 24.55,
+        "go": 64.1,
+        "oi": 49.95,
+        "pr": 17.57
+      },
+      {
+        "year": 2024,
+        "rank": 83,
+        "score": 46.53,
+        "tlr": 66.04,
+        "rpc": 23.5,
+        "go": 63.87,
+        "oi": 47.69,
+        "pr": 21.28
+      },
+      {
+        "year": 2025,
+        "rank": 100,
+        "score": 45.55,
+        "tlr": 68.47,
+        "rpc": 22.35,
+        "go": 63.4,
+        "oi": 49.25,
+        "pr": 6.97
+      }
+    ],
+    "Sri Sivasubramaniya Nadar College of Engineering": [
+      {
+        "year": 2018,
+        "rank": 36,
+        "score": 48.1,
+        "tlr": 69.98,
+        "rpc": 27.18,
+        "go": 58.89,
+        "oi": 52.41,
+        "pr": 19.35
+      },
+      {
+        "year": 2019,
+        "rank": 37,
+        "score": 48.94,
+        "tlr": 69.13,
+        "rpc": 28.51,
+        "go": 63.63,
+        "oi": 52.66,
+        "pr": 16.55
+      },
+      {
+        "year": 2020,
+        "rank": 44,
+        "score": 49.26,
+        "tlr": 66.01,
+        "rpc": 31.1,
+        "go": 63.81,
+        "oi": 53.47,
+        "pr": 20.25
+      },
+      {
+        "year": 2021,
+        "rank": 45,
+        "score": 50.2,
+        "tlr": 66.95,
+        "rpc": 34.56,
+        "go": 61.71,
+        "oi": 53.48,
+        "pr": 20.65
+      },
+      {
+        "year": 2022,
+        "rank": 48,
+        "score": 50.5,
+        "tlr": 63.78,
+        "rpc": 37.31,
+        "go": 63.41,
+        "oi": 52.63,
+        "pr": 22.25
+      },
+      {
+        "year": 2023,
+        "rank": 45,
+        "score": 52.88,
+        "tlr": 67.69,
+        "rpc": 41.08,
+        "go": 66.94,
+        "oi": 53.21,
+        "pr": 15.43
+      },
+      {
+        "year": 2024,
+        "rank": 46,
+        "score": 55.01,
+        "tlr": 69.93,
+        "rpc": 41.32,
+        "go": 69.34,
+        "oi": 57.1,
+        "pr": 20.46
+      },
+      {
+        "year": 2025,
+        "rank": 47,
+        "score": 56.08,
+        "tlr": 71.29,
+        "rpc": 43.96,
+        "go": 70.01,
+        "oi": 57.78,
+        "pr": 17.21
+      }
+    ]
+  },
+  "raw_vs_score_correlation": [
+    {
+      "feature": "log_median_salary_ug",
+      "tlr": 0.14,
+      "rpc": 0.1,
+      "go": 0.38,
+      "oi": 0.05,
+      "pr": 0.25,
+      "score": 0.23
+    },
+    {
+      "feature": "log_opex_per_student",
+      "tlr": 0.47,
+      "rpc": 0.34,
+      "go": 0.5,
+      "oi": -0.13,
+      "pr": 0.45,
+      "score": 0.51
+    },
+    {
+      "feature": "log_capex_per_student",
+      "tlr": 0.48,
+      "rpc": 0.07,
+      "go": 0.39,
+      "oi": 0.01,
+      "pr": 0.29,
+      "score": 0.32
+    },
+    {
+      "feature": "log_sponsored_amount_3y_avg",
+      "tlr": 0.43,
+      "rpc": 0.52,
+      "go": 0.62,
+      "oi": -0.07,
+      "pr": 0.57,
+      "score": 0.65
+    },
+    {
+      "feature": "log_consultancy_amount_3y_avg",
+      "tlr": 0.35,
+      "rpc": 0.35,
+      "go": 0.44,
+      "oi": 0.05,
+      "pr": 0.38,
+      "score": 0.47
+    },
+    {
+      "feature": "log_phd_grad_3y_avg",
+      "tlr": 0.22,
+      "rpc": 0.71,
+      "go": 0.48,
+      "oi": 0.07,
+      "pr": 0.5,
+      "score": 0.67
+    },
+    {
+      "feature": "students_per_faculty",
+      "tlr": -0.4,
+      "rpc": 0.12,
+      "go": 0.27,
+      "oi": -0.06,
+      "pr": 0.09,
+      "score": 0.03
+    },
+    {
+      "feature": "placement_rate",
+      "tlr": 0.02,
+      "rpc": -0.03,
+      "go": 0.44,
+      "oi": -0.06,
+      "pr": 0.11,
+      "score": 0.11
+    },
+    {
+      "feature": "graduation_rate",
+      "tlr": 0.08,
+      "rpc": -0.14,
+      "go": 0.09,
+      "oi": 0.17,
+      "pr": -0.08,
+      "score": -0.04
+    },
+    {
+      "feature": "women_students_pct",
+      "tlr": -0.01,
+      "rpc": -0.23,
+      "go": -0.33,
+      "oi": 0.45,
+      "pr": -0.31,
+      "score": -0.23
+    },
+    {
+      "feature": "outside_state_pct",
+      "tlr": 0.23,
+      "rpc": 0.22,
+      "go": 0.14,
+      "oi": 0.54,
+      "pr": 0.14,
+      "score": 0.28
+    },
+    {
+      "feature": "full_fee_reimb_pct",
+      "tlr": 0.04,
+      "rpc": -0.08,
+      "go": 0.24,
+      "oi": 0.07,
+      "pr": 0.04,
+      "score": 0.03
+    }
+  ]
+}

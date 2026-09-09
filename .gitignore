@@ -1,0 +1,12 @@
+# secrets
+.env
+# environments / caches
+.venv/
+__pycache__/
+*.pyc
+.streamlit/secrets.toml
+# large regenerable caches
+app/rag/bm25_index.pkl
+docs/img/
+# OS
+.DS_Store

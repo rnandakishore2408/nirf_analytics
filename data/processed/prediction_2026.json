@@ -1,0 +1,1034 @@
+{
+  "run_at": "2026-09-09T10:06:21+00:00",
+  "target_year": 2026,
+  "thresholds": {
+    "cutoff_history": {
+      "2017": 36.21,
+      "2018": 35.84,
+      "2019": 35.86,
+      "2020": 37.6,
+      "2021": 38.94,
+      "2022": 40.14,
+      "2023": 41.93,
+      "2024": 43.95,
+      "2025": 45.55
+    },
+    "trend_slope_per_year": 1.616,
+    "trend_resid_sd": 0.27,
+    "forecast_2026": {
+      "100": 47.01,
+      "125": 44.38,
+      "150": 42.45,
+      "175": 40.91,
+      "200": 39.3,
+      "250": 36.99,
+      "300": 35.03
+    },
+    "ratio_to_rank100": {
+      "100": 1.0,
+      "125": 0.9441,
+      "150": 0.9031,
+      "175": 0.8702,
+      "200": 0.8361,
+      "250": 0.7868,
+      "300": 0.7452
+    }
+  },
+  "top100_model_validation": {
+    "val_year": 2025,
+    "n": 92,
+    "mae": 1.36,
+    "rmse": 1.83,
+    "naive_mae_no_change": 1.62,
+    "rank_spearman_top100": 0.963
+  },
+  "saveetha": {
+    "institute_id": "IR-E-C-16590",
+    "name": "Saveetha Engineering College",
+    "submission_year_used": 2026,
+    "param_estimates": {
+      "tlr": 59.35,
+      "rpc": 13.43,
+      "go": 58.42,
+      "oi": 49.81
+    },
+    "pr_assumption": {
+      "median": 11.86,
+      "p10": 3.79,
+      "p90": 48.83
+    },
+    "total_score": {
+      "median": 40.12,
+      "p10": 35.61,
+      "p90": 45.15
+    },
+    "expected_rank": 187,
+    "most_likely_band": "151-200",
+    "band_probabilities": {
+      "top 100": 0.038,
+      "101-150": 0.233,
+      "151-200": 0.314,
+      "201-250": 0.22,
+      "251-300": 0.121,
+      "below 300": 0.072
+    },
+    "gap_to_top100": 6.89,
+    "gap_to_top200": -0.82
+  },
+  "what_if_levers": [
+    {
+      "lever": "PhD graduates/yr 12 -> 80",
+      "delta_total": 3.66
+    },
+    {
+      "lever": "PhD graduates/yr 12 -> 40",
+      "delta_total": 2.21
+    },
+    {
+      "lever": "Opex per student 1.1L -> 2L",
+      "delta_total": 1.95
+    },
+    {
+      "lever": "Full-time PhD scholars 61 -> 200",
+      "delta_total": 1.4
+    },
+    {
+      "lever": "Median UG salary 5.5L -> 10L",
+      "delta_total": 1.35
+    },
+    {
+      "lever": "Sponsored research 30L -> 10Cr/yr",
+      "delta_total": 0.98
+    },
+    {
+      "lever": "Median UG salary 5.5L -> 8L",
+      "delta_total": 0.78
+    },
+    {
+      "lever": "Capex per student 18k -> 60k",
+      "delta_total": 0.78
+    },
+    {
+      "lever": "Graduation-in-time rate 81% -> 95%",
+      "delta_total": 0.56
+    },
+    {
+      "lever": "Students from other states 7.6% -> 20%",
+      "delta_total": 0.3
+    },
+    {
+      "lever": "Women students 32.6% -> 45%",
+      "delta_total": 0.22
+    },
+    {
+      "lever": "Consultancy 20L -> 2Cr/yr",
+      "delta_total": 0.05
+    },
+    {
+      "lever": "Sponsored research 30L -> 3Cr/yr",
+      "delta_total": 0.0
+    }
+  ],
+  "top100_forecast": [
+    {
+      "pred_rank_2026": 1,
+      "rank_2025": 1,
+      "institute_id": "IR-E-U-0456",
+      "name": "Indian Institute of Technology Madras",
+      "state": "Tamil Nadu",
+      "score": 88.72,
+      "pred_score_2026": 88.54
+    },
+    {
+      "pred_rank_2026": 2,
+      "rank_2025": 2,
+      "institute_id": "IR-E-I-1074",
+      "name": "Indian Institute of Technology Delhi",
+      "state": "Delhi",
+      "score": 85.74,
+      "pred_score_2026": 86.01
+    },
+    {
+      "pred_rank_2026": 3,
+      "rank_2025": 3,
+      "institute_id": "IR-E-U-0306",
+      "name": "Indian Institute of Technology Bombay",
+      "state": "Maharashtra",
+      "score": 83.65,
+      "pred_score_2026": 83.7
+    },
+    {
+      "pred_rank_2026": 4,
+      "rank_2025": 4,
+      "institute_id": "IR-E-I-1075",
+      "name": "Indian Institute of Technology Kanpur",
+      "state": "Uttar Pradesh",
+      "score": 81.82,
+      "pred_score_2026": 81.51
+    },
+    {
+      "pred_rank_2026": 5,
+      "rank_2025": 5,
+      "institute_id": "IR-E-U-0573",
+      "name": "Indian Institute of Technology Kharagpur",
+      "state": "West Bengal",
+      "score": 78.69,
+      "pred_score_2026": 79.18
+    },
+    {
+      "pred_rank_2026": 6,
+      "rank_2025": 6,
+      "institute_id": "IR-E-U-0560",
+      "name": "Indian Institute of Technology Roorkee",
+      "state": "Uttarakhand",
+      "score": 75.44,
+      "pred_score_2026": 76.1
+    },
+    {
+      "pred_rank_2026": 7,
+      "rank_2025": 8,
+      "institute_id": "IR-E-U-0053",
+      "name": "Indian Institute of Technology Guwahati",
+      "state": "Assam",
+      "score": 72.24,
+      "pred_score_2026": 73.01
+    },
+    {
+      "pred_rank_2026": 8,
+      "rank_2025": 7,
+      "institute_id": "IR-E-U-0013",
+      "name": "Indian Institute of Technology Hyderabad",
+      "state": "Telangana",
+      "score": 72.31,
+      "pred_score_2026": 72.23
+    },
+    {
+      "pred_rank_2026": 9,
+      "rank_2025": 9,
+      "institute_id": "IR-E-U-0467",
+      "name": "National Institute of Technology Tiruchirappalli",
+      "state": "Tamil Nadu",
+      "score": 68.14,
+      "pred_score_2026": 68.99
+    },
+    {
+      "pred_rank_2026": 10,
+      "rank_2025": 10,
+      "institute_id": "IR-E-U-0701",
+      "name": "Indian Institute of Technology (Banaras Hindu University) Varanasi",
+      "state": "Uttar Pradesh",
+      "score": 67.24,
+      "pred_score_2026": 68.17
+    },
+    {
+      "pred_rank_2026": 11,
+      "rank_2025": 11,
+      "institute_id": "IR-E-U-0391",
+      "name": "Birla Institute of Technology  & Science -Pilani",
+      "state": "Rajasthan",
+      "score": 67.02,
+      "pred_score_2026": 67.62
+    },
+    {
+      "pred_rank_2026": 12,
+      "rank_2025": 12,
+      "institute_id": "IR-E-U-0273",
+      "name": "Indian Institute of Technology Indore",
+      "state": "Madhya Pradesh",
+      "score": 66.65,
+      "pred_score_2026": 67.38
+    },
+    {
+      "pred_rank_2026": 13,
+      "rank_2025": 13,
+      "institute_id": "IR-E-U-0357",
+      "name": "National Institute of Technology Rourkela",
+      "state": "Odisha",
+      "score": 66.62,
+      "pred_score_2026": 67.3
+    },
+    {
+      "pred_rank_2026": 14,
+      "rank_2025": 14,
+      "institute_id": "IR-E-U-0473",
+      "name": "S.R.M. Institute of Science and Technology",
+      "state": "Tamil Nadu",
+      "score": 65.83,
+      "pred_score_2026": 67.04
+    },
+    {
+      "pred_rank_2026": 15,
+      "rank_2025": 16,
+      "institute_id": "IR-E-U-0490",
+      "name": "Vellore Institute of Technology",
+      "state": "Tamil Nadu",
+      "score": 65.25,
+      "pred_score_2026": 66.48
+    },
+    {
+      "pred_rank_2026": 16,
+      "rank_2025": 15,
+      "institute_id": "IR-E-U-0205",
+      "name": "Indian Institute of Technology (Indian School of Mines)",
+      "state": "Jharkhand",
+      "score": 65.37,
+      "pred_score_2026": 66.33
+    },
+    {
+      "pred_rank_2026": 17,
+      "rank_2025": 19,
+      "institute_id": "IR-E-U-0064",
+      "name": "Indian Institute of Technology Patna",
+      "state": "Bihar",
+      "score": 64.52,
+      "pred_score_2026": 65.57
+    },
+    {
+      "pred_rank_2026": 18,
+      "rank_2025": 17,
+      "institute_id": "IR-E-U-0237",
+      "name": "National Institute of Technology Karnataka, Surathkal",
+      "state": "Karnataka",
+      "score": 64.59,
+      "pred_score_2026": 65.27
+    },
+    {
+      "pred_rank_2026": 19,
+      "rank_2025": 18,
+      "institute_id": "IR-E-U-0575",
+      "name": "Jadavpur University",
+      "state": "West Bengal",
+      "score": 64.54,
+      "pred_score_2026": 64.81
+    },
+    {
+      "pred_rank_2026": 20,
+      "rank_2025": 20,
+      "institute_id": "IR-E-U-0439",
+      "name": "Anna University",
+      "state": "Tamil Nadu",
+      "score": 63.51,
+      "pred_score_2026": 64.36
+    },
+    {
+      "pred_rank_2026": 21,
+      "rank_2025": 24,
+      "institute_id": "IR-E-U-0108",
+      "name": "Jamia Millia Islamia",
+      "state": "Delhi",
+      "score": 62.42,
+      "pred_score_2026": 63.8
+    },
+    {
+      "pred_rank_2026": 22,
+      "rank_2025": 21,
+      "institute_id": "IR-E-U-0263",
+      "name": "National Institute of Technology Calicut",
+      "state": "Kerala",
+      "score": 63.05,
+      "pred_score_2026": 63.48
+    },
+    {
+      "pred_rank_2026": 23,
+      "rank_2025": 22,
+      "institute_id": "IR-E-U-0363",
+      "name": "Siksha `O` Anusandhan",
+      "state": "Odisha",
+      "score": 62.58,
+      "pred_score_2026": 63.36
+    },
+    {
+      "pred_rank_2026": 24,
+      "rank_2025": 23,
+      "institute_id": "IR-E-U-0436",
+      "name": "Amrita Vishwa Vidyapeetham",
+      "state": "Tamil Nadu",
+      "score": 62.46,
+      "pred_score_2026": 63.3
+    },
+    {
+      "pred_rank_2026": 25,
+      "rank_2025": 26,
+      "institute_id": "IR-E-U-0184",
+      "name": "Indian Institute of Technology Mandi",
+      "state": "Himachal Pradesh",
+      "score": 62.08,
+      "pred_score_2026": 62.77
+    },
+    {
+      "pred_rank_2026": 26,
+      "rank_2025": 25,
+      "institute_id": "IR-E-U-0139",
+      "name": "Indian Institute of Technology Gandhinagar",
+      "state": "Gujarat",
+      "score": 62.31,
+      "pred_score_2026": 62.5
+    },
+    {
+      "pred_rank_2026": 27,
+      "rank_2025": 31,
+      "institute_id": "IR-E-U-0747",
+      "name": "Chandigarh University",
+      "state": "Punjab",
+      "score": 60.46,
+      "pred_score_2026": 62.15
+    },
+    {
+      "pred_rank_2026": 28,
+      "rank_2025": 29,
+      "institute_id": "IR-E-I-1480",
+      "name": "Thapar Institute of Engineering and Technology (Deemed-to-be-university)",
+      "state": "Punjab",
+      "score": 60.97,
+      "pred_score_2026": 61.96
+    },
+    {
+      "pred_rank_2026": 29,
+      "rank_2025": 27,
+      "institute_id": "IR-E-U-0395",
+      "name": "Indian Institute of Technology Jodhpur",
+      "state": "Rajasthan",
+      "score": 61.31,
+      "pred_score_2026": 61.82
+    },
+    {
+      "pred_rank_2026": 30,
+      "rank_2025": 28,
+      "institute_id": "IR-E-U-0025",
+      "name": "National Institute of Technology Warangal",
+      "state": "Telangana",
+      "score": 61.05,
+      "pred_score_2026": 61.66
+    },
+    {
+      "pred_rank_2026": 31,
+      "rank_2025": 30,
+      "institute_id": "IR-E-U-0098",
+      "name": "Delhi Technological University",
+      "state": "Delhi",
+      "score": 60.85,
+      "pred_score_2026": 61.38
+    },
+    {
+      "pred_rank_2026": 32,
+      "rank_2025": 32,
+      "institute_id": "IR-E-U-0378",
+      "name": "Indian Institute of Technology Ropar",
+      "state": "Punjab",
+      "score": 59.66,
+      "pred_score_2026": 60.37
+    },
+    {
+      "pred_rank_2026": 33,
+      "rank_2025": 36,
+      "institute_id": "IR-E-U-0356",
+      "name": "Kalinga Institute of Industrial Technology",
+      "state": "Odisha",
+      "score": 58.79,
+      "pred_score_2026": 60.23
+    },
+    {
+      "pred_rank_2026": 34,
+      "rank_2025": 33,
+      "institute_id": "IR-E-U-0458",
+      "name": "Kalasalingam Academy of Research and Education",
+      "state": "Tamil Nadu",
+      "score": 59.03,
+      "pred_score_2026": 60.21
+    },
+    {
+      "pred_rank_2026": 35,
+      "rank_2025": 37,
+      "institute_id": "IR-E-U-0497",
+      "name": "Amity University",
+      "state": "Uttar Pradesh",
+      "score": 58.53,
+      "pred_score_2026": 60.03
+    },
+    {
+      "pred_rank_2026": 36,
+      "rank_2025": 35,
+      "institute_id": "IR-E-U-0020",
+      "name": "Koneru Lakshmaiah Education Foundation University (K L College of Engineering)",
+      "state": "Andhra Pradesh",
+      "score": 58.95,
+      "pred_score_2026": 59.98
+    },
+    {
+      "pred_rank_2026": 37,
+      "rank_2025": 38,
+      "institute_id": "IR-E-U-0014",
+      "name": "International Institute of Information Technology Hyderabad",
+      "state": "Telangana",
+      "score": 58.45,
+      "pred_score_2026": 59.53
+    },
+    {
+      "pred_rank_2026": 38,
+      "rank_2025": 34,
+      "institute_id": "IR-E-U-0496",
+      "name": "Aligarh Muslim University",
+      "state": "Uttar Pradesh",
+      "score": 59.01,
+      "pred_score_2026": 59.42
+    },
+    {
+      "pred_rank_2026": 39,
+      "rank_2025": 39,
+      "institute_id": "IR-E-U-0355",
+      "name": "Indian Institute of Technology Bhubaneswar",
+      "state": "Odisha",
+      "score": 58.22,
+      "pred_score_2026": 59.28
+    },
+    {
+      "pred_rank_2026": 40,
+      "rank_2025": 40,
+      "institute_id": "IR-E-U-0476",
+      "name": "Shanmugha Arts Science Technology & Research Academy",
+      "state": "Tamil Nadu",
+      "score": 58.02,
+      "pred_score_2026": 58.81
+    },
+    {
+      "pred_rank_2026": 41,
+      "rank_2025": 41,
+      "institute_id": "IR-E-U-0308",
+      "name": "Institute of Chemical Technology",
+      "state": "Maharashtra",
+      "score": 57.96,
+      "pred_score_2026": 58.76
+    },
+    {
+      "pred_rank_2026": 42,
+      "rank_2025": 45,
+      "institute_id": "IR-E-I-1441",
+      "name": "Saveetha Institute of Medical and Technical Sciences",
+      "state": "Tamil Nadu",
+      "score": 56.55,
+      "pred_score_2026": 58.72
+    },
+    {
+      "pred_rank_2026": 43,
+      "rank_2025": 42,
+      "institute_id": "IR-E-U-0410",
+      "name": "Malaviya National Institute of Technology",
+      "state": "Rajasthan",
+      "score": 57.45,
+      "pred_score_2026": 58.68
+    },
+    {
+      "pred_rank_2026": 44,
+      "rank_2025": 43,
+      "institute_id": "IR-E-U-0564",
+      "name": "UPES",
+      "state": "Uttarakhand",
+      "score": 56.99,
+      "pred_score_2026": 58.49
+    },
+    {
+      "pred_rank_2026": 45,
+      "rank_2025": 48,
+      "institute_id": "IR-E-U-0379",
+      "name": "Lovely Professional University",
+      "state": "Punjab",
+      "score": 55.99,
+      "pred_score_2026": 57.87
+    },
+    {
+      "pred_rank_2026": 46,
+      "rank_2025": 46,
+      "institute_id": "IR-E-U-0329",
+      "name": "Symbiosis International",
+      "state": "Maharashtra",
+      "score": 56.22,
+      "pred_score_2026": 57.31
+    },
+    {
+      "pred_rank_2026": 47,
+      "rank_2025": 44,
+      "institute_id": "IR-E-U-0334",
+      "name": "Visvesvaraya National Institute of Technology, Nagpur",
+      "state": "Maharashtra",
+      "score": 56.58,
+      "pred_score_2026": 57.3
+    },
+    {
+      "pred_rank_2026": 48,
+      "rank_2025": 47,
+      "institute_id": "IR-E-C-16604",
+      "name": "Sri Sivasubramaniya Nadar College of Engineering",
+      "state": "Tamil Nadu",
+      "score": 56.08,
+      "pred_score_2026": 57.05
+    },
+    {
+      "pred_rank_2026": 49,
+      "rank_2025": 52,
+      "institute_id": "IR-E-U-0555",
+      "name": "Graphic Era University",
+      "state": "Uttarakhand",
+      "score": 55.26,
+      "pred_score_2026": 56.99
+    },
+    {
+      "pred_rank_2026": 50,
+      "rank_2025": 50,
+      "institute_id": "IR-E-U-0055",
+      "name": "National Institute of Technology Silchar",
+      "state": "Assam",
+      "score": 55.91,
+      "pred_score_2026": 56.95
+    },
+    {
+      "pred_rank_2026": 51,
+      "rank_2025": 49,
+      "institute_id": "IR-E-U-0577",
+      "name": "National Institute of Technology Durgapur",
+      "state": "West Bengal",
+      "score": 55.94,
+      "pred_score_2026": 56.63
+    },
+    {
+      "pred_rank_2026": 52,
+      "rank_2025": 51,
+      "institute_id": "IR-E-U-0202",
+      "name": "Birla Institute of Technology",
+      "state": "Jharkhand",
+      "score": 55.28,
+      "pred_score_2026": 55.91
+    },
+    {
+      "pred_rank_2026": 53,
+      "rank_2025": 53,
+      "institute_id": "IR-E-U-0072",
+      "name": "National Institute of Technology Patna",
+      "state": "Bihar",
+      "score": 53.89,
+      "pred_score_2026": 55.36
+    },
+    {
+      "pred_rank_2026": 54,
+      "rank_2025": 55,
+      "institute_id": "IR-E-U-0374",
+      "name": "Dr. B R Ambedkar National Institute of Technology, Jalandhar",
+      "state": "Punjab",
+      "score": 53.38,
+      "pred_score_2026": 54.71
+    },
+    {
+      "pred_rank_2026": 55,
+      "rank_2025": 54,
+      "institute_id": "IR-E-U-0584",
+      "name": "Indian Institute of Engineering Science and Technology, Shibpur",
+      "state": "West Bengal",
+      "score": 53.63,
+      "pred_score_2026": 54.44
+    },
+    {
+      "pred_rank_2026": 56,
+      "rank_2025": 58,
+      "institute_id": "IR-E-U-0749",
+      "name": "Manipal University Jaipur",
+      "state": "Rajasthan",
+      "score": 52.69,
+      "pred_score_2026": 54.29
+    },
+    {
+      "pred_rank_2026": 57,
+      "rank_2025": 59,
+      "institute_id": "IR-E-C-7252",
+      "name": "Manipal Institute of Technology",
+      "state": "Karnataka",
+      "score": 52.55,
+      "pred_score_2026": 53.83
+    },
+    {
+      "pred_rank_2026": 58,
+      "rank_2025": 56,
+      "institute_id": "IR-E-U-0906",
+      "name": "Indian Institute of Technology Jammu",
+      "state": "Jammu and Kashmir",
+      "score": 53.08,
+      "pred_score_2026": 53.82
+    },
+    {
+      "pred_rank_2026": 59,
+      "rank_2025": 60,
+      "institute_id": "IR-E-U-0739",
+      "name": "Madan Mohan Malaviya University of Technology",
+      "state": "Uttar Pradesh",
+      "score": 52.45,
+      "pred_score_2026": 53.74
+    },
+    {
+      "pred_rank_2026": 60,
+      "rank_2025": 62,
+      "institute_id": "IR-E-U-0530",
+      "name": "Motilal Nehru National Institute of Technology",
+      "state": "Uttar Pradesh",
+      "score": 52.15,
+      "pred_score_2026": 53.31
+    },
+    {
+      "pred_rank_2026": 61,
+      "rank_2025": 57,
+      "institute_id": "IR-E-U-0844",
+      "name": "Indian Institute of Technology, Tirupati",
+      "state": "Andhra Pradesh",
+      "score": 52.73,
+      "pred_score_2026": 53.03
+    },
+    {
+      "pred_rank_2026": 62,
+      "rank_2025": 61,
+      "institute_id": "IR-E-U-0255",
+      "name": "Indian Institute of Space Science and Technology",
+      "state": "Kerala",
+      "score": 52.44,
+      "pred_score_2026": 53.01
+    },
+    {
+      "pred_rank_2026": 63,
+      "rank_2025": 63,
+      "institute_id": "IR-E-U-0105",
+      "name": "Indraprastha Institute of Information Technology",
+      "state": "Delhi",
+      "score": 51.33,
+      "pred_score_2026": 52.39
+    },
+    {
+      "pred_rank_2026": 64,
+      "rank_2025": 67,
+      "institute_id": "IR-E-U-0474",
+      "name": "Sathyabama Institute of Science and Technology",
+      "state": "Tamil Nadu",
+      "score": 50.64,
+      "pred_score_2026": 52.35
+    },
+    {
+      "pred_rank_2026": 65,
+      "rank_2025": 64,
+      "institute_id": "IR-E-U-0878",
+      "name": "Indian Institute of Technology Palakkad",
+      "state": "Kerala",
+      "score": 51.2,
+      "pred_score_2026": 52.23
+    },
+    {
+      "pred_rank_2026": 66,
+      "rank_2025": 66,
+      "institute_id": "IR-E-U-0149",
+      "name": "Sardar Vallabhbhai National Institute of Technology",
+      "state": "Gujarat",
+      "score": 50.77,
+      "pred_score_2026": 52.11
+    },
+    {
+      "pred_rank_2026": 67,
+      "rank_2025": 65,
+      "institute_id": "IR-E-U-0622",
+      "name": "National Institute of Technology Delhi",
+      "state": "Delhi",
+      "score": 50.79,
+      "pred_score_2026": 51.91
+    },
+    {
+      "pred_rank_2026": 68,
+      "rank_2025": 73,
+      "institute_id": "IR-E-U-0197",
+      "name": "National Institute of Technology Srinagar",
+      "state": "Jammu and Kashmir",
+      "score": 50.23,
+      "pred_score_2026": 51.84
+    },
+    {
+      "pred_rank_2026": 69,
+      "rank_2025": 71,
+      "institute_id": "IR-E-U-0389",
+      "name": "Banasthali Vidyapith",
+      "state": "Rajasthan",
+      "score": 50.38,
+      "pred_score_2026": 51.7
+    },
+    {
+      "pred_rank_2026": 70,
+      "rank_2025": 69,
+      "institute_id": "IR-E-U-0221",
+      "name": "International Institute of Information Technology Bangalore",
+      "state": "Karnataka",
+      "score": 50.46,
+      "pred_score_2026": 51.43
+    },
+    {
+      "pred_rank_2026": 71,
+      "rank_2025": 76,
+      "institute_id": "IR-E-U-0217",
+      "name": "Christ University",
+      "state": "Karnataka",
+      "score": 49.03,
+      "pred_score_2026": 51.35
+    },
+    {
+      "pred_rank_2026": 72,
+      "rank_2025": 67,
+      "institute_id": "IR-E-C-37013",
+      "name": "PSG College of Technology",
+      "state": "Tamil Nadu",
+      "score": 50.64,
+      "pred_score_2026": 51.26
+    },
+    {
+      "pred_rank_2026": 73,
+      "rank_2025": 72,
+      "institute_id": "IR-E-U-0946",
+      "name": "Indian Institute of Technology Bhilai",
+      "state": "Chhattisgarh",
+      "score": 50.37,
+      "pred_score_2026": 51.1
+    },
+    {
+      "pred_rank_2026": 74,
+      "rank_2025": 70,
+      "institute_id": "IR-E-C-6379",
+      "name": "Netaji Subhas University of Technology (NSUT)",
+      "state": "Delhi",
+      "score": 50.43,
+      "pred_score_2026": 51.0
+    },
+    {
+      "pred_rank_2026": 75,
+      "rank_2025": 74,
+      "institute_id": "IR-E-U-0042",
+      "name": "University of Hyderabad",
+      "state": "Telangana",
+      "score": 49.36,
+      "pred_score_2026": 50.89
+    },
+    {
+      "pred_rank_2026": 76,
+      "rank_2025": 75,
+      "institute_id": "IR-E-C-1331",
+      "name": "M. S. Ramaiah Institute of Technology",
+      "state": "Karnataka",
+      "score": 49.26,
+      "pred_score_2026": 50.24
+    },
+    {
+      "pred_rank_2026": 77,
+      "rank_2025": 84,
+      "institute_id": "IR-E-U-0223",
+      "name": "Jain university,Bangalore",
+      "state": "Karnataka",
+      "score": 48.01,
+      "pred_score_2026": 49.95
+    },
+    {
+      "pred_rank_2026": 78,
+      "rank_2025": 89,
+      "institute_id": "IR-E-U-0373",
+      "name": "Chitkara  University",
+      "state": "Punjab",
+      "score": 47.34,
+      "pred_score_2026": 49.92
+    },
+    {
+      "pred_rank_2026": 79,
+      "rank_2025": 85,
+      "institute_id": "IR-E-U-0172",
+      "name": "National Institute of Technology Kurukshetra",
+      "state": "Haryana",
+      "score": 47.98,
+      "pred_score_2026": 49.68
+    },
+    {
+      "pred_rank_2026": 80,
+      "rank_2025": 80,
+      "institute_id": "IR-E-U-0043",
+      "name": "Vignan's Foundation for Science, Technology and Research",
+      "state": "Andhra Pradesh",
+      "score": 48.27,
+      "pred_score_2026": 49.67
+    },
+    {
+      "pred_rank_2026": 81,
+      "rank_2025": 81,
+      "institute_id": "IR-E-U-0284",
+      "name": "Maulana Azad National Institute of Technology",
+      "state": "Madhya Pradesh",
+      "score": 48.26,
+      "pred_score_2026": 49.62
+    },
+    {
+      "pred_rank_2026": 82,
+      "rank_2025": 79,
+      "institute_id": "IR-E-U-0384",
+      "name": "Sant Longowal Institute of Engineering & Technology",
+      "state": "Punjab",
+      "score": 48.42,
+      "pred_score_2026": 49.57
+    },
+    {
+      "pred_rank_2026": 83,
+      "rank_2025": 82,
+      "institute_id": "IR-E-U-0207",
+      "name": "National Institute of Technology, Jamshedpur",
+      "state": "Jharkhand",
+      "score": 48.25,
+      "pred_score_2026": 49.46
+    },
+    {
+      "pred_rank_2026": 84,
+      "rank_2025": 87,
+      "institute_id": "IR-E-U-0489",
+      "name": "Vel Tech Rangarajan Dr. Sagunthala R & D Institute of Science and Technology",
+      "state": "Tamil Nadu",
+      "score": 47.43,
+      "pred_score_2026": 49.34
+    },
+    {
+      "pred_rank_2026": 85,
+      "rank_2025": 83,
+      "institute_id": "IR-E-U-0619",
+      "name": "National Institute of Technology Meghalaya",
+      "state": "Meghalaya",
+      "score": 48.21,
+      "pred_score_2026": 49.32
+    },
+    {
+      "pred_rank_2026": 86,
+      "rank_2025": 93,
+      "institute_id": "IR-E-U-0078",
+      "name": "Panjab University",
+      "state": "Chandigarh",
+      "score": 46.9,
+      "pred_score_2026": 49.29
+    },
+    {
+      "pred_rank_2026": 87,
+      "rank_2025": 77,
+      "institute_id": "IR-E-U-0899",
+      "name": "Indian Institute of Technology Dharwad",
+      "state": "Karnataka",
+      "score": 48.61,
+      "pred_score_2026": 49.2
+    },
+    {
+      "pred_rank_2026": 88,
+      "rank_2025": 86,
+      "institute_id": "IR-E-U-0092",
+      "name": "National Institute of Technology, Raipur",
+      "state": "Chhattisgarh",
+      "score": 47.59,
+      "pred_score_2026": 49.14
+    },
+    {
+      "pred_rank_2026": 89,
+      "rank_2025": 78,
+      "institute_id": "IR-E-U-0535",
+      "name": "Rajiv Gandhi Institute of Petroleum Technology",
+      "state": "Uttar Pradesh",
+      "score": 48.52,
+      "pred_score_2026": 49.05
+    },
+    {
+      "pred_rank_2026": 90,
+      "rank_2025": 88,
+      "institute_id": "IR-E-C-24004",
+      "name": "AU College of Engineering (A)",
+      "state": "Andhra Pradesh",
+      "score": 47.37,
+      "pred_score_2026": 48.65
+    },
+    {
+      "pred_rank_2026": 91,
+      "rank_2025": 91,
+      "institute_id": "IR-E-C-19754",
+      "name": "SR University",
+      "state": "Telangana",
+      "score": 47.16,
+      "pred_score_2026": 48.45
+    },
+    {
+      "pred_rank_2026": 92,
+      "rank_2025": 90,
+      "institute_id": "IR-E-U-1257",
+      "name": "COEP Technological University",
+      "state": "Maharashtra",
+      "score": 47.31,
+      "pred_score_2026": 48.28
+    },
+    {
+      "pred_rank_2026": 93,
+      "rank_2025": 94,
+      "institute_id": "IR-E-U-0017",
+      "name": "Jawaharlal Nehru Technological University",
+      "state": "Telangana",
+      "score": 46.74,
+      "pred_score_2026": 48.05
+    },
+    {
+      "pred_rank_2026": 94,
+      "rank_2025": 92,
+      "institute_id": "IR-E-U-0297",
+      "name": "Defence Institute of Advanced Technology",
+      "state": "Maharashtra",
+      "score": 46.98,
+      "pred_score_2026": 47.84
+    },
+    {
+      "pred_rank_2026": 95,
+      "rank_2025": 97,
+      "institute_id": "IR-E-U-0189",
+      "name": "National Institute of Technology Hamirpur",
+      "state": "Himachal Pradesh",
+      "score": 46.1,
+      "pred_score_2026": 47.73
+    },
+    {
+      "pred_rank_2026": 96,
+      "rank_2025": 95,
+      "institute_id": "IR-E-C-30045",
+      "name": "C.V. Raman Global University, Odisha",
+      "state": "Odisha",
+      "score": 46.62,
+      "pred_score_2026": 47.66
+    },
+    {
+      "pred_rank_2026": 97,
+      "rank_2025": 99,
+      "institute_id": "IR-E-U-0621",
+      "name": "National Institute of Technology Puducherry",
+      "state": "Pondicherry",
+      "score": 45.83,
+      "pred_score_2026": 47.48
+    },
+    {
+      "pred_rank_2026": 98,
+      "rank_2025": 96,
+      "institute_id": "IR-E-U-0267",
+      "name": "Atal Bihari Vajpayee Indian Institute of Information Technology and Management",
+      "state": "Madhya Pradesh",
+      "score": 46.25,
+      "pred_score_2026": 47.3
+    },
+    {
+      "pred_rank_2026": 99,
+      "rank_2025": 98,
+      "institute_id": "IR-E-U-0147",
+      "name": "Pandit Deendayal Energy University",
+      "state": "Gujarat",
+      "score": 45.97,
+      "pred_score_2026": 47.05
+    },
+    {
+      "pred_rank_2026": 100,
+      "rank_2025": 100,
+      "institute_id": "IR-E-C-36995",
+      "name": "Sri Krishna College of Engineering and Technology",
+      "state": "Tamil Nadu",
+      "score": 45.55,
+      "pred_score_2026": 46.25
+    }
+  ]
+}

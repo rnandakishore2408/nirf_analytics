@@ -1,0 +1,119 @@
+{
+  "weights": {
+    "tlr": 0.3,
+    "rpc": 0.3,
+    "go": 0.2,
+    "oi": 0.1,
+    "pr": 0.1
+  },
+  "params": {
+    "tlr": {
+      "n": 700,
+      "cv_r2": 0.727,
+      "cv_mae": 4.35,
+      "cv_rmse": 5.52,
+      "features": [
+        "students_total",
+        "phd_pursuing_ft",
+        "faculty_per_student",
+        "log_capex_per_student",
+        "log_opex_per_student",
+        "intake_total_latest"
+      ],
+      "importance": {
+        "phd_pursuing_ft": 0.364,
+        "log_opex_per_student": 0.213,
+        "faculty_per_student": 0.12,
+        "log_capex_per_student": 0.115,
+        "intake_total_latest": 0.11,
+        "students_total": 0.078
+      }
+    },
+    "rpc": {
+      "n": 700,
+      "cv_r2": 0.781,
+      "cv_mae": 7.54,
+      "cv_rmse": 9.92,
+      "features": [
+        "phd_grad_3y_avg",
+        "log_sponsored_amount",
+        "log_consultancy_amount",
+        "faculty_entered",
+        "phd_pursuing_ft",
+        "sponsored_projects_3y",
+        "log_opex_per_student"
+      ],
+      "importance": {
+        "phd_pursuing_ft": 0.596,
+        "log_sponsored_amount": 0.199,
+        "phd_grad_3y_avg": 0.155,
+        "log_opex_per_student": 0.021,
+        "sponsored_projects_3y": 0.014,
+        "faculty_entered": 0.012,
+        "log_consultancy_amount": 0.003
+      }
+    },
+    "go": {
+      "n": 700,
+      "cv_r2": 0.823,
+      "cv_mae": 3.67,
+      "cv_rmse": 4.96,
+      "features": [
+        "placed_or_hs_rate",
+        "graduation_rate_capped",
+        "log_median_salary",
+        "phd_grad_3y_avg"
+      ],
+      "importance": {
+        "log_median_salary": 0.491,
+        "phd_grad_3y_avg": 0.256,
+        "placed_or_hs_rate": 0.183,
+        "graduation_rate_capped": 0.07
+      }
+    },
+    "oi": {
+      "n": 700,
+      "cv_r2": 0.742,
+      "cv_mae": 2.95,
+      "cv_rmse": 4.09,
+      "features": [
+        "outside_state_pct",
+        "outside_country_pct",
+        "women_students_pct",
+        "full_fee_reimb_pct",
+        "pcs_score_0_3"
+      ],
+      "importance": {
+        "outside_state_pct": 0.406,
+        "women_students_pct": 0.267,
+        "pcs_score_0_3": 0.172,
+        "full_fee_reimb_pct": 0.104,
+        "outside_country_pct": 0.052
+      }
+    }
+  },
+  "total_score_fit": {
+    "mae": 2.05,
+    "r2": 0.952
+  },
+  "saveetha_estimates": [
+    {
+      "year": 2025,
+      "tlr": 55.54999923706055,
+      "rpc": 11.630000114440918,
+      "go": 52.90999984741211,
+      "oi": 52.31999969482422,
+      "pr_assumed": 11.86,
+      "total_est": 37.15
+    },
+    {
+      "year": 2026,
+      "tlr": 59.349998474121094,
+      "rpc": 13.430000305175781,
+      "go": 58.41999816894531,
+      "oi": 49.810001373291016,
+      "pr_assumed": 11.86,
+      "total_est": 39.68
+    }
+  ]
+}

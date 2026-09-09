@@ -1,0 +1,1576 @@
+year,institute_id,category,srno,name,age,designation,gender,qualification,experience_months,currently_working,joining_date,association
+2025,IR-E-C-16590,Engineering,1,KALAIARASI A R,51,Professor,Female,Ph.D,310,True,26-06-2013,Regular
+2025,IR-E-C-16590,Engineering,2,MERLIN,39,Associate Professor,Female,Ph.D,204,True,21-07-2008,Regular
+2025,IR-E-C-16590,Engineering,3,ULAGAMMAI M,42,Associate Professor,Female,Ph.D,241,True,14-06-2007,Regular
+2025,IR-E-C-16590,Engineering,4,JOEL JOHN M,41,Assistant Professor,Male,M.E.,189,True,03-06-2013,Regular
+2025,IR-E-C-16590,Engineering,5,SUNITHA DEVA,45,Assistant Professor,Female,Ph.D,213,True,24-09-2008,Regular
+2025,IR-E-C-16590,Engineering,6,BALAJI N,47,Associate Professor,Male,Ph.D,302,True,08-09-2008,Regular
+2025,IR-E-C-16590,Engineering,7,M PRIYA,51,Professor,Female,Ph.D,301,True,01-06-2012,Regular
+2025,IR-E-C-16590,Engineering,8,MADHAN KUMAR,31,Assistant Professor,Male,M.E.,109,True,01-06-2016,Regular
+2025,IR-E-C-16590,Engineering,9,Arunadevi K,67,Professor,Female,Ph.D,276,True,01-03-2019,Regular
+2025,IR-E-C-16590,Engineering,10,C SHEEBA JOICE,47,Professor,Female,Ph.D,300,True,04-06-2012,Regular
+2025,IR-E-C-16590,Engineering,11,SANGEETHA L,46,Assistant Professor,Female,Ph.D,279,True,02-07-2012,Regular
+2025,IR-E-C-16590,Engineering,12,JOY PRISCILLA J,47,Professor,Female,Ph.D,304,True,13-08-2001,Regular
+2025,IR-E-C-16590,Engineering,13,SELLA KUMAR S,38,Assistant Professor,Male,M.E.,184,True,02-07-2010,Regular
+2025,IR-E-C-16590,Engineering,14,SURESHKUMAR K,49,Associate Professor,Male,Ph.D,268,True,11-06-2007,Regular
+2025,IR-E-C-16590,Engineering,15,ANANDAN V,45,Associate Professor,Male,Ph.D,300,True,26-08-2009,Regular
+2025,IR-E-C-16590,Engineering,16,SAKTHI K,41,Assistant Professor,Female,M.E.,241,True,13-07-2016,Regular
+2025,IR-E-C-16590,Engineering,17,V GOMATHI,37,Assistant Professor,Female,M.E.,161,True,03-06-2013,Regular
+2025,IR-E-C-16590,Engineering,18,MUTHUKUMAR V,49,Professor,Male,Ph.D,310,True,06-09-2008,Regular
+2025,IR-E-C-16590,Engineering,19,THIRUMALAI M,36,Assistant Professor,Male,M.E.,160,True,03-04-2017,Regular
+2025,IR-E-C-16590,Engineering,20,ARCHANA T,39,Assistant Professor,Female,M.E.,190,True,14-12-2011,Regular
+2025,IR-E-C-16590,Engineering,21,RAJA RAJESWARI,44,Professor,Female,Ph.D,274,True,03-06-2013,Regular
+2025,IR-E-C-16590,Engineering,22,VIVEKANAND PA,44,Professor,Male,Ph.D,253,True,15-12-2017,Regular
+2025,IR-E-C-16590,Engineering,23,AMARNATH P,40,Assistant Professor,Male,M.E.,204,True,06-06-2016,Regular
+2025,IR-E-C-16590,Engineering,24,LOGANATHAN V,48,Assistant Professor,Male,Ph.D,299,True,15-06-2009,Regular
+2025,IR-E-C-16590,Engineering,25,OBED OTTO C,45,Associate Professor,Male,M.E.,262,True,13-06-2005,Regular
+2025,IR-E-C-16590,Engineering,26,RAMESHKUMAR M,44,Assistant Professor,Male,Ph.D,253,True,11-09-2013,Regular
+2025,IR-E-C-16590,Engineering,27,MANIMARAN G,52,Professor,Male,Ph.D,346,True,04-09-2008,Regular
+2025,IR-E-C-16590,Engineering,28,VIJAYA RAJAN V,34,Assistant Professor,Male,M.E.,146,True,10-07-2013,Regular
+2025,IR-E-C-16590,Engineering,29,PADMA S,33,Assistant Professor,Female,Ph.D,120,True,22-12-2014,Regular
+2025,IR-E-C-16590,Engineering,30,DHANDAPANI S,47,Professor,Male,Ph.D,304,True,29-05-2013,Regular
+2025,IR-E-C-16590,Engineering,31,VELMURUGAN V,36,Assistant Professor,Male,M.E.,171,True,20-06-2011,Regular
+2025,IR-E-C-16590,Engineering,32,KAVITHA S,47,Assistant Professor,Female,M.E.,294,True,02-07-2010,Regular
+2025,IR-E-C-16590,Engineering,33,AKILA P MOHAN,31,Assistant Professor,Female,M.E.,101,True,14-06-2017,Regular
+2025,IR-E-C-16590,Engineering,34,SENTHIL KUMAR R,49,Professor,Male,Ph.D,339,True,28-07-2003,Regular
+2025,IR-E-C-16590,Engineering,35,ARUN KUMAR K,34,Assistant Professor,Male,M.E.,144,True,03-06-2013,Regular
+2025,IR-E-C-16590,Engineering,36,NAGAPPAN G,43,Professor,Male,Ph.D,268,True,04-07-2009,Regular
+2025,IR-E-C-16590,Engineering,37,KALPANA M,44,Associate Professor,Female,M.E.,278,True,08-08-2011,Regular
+2025,IR-E-C-16590,Engineering,38,KALAIVANI C T,40,Assistant Professor,Female,Ph.D,229,True,14-06-2010,Regular
+2025,IR-E-C-16590,Engineering,39,SASIKUMAR S,45,Professor,Male,Ph.D,295,True,23-11-2009,Regular
+2025,IR-E-C-16590,Engineering,40,PRAKASH R,43,Assistant Professor,Male,M.E.,234,True,22-06-2015,Regular
+2025,IR-E-C-16590,Engineering,41,ARAVIND T,36,Associate Professor,Male,Ph.D,157,True,08-06-2011,Regular
+2025,IR-E-C-16590,Engineering,42,VIJAYANAND M,48,Professor,Male,Ph.D,292,True,04-12-2017,Regular
+2025,IR-E-C-16590,Engineering,43,SURESH S,44,Associate Professor,Male,Ph.D,264,True,28-08-2017,Regular
+2025,IR-E-C-16590,Engineering,44,SRIGITHA S NATH,53,Professor,Female,Ph.D,360,True,03-06-2011,Regular
+2025,IR-E-C-16590,Engineering,45,PRAVEEN M,39,Assistant Professor,Male,M.E.,179,True,02-07-2010,Regular
+2025,IR-E-C-16590,Engineering,46,ARIVALGAN M,39,Assistant Professor,Male,M.E.,170,False,03-06-2013,Regular
+2025,IR-E-C-16590,Engineering,47,NARESH G,37,Assistant Professor,Male,M.E.,187,True,17-01-2013,Regular
+2025,IR-E-C-16590,Engineering,48,GAYATHRI,42,Assistant Professor,Female,Ph.D,225,True,23-07-2014,Regular
+2025,IR-E-C-16590,Engineering,49,HEMALATHA V,41,Assistant Professor,Female,Ph.D,212,True,19-06-2009,Regular
+2025,IR-E-C-16590,Engineering,50,VIDHYA S,41,Assistant Professor,Female,M.E.,231,True,06-01-2011,Regular
+2025,IR-E-C-16590,Engineering,51,PARIVENTHAN K,45,Associate Professor,Male,Ph.D,250,True,24-08-2011,Regular
+2025,IR-E-C-16590,Engineering,52,NALINIPRIYA G,49,Professor,Female,Ph.D,304,True,14-06-2012,Regular
+2025,IR-E-C-16590,Engineering,53,MONICA P,54,Associate Professor,Female,Ph.D,373,True,26-05-2004,Regular
+2025,IR-E-C-16590,Engineering,54,SELVI M,53,Professor,Female,Ph.D,333,True,04-06-2012,Regular
+2025,IR-E-C-16590,Engineering,55,ASHA S,53,Associate Professor,Female,Ph.D,339,True,01-06-2017,Regular
+2025,IR-E-C-16590,Engineering,56,PRAVEEN KUMAR,40,Professor,Male,Ph.D,236,True,23-08-2007,Regular
+2025,IR-E-C-16590,Engineering,57,PADMA PRIYA K,36,Assistant Professor,Female,M.E.,157,True,01-06-2012,Regular
+2025,IR-E-C-16590,Engineering,58,VINOTHKUMAR P,36,Assistant Professor,Male,Ph.D,92,True,25-06-2018,Regular
+2025,IR-E-C-16590,Engineering,59,Selvam R,52,Assistant Professor,Male,Ph.D,357,True,22-07-2019,Regular
+2025,IR-E-C-16590,Engineering,60,Raji Pandurangan,46,Assistant Professor,Female,Ph.D,228,True,18-07-2019,Regular
+2025,IR-E-C-16590,Engineering,61,Kumaran S,36,Assistant Professor,Male,Ph.D,145,True,24-06-2019,Regular
+2025,IR-E-C-16590,Engineering,62,Anitha Julian,56,Professor,Female,Ph.D,289,True,08-07-2019,Regular
+2025,IR-E-C-16590,Engineering,63,Bakkiyalakshmi P,44,Associate Professor,Female,Ph.D,210,True,15-07-2019,Regular
+2025,IR-E-C-16590,Engineering,64,Ganapathi D,35,Assistant Professor,Male,Ph.D,95,True,04-02-2019,Regular
+2025,IR-E-C-16590,Engineering,65,Kanagarathinam L,42,Associate Professor,Female,Ph.D,152,True,24-06-2019,Regular
+2025,IR-E-C-16590,Engineering,66,Moorthi M,44,Professor,Male,Ph.D,267,True,17-12-2018,Regular
+2025,IR-E-C-16590,Engineering,67,Gopalarama,46,Professor,Male,Ph.D,269,True,09-07-2018,Regular
+2025,IR-E-C-16590,Engineering,68,Thennarasu S,45,Assistant Professor,Male,Ph.D,144,True,02-07-2018,Regular
+2025,IR-E-C-16590,Engineering,69,Pugazhvadivu K S,38,Assistant Professor,Female,Ph.D,192,True,03-07-2018,Regular
+2025,IR-E-C-16590,Engineering,70,Anand S,47,Assistant Professor,Male,Ph.D,168,True,18-06-2018,Regular
+2025,IR-E-C-16590,Engineering,71,Vanitha M,45,Associate Professor,Female,Ph.D,272,True,01-06-2018,Regular
+2025,IR-E-C-16590,Engineering,72,Ezhil Arasan I,33,Assistant Professor,Male,M.E.,88,True,16-03-2022,Regular
+2025,IR-E-C-16590,Engineering,73,Rohini M,30,Assistant Professor,Female,M.E.,84,True,24-07-2015,Regular
+2025,IR-E-C-16590,Engineering,74,Sridhar S,31,Assistant Professor,Male,M.E.,104,True,05-07-2018,Regular
+2025,IR-E-C-16590,Engineering,75,Gopinathan P,30,Assistant Professor,Male,M.E.,84,True,30-11-2020,Regular
+2025,IR-E-C-16590,Engineering,76,Shanmathi M,30,Assistant Professor,Female,M.E.,90,True,07-01-2020,Regular
+2025,IR-E-C-16590,Engineering,77,Rosemitha V,28,Assistant Professor,Female,M.E.,72,True,25-09-2017,Regular
+2025,IR-E-C-16590,Engineering,78,Anjaline Jayaprabha,28,Assistant Professor,Female,M.E.,72,True,01-11-2021,Regular
+2025,IR-E-C-16590,Engineering,79,M A Somanathan,34,Assistant Professor,Male,M.E.,132,True,01-04-2019,Regular
+2025,IR-E-C-16590,Engineering,80,Vinifa R,42,Assistant Professor,Female,Ph.D,203,True,10-08-2020,Regular
+2025,IR-E-C-16590,Engineering,81,Venkatesan G,36,Assistant Professor,Male,Ph.D,130,True,04-01-2021,Regular
+2025,IR-E-C-16590,Engineering,82,Abinaya G,33,Assistant Professor,Female,M.E.,97,True,04-01-2021,Regular
+2025,IR-E-C-16590,Engineering,83,Thamarai Selvan A,44,Assistant Professor,Male,M.E.,241,True,08-07-2019,Regular
+2025,IR-E-C-16590,Engineering,84,Ann C V Medona,34,Assistant Professor,Female,M.E.,100,True,06-07-2020,Regular
+2025,IR-E-C-16590,Engineering,85,Tenali Ravikumar,43,Assistant Professor,Male,M.Tech,229,True,06-07-2020,Regular
+2025,IR-E-C-16590,Engineering,86,Sivaramakrishnan N,40,Associate Professor,Male,Ph.D,138,True,06-07-2020,Regular
+2025,IR-E-C-16590,Engineering,87,Karthika R N,34,Assistant Professor,Female,M.Tech,48,True,30-07-2020,Regular
+2025,IR-E-C-16590,Engineering,88,Anne Dorathy A,48,Assistant Professor,Female,Ph.D,216,True,16-09-2020,Regular
+2025,IR-E-C-16590,Engineering,89,Jennie Bharathi R,41,Assistant Professor,Female,Ph.D,132,True,07-12-2020,Regular
+2025,IR-E-C-16590,Engineering,90,Vinod Kumar R,57,Associate Professor,Male,Ph.D,336,True,04-01-2021,Regular
+2025,IR-E-C-16590,Engineering,91,Jenifa Latha C,57,Professor,Female,Ph.D,387,True,04-01-2021,Regular
+2025,IR-E-C-16590,Engineering,92,Sivanandam S,44,Professor,Female,Ph.D,219,True,18-01-2021,Regular
+2025,IR-E-C-16590,Engineering,93,Vasanth Kumar C H,36,Assistant Professor,Male,M.Tech,136,True,29-01-2021,Regular
+2025,IR-E-C-16590,Engineering,94,Sasikala K,32,Assistant Professor,Female,M.E.,58,True,14-11-2019,Regular
+2025,IR-E-C-16590,Engineering,95,Sujatha E,49,Professor,Female,Ph.D,300,True,01-02-2021,Regular
+2025,IR-E-C-16590,Engineering,96,Archana S H,31,Assistant Professor,Female,M.E.,90,True,18-11-2019,Regular
+2025,IR-E-C-16590,Engineering,97,Swedha,29,Assistant Professor,Female,M.E.,49,True,30-11-2019,Regular
+2025,IR-E-C-16590,Engineering,98,Indhumathi K,40,Associate Professor,Female,Ph.D,151,True,21-01-2019,Regular
+2025,IR-E-C-16590,Engineering,99,Premnath K,36,Assistant Professor,Male,M.E.,169,True,26-02-2021,Regular
+2025,IR-E-C-16590,Engineering,100,Arun kumar S,30,Assistant Professor,Male,M.E.,90,True,19-01-2021,Regular
+2025,IR-E-C-16590,Engineering,101,Ragesh K T,37,Assistant Professor,Male,M.Tech,100,False,01-09-2020,Regular
+2025,IR-E-C-16590,Engineering,102,Balasundaram V,35,Assistant Professor,Male,M.E.,141,True,26-04-2021,Regular
+2025,IR-E-C-16590,Engineering,103,Nandhini R,27,Assistant Professor,Female,M.E.,32,True,13-11-2021,Regular
+2025,IR-E-C-16590,Engineering,104,Karthi G,42,Assistant Professor,Male,Ph.D,210,True,28-06-2021,Regular
+2025,IR-E-C-16590,Engineering,105,Selvanayaki S,44,Assistant Professor,Female,M.Tech,228,True,16-03-2022,Regular
+2025,IR-E-C-16590,Engineering,106,Aparna T K,31,Assistant Professor,Female,Ph.D,50,True,03-05-2021,Regular
+2025,IR-E-C-16590,Engineering,107,Kumar A,65,Professor,Male,Ph.D,431,True,20-08-2018,Regular
+2025,IR-E-C-16590,Engineering,108,Bala Subramanian A,39,Assistant Professor,Male,Ph.D,127,True,02-01-2019,Regular
+2025,IR-E-C-16590,Engineering,109,Balachandran S,43,Assistant Professor,Male,M.Tech,174,True,13-09-2021,Regular
+2025,IR-E-C-16590,Engineering,110,Hemalatha M,30,Assistant Professor,Female,M.Tech,34,True,15-09-2021,Regular
+2025,IR-E-C-16590,Engineering,111,Umaiyambika N,36,Assistant Professor,Female,M.Tech,104,True,13-11-2021,Regular
+2025,IR-E-C-16590,Engineering,112,Sundar Rajan P,31,Assistant Professor,Male,Ph.D,32,True,13-11-2021,Regular
+2025,IR-E-C-16590,Engineering,113,Sasikala M,36,Assistant Professor,Female,Ph.D,39,True,15-04-2021,Regular
+2025,IR-E-C-16590,Engineering,114,Anancia Grace A,31,Assistant Professor,Female,Ph.D,39,True,16-04-2021,Regular
+2025,IR-E-C-16590,Engineering,116,Muthu Pandian P,38,Assistant Professor,Male,Ph.D,62,True,13-11-2021,Regular
+2025,IR-E-C-16590,Engineering,117,Lavanya G,44,Assistant Professor,Female,M.E.,156,True,15-12-2021,Regular
+2025,IR-E-C-16590,Engineering,118,Yamini B,42,Assistant Professor,Female,Ph.D,184,True,16-03-2022,Regular
+2025,IR-E-C-16590,Engineering,119,Kalaivani A,36,Assistant Professor,Female,Ph.D,111,True,21-06-2017,Regular
+2025,IR-E-C-16590,Engineering,120,Narendran K,43,Assistant Professor,Male,Ph.D,167,True,02-08-2017,Regular
+2025,IR-E-C-16590,Engineering,121,Senthamil Arasu S,30,Assistant Professor,Male,M.E.,40,True,02-03-2022,Regular
+2025,IR-E-C-16590,Engineering,122,Velmurugan N,48,Assistant Professor,Male,M.E.,292,True,23-08-2007,Regular
+2025,IR-E-C-16590,Engineering,123,Ravindhar N V,37,Assistant Professor,Male,M.E.,167,True,11-08-2010,Regular
+2025,IR-E-C-16590,Engineering,124,Uma Rani V,43,Assistant Professor,Female,Ph.D,248,True,01-06-2021,Regular
+2025,IR-E-C-16590,Engineering,125,Ramyadevi R,44,Associate Professor,Female,Ph.D,274,True,09-08-2021,Regular
+2025,IR-E-C-16590,Engineering,127,Surya S,36,Assistant Professor,Male,M.E.,144,True,01-12-2021,Regular
+2025,IR-E-C-16590,Engineering,128,Mahalakshmi M,33,Assistant Professor,Female,M.E.,61,True,11-02-2022,Regular
+2025,IR-E-C-16590,Engineering,129,Pavithrakannan A,30,Assistant Professor,Male,M.E.,107,True,06-08-2015,Regular
+2025,IR-E-C-16590,Engineering,130,Hemamalini A,42,Assistant Professor,Female,M.Tech,217,True,23-06-2008,Regular
+2025,IR-E-C-16590,Engineering,131,Jebajasphin E T,41,Assistant Professor,Female,M.E.,217,True,09-06-2008,Regular
+2025,IR-E-C-16590,Engineering,132,Arokia Nerling,33,Assistant Professor,Female,M.E.,140,True,07-12-2020,Regular
+2025,IR-E-C-16590,Engineering,133,Arumugam T,44,Assistant Professor,Male,M.E.,218,True,18-01-2021,Regular
+2025,IR-E-C-16590,Engineering,134,Baraneedharan P,36,Assistant Professor,Male,Ph.D,36,True,28-07-2021,Regular
+2025,IR-E-C-16590,Engineering,135,Elakkiya A,30,Assistant Professor,Male,M.E.,34,True,13-09-2021,Regular
+2025,IR-E-C-16590,Engineering,136,Srinivasan C,40,Assistant Professor,Male,M.E.,199,True,01-12-2021,Regular
+2025,IR-E-C-16590,Engineering,137,Valvil Ori C,38,Assistant Professor,Male,M.E.,103,True,13-12-2021,Regular
+2025,IR-E-C-16590,Engineering,138,Catherine Priya S,28,Assistant Professor,Female,M.E.,30,True,03-01-2022,Regular
+2025,IR-E-C-16590,Engineering,139,Kannan R,38,Assistant Professor,Male,M.E.,166,True,03-01-2022,Regular
+2025,IR-E-C-16590,Engineering,140,Imran Hussain S,33,Assistant Professor,Male,Ph.D,91,True,20-01-2022,Regular
+2025,IR-E-C-16590,Engineering,141,Jeffin Gracewell J,35,Assistant Professor,Male,Ph.D,141,True,21-01-2021,Regular
+2025,IR-E-C-16590,Engineering,142,Saranya A,36,Assistant Professor,Female,Ph.D,47,True,07-02-2022,Regular
+2025,IR-E-C-16590,Engineering,143,Navaneethan S,36,Assistant Professor,Male,Ph.D,96,True,02-03-2022,Regular
+2025,IR-E-C-16590,Engineering,144,Chitra N,43,Assistant Professor,Female,M.Tech,79,True,02-03-2022,Regular
+2025,IR-E-C-16590,Engineering,145,Karthiga V,31,Assistant Professor,Female,M.E.,44,True,04-03-2022,Regular
+2025,IR-E-C-16590,Engineering,146,Deepa T,32,Assistant Professor,Female,M.E.,64,True,11-03-2022,Regular
+2025,IR-E-C-16590,Engineering,147,Srinivasan T K,37,Assistant Professor,Male,M.E.,121,True,09-01-2017,Regular
+2025,IR-E-C-16590,Engineering,148,Anishkumar J,43,Assistant Professor,Male,M.E.,235,True,29-12-2006,Regular
+2025,IR-E-C-16590,Engineering,149,Max Savio F,38,Assistant Professor,Male,M.E.,170,True,03-09-2021,Regular
+2025,IR-E-C-16590,Engineering,150,Hemalatha R,34,Assistant Professor,Male,M.E.,120,True,22-11-2021,Regular
+2025,IR-E-C-16590,Engineering,151,John De Britto C,32,Assistant Professor,Male,M.E.,99,True,11-01-2022,Regular
+2025,IR-E-C-16590,Engineering,152,Kanchana K,44,Associate Professor,Female,Ph.D,238,True,14-03-2022,Regular
+2025,IR-E-C-16590,Engineering,153,Suresh T D,38,Assistant Professor,Male,M.E.,196,True,04-07-2013,Regular
+2025,IR-E-C-16590,Engineering,154,Manonmani A,41,Assistant Professor,Female,Ph.D,186,True,01-06-2012,Regular
+2025,IR-E-C-16590,Engineering,155,Prabakaran M,34,Assistant Professor,Male,M.E.,79,True,05-12-2017,Regular
+2025,IR-E-C-16590,Engineering,156,Panimalar S P,34,Assistant Professor,Female,M.E.,86,True,16-08-2021,Regular
+2025,IR-E-C-16590,Engineering,157,Ilavarasan S,42,Assistant Professor,Male,M.E.,203,True,11-08-2011,Regular
+2025,IR-E-C-16590,Engineering,158,Aswin A,30,Assistant Professor,Male,M.E.,73,True,25-06-2018,Regular
+2025,IR-E-C-16590,Engineering,159,Kripa M Suvarna,38,Associate Professor,Female,Ph.D,99,True,06-07-2020,Regular
+2025,IR-E-C-16590,Engineering,160,Yogeswari S,29,Assistant Professor,Female,M.E.,40,True,22-03-2021,Regular
+2025,IR-E-C-16590,Engineering,161,Vignesh P,34,Assistant Professor,Male,M.E.,131,True,02-08-2021,Regular
+2025,IR-E-C-16590,Engineering,162,Shenbagaraman S,56,Assistant Professor,Male,M.Tech,412,True,17-06-2013,Regular
+2025,IR-E-C-16590,Engineering,163,Arumparithy G L,37,Assistant Professor,Male,M.S,145,True,02-06-2014,Regular
+2025,IR-E-C-16590,Engineering,164,Felix Prabhu F,36,Assistant Professor,Male,M.E.,121,True,16-06-2017,Regular
+2025,IR-E-C-16590,Engineering,165,Jerome Nithin G,31,Assistant Professor,Male,M.E.,85,True,28-06-2017,Regular
+2025,IR-E-C-16590,Engineering,166,Gurumoorthy G,42,Assistant Professor,Male,M.E.,242,True,27-08-2021,Regular
+2025,IR-E-C-16590,Engineering,167,Silambarasan M,39,Assistant Professor,Male,Ph.D,177,True,13-11-2021,Regular
+2025,IR-E-C-16590,Engineering,168,Sinthia P,37,Associate Professor,Female,Ph.D,204,True,04-06-2012,Regular
+2025,IR-E-C-16590,Engineering,169,Mettilda,54,Associate Professor,Female,Ph.D,364,True,04-12-2017,Regular
+2025,IR-E-C-16590,Engineering,170,Joyal Isac S,36,Assistant Professor,Male,M.E.,160,True,03-06-2013,Regular
+2025,IR-E-C-16590,Engineering,171,DIVYA PRABHA V,27,Assistant Professor,Female,M.E.,23,True,01-08-2022,Regular
+2025,IR-E-C-16590,Engineering,172,TAJUDDIN A,68,Professor,Male,Ph.D,434,True,08-08-2022,Regular
+2025,IR-E-C-16590,Engineering,173,DINESH KUMAR K,35,Assistant Professor,Male,M.E.,150,True,01-04-2022,Regular
+2025,IR-E-C-16590,Engineering,174,VARALAKSHMI J,40,Assistant Professor,Female,M.E.,156,True,01-07-2022,Regular
+2025,IR-E-C-16590,Engineering,175,GOWRI GANESH N,53,Associate Professor,Male,Ph.D,300,True,01-08-2022,Regular
+2025,IR-E-C-16590,Engineering,176,MAGITHA NIRMALA,44,Assistant Professor,Female,M.E.,114,True,26-04-2022,Regular
+2025,IR-E-C-16590,Engineering,177,ASWINI J,44,Professor,Female,Ph.D,178,True,11-07-2022,Regular
+2025,IR-E-C-16590,Engineering,178,SILAMBARASI C,36,Assistant Professor,Female,M.E.,93,True,01-08-2022,Regular
+2025,IR-E-C-16590,Engineering,179,SELVAKUMAR R,42,Associate Professor,Male,Ph.D,192,True,17-08-2022,Regular
+2025,IR-E-C-16590,Engineering,180,SWARNAMBIGA A,38,Associate Professor,Female,Ph.D,104,True,24-08-2022,Regular
+2025,IR-E-C-16590,Engineering,181,SENTHIKUMAR P,43,Associate Professor,Male,Ph.D,214,True,17-08-2022,Regular
+2025,IR-E-C-16590,Engineering,182,DOLLI H,49,Associate Professor,Male,Ph.D,242,True,01-09-2022,Regular
+2025,IR-E-C-16590,Engineering,183,THIRUMAVALAVAN,52,Professor,Male,Ph.D,312,True,29-08-2022,Regular
+2025,IR-E-C-16590,Engineering,184,SHARMILA,51,Associate Professor,Female,Ph.D,254,True,29-08-2022,Regular
+2025,IR-E-C-16590,Engineering,185,SHANTHI S,41,Assistant Professor,Female,Ph.D,72,True,09-09-2022,Regular
+2025,IR-E-C-16590,Engineering,186,PRAVEEN KUMAR,34,Assistant Professor,Male,M.E.,57,True,01-06-2021,Regular
+2025,IR-E-C-16590,Engineering,187,GOPINATH A,32,Assistant Professor,Male,M.E.,123,True,26-11-2021,Regular
+2025,IR-E-C-16590,Engineering,188,THEERKA,39,Assistant Professor,Female,M.E.,156,True,17-08-2022,Regular
+2025,IR-E-C-16590,Engineering,189,REKHA K S,37,Assistant Professor,Female,M.E.,96,True,01-07-2022,Regular
+2025,IR-E-C-16590,Engineering,190,JASHIKA K M,26,Assistant Professor,Female,M.E.,23,True,19-09-2022,Regular
+2025,IR-E-C-16590,Engineering,191,KEERTHIGA G,40,Associate Professor,Female,M.Tech,204,True,06-09-2006,Regular
+2025,IR-E-C-16590,Engineering,192,POONGOTHAI U,36,Assistant Professor,Female,M.E.,36,True,01-06-2021,Regular
+2025,IR-E-C-16590,Engineering,193,MAHENDRAN K,36,Assistant Professor,Male,M.E.,132,True,21-03-2022,Regular
+2025,IR-E-C-16590,Engineering,194,NIRMALA DEVI K,47,Associate Professor,Female,Ph.D,240,True,02-05-2022,Regular
+2025,IR-E-C-16590,Engineering,195,VINAYAGAM P,37,Assistant Professor,Male,Ph.D,156,True,17-08-2022,Regular
+2025,IR-E-C-16590,Engineering,196,LATHA R,37,Assistant Professor,Female,Ph.D,60,True,30-08-2022,Regular
+2025,IR-E-C-16590,Engineering,197,SUBASHREE V,36,Assistant Professor,Female,M.E.,112,True,01-09-2022,Regular
+2025,IR-E-C-16590,Engineering,198,KANAGAMALLIGA,37,Associate Professor,Female,Ph.D,118,True,01-09-2022,Regular
+2025,IR-E-C-16590,Engineering,199,ARUL EDWIN RAJ,43,Assistant Professor,Male,Ph.D,192,True,01-09-2022,Regular
+2025,IR-E-C-16590,Engineering,200,SOWMIYA MANOJ,38,Assistant Professor,Female,M.E.,144,True,09-09-2022,Regular
+2025,IR-E-C-16590,Engineering,201,IMMACULATE JOY,37,Assistant Professor,Female,M.E.,120,True,28-10-2022,Regular
+2025,IR-E-C-16590,Engineering,202,KARPAGA PRIYA R,33,Assistant Professor,Female,Ph.D,102,True,17-08-2022,Regular
+2025,IR-E-C-16590,Engineering,203,RAJALINGAM S,39,Associate Professor,Male,Ph.D,156,True,01-09-2022,Regular
+2025,IR-E-C-16590,Engineering,204,YUVARAJ P,44,Assistant Professor,Male,Ph.D,221,True,01-09-2022,Regular
+2025,IR-E-C-16590,Engineering,205,FREEDA,50,Associate Professor,Female,Ph.D,264,True,22-08-2022,Regular
+2025,IR-E-C-16590,Engineering,206,SUBHASHINI R,41,Assistant Professor,Female,Ph.D,36,True,26-08-2022,Regular
+2025,IR-E-C-16590,Engineering,207,KIRAN KUMAR J,31,Assistant Professor,Male,Ph.D,48,True,05-11-2022,Regular
+2025,IR-E-C-16590,Engineering,208,YUVASHREE S,32,Assistant Professor,Female,M.E.,28,True,15-03-2022,Regular
+2025,IR-E-C-16590,Engineering,209,TAMIZHARASI R,43,Assistant Professor,Male,Ph.D,42,True,16-08-2022,Regular
+2025,IR-E-C-16590,Engineering,210,RAJARAMAN R,58,Professor,Male,Ph.D,286,True,16-08-2022,Regular
+2025,IR-E-C-16590,Engineering,211,SIVAN V,48,Assistant Professor,Male,Ph.D,222,True,14-11-2022,Regular
+2025,IR-E-C-16590,Engineering,212,JANAKI K,35,Assistant Professor,Female,Ph.D,48,True,24-11-2022,Regular
+2025,IR-E-C-16590,Engineering,213,VIGNESH S,30,Assistant Professor,Male,Ph.D,24,True,27-07-2022,Regular
+2025,IR-E-C-16590,Engineering,214,RADHIKA C,35,Assistant Professor,Female,M.E.,24,True,10-08-2022,Regular
+2025,IR-E-C-16590,Engineering,215,FRANCIS J,37,Assistant Professor,Male,M.E.,35,True,10-08-2022,Regular
+2025,IR-E-C-16590,Engineering,216,VIGNESHWARI N,31,Assistant Professor,Female,M.E.,62,True,04-05-2022,Regular
+2025,IR-E-C-16590,Engineering,217,BHAVADHARANI V,25,Assistant Professor,Female,M.E.,23,True,06-09-2022,Regular
+2025,IR-E-C-16590,Engineering,218,INDUMATHY T,47,Assistant Professor,Female,M.E.,204,True,07-09-2022,Regular
+2025,IR-E-C-16590,Engineering,219,LAKSHMANAN A R,77,Professor,Male,Ph.D,475,True,12-12-2007,Regular
+2025,IR-E-C-16590,Engineering,220,KALPANA S,49,Professor,Female,Ph.D,264,True,17-08-2022,Regular
+2025,IR-E-C-16590,Engineering,221,RAMKI C,44,Assistant Professor,Male,Ph.D,23,True,29-08-2022,Regular
+2025,IR-E-C-16590,Engineering,222,SIVAKUMAR T,44,Assistant Professor,Male,Ph.D,144,True,29-08-2022,Regular
+2025,IR-E-C-16590,Engineering,223,GANAPATHI,41,Associate Professor,Male,Ph.D,160,True,01-09-2022,Regular
+2025,IR-E-C-16590,Engineering,224,GIRUBA M,33,Assistant Professor,Female,Ph.D,82,True,05-09-2022,Regular
+2025,IR-E-C-16590,Engineering,225,BABY SUGNATHI A,40,Associate Professor,Female,Ph.D,132,True,27-06-2017,Regular
+2025,IR-E-C-16590,Engineering,226,LAVANYA G,44,Assistant Professor,Female,Ph.D,156,True,15-12-2021,Regular
+2025,IR-E-C-16590,Engineering,227,RAJKUMAR E,32,Assistant Professor,Male,M.E.,49,True,01-06-2022,Regular
+2025,IR-E-C-16590,Engineering,228,GANGADHARAN S,50,Associate Professor,Male,Ph.D,168,True,31-07-2020,Regular
+2025,IR-E-C-16590,Engineering,229,SATHIYAMURTHI K,39,Assistant Professor,Male,Ph.D,136,True,11-11-2020,Regular
+2025,IR-E-C-16590,Engineering,230,VENITH VIJAY M,36,Assistant Professor,Male,Ph.D,168,True,06-10-2021,Regular
+2025,IR-E-C-16590,Engineering,231,MOHANRAJ D,51,Assistant Professor,Male,Ph.D,156,True,04-10-2021,Regular
+2025,IR-E-C-16590,Engineering,232,ANITHA L,52,Assistant Professor,Female,Ph.D,168,True,30-11-2021,Regular
+2025,IR-E-C-16590,Engineering,233,RAJ KUMAR P,62,Professor,Male,Ph.D,432,True,03-08-2002,Regular
+2025,IR-E-C-16590,Engineering,234,JYOTHI P,40,Associate Professor,Female,Ph.D,192,True,26-10-2022,Regular
+2025,IR-E-C-16590,Engineering,235,VINOTHINI T,29,Assistant Professor,Female,M.E.,42,True,27-11-2020,Regular
+2025,IR-E-C-16590,Engineering,236,BALAJI R,35,Assistant Professor,Male,M.E.,72,True,02-03-2022,Regular
+2025,IR-E-C-16590,Engineering,238,GANDHIMATHINAT,38,Assistant Professor,Male,M.Tech,156,True,06-06-2022,Regular
+2025,IR-E-C-16590,Engineering,239,GAUTHAMAN B,42,Assistant Professor,Male,M.E.,24,True,06-07-2022,Regular
+2025,IR-E-C-16590,Engineering,240,JIM ELLIOT C,36,Assistant Professor,Male,M.Tech,108,True,13-06-2022,Regular
+2025,IR-E-C-16590,Engineering,241,DELECTA JENIFER,43,Assistant Professor,Female,Ph.D,48,True,13-06-2022,Regular
+2025,IR-E-C-16590,Engineering,242,SUGITHA N,52,Associate Professor,Female,Ph.D,264,True,27-06-2022,Regular
+2025,IR-E-C-16590,Engineering,243,SRIPRIYA,49,Associate Professor,Female,Ph.D,180,True,04-01-2022,Regular
+2025,IR-E-C-16590,Engineering,244,BAVATHARANI C,28,Assistant Professor,Female,Ph.D,24,True,19-01-2022,Regular
+2025,IR-E-C-16590,Engineering,245,SRAVYA P R,34,Assistant Professor,Female,Ph.D,24,True,01-02-2022,Regular
+2025,IR-E-C-16590,Engineering,246,SARAVANAN M P,35,Assistant Professor,Male,Ph.D,132,True,01-02-2022,Regular
+2025,IR-E-C-16590,Engineering,247,PADMAVATHI T,35,Assistant Professor,Female,Ph.D,108,True,07-02-2022,Regular
+2025,IR-E-C-16590,Engineering,248,KUMARAVELU R,49,Associate Professor,Male,Ph.D,162,True,28-02-2022,Regular
+2025,IR-E-C-16590,Engineering,249,HEINER A J,32,Assistant Professor,Male,Ph.D,24,True,28-02-2022,Regular
+2025,IR-E-C-16590,Engineering,250,RAJENDRA,40,Assistant Professor,Male,Ph.D,108,True,01-03-2022,Regular
+2025,IR-E-C-16590,Engineering,251,NAVANEETHA,42,Assistant Professor,Female,Ph.D,212,True,01-03-2022,Regular
+2025,IR-E-C-16590,Engineering,252,RESMI R NAIR,39,Associate Professor,Female,Ph.D,132,True,01-03-2022,Regular
+2025,IR-E-C-16590,Engineering,253,PAVITHRA P,31,Assistant Professor,Female,Ph.D,24,True,08-03-2022,Regular
+2025,IR-E-C-16590,Engineering,254,RAJASEKAR R,34,Assistant Professor,Male,Ph.D,24,True,14-03-2022,Regular
+2025,IR-E-C-16590,Engineering,255,AMSAYAZHI P,32,Assistant Professor,Female,Ph.D,24,True,10-03-2022,Regular
+2025,IR-E-C-16590,Engineering,256,PREMILA S C,47,Assistant Professor,Female,Ph.D,204,True,10-03-2022,Regular
+2025,IR-E-C-16590,Engineering,257,MADHAN KUMAR A,39,Assistant Professor,Male,Ph.D,192,True,16-03-2022,Regular
+2025,IR-E-C-16590,Engineering,258,ANUSHA RANI V,32,Assistant Professor,Female,Ph.D,144,True,17-03-2023,Regular
+2025,IR-E-C-16590,Engineering,259,RENJITH,33,Assistant Professor,Male,Ph.D,36,True,21-03-2022,Regular
+2025,IR-E-C-16590,Engineering,260,KISHORE MOHAN,51,Associate Professor,Male,Ph.D,276,True,05-04-2022,Regular
+2025,IR-E-C-16590,Engineering,261,HELEN R,48,Assistant Professor,Female,Ph.D,276,True,02-05-2022,Regular
+2025,IR-E-C-16590,Engineering,262,HEMAVATHY P,50,Assistant Professor,Female,Ph.D,252,True,04-05-2022,Regular
+2025,IR-E-C-16590,Engineering,263,VANITHA A,51,Associate Professor,Female,Ph.D,156,True,31-05-2022,Regular
+2025,IR-E-C-16590,Engineering,264,MARY ADLINE,35,Assistant Professor,Female,Ph.D,72,True,13-06-2022,Regular
+2025,IR-E-C-16590,Engineering,265,JOSEPH SATISH V,40,Assistant Professor,Male,Ph.D,24,True,15-06-2022,Regular
+2025,IR-E-C-16590,Engineering,266,MALATHI K,42,Assistant Professor,Female,Ph.D,120,True,20-06-2022,Regular
+2025,IR-E-C-16590,Engineering,267,VINURAJKUMAR S,40,Assistant Professor,Male,Ph.D,144,True,18-07-2022,Regular
+2025,IR-E-C-16590,Engineering,268,JAYANTHI G,54,Associate Professor,Female,Ph.D,222,True,29-08-2022,Regular
+2025,IR-E-C-16590,Engineering,269,JAYA T,50,Professor,Female,Ph.D,276,True,27-07-2022,Regular
+2025,IR-E-C-16590,Engineering,270,BHUVANESWARI G,45,Professor,Female,Ph.D,252,True,20-07-2022,Regular
+2025,IR-E-C-16590,Engineering,271,CHANTHIRASEKAR,56,Professor,Male,Ph.D,216,True,27-07-2022,Regular
+2025,IR-E-C-16590,Engineering,272,CHAMUNDEESWA,42,Assistant Professor,Female,Ph.D,180,True,29-07-2022,Regular
+2025,IR-E-C-16590,Engineering,273,PRADEEP,38,Assistant Professor,Male,Ph.D,72,True,01-08-2022,Regular
+2025,IR-E-C-16590,Engineering,274,GOKUL KANNAN K,45,Assistant Professor,Male,Ph.D,192,True,08-08-2022,Regular
+2025,IR-E-C-16590,Engineering,275,IMMANUEL G,43,Assistant Professor,Male,Ph.D,240,True,08-08-2022,Regular
+2025,IR-E-C-16590,Engineering,276,ELANGO J,60,Assistant Professor,Male,Ph.D,22,True,11-08-2022,Regular
+2025,IR-E-C-16590,Engineering,277,RAVI MOHAN R,58,Assistant Professor,Male,Ph.D,168,True,22-08-2022,Regular
+2025,IR-E-C-16590,Engineering,278,SANGEETHA P,44,Assistant Professor,Female,Ph.D,144,True,22-08-2022,Regular
+2025,IR-E-C-16590,Engineering,279,SATHISH BABU,39,Assistant Professor,Male,Ph.D,132,True,22-08-2022,Regular
+2025,IR-E-C-16590,Engineering,280,DEEPAK,50,Assistant Professor,Male,Ph.D,276,True,05-09-2022,Regular
+2025,IR-E-C-16590,Engineering,281,RAMASUNDARAM,54,Professor,Male,Ph.D,312,True,05-09-2022,Regular
+2025,IR-E-C-16590,Engineering,282,PERIASAMY P,51,Associate Professor,Male,Ph.D,288,True,05-09-2022,Regular
+2025,IR-E-C-16590,Engineering,283,MANIVANNA,48,Professor,Male,Ph.D,264,True,20-09-2022,Regular
+2025,IR-E-C-16590,Engineering,284,EUNICE JEMIMA,51,Assistant Professor,Female,Ph.D,204,True,26-09-2022,Regular
+2025,IR-E-C-16590,Engineering,285,ARUN PRADEEP,37,Associate Professor,Male,Ph.D,180,True,17-10-2022,Regular
+2025,IR-E-C-16590,Engineering,286,VIJAYAN P,49,Assistant Professor,Male,Ph.D,256,True,20-10-2022,Regular
+2025,IR-E-C-16590,Engineering,287,AUGUSTIAN ISAAC,48,Assistant Professor,Female,Ph.D,276,True,31-10-2022,Regular
+2025,IR-E-C-16590,Engineering,288,SUNDARA,42,Associate Professor,Male,Ph.D,216,True,01-11-2022,Regular
+2025,IR-E-C-16590,Engineering,289,JAINAB ZAREENA,37,Assistant Professor,Female,Ph.D,72,True,03-11-2022,Regular
+2025,IR-E-C-16590,Engineering,290,MANI S V J,50,Assistant Professor,Male,Ph.D,264,True,27-11-2022,Regular
+2025,IR-E-C-16590,Engineering,291,ANAND A,42,Professor,Male,Ph.D,192,True,03-10-2022,Regular
+2025,IR-E-C-16590,Engineering,292,YAMINI ROJA S,33,Assistant Professor,Female,M.E.,91,True,09-01-2023,Regular
+2025,IR-E-C-16590,Engineering,293,SINDHUJA R,35,Assistant Professor,Female,M.E.,7,True,23-01-2023,Regular
+2025,IR-E-C-16590,Engineering,294,SARAVANAN N,43,Assistant Professor,Male,M.E.,120,True,03-02-2023,Regular
+2025,IR-E-C-16590,Engineering,295,SINDHU G,28,Assistant Professor,Female,M.E.,6,True,10-02-2023,Regular
+2025,IR-E-C-16590,Engineering,296,SANGEETHA,33,Assistant Professor,Female,M.E.,6,True,10-02-2023,Regular
+2025,IR-E-C-16590,Engineering,297,KOLLI HIMANTHA,33,Assistant Professor,Male,M.Tech,80,True,14-02-2023,Regular
+2025,IR-E-C-16590,Engineering,298,MONICA D,26,Assistant Professor,Female,M.E.,6,True,15-02-2023,Regular
+2025,IR-E-C-16590,Engineering,299,THILAGAVATHY S,27,Assistant Professor,Female,M.Tech,18,True,23-02-2023,Regular
+2025,IR-E-C-16590,Engineering,300,DHIVYA,36,Assistant Professor,Female,M.E.,17,True,03-03-2023,Regular
+2025,IR-E-C-16590,Engineering,301,KARTHIGA M,32,Assistant Professor,Female,M.E.,12,True,06-03-2023,Regular
+2025,IR-E-C-16590,Engineering,302,SUBASHINI T,43,Assistant Professor,Female,M.E.,53,True,15-03-2023,Regular
+2025,IR-E-C-16590,Engineering,303,DIVYA S,33,Assistant Professor,Female,M.Tech,12,True,12-03-2023,Regular
+2025,IR-E-C-16590,Engineering,304,RAMACHANDRAN,35,Assistant Professor,Male,M.E.,12,True,26-04-2023,Regular
+2025,IR-E-C-16590,Engineering,305,MADHUMITHA N,36,Assistant Professor,Female,M.Tech,38,True,04-05-2023,Regular
+2025,IR-E-C-16590,Engineering,306,ABARNA P S,30,Assistant Professor,Female,M.E.,12,True,04-05-2024,Regular
+2025,IR-E-C-16590,Engineering,307,DEEPA M,38,Assistant Professor,Female,Ph.D,56,True,05-05-2023,Regular
+2025,IR-E-C-16590,Engineering,308,NAJEEM DHEEN A,36,Assistant Professor,Male,M.E.,74,True,24-05-2023,Regular
+2025,IR-E-C-16590,Engineering,309,NAGENDRAN K,43,Assistant Professor,Male,M.E.,181,True,22-06-2023,Regular
+2025,IR-E-C-16590,Engineering,310,ARUL OLI A,41,Assistant Professor,Female,M.E.,217,True,05-06-2023,Regular
+2025,IR-E-C-16590,Engineering,311,VINOTH KUMAR E,44,Assistant Professor,Male,M.Tech,145,True,05-06-2023,Regular
+2025,IR-E-C-16590,Engineering,312,POONGULALI E,47,Assistant Professor,Female,M.E.,241,True,09-06-2023,Regular
+2025,IR-E-C-16590,Engineering,313,KRITHIKA M,26,Assistant Professor,Female,M.E.,10,True,12-06-2024,Regular
+2025,IR-E-C-16590,Engineering,314,JUDITH REYA M,33,Assistant Professor,Female,M.Tech,21,True,21-06-2023,Regular
+2025,IR-E-C-16590,Engineering,315,KIRUTHIKA S S,42,Assistant Professor,Female,M.E.,108,True,19-07-2023,Regular
+2025,IR-E-C-16590,Engineering,316,HEMADHARSANA,39,Assistant Professor,Female,M.E.,12,True,19-07-2023,Regular
+2025,IR-E-C-16590,Engineering,317,SATHYA U,35,Assistant Professor,Female,M.E.,12,True,28-07-2023,Regular
+2025,IR-E-C-16590,Engineering,318,SARAVANAN T,43,Assistant Professor,Male,M.E.,192,True,01-08-2023,Regular
+2025,IR-E-C-16590,Engineering,319,DINESH BABU G L,33,Assistant Professor,Male,M.E.,72,True,01-08-2023,Regular
+2025,IR-E-C-16590,Engineering,320,KUPPAN A,29,Assistant Professor,Male,Ph.D,12,True,02-08-2023,Regular
+2025,IR-E-C-16590,Engineering,321,SHRUTHI S NAIR,35,Assistant Professor,Female,M.E.,57,True,02-08-2023,Regular
+2025,IR-E-C-16590,Engineering,322,SANGEETHA R,24,Assistant Professor,Female,M.E.,10,True,07-08-2023,Regular
+2025,IR-E-C-16590,Engineering,323,SANKAR P,31,Assistant Professor,Male,M.E.,120,True,28-08-2023,Regular
+2025,IR-E-C-16590,Engineering,324,SHAGUL A S,28,Assistant Professor,Female,M.E.,10,True,28-08-2023,Regular
+2025,IR-E-C-16590,Engineering,325,MATHANAVALLI S,30,Assistant Professor,Female,Ph.D,12,True,30-08-2023,Regular
+2025,IR-E-C-16590,Engineering,326,KARTHIKA PRIYA,34,Assistant Professor,Female,M.E.,36,True,01-09-2023,Regular
+2025,IR-E-C-16590,Engineering,327,JESILA MOL J,40,Assistant Professor,Female,M.Tech,132,True,11-09-2023,Regular
+2025,IR-E-C-16590,Engineering,328,ABIRAMI A,36,Assistant Professor,Female,M.E.,48,True,11-09-2023,Regular
+2025,IR-E-C-16590,Engineering,329,VINODHINI N,31,Assistant Professor,Female,Ph.D,10,True,11-09-2023,Regular
+2025,IR-E-C-16590,Engineering,330,UMA V,42,Assistant Professor,Male,M.E.,192,True,13-09-2023,Regular
+2025,IR-E-C-16590,Engineering,331,DEEPA A,43,Assistant Professor,Female,M.Tech,48,True,14-09-2023,Regular
+2025,IR-E-C-16590,Engineering,332,PRAVEENA T,27,Assistant Professor,Female,Ph.D,10,True,14-09-2023,Regular
+2025,IR-E-C-16590,Engineering,333,RAMACHANDRAN,39,Associate Professor,Male,Ph.D,150,True,25-09-2023,Regular
+2025,IR-E-C-16590,Engineering,334,ARUL DALTON G,51,Associate Professor,Male,Ph.D,216,True,27-09-2023,Regular
+2025,IR-E-C-16590,Engineering,335,VISHNU PRIYA K,29,Assistant Professor,Female,M.E.,48,True,03-10-2023,Regular
+2025,IR-E-C-16590,Engineering,336,MAHALAKSHMI P,27,Assistant Professor,Female,M.E.,46,True,18-10-2023,Regular
+2025,IR-E-C-16590,Engineering,337,JANAKI AAMAL P,39,Assistant Professor,Female,M.E.,48,True,01-11-2023,Regular
+2025,IR-E-C-16590,Engineering,338,SREELAKSHMI S,37,Assistant Professor,Female,M.Tech,10,True,16-11-2023,Regular
+2025,IR-E-C-16590,Engineering,339,SHARMILA J,24,Assistant Professor,Female,M.E.,36,True,01-12-2023,Regular
+2025,IR-E-C-16590,Engineering,340,PONMATHI JEBA,36,Assistant Professor,Female,M.E.,12,True,01-12-2023,Regular
+2025,IR-E-C-16590,Engineering,341,KUMARAN V,40,Assistant Professor,Male,M.E.,156,True,18-12-2023,Regular
+2025,IR-E-C-16590,Engineering,342,SAVITHA V,42,Assistant Professor,Female,M.E.,144,True,26-12-2023,Regular
+2025,IR-E-C-16590,Engineering,343,MICHAEL MAHESH,37,Associate Professor,Male,Ph.D,144,True,27-12-2023,Regular
+2025,IR-E-C-16590,Engineering,344,DHANALAKSHMI J,37,Assistant Professor,Female,M.E.,144,True,02-01-2024,Regular
+2025,IR-E-C-16590,Engineering,345,YESUBAI,41,Professor,Female,Ph.D,180,True,04-01-2024,Regular
+2025,IR-E-C-16590,Engineering,346,HARI U,54,Assistant Professor,Male,M.E.,300,True,10-01-2024,Regular
+2025,IR-E-C-16590,Engineering,347,OMANA J,35,Assistant Professor,Female,Ph.D,120,True,24-01-2024,Regular
+2025,IR-E-C-16590,Engineering,348,SARANYA K,34,Assistant Professor,Female,M.E.,18,True,24-01-2024,Regular
+2025,IR-E-C-16590,Engineering,349,PAVAI D,32,Assistant Professor,Female,M.E.,28,True,24-01-2024,Regular
+2025,IR-E-C-16590,Engineering,350,SATYA GOPAL,42,Associate Professor,Male,Ph.D,78,True,29-01-2024,Regular
+2025,IR-E-C-16590,Engineering,351,RAJESH C,34,Associate Professor,Male,M.E.,96,True,29-01-2024,Regular
+2025,IR-E-C-16590,Engineering,352,ARASA KUMAR R,38,Assistant Professor,Male,M.E.,96,True,31-01-2024,Regular
+2025,IR-E-C-16590,Engineering,353,PANDIAN G,36,Assistant Professor,Male,Ph.D,126,True,12-02-2024,Regular
+2025,IR-E-C-16590,Engineering,354,MANICKAM S,31,Assistant Professor,Male,M.E.,72,True,16-02-2024,Regular
+2025,IR-E-C-16590,Engineering,355,VENKATESAN V,34,Assistant Professor,Male,M.E.,91,True,01-02-2024,Regular
+2025,IR-E-C-16590,Engineering,356,POTNURI ANITHA,25,Assistant Professor,Female,M.Tech,24,True,01-03-2024,Regular
+2025,IR-E-C-16590,Engineering,357,P MUTHUVEL,37,Associate Professor,Male,Ph.D,120,True,04-03-2024,Regular
+2025,IR-E-C-16590,Engineering,358,ANNA PALAGAN C,44,Professor,Male,Ph.D,204,True,06-03-2024,Regular
+2025,IR-E-C-16590,Engineering,359,NICI MARX V S,27,Assistant Professor,Female,M.E.,5,True,06-03-2024,Regular
+2025,IR-E-C-16590,Engineering,360,R SUGUNA DEVI,44,Assistant Professor,Female,M.E.,163,True,14-03-2024,Regular
+2025,IR-E-C-16590,Engineering,361,C M VELU,64,Professor,Male,Ph.D,444,True,14-03-2024,Regular
+2025,IR-E-C-16590,Engineering,362,RAJAKRISHNAMM,33,Assistant Professor,Female,M.E.,42,True,15-04-2024,Regular
+2025,IR-E-C-16590,Engineering,363,SAKTHI SWARRUP,38,Professor,Female,Ph.D,66,True,18-04-2024,Regular
+2025,IR-E-C-16590,Engineering,364,SUBASHINI K,24,Assistant Professor,Female,M.E.,12,False,26-10-2023,Regular
+2025,IR-E-C-16590,Engineering,365,ROSEKUMARI I,65,Professor,Female,Ph.D,372,True,13-06-2017,Regular
+2025,IR-E-C-16590,Engineering,366,A SARAVANAN,42,Assistant Professor,Male,Ph.D,180,True,01-06-2017,Regular
+2025,IR-E-C-16590,Engineering,367,RAVINDHRAN M,43,Professor,Male,Ph.D,160,True,26-08-2021,Regular
+2025,IR-E-C-16590,Engineering,368,UMA,43,Assistant Professor,Female,M.E.,99,True,05-06-2015,Regular
+2025,IR-E-C-16590,Engineering,369,JAGADEESHKUMA,27,Assistant Professor,Male,M.E.,36,False,20-01-2021,Regular
+2025,IR-E-C-16590,Engineering,370,ABINAYA N G,31,Assistant Professor,Female,M.E.,84,True,16-06-2017,Regular
+2025,IR-E-C-16590,Engineering,371,MEENATCHI K V,35,Assistant Professor,Female,M.E.,12,True,12-05-2023,Regular
+2025,IR-E-C-16590,Engineering,372,BALASINGH S,40,Assistant Professor,Male,Ph.D,222,True,20-10-2022,Regular
+2025,IR-E-C-16590,Engineering,373,NIVETHITHA M,28,Assistant Professor,Female,M.E.,38,True,13-03-2023,Regular
+2025,IR-E-C-16590,Engineering,374,RENJITH,27,Assistant Professor,Male,Ph.D,46,True,20-03-2023,Regular
+2025,IR-E-C-16590,Engineering,375,ANIVEL,44,Assistant Professor,Male,Ph.D,252,True,20-07-2020,Regular
+2025,IR-E-C-16590,Engineering,376,RASAN U,31,Assistant Professor,Male,M.E.,12,True,01-06-2023,Regular
+2025,IR-E-C-16590,Engineering,377,MAMATHA A,27,Assistant Professor,Female,M.E.,53,True,15-04-2019,Regular
+2025,IR-E-C-16590,Engineering,378,PONPRASANNA T,31,Assistant Professor,Male,M.E.,33,True,28-12-2020,Regular
+2025,IR-E-C-16590,Engineering,379,DHANANCHEZIYAN,36,Assistant Professor,Male,M.E.,96,True,24-02-2016,Regular
+2025,IR-E-C-16590,Engineering,380,SUBASHINI,36,Assistant Professor,Female,M.E.,88,True,24-02-2016,Regular
+2025,IR-E-C-16590,Engineering,381,G R RAM PRASATH,36,Assistant Professor,Male,M.E.,111,False,22-06-2015,Regular
+2025,IR-E-C-16590,Engineering,382,EZHIL,36,Assistant Professor,Male,M.Tech,180,True,03-12-2019,Regular
+2025,IR-E-C-16590,Engineering,383,MAUSAM,36,Assistant Professor,Male,Ph.D,23,False,03-08-2022,Regular
+2025,IR-E-C-16590,Engineering,384,DURAIPANDIAN N,56,Professor,Female,Ph.D,360,False,14-06-2021,Regular
+2025,IR-E-C-16590,Engineering,385,RANJANI A,43,Assistant Professor,Female,M.E.,41,False,15-05-2023,Regular
+2025,IR-E-C-16590,Engineering,386,AMIT KUMAR,39,Assistant Professor,Male,Ph.D,160,False,15-11-2021,Regular
+2025,IR-E-C-16590,Engineering,387,VARUN M,38,Assistant Professor,Male,M.E.,149,False,09-12-2020,Regular
+2025,IR-E-C-16590,Engineering,388,GANGA KISHORE,27,Assistant Professor,Male,M.Tech,23,False,17-10-2022,Regular
+2025,IR-E-C-16590,Engineering,389,LAKSHMI THARA R,39,Assistant Professor,Female,Ph.D,36,False,26-06-2023,Regular
+2025,IR-E-C-16590,Engineering,390,MOHANA SUNDARI,36,Assistant Professor,Female,Ph.D,144,False,12-12-2022,Regular
+2025,IR-E-C-16590,Engineering,391,KUMARI AMBE,30,Assistant Professor,Female,Ph.D,12,False,20-03-2023,Regular
+2025,IR-E-C-16590,Engineering,392,AYISHA BEGAM K,41,Assistant Professor,Female,Ph.D,168,False,21-06-2017,Regular
+2025,IR-E-C-16590,Engineering,393,SHANMUGA PRIYA,41,Assistant Professor,Female,M.Tech,136,True,10-06-2022,Regular
+2025,IR-I-C-16590,Innovation,1,Abinaya G,33,Assistant Professor,Female,M.E.,97,True,04-01-2021,Regular
+2025,IR-I-C-16590,Innovation,2,ANAND A,42,Professor,Male,Ph.D,192,True,03-10-2022,Regular
+2025,IR-I-C-16590,Innovation,3,Anjaline Jayaprabha,28,Assistant Professor,Female,M.E.,72,True,01-11-2021,Regular
+2025,IR-I-C-16590,Innovation,4,ARAVIND T,36,Associate Professor,Male,Ph.D,157,True,08-06-2011,Regular
+2025,IR-I-C-16590,Innovation,5,ARUL OLI A,41,Assistant Professor,Female,M.E.,217,True,05-06-2023,Regular
+2025,IR-I-C-16590,Innovation,6,ASHA S,53,Associate Professor,Female,Ph.D,339,True,01-06-2017,Regular
+2025,IR-I-C-16590,Innovation,7,Bakkiyalakshmi P,44,Associate Professor,Female,Ph.D,210,True,15-07-2019,Regular
+2025,IR-I-C-16590,Innovation,8,Baraneedharan P,36,Assistant Professor,Male,Ph.D,36,True,28-07-2021,Regular
+2025,IR-I-C-16590,Innovation,9,CHAMUNDEESWA,42,Assistant Professor,Female,Ph.D,180,True,29-07-2022,Regular
+2025,IR-I-C-16590,Innovation,10,DELECTA JENIFER,43,Assistant Professor,Female,Ph.D,48,True,13-06-2022,Regular
+2025,IR-I-C-16590,Innovation,11,DIVYA PRABHA V,27,Assistant Professor,Female,M.E.,23,True,01-08-2022,Regular
+2025,IR-I-C-16590,Innovation,12,Ezhil Arasan I,33,Assistant Professor,Male,M.E.,88,True,16-03-2022,Regular
+2025,IR-I-C-16590,Innovation,13,GANAPATHI,41,Associate Professor,Male,Ph.D,160,True,01-09-2022,Regular
+2025,IR-I-C-16590,Innovation,14,GOKUL KANNAN K,45,Assistant Professor,Male,Ph.D,192,True,08-08-2022,Regular
+2025,IR-I-C-16590,Innovation,15,HEINER A J,32,Assistant Professor,Male,Ph.D,24,True,28-02-2022,Regular
+2025,IR-I-C-16590,Innovation,16,HEMAVATHY P,50,Assistant Professor,Female,Ph.D,252,True,04-05-2022,Regular
+2025,IR-I-C-16590,Innovation,17,JAGADEESHKUMA,27,Assistant Professor,Male,M.E.,36,False,20-01-2021,Regular
+2025,IR-I-C-16590,Innovation,18,Jebajasphin E T,41,Assistant Professor,Female,M.E.,217,True,09-06-2008,Regular
+2025,IR-I-C-16590,Innovation,19,JOEL JOHN M,41,Assistant Professor,Male,M.E.,189,True,03-06-2013,Regular
+2025,IR-I-C-16590,Innovation,20,KALAIARASI A R,51,Professor,Female,Ph.D,310,True,26-06-2013,Regular
+2025,IR-I-C-16590,Innovation,21,Kanchana K,44,Associate Professor,Female,Ph.D,238,True,14-03-2022,Regular
+2025,IR-I-C-16590,Innovation,22,Karthika R N,34,Assistant Professor,Female,M.Tech,48,True,30-07-2020,Regular
+2025,IR-I-C-16590,Innovation,23,Kripa M Suvarna,38,Associate Professor,Female,Ph.D,99,True,06-07-2020,Regular
+2025,IR-I-C-16590,Innovation,24,KUPPAN A,29,Assistant Professor,Male,Ph.D,12,True,02-08-2023,Regular
+2025,IR-I-C-16590,Innovation,25,M A Somanathan,34,Assistant Professor,Male,M.E.,132,True,01-04-2019,Regular
+2025,IR-I-C-16590,Innovation,26,MAHALAKSHMI P,27,Assistant Professor,Female,M.E.,46,True,18-10-2023,Regular
+2025,IR-I-C-16590,Innovation,27,MANIVANNA,48,Professor,Male,Ph.D,264,True,20-09-2022,Regular
+2025,IR-I-C-16590,Innovation,28,MERLIN,39,Associate Professor,Female,Ph.D,204,True,21-07-2008,Regular
+2025,IR-I-C-16590,Innovation,29,MONICA P,54,Associate Professor,Female,Ph.D,373,True,26-05-2004,Regular
+2025,IR-I-C-16590,Innovation,30,NALINIPRIYA G,49,Professor,Female,Ph.D,304,True,14-06-2012,Regular
+2025,IR-I-C-16590,Innovation,31,NIRMALA DEVI K,47,Associate Professor,Female,Ph.D,240,True,02-05-2022,Regular
+2025,IR-I-C-16590,Innovation,32,PADMAVATHI T,35,Assistant Professor,Female,Ph.D,108,True,07-02-2022,Regular
+2025,IR-I-C-16590,Innovation,33,PERIASAMY P,51,Associate Professor,Male,Ph.D,288,True,05-09-2022,Regular
+2025,IR-I-C-16590,Innovation,34,PRADEEP,38,Assistant Professor,Male,Ph.D,72,True,01-08-2022,Regular
+2025,IR-I-C-16590,Innovation,35,Premnath K,36,Assistant Professor,Male,M.E.,169,True,26-02-2021,Regular
+2025,IR-I-C-16590,Innovation,36,RAJAKRISHNAMM,33,Assistant Professor,Female,M.E.,42,True,15-04-2024,Regular
+2025,IR-I-C-16590,Innovation,37,RAJKUMAR E,32,Assistant Professor,Male,M.E.,49,True,01-06-2022,Regular
+2025,IR-I-C-16590,Innovation,38,RANJANI A,43,Assistant Professor,Female,M.E.,41,False,15-05-2023,Regular
+2025,IR-I-C-16590,Innovation,39,RENJITH,27,Assistant Professor,Male,Ph.D,46,True,20-03-2023,Regular
+2025,IR-I-C-16590,Innovation,40,SANGEETHA L,46,Assistant Professor,Female,Ph.D,279,True,02-07-2012,Regular
+2025,IR-I-C-16590,Innovation,41,SARAVANAN M P,35,Assistant Professor,Male,Ph.D,132,True,01-02-2022,Regular
+2025,IR-I-C-16590,Innovation,42,SATHIYAMURTHI K,39,Assistant Professor,Male,Ph.D,136,True,11-11-2020,Regular
+2025,IR-I-C-16590,Innovation,43,Selvanayaki S,44,Assistant Professor,Female,M.Tech,228,True,16-03-2022,Regular
+2025,IR-I-C-16590,Innovation,44,SHANMUGA PRIYA,41,Assistant Professor,Female,M.Tech,136,True,10-06-2022,Regular
+2025,IR-I-C-16590,Innovation,45,SILAMBARASI C,36,Assistant Professor,Female,M.E.,93,True,01-08-2022,Regular
+2025,IR-I-C-16590,Innovation,46,Sivaramakrishnan N,40,Associate Professor,Male,Ph.D,138,True,06-07-2020,Regular
+2025,IR-I-C-16590,Innovation,47,Srinivasan T K,37,Assistant Professor,Male,M.E.,121,True,09-01-2017,Regular
+2025,IR-I-C-16590,Innovation,48,SUGITHA N,52,Associate Professor,Female,Ph.D,264,True,27-06-2022,Regular
+2025,IR-I-C-16590,Innovation,49,SURESHKUMAR K,49,Associate Professor,Male,Ph.D,268,True,11-06-2007,Regular
+2025,IR-I-C-16590,Innovation,50,Thamarai Selvan A,44,Assistant Professor,Male,M.E.,241,True,08-07-2019,Regular
+2025,IR-I-C-16590,Innovation,51,UMA,43,Assistant Professor,Female,M.E.,99,True,05-06-2015,Regular
+2025,IR-I-C-16590,Innovation,52,Vanitha M,45,Associate Professor,Female,Ph.D,272,True,01-06-2018,Regular
+2025,IR-I-C-16590,Innovation,53,Venkatesan G,36,Assistant Professor,Male,Ph.D,130,True,04-01-2021,Regular
+2025,IR-I-C-16590,Innovation,54,VIJAYA RAJAN V,34,Assistant Professor,Male,M.E.,146,True,10-07-2013,Regular
+2025,IR-I-C-16590,Innovation,55,VINOTH KUMAR E,44,Assistant Professor,Male,M.Tech,145,True,05-06-2023,Regular
+2025,IR-I-C-16590,Innovation,56,YAMINI ROJA S,33,Assistant Professor,Female,M.E.,91,True,09-01-2023,Regular
+2025,IR-I-C-16590,Innovation,57,AKILA P MOHAN,31,Assistant Professor,Female,M.E.,101,True,14-06-2017,Regular
+2025,IR-I-C-16590,Innovation,58,ANANDAN V,45,Associate Professor,Male,Ph.D,300,True,26-08-2009,Regular
+2025,IR-I-C-16590,Innovation,59,ANNA PALAGAN C,44,Professor,Male,Ph.D,204,True,06-03-2024,Regular
+2025,IR-I-C-16590,Innovation,60,ARCHANA T,39,Assistant Professor,Female,M.E.,190,True,14-12-2011,Regular
+2025,IR-I-C-16590,Innovation,61,Arumugam T,44,Assistant Professor,Male,M.E.,218,True,18-01-2021,Regular
+2025,IR-I-C-16590,Innovation,62,ASWINI J,44,Professor,Female,Ph.D,178,True,11-07-2022,Regular
+2025,IR-I-C-16590,Innovation,63,Balachandran S,43,Assistant Professor,Male,M.Tech,174,True,13-09-2021,Regular
+2025,IR-I-C-16590,Innovation,64,BHAVADHARANI V,25,Assistant Professor,Female,M.E.,23,True,06-09-2022,Regular
+2025,IR-I-C-16590,Innovation,65,Chitra N,43,Assistant Professor,Female,M.Tech,79,True,02-03-2022,Regular
+2025,IR-I-C-16590,Innovation,66,DHANANCHEZIYAN,36,Assistant Professor,Male,M.E.,96,True,24-02-2016,Regular
+2025,IR-I-C-16590,Innovation,67,DOLLI H,49,Associate Professor,Male,Ph.D,242,True,01-09-2022,Regular
+2025,IR-I-C-16590,Innovation,68,Felix Prabhu F,36,Assistant Professor,Male,M.E.,121,True,16-06-2017,Regular
+2025,IR-I-C-16590,Innovation,69,GANGA KISHORE,27,Assistant Professor,Male,M.Tech,23,False,17-10-2022,Regular
+2025,IR-I-C-16590,Innovation,70,GOPINATH A,32,Assistant Professor,Male,M.E.,123,True,26-11-2021,Regular
+2025,IR-I-C-16590,Innovation,71,HEMADHARSANA,39,Assistant Professor,Female,M.E.,12,True,19-07-2023,Regular
+2025,IR-I-C-16590,Innovation,72,IMMACULATE JOY,37,Assistant Professor,Female,M.E.,120,True,28-10-2022,Regular
+2025,IR-I-C-16590,Innovation,73,JANAKI AAMAL P,39,Assistant Professor,Female,M.E.,48,True,01-11-2023,Regular
+2025,IR-I-C-16590,Innovation,74,Jenifa Latha C,57,Professor,Female,Ph.D,387,True,04-01-2021,Regular
+2025,IR-I-C-16590,Innovation,75,JOSEPH SATISH V,40,Assistant Professor,Male,Ph.D,24,True,15-06-2022,Regular
+2025,IR-I-C-16590,Innovation,76,KALAIVANI C T,40,Assistant Professor,Female,Ph.D,229,True,14-06-2010,Regular
+2025,IR-I-C-16590,Innovation,77,KARPAGA PRIYA R,33,Assistant Professor,Female,Ph.D,102,True,17-08-2022,Regular
+2025,IR-I-C-16590,Innovation,78,KEERTHIGA G,40,Associate Professor,Female,M.Tech,204,True,06-09-2006,Regular
+2025,IR-I-C-16590,Innovation,79,Kumar A,65,Professor,Male,Ph.D,431,True,20-08-2018,Regular
+2025,IR-I-C-16590,Innovation,80,LAKSHMI THARA R,39,Assistant Professor,Female,Ph.D,36,False,26-06-2023,Regular
+2025,IR-I-C-16590,Innovation,81,MADHAN KUMAR A,39,Assistant Professor,Male,Ph.D,192,True,16-03-2022,Regular
+2025,IR-I-C-16590,Innovation,82,MALATHI K,42,Assistant Professor,Female,Ph.D,120,True,20-06-2022,Regular
+2025,IR-I-C-16590,Innovation,83,MARY ADLINE,35,Assistant Professor,Female,Ph.D,72,True,13-06-2022,Regular
+2025,IR-I-C-16590,Innovation,84,MICHAEL MAHESH,37,Associate Professor,Male,Ph.D,144,True,27-12-2023,Regular
+2025,IR-I-C-16590,Innovation,85,Muthu Pandian P,38,Assistant Professor,Male,Ph.D,62,True,13-11-2021,Regular
+2025,IR-I-C-16590,Innovation,86,Narendran K,43,Assistant Professor,Male,Ph.D,167,True,02-08-2017,Regular
+2025,IR-I-C-16590,Innovation,87,OBED OTTO C,45,Associate Professor,Male,M.E.,262,True,13-06-2005,Regular
+2025,IR-I-C-16590,Innovation,88,Panimalar S P,34,Assistant Professor,Female,M.E.,86,True,16-08-2021,Regular
+2025,IR-I-C-16590,Innovation,89,PONPRASANNA T,31,Assistant Professor,Male,M.E.,33,True,28-12-2020,Regular
+2025,IR-I-C-16590,Innovation,90,PRAVEEN KUMAR,34,Assistant Professor,Male,M.E.,57,True,01-06-2021,Regular
+2025,IR-I-C-16590,Innovation,91,R SUGUNA DEVI,44,Assistant Professor,Female,M.E.,163,True,14-03-2024,Regular
+2025,IR-I-C-16590,Innovation,92,RAJARAMAN R,58,Professor,Male,Ph.D,286,True,16-08-2022,Regular
+2025,IR-I-C-16590,Innovation,93,RAMACHANDRAN,35,Assistant Professor,Male,M.E.,12,True,26-04-2023,Regular
+2025,IR-I-C-16590,Innovation,94,RAVI MOHAN R,58,Assistant Professor,Male,Ph.D,168,True,22-08-2022,Regular
+2025,IR-I-C-16590,Innovation,95,Rohini M,30,Assistant Professor,Female,M.E.,84,True,24-07-2015,Regular
+2025,IR-I-C-16590,Innovation,96,SANGEETHA,33,Assistant Professor,Female,M.E.,6,True,10-02-2023,Regular
+2025,IR-I-C-16590,Innovation,97,SARAVANAN T,43,Assistant Professor,Male,M.E.,192,True,01-08-2023,Regular
+2025,IR-I-C-16590,Innovation,98,SATYA GOPAL,42,Associate Professor,Male,Ph.D,78,True,29-01-2024,Regular
+2025,IR-I-C-16590,Innovation,99,Senthamil Arasu S,30,Assistant Professor,Male,M.E.,40,True,02-03-2022,Regular
+2025,IR-I-C-16590,Innovation,100,SHARMILA J,24,Assistant Professor,Female,M.E.,36,True,01-12-2023,Regular
+2025,IR-I-C-16590,Innovation,101,SINDHUJA R,35,Assistant Professor,Female,M.E.,7,True,23-01-2023,Regular
+2025,IR-I-C-16590,Innovation,102,SRAVYA P R,34,Assistant Professor,Female,Ph.D,24,True,01-02-2022,Regular
+2025,IR-I-C-16590,Innovation,103,SUBASHINI,36,Assistant Professor,Female,M.E.,88,True,24-02-2016,Regular
+2025,IR-I-C-16590,Innovation,104,Sundar Rajan P,31,Assistant Professor,Male,Ph.D,32,True,13-11-2021,Regular
+2025,IR-I-C-16590,Innovation,105,SWARNAMBIGA A,38,Associate Professor,Female,Ph.D,104,True,24-08-2022,Regular
+2025,IR-I-C-16590,Innovation,106,Thennarasu S,45,Assistant Professor,Male,Ph.D,144,True,02-07-2018,Regular
+2025,IR-I-C-16590,Innovation,107,UMA V,42,Assistant Professor,Male,M.E.,192,True,13-09-2023,Regular
+2025,IR-I-C-16590,Innovation,108,VARUN M,38,Assistant Professor,Male,M.E.,149,False,09-12-2020,Regular
+2025,IR-I-C-16590,Innovation,109,VIDHYA S,41,Assistant Professor,Female,M.E.,231,True,06-01-2011,Regular
+2025,IR-I-C-16590,Innovation,110,VIJAYANAND M,48,Professor,Male,Ph.D,292,True,04-12-2017,Regular
+2025,IR-I-C-16590,Innovation,111,VINOTHKUMAR P,36,Assistant Professor,Male,Ph.D,92,True,25-06-2018,Regular
+2025,IR-I-C-16590,Innovation,112,Yogeswari S,29,Assistant Professor,Female,M.E.,40,True,22-03-2021,Regular
+2025,IR-I-C-16590,Innovation,113,A SARAVANAN,42,Assistant Professor,Male,Ph.D,180,True,01-06-2017,Regular
+2025,IR-I-C-16590,Innovation,114,AMIT KUMAR,39,Assistant Professor,Male,Ph.D,160,False,15-11-2021,Regular
+2025,IR-I-C-16590,Innovation,115,Anitha Julian,56,Professor,Female,Ph.D,289,True,08-07-2019,Regular
+2025,IR-I-C-16590,Innovation,116,ANUSHA RANI V,32,Assistant Professor,Female,Ph.D,144,True,17-03-2023,Regular
+2025,IR-I-C-16590,Innovation,117,Arokia Nerling,33,Assistant Professor,Female,M.E.,140,True,07-12-2020,Regular
+2025,IR-I-C-16590,Innovation,118,Arun kumar S,30,Assistant Professor,Male,M.E.,90,True,19-01-2021,Regular
+2025,IR-I-C-16590,Innovation,119,AYISHA BEGAM K,41,Assistant Professor,Female,Ph.D,168,False,21-06-2017,Regular
+2025,IR-I-C-16590,Innovation,120,BALAJI R,35,Assistant Professor,Male,M.E.,72,True,02-03-2022,Regular
+2025,IR-I-C-16590,Innovation,121,C M VELU,64,Professor,Male,Ph.D,444,True,14-03-2024,Regular
+2025,IR-I-C-16590,Innovation,122,DEEPA M,38,Assistant Professor,Female,Ph.D,56,True,05-05-2023,Regular
+2025,IR-I-C-16590,Innovation,123,DHIVYA,36,Assistant Professor,Female,M.E.,17,True,03-03-2023,Regular
+2025,IR-I-C-16590,Innovation,124,Elakkiya A,30,Assistant Professor,Male,M.E.,34,True,13-09-2021,Regular
+2025,IR-I-C-16590,Innovation,125,FREEDA,50,Associate Professor,Female,Ph.D,264,True,22-08-2022,Regular
+2025,IR-I-C-16590,Innovation,126,GAUTHAMAN B,42,Assistant Professor,Male,M.E.,24,True,06-07-2022,Regular
+2025,IR-I-C-16590,Innovation,127,GOWRI GANESH N,53,Associate Professor,Male,Ph.D,300,True,01-08-2022,Regular
+2025,IR-I-C-16590,Innovation,128,Hemalatha R,34,Assistant Professor,Male,M.E.,120,True,22-11-2021,Regular
+2025,IR-I-C-16590,Innovation,129,Imran Hussain S,33,Assistant Professor,Male,Ph.D,91,True,20-01-2022,Regular
+2025,IR-I-C-16590,Innovation,130,JASHIKA K M,26,Assistant Professor,Female,M.E.,23,True,19-09-2022,Regular
+2025,IR-I-C-16590,Innovation,131,Jerome Nithin G,31,Assistant Professor,Male,M.E.,85,True,28-06-2017,Regular
+2025,IR-I-C-16590,Innovation,132,Joyal Isac S,36,Assistant Professor,Male,M.E.,160,True,03-06-2013,Regular
+2025,IR-I-C-16590,Innovation,133,KALPANA S,49,Professor,Female,Ph.D,264,True,17-08-2022,Regular
+2025,IR-I-C-16590,Innovation,134,KARTHIGA M,32,Assistant Professor,Female,M.E.,12,True,06-03-2023,Regular
+2025,IR-I-C-16590,Innovation,135,KIRUTHIKA S S,42,Assistant Professor,Female,M.E.,108,True,19-07-2023,Regular
+2025,IR-I-C-16590,Innovation,136,KUMARAN V,40,Assistant Professor,Male,M.E.,156,True,18-12-2023,Regular
+2025,IR-I-C-16590,Innovation,137,LAVANYA G,44,Assistant Professor,Female,Ph.D,156,True,15-12-2021,Regular
+2025,IR-I-C-16590,Innovation,138,MADHUMITHA N,36,Assistant Professor,Female,M.Tech,38,True,04-05-2023,Regular
+2025,IR-I-C-16590,Innovation,139,MANI S V J,50,Assistant Professor,Male,Ph.D,264,True,27-11-2022,Regular
+2025,IR-I-C-16590,Innovation,140,MAUSAM,36,Assistant Professor,Male,Ph.D,23,False,03-08-2022,Regular
+2025,IR-I-C-16590,Innovation,141,MOHANA SUNDARI,36,Assistant Professor,Female,Ph.D,144,False,12-12-2022,Regular
+2025,IR-I-C-16590,Innovation,142,NAGAPPAN G,43,Professor,Male,Ph.D,268,True,04-07-2009,Regular
+2025,IR-I-C-16590,Innovation,143,NAVANEETHA,42,Assistant Professor,Female,Ph.D,212,True,01-03-2022,Regular
+2025,IR-I-C-16590,Innovation,144,P MUTHUVEL,37,Associate Professor,Male,Ph.D,120,True,04-03-2024,Regular
+2025,IR-I-C-16590,Innovation,145,ABIRAMI A,36,Assistant Professor,Female,M.E.,48,True,11-09-2023,Regular
+2025,IR-I-C-16590,Innovation,146,Anand S,47,Assistant Professor,Male,Ph.D,168,True,18-06-2018,Regular
+2025,IR-I-C-16590,Innovation,147,Ann C V Medona,34,Assistant Professor,Female,M.E.,100,True,06-07-2020,Regular
+2025,IR-I-C-16590,Innovation,148,Archana S H,31,Assistant Professor,Female,M.E.,90,True,18-11-2019,Regular
+2025,IR-I-C-16590,Innovation,149,Arumparithy G L,37,Assistant Professor,Male,M.S,145,True,02-06-2014,Regular
+2025,IR-I-C-16590,Innovation,150,Aswin A,30,Assistant Professor,Male,M.E.,73,True,25-06-2018,Regular
+2025,IR-I-C-16590,Innovation,151,Bala Subramanian A,39,Assistant Professor,Male,Ph.D,127,True,02-01-2019,Regular
+2025,IR-I-C-16590,Innovation,152,BAVATHARANI C,28,Assistant Professor,Female,Ph.D,24,True,19-01-2022,Regular
+2025,IR-I-C-16590,Innovation,153,CHANTHIRASEKAR,56,Professor,Male,Ph.D,216,True,27-07-2022,Regular
+2025,IR-I-C-16590,Innovation,154,DHANALAKSHMI J,37,Assistant Professor,Female,M.E.,144,True,02-01-2024,Regular
+2025,IR-I-C-16590,Innovation,155,DIVYA S,33,Assistant Professor,Female,M.Tech,12,True,12-03-2023,Regular
+2025,IR-I-C-16590,Innovation,156,EZHIL,36,Assistant Professor,Male,M.Tech,180,True,03-12-2019,Regular
+2025,IR-I-C-16590,Innovation,157,GANDHIMATHINAT,38,Assistant Professor,Male,M.Tech,156,True,06-06-2022,Regular
+2025,IR-I-C-16590,Innovation,158,Gopalarama,46,Professor,Male,Ph.D,269,True,09-07-2018,Regular
+2025,IR-I-C-16590,Innovation,159,HELEN R,48,Assistant Professor,Female,Ph.D,276,True,02-05-2022,Regular
+2025,IR-I-C-16590,Innovation,160,Ilavarasan S,42,Assistant Professor,Male,M.E.,203,True,11-08-2011,Regular
+2025,IR-I-C-16590,Innovation,161,JAINAB ZAREENA,37,Assistant Professor,Female,Ph.D,72,True,03-11-2022,Regular
+2025,IR-I-C-16590,Innovation,162,Jeffin Gracewell J,35,Assistant Professor,Male,Ph.D,141,True,21-01-2021,Regular
+2025,IR-I-C-16590,Innovation,163,John De Britto C,32,Assistant Professor,Male,M.E.,99,True,11-01-2022,Regular
+2025,IR-I-C-16590,Innovation,164,Kalaivani A,36,Assistant Professor,Female,Ph.D,111,True,21-06-2017,Regular
+2025,IR-I-C-16590,Innovation,165,Kannan R,38,Assistant Professor,Male,M.E.,166,True,03-01-2022,Regular
+2025,IR-I-C-16590,Innovation,166,KAVITHA S,47,Assistant Professor,Female,M.E.,294,True,02-07-2010,Regular
+2025,IR-I-C-16590,Innovation,167,KRITHIKA M,26,Assistant Professor,Female,M.E.,10,True,12-06-2024,Regular
+2025,IR-I-C-16590,Innovation,168,LAKSHMANAN A R,77,Professor,Male,Ph.D,475,True,12-12-2007,Regular
+2025,IR-I-C-16590,Innovation,169,M PRIYA,51,Professor,Female,Ph.D,301,True,01-06-2012,Regular
+2025,IR-I-C-16590,Innovation,170,MAHENDRAN K,36,Assistant Professor,Male,M.E.,132,True,21-03-2022,Regular
+2025,IR-I-C-16590,Innovation,171,Manonmani A,41,Assistant Professor,Female,Ph.D,186,True,01-06-2012,Regular
+2025,IR-I-C-16590,Innovation,172,Mettilda,54,Associate Professor,Female,Ph.D,364,True,04-12-2017,Regular
+2025,IR-I-C-16590,Innovation,173,Moorthi M,44,Professor,Male,Ph.D,267,True,17-12-2018,Regular
+2025,IR-I-C-16590,Innovation,174,Nandhini R,27,Assistant Professor,Female,M.E.,32,True,13-11-2021,Regular
+2025,IR-I-C-16590,Innovation,175,NIVETHITHA M,28,Assistant Professor,Female,M.E.,38,True,13-03-2023,Regular
+2025,IR-I-C-16590,Innovation,176,PANDIAN G,36,Assistant Professor,Male,Ph.D,126,True,12-02-2024,Regular
+2025,IR-I-C-16590,Innovation,177,PONMATHI JEBA,36,Assistant Professor,Female,M.E.,12,True,01-12-2023,Regular
+2025,IR-I-C-16590,Innovation,178,Prabakaran M,34,Assistant Professor,Male,M.E.,79,True,05-12-2017,Regular
+2025,IR-I-C-16590,Innovation,179,PREMILA S C,47,Assistant Professor,Female,Ph.D,204,True,10-03-2022,Regular
+2025,IR-I-C-16590,Innovation,180,RAJA RAJESWARI,44,Professor,Female,Ph.D,274,True,03-06-2013,Regular
+2025,IR-I-C-16590,Innovation,181,Raji Pandurangan,46,Assistant Professor,Female,Ph.D,228,True,18-07-2019,Regular
+2025,IR-I-C-16590,Innovation,182,Ramyadevi R,44,Associate Professor,Female,Ph.D,274,True,09-08-2021,Regular
+2025,IR-I-C-16590,Innovation,183,RENJITH,33,Assistant Professor,Male,Ph.D,36,True,21-03-2022,Regular
+2025,IR-I-C-16590,Innovation,184,SAKTHI SWARRUP,38,Professor,Female,Ph.D,66,True,18-04-2024,Regular
+2025,IR-I-C-16590,Innovation,185,SARANYA K,34,Assistant Professor,Female,M.E.,18,True,24-01-2024,Regular
+2025,IR-I-C-16590,Innovation,186,SATHISH BABU,39,Assistant Professor,Male,Ph.D,132,True,22-08-2022,Regular
+2025,IR-I-C-16590,Innovation,187,Selvam R,52,Assistant Professor,Male,Ph.D,357,True,22-07-2019,Regular
+2025,IR-I-C-16590,Innovation,188,Shanmathi M,30,Assistant Professor,Female,M.E.,90,True,07-01-2020,Regular
+2025,IR-I-C-16590,Innovation,189,Silambarasan M,39,Assistant Professor,Male,Ph.D,177,True,13-11-2021,Regular
+2025,IR-I-C-16590,Innovation,190,Sivanandam S,44,Professor,Female,Ph.D,219,True,18-01-2021,Regular
+2025,IR-I-C-16590,Innovation,191,Srinivasan C,40,Assistant Professor,Male,M.E.,199,True,01-12-2021,Regular
+2025,IR-I-C-16590,Innovation,192,SUBHASHINI R,41,Assistant Professor,Female,Ph.D,36,True,26-08-2022,Regular
+2025,IR-I-C-16590,Innovation,193,Suresh T D,38,Assistant Professor,Male,M.E.,196,True,04-07-2013,Regular
+2025,IR-I-C-16590,Innovation,194,Tenali Ravikumar,43,Assistant Professor,Male,M.Tech,229,True,06-07-2020,Regular
+2025,IR-I-C-16590,Innovation,195,ULAGAMMAI M,42,Associate Professor,Female,Ph.D,241,True,14-06-2007,Regular
+2025,IR-I-C-16590,Innovation,196,VANITHA A,51,Associate Professor,Female,Ph.D,156,True,31-05-2022,Regular
+2025,IR-I-C-16590,Innovation,197,VENITH VIJAY M,36,Assistant Professor,Male,Ph.D,168,True,06-10-2021,Regular
+2025,IR-I-C-16590,Innovation,199,VINODHINI N,31,Assistant Professor,Female,Ph.D,10,True,11-09-2023,Regular
+2025,IR-I-C-16590,Innovation,200,Yamini B,42,Assistant Professor,Female,Ph.D,184,True,16-03-2022,Regular
+2025,IR-I-C-16590,Innovation,201,POTNURI ANITHA,25,Assistant Professor,Female,M.Tech,24,True,01-03-2024,Regular
+2025,IR-I-C-16590,Innovation,202,PRAVEENA T,27,Assistant Professor,Female,Ph.D,10,True,14-09-2023,Regular
+2025,IR-I-C-16590,Innovation,203,RAJ KUMAR P,62,Professor,Male,Ph.D,432,True,03-08-2002,Regular
+2025,IR-I-C-16590,Innovation,204,RAJESH C,34,Associate Professor,Male,M.E.,96,True,29-01-2024,Regular
+2025,IR-I-C-16590,Innovation,205,RAMKI C,44,Assistant Professor,Male,Ph.D,23,True,29-08-2022,Regular
+2025,IR-I-C-16590,Innovation,206,REKHA K S,37,Assistant Professor,Female,M.E.,96,True,01-07-2022,Regular
+2025,IR-I-C-16590,Innovation,207,SAKTHI K,41,Assistant Professor,Female,M.E.,241,True,13-07-2016,Regular
+2025,IR-I-C-16590,Innovation,208,Saranya A,36,Assistant Professor,Female,Ph.D,47,True,07-02-2022,Regular
+2025,IR-I-C-16590,Innovation,209,SASIKUMAR S,45,Professor,Male,Ph.D,295,True,23-11-2009,Regular
+2025,IR-I-C-16590,Innovation,210,SELVAKUMAR R,42,Associate Professor,Male,Ph.D,192,True,17-08-2022,Regular
+2025,IR-I-C-16590,Innovation,211,SHAGUL A S,28,Assistant Professor,Female,M.E.,10,True,28-08-2023,Regular
+2025,IR-I-C-16590,Innovation,212,SHRUTHI S NAIR,35,Assistant Professor,Female,M.E.,57,True,02-08-2023,Regular
+2025,IR-I-C-16590,Innovation,213,SIVAN V,48,Assistant Professor,Male,Ph.D,222,True,14-11-2022,Regular
+2025,IR-I-C-16590,Innovation,214,SRIGITHA S NATH,53,Professor,Female,Ph.D,360,True,03-06-2011,Regular
+2025,IR-I-C-16590,Innovation,215,SUBASHREE V,36,Assistant Professor,Female,M.E.,112,True,01-09-2022,Regular
+2025,IR-I-C-16590,Innovation,216,SURESH S,44,Associate Professor,Male,Ph.D,264,True,28-08-2017,Regular
+2025,IR-I-C-16590,Innovation,217,TAMIZHARASI R,43,Assistant Professor,Male,Ph.D,42,True,16-08-2022,Regular
+2025,IR-I-C-16590,Innovation,218,THIRUMAVALAVAN,52,Professor,Male,Ph.D,312,True,29-08-2022,Regular
+2025,IR-I-C-16590,Innovation,219,Valvil Ori C,38,Assistant Professor,Male,M.E.,103,True,13-12-2021,Regular
+2025,IR-I-C-16590,Innovation,220,VELMURUGAN V,36,Assistant Professor,Male,M.E.,171,True,20-06-2011,Regular
+2025,IR-I-C-16590,Innovation,221,VIGNESHWARI N,31,Assistant Professor,Female,M.E.,62,True,04-05-2022,Regular
+2025,IR-I-C-16590,Innovation,222,Vinod Kumar R,57,Associate Professor,Male,Ph.D,336,True,04-01-2021,Regular
+2025,IR-I-C-16590,Innovation,223,VIVEKANAND PA,44,Professor,Male,Ph.D,253,True,15-12-2017,Regular
+2025,IR-I-C-16590,Innovation,224,ABINAYA N G,31,Assistant Professor,Female,M.E.,84,True,16-06-2017,Regular
+2025,IR-I-C-16590,Innovation,225,Anancia Grace A,31,Assistant Professor,Female,Ph.D,39,True,16-04-2021,Regular
+2025,IR-I-C-16590,Innovation,226,ANIVEL,44,Assistant Professor,Male,Ph.D,252,True,20-07-2020,Regular
+2025,IR-I-C-16590,Innovation,227,ARASA KUMAR R,38,Assistant Professor,Male,M.E.,96,True,31-01-2024,Regular
+2025,IR-I-C-16590,Innovation,228,ARUL EDWIN RAJ,43,Assistant Professor,Male,Ph.D,192,True,01-09-2022,Regular
+2025,IR-I-C-16590,Innovation,229,Arunadevi K,67,Professor,Female,Ph.D,276,True,01-03-2019,Regular
+2025,IR-I-C-16590,Innovation,230,BABY SUGNATHI A,40,Associate Professor,Female,Ph.D,132,True,27-06-2017,Regular
+2025,IR-I-C-16590,Innovation,231,Balasundaram V,35,Assistant Professor,Male,M.E.,141,True,26-04-2021,Regular
+2025,IR-I-C-16590,Innovation,232,Catherine Priya S,28,Assistant Professor,Female,M.E.,30,True,03-01-2022,Regular
+2025,IR-I-C-16590,Innovation,233,DEEPAK,50,Assistant Professor,Male,Ph.D,276,True,05-09-2022,Regular
+2025,IR-I-C-16590,Innovation,234,DINESH KUMAR K,35,Assistant Professor,Male,M.E.,150,True,01-04-2022,Regular
+2025,IR-I-C-16590,Innovation,235,EUNICE JEMIMA,51,Assistant Professor,Female,Ph.D,204,True,26-09-2022,Regular
+2025,IR-I-C-16590,Innovation,236,Ganapathi D,35,Assistant Professor,Male,Ph.D,95,True,04-02-2019,Regular
+2025,IR-I-C-16590,Innovation,237,GIRUBA M,33,Assistant Professor,Female,Ph.D,82,True,05-09-2022,Regular
+2025,IR-I-C-16590,Innovation,238,HARI U,54,Assistant Professor,Male,M.E.,300,True,10-01-2024,Regular
+2025,IR-I-C-16590,Innovation,239,Hemamalini A,42,Assistant Professor,Female,M.Tech,217,True,23-06-2008,Regular
+2025,IR-I-C-16590,Innovation,240,INDUMATHY T,47,Assistant Professor,Female,M.E.,204,True,07-09-2022,Regular
+2025,IR-I-C-16590,Innovation,241,JAYANTHI G,54,Associate Professor,Female,Ph.D,222,True,29-08-2022,Regular
+2025,IR-I-C-16590,Innovation,242,JIM ELLIOT C,36,Assistant Professor,Male,M.Tech,108,True,13-06-2022,Regular
+2025,IR-I-C-16590,Innovation,243,JYOTHI P,40,Associate Professor,Female,Ph.D,192,True,26-10-2022,Regular
+2025,IR-I-C-16590,Innovation,244,Kanagarathinam L,42,Associate Professor,Female,Ph.D,152,True,24-06-2019,Regular
+2025,IR-I-C-16590,Innovation,245,KARTHIKA PRIYA,34,Assistant Professor,Female,M.E.,36,True,01-09-2023,Regular
+2025,IR-I-C-16590,Innovation,246,KOLLI HIMANTHA,33,Assistant Professor,Male,M.Tech,80,True,14-02-2023,Regular
+2025,IR-I-C-16590,Innovation,247,KUMARI AMBE,30,Assistant Professor,Female,Ph.D,12,False,20-03-2023,Regular
+2025,IR-I-C-16590,Innovation,248,LOGANATHAN V,48,Assistant Professor,Male,Ph.D,299,True,15-06-2009,Regular
+2025,IR-I-C-16590,Innovation,249,Mahalakshmi M,33,Assistant Professor,Female,M.E.,61,True,11-02-2022,Regular
+2025,IR-I-C-16590,Innovation,250,MANIMARAN G,52,Professor,Male,Ph.D,346,True,04-09-2008,Regular
+2025,IR-I-C-16590,Innovation,251,MEENATCHI K V,35,Assistant Professor,Female,M.E.,12,True,12-05-2023,Regular
+2025,IR-I-C-16590,Innovation,252,MONICA D,26,Assistant Professor,Female,M.E.,6,True,15-02-2023,Regular
+2025,IR-I-C-16590,Innovation,253,NAJEEM DHEEN A,36,Assistant Professor,Male,M.E.,74,True,24-05-2023,Regular
+2025,IR-I-C-16590,Innovation,254,NICI MARX V S,27,Assistant Professor,Female,M.E.,5,True,06-03-2024,Regular
+2025,IR-I-C-16590,Innovation,255,PADMA S,33,Assistant Professor,Female,Ph.D,120,True,22-12-2014,Regular
+2025,IR-I-C-16590,Innovation,256,Pavithrakannan A,30,Assistant Professor,Male,M.E.,107,True,06-08-2015,Regular
+2025,IR-I-C-16590,Innovation,257,PRAKASH R,43,Assistant Professor,Male,M.E.,234,True,22-06-2015,Regular
+2025,IR-I-C-16590,Innovation,258,Pugazhvadivu K S,38,Assistant Professor,Female,Ph.D,192,True,03-07-2018,Regular
+2025,IR-I-C-16590,Innovation,259,RAJALINGAM S,39,Associate Professor,Male,Ph.D,156,True,01-09-2022,Regular
+2025,IR-I-C-16590,Innovation,260,RAMACHANDRAN,39,Associate Professor,Male,Ph.D,150,True,25-09-2023,Regular
+2025,IR-I-C-16590,Innovation,261,RASAN U,31,Assistant Professor,Male,M.E.,12,True,01-06-2023,Regular
+2025,IR-I-C-16590,Innovation,262,RESMI R NAIR,39,Associate Professor,Female,Ph.D,132,True,01-03-2022,Regular
+2025,IR-I-C-16590,Innovation,263,SANGEETHA P,44,Assistant Professor,Female,Ph.D,144,True,22-08-2022,Regular
+2025,IR-I-C-16590,Innovation,264,SARAVANAN N,43,Assistant Professor,Male,M.E.,120,True,03-02-2023,Regular
+2025,IR-I-C-16590,Innovation,265,SATHYA U,35,Assistant Professor,Female,M.E.,12,True,28-07-2023,Regular
+2025,IR-I-C-16590,Innovation,266,SELVI M,53,Professor,Female,Ph.D,333,True,04-06-2012,Regular
+2025,IR-I-C-16590,Innovation,267,SHANTHI S,41,Assistant Professor,Female,Ph.D,72,True,09-09-2022,Regular
+2025,IR-I-C-16590,Innovation,268,SINDHU G,28,Assistant Professor,Female,M.E.,6,True,10-02-2023,Regular
+2025,IR-I-C-16590,Innovation,269,SOWMIYA MANOJ,38,Assistant Professor,Female,M.E.,144,True,09-09-2022,Regular
+2025,IR-I-C-16590,Innovation,270,SRIPRIYA,49,Associate Professor,Female,Ph.D,180,True,04-01-2022,Regular
+2025,IR-I-C-16590,Innovation,271,Sujatha E,49,Professor,Female,Ph.D,300,True,01-02-2021,Regular
+2025,IR-I-C-16590,Innovation,272,Surya S,36,Assistant Professor,Male,M.E.,144,True,01-12-2021,Regular
+2025,IR-I-C-16590,Innovation,273,THEERKA,39,Assistant Professor,Female,M.E.,156,True,17-08-2022,Regular
+2025,IR-I-C-16590,Innovation,274,Uma Rani V,43,Assistant Professor,Female,Ph.D,248,True,01-06-2021,Regular
+2025,IR-I-C-16590,Innovation,275,VARALAKSHMI J,40,Assistant Professor,Female,M.E.,156,True,01-07-2022,Regular
+2025,IR-I-C-16590,Innovation,276,VENKATESAN V,34,Assistant Professor,Male,M.E.,91,True,01-02-2024,Regular
+2025,IR-I-C-16590,Innovation,277,VIJAYAN P,49,Assistant Professor,Male,Ph.D,256,True,20-10-2022,Regular
+2025,IR-I-C-16590,Innovation,278,VINOTHINI T,29,Assistant Professor,Female,M.E.,42,True,27-11-2020,Regular
+2025,IR-I-C-16590,Innovation,279,YESUBAI,41,Professor,Female,Ph.D,180,True,04-01-2024,Regular
+2025,IR-I-C-16590,Innovation,280,ABARNA P S,30,Assistant Professor,Female,M.E.,12,True,04-05-2024,Regular
+2025,IR-I-C-16590,Innovation,281,AMSAYAZHI P,32,Assistant Professor,Female,Ph.D,24,True,10-03-2022,Regular
+2025,IR-I-C-16590,Innovation,282,ANITHA L,52,Assistant Professor,Female,Ph.D,168,True,30-11-2021,Regular
+2025,IR-I-C-16590,Innovation,283,Aparna T K,31,Assistant Professor,Female,Ph.D,50,True,03-05-2021,Regular
+2025,IR-I-C-16590,Innovation,284,ARUL DALTON G,51,Associate Professor,Male,Ph.D,216,True,27-09-2023,Regular
+2025,IR-I-C-16590,Innovation,285,ARUN PRADEEP,37,Associate Professor,Male,Ph.D,180,True,17-10-2022,Regular
+2025,IR-I-C-16590,Innovation,287,BALASINGH S,40,Assistant Professor,Male,Ph.D,222,True,20-10-2022,Regular
+2025,IR-I-C-16590,Innovation,288,C SHEEBA JOICE,47,Professor,Female,Ph.D,300,True,04-06-2012,Regular
+2025,IR-I-C-16590,Innovation,289,Deepa T,32,Assistant Professor,Female,M.E.,64,True,11-03-2022,Regular
+2025,IR-I-C-16590,Innovation,290,DINESH BABU G L,33,Assistant Professor,Male,M.E.,72,True,01-08-2023,Regular
+2025,IR-I-C-16590,Innovation,291,ELANGO J,60,Assistant Professor,Male,Ph.D,22,True,11-08-2022,Regular
+2025,IR-I-C-16590,Innovation,292,G R RAM PRASATH,36,Assistant Professor,Male,M.E.,111,False,22-06-2015,Regular
+2025,IR-I-C-16590,Innovation,293,GAYATHRI,42,Assistant Professor,Female,Ph.D,225,True,23-07-2014,Regular
+2025,IR-I-C-16590,Innovation,294,Gurumoorthy G,42,Assistant Professor,Male,M.E.,242,True,27-08-2021,Regular
+2025,IR-I-C-16590,Innovation,295,HEMALATHA V,41,Assistant Professor,Female,Ph.D,212,True,19-06-2009,Regular
+2025,IR-I-C-16590,Innovation,296,Indhumathi K,40,Associate Professor,Female,Ph.D,151,True,21-01-2019,Regular
+2025,IR-I-C-16590,Innovation,297,JAYA T,50,Professor,Female,Ph.D,276,True,27-07-2022,Regular
+2025,IR-I-C-16590,Innovation,298,JESILA MOL J,40,Assistant Professor,Female,M.Tech,132,True,11-09-2023,Regular
+2025,IR-I-C-16590,Innovation,299,JUDITH REYA M,33,Assistant Professor,Female,M.Tech,21,True,21-06-2023,Regular
+2025,IR-I-C-16590,Innovation,300,KANAGAMALLIGA,37,Associate Professor,Female,Ph.D,118,True,01-09-2022,Regular
+2025,IR-I-C-16590,Innovation,301,Karthiga V,31,Assistant Professor,Female,M.E.,44,True,04-03-2022,Regular
+2025,IR-I-C-16590,Innovation,302,KISHORE MOHAN,51,Associate Professor,Male,Ph.D,276,True,05-04-2022,Regular
+2025,IR-I-C-16590,Innovation,303,KUMARAVELU R,49,Associate Professor,Male,Ph.D,162,True,28-02-2022,Regular
+2025,IR-I-C-16590,Innovation,304,Lavanya G,44,Assistant Professor,Female,M.E.,156,True,15-12-2021,Regular
+2025,IR-I-C-16590,Innovation,305,MAGITHA NIRMALA,44,Assistant Professor,Female,M.E.,114,True,26-04-2022,Regular
+2025,IR-I-C-16590,Innovation,306,MANICKAM S,31,Assistant Professor,Male,M.E.,72,True,16-02-2024,Regular
+2025,IR-I-C-16590,Innovation,307,Max Savio F,38,Assistant Professor,Male,M.E.,170,True,03-09-2021,Regular
+2025,IR-I-C-16590,Innovation,308,MOHANRAJ D,51,Assistant Professor,Male,Ph.D,156,True,04-10-2021,Regular
+2025,IR-I-C-16590,Innovation,309,NAGENDRAN K,43,Assistant Professor,Male,M.E.,181,True,22-06-2023,Regular
+2025,IR-I-C-16590,Innovation,310,Navaneethan S,36,Assistant Professor,Male,Ph.D,96,True,02-03-2022,Regular
+2025,IR-I-C-16590,Innovation,311,PADMA PRIYA K,36,Assistant Professor,Female,M.E.,157,True,01-06-2012,Regular
+2025,IR-I-C-16590,Innovation,312,PAVITHRA P,31,Assistant Professor,Female,Ph.D,24,True,08-03-2022,Regular
+2025,IR-I-C-16590,Innovation,313,AMARNATH P,40,Assistant Professor,Male,M.E.,204,True,06-06-2016,Regular
+2025,IR-I-C-16590,Innovation,314,Anishkumar J,43,Assistant Professor,Male,M.E.,235,True,29-12-2006,Regular
+2025,IR-I-C-16590,Innovation,315,Anne Dorathy A,48,Assistant Professor,Female,Ph.D,216,True,16-09-2020,Regular
+2025,IR-I-C-16590,Innovation,316,ARIVALGAN M,39,Assistant Professor,Male,M.E.,170,False,03-06-2013,Regular
+2025,IR-I-C-16590,Innovation,317,ARUN KUMAR K,34,Assistant Professor,Male,M.E.,144,True,03-06-2013,Regular
+2025,IR-I-C-16590,Innovation,318,AUGUSTIAN ISAAC,48,Assistant Professor,Female,Ph.D,276,True,31-10-2022,Regular
+2025,IR-I-C-16590,Innovation,319,BALAJI N,47,Associate Professor,Male,Ph.D,302,True,08-09-2008,Regular
+2025,IR-I-C-16590,Innovation,320,BHUVANESWARI G,45,Professor,Female,Ph.D,252,True,20-07-2022,Regular
+2025,IR-I-C-16590,Innovation,321,DEEPA A,43,Assistant Professor,Female,M.Tech,48,True,14-09-2023,Regular
+2025,IR-I-C-16590,Innovation,322,DHANDAPANI S,47,Professor,Male,Ph.D,304,True,29-05-2013,Regular
+2025,IR-I-C-16590,Innovation,323,DURAIPANDIAN N,56,Professor,Female,Ph.D,360,False,14-06-2021,Regular
+2025,IR-I-C-16590,Innovation,324,FRANCIS J,37,Assistant Professor,Male,M.E.,35,True,10-08-2022,Regular
+2025,IR-I-C-16590,Innovation,325,GANGADHARAN S,50,Associate Professor,Male,Ph.D,168,True,31-07-2020,Regular
+2025,IR-I-C-16590,Innovation,326,Gopinathan P,30,Assistant Professor,Male,M.E.,84,True,30-11-2020,Regular
+2025,IR-I-C-16590,Innovation,327,Hemalatha M,30,Assistant Professor,Female,M.Tech,34,True,15-09-2021,Regular
+2025,IR-I-C-16590,Innovation,328,IMMANUEL G,43,Assistant Professor,Male,Ph.D,240,True,08-08-2022,Regular
+2025,IR-I-C-16590,Innovation,329,JANAKI K,35,Assistant Professor,Female,Ph.D,48,True,24-11-2022,Regular
+2025,IR-I-C-16590,Innovation,330,Jennie Bharathi R,41,Assistant Professor,Female,Ph.D,132,True,07-12-2020,Regular
+2025,IR-I-C-16590,Innovation,331,JOY PRISCILLA J,47,Professor,Female,Ph.D,304,True,13-08-2001,Regular
+2025,IR-I-C-16590,Innovation,332,KALPANA M,44,Associate Professor,Female,M.E.,278,True,08-08-2011,Regular
+2025,IR-I-C-16590,Innovation,333,Karthi G,42,Assistant Professor,Male,Ph.D,210,True,28-06-2021,Regular
+2025,IR-I-C-16590,Innovation,334,KIRAN KUMAR J,31,Assistant Professor,Male,Ph.D,48,True,05-11-2022,Regular
+2025,IR-I-C-16590,Innovation,335,Kumaran S,36,Assistant Professor,Male,Ph.D,145,True,24-06-2019,Regular
+2025,IR-I-C-16590,Innovation,336,LATHA R,37,Assistant Professor,Female,Ph.D,60,True,30-08-2022,Regular
+2025,IR-I-C-16590,Innovation,337,MADHAN KUMAR,31,Assistant Professor,Male,M.E.,109,True,01-06-2016,Regular
+2025,IR-I-C-16590,Innovation,338,MAMATHA A,27,Assistant Professor,Female,M.E.,53,True,15-04-2019,Regular
+2025,IR-I-C-16590,Innovation,339,MATHANAVALLI S,30,Assistant Professor,Female,Ph.D,12,True,30-08-2023,Regular
+2025,IR-I-C-16590,Innovation,341,MUTHUKUMAR V,49,Professor,Male,Ph.D,310,True,06-09-2008,Regular
+2025,IR-I-C-16590,Innovation,342,NARESH G,37,Assistant Professor,Male,M.E.,187,True,17-01-2013,Regular
+2025,IR-I-C-16590,Innovation,343,OMANA J,35,Assistant Professor,Female,Ph.D,120,True,24-01-2024,Regular
+2025,IR-I-C-16590,Innovation,344,PARIVENTHAN K,45,Associate Professor,Male,Ph.D,250,True,24-08-2011,Regular
+2025,IR-I-C-16590,Innovation,345,POONGOTHAI U,36,Assistant Professor,Female,M.E.,36,True,01-06-2021,Regular
+2025,IR-I-C-16590,Innovation,346,PRAVEEN KUMAR,40,Professor,Male,Ph.D,236,True,23-08-2007,Regular
+2025,IR-I-C-16590,Innovation,347,PAVAI D,32,Assistant Professor,Female,M.E.,28,True,24-01-2024,Regular
+2025,IR-I-C-16590,Innovation,348,POONGULALI E,47,Assistant Professor,Female,M.E.,241,True,09-06-2023,Regular
+2025,IR-I-C-16590,Innovation,349,PRAVEEN M,39,Assistant Professor,Male,M.E.,179,True,02-07-2010,Regular
+2025,IR-I-C-16590,Innovation,350,Ragesh K T,37,Assistant Professor,Male,M.Tech,100,False,01-09-2020,Regular
+2025,IR-I-C-16590,Innovation,351,RAJENDRA,40,Assistant Professor,Male,Ph.D,108,True,01-03-2022,Regular
+2025,IR-I-C-16590,Innovation,352,RAMESHKUMAR M,44,Assistant Professor,Male,Ph.D,253,True,11-09-2013,Regular
+2025,IR-I-C-16590,Innovation,353,RAVINDHRAN M,43,Professor,Male,Ph.D,160,True,26-08-2021,Regular
+2025,IR-I-C-16590,Innovation,354,Rosemitha V,28,Assistant Professor,Female,M.E.,72,True,25-09-2017,Regular
+2025,IR-I-C-16590,Innovation,355,SANKAR P,31,Assistant Professor,Male,M.E.,120,True,28-08-2023,Regular
+2025,IR-I-C-16590,Innovation,356,Sasikala M,36,Assistant Professor,Female,Ph.D,39,True,15-04-2021,Regular
+2025,IR-I-C-16590,Innovation,357,SELLA KUMAR S,38,Assistant Professor,Male,M.E.,184,True,02-07-2010,Regular
+2025,IR-I-C-16590,Innovation,358,SENTHIL KUMAR R,49,Professor,Male,Ph.D,339,True,28-07-2003,Regular
+2025,IR-I-C-16590,Innovation,359,Shenbagaraman S,56,Assistant Professor,Male,M.Tech,412,True,17-06-2013,Regular
+2025,IR-I-C-16590,Innovation,360,SIVAKUMAR T,44,Assistant Professor,Male,Ph.D,144,True,29-08-2022,Regular
+2025,IR-I-C-16590,Innovation,361,Sridhar S,31,Assistant Professor,Male,M.E.,104,True,05-07-2018,Regular
+2025,IR-I-C-16590,Innovation,362,SUBASHINI T,43,Assistant Professor,Female,M.E.,53,True,15-03-2023,Regular
+2025,IR-I-C-16590,Innovation,363,SUNITHA DEVA,45,Assistant Professor,Female,Ph.D,213,True,24-09-2008,Regular
+2025,IR-I-C-16590,Innovation,364,TAJUDDIN A,68,Professor,Male,Ph.D,434,True,08-08-2022,Regular
+2025,IR-I-C-16590,Innovation,365,THIRUMALAI M,36,Assistant Professor,Male,M.E.,160,True,03-04-2017,Regular
+2025,IR-I-C-16590,Innovation,366,V GOMATHI,37,Assistant Professor,Female,M.E.,161,True,03-06-2013,Regular
+2025,IR-I-C-16590,Innovation,367,Velmurugan N,48,Assistant Professor,Male,M.E.,292,True,23-08-2007,Regular
+2025,IR-I-C-16590,Innovation,368,VIGNESH S,30,Assistant Professor,Male,Ph.D,24,True,27-07-2022,Regular
+2025,IR-I-C-16590,Innovation,369,Vinifa R,42,Assistant Professor,Female,Ph.D,203,True,10-08-2020,Regular
+2025,IR-I-C-16590,Innovation,370,VISHNU PRIYA K,29,Assistant Professor,Female,M.E.,48,True,03-10-2023,Regular
+2025,IR-I-C-16590,Innovation,371,YUVASHREE S,32,Assistant Professor,Female,M.E.,28,True,15-03-2022,Regular
+2025,IR-I-C-16590,Innovation,372,RADHIKA C,35,Assistant Professor,Female,M.E.,24,True,10-08-2022,Regular
+2025,IR-I-C-16590,Innovation,373,RAJASEKAR R,34,Assistant Professor,Male,Ph.D,24,True,14-03-2022,Regular
+2025,IR-I-C-16590,Innovation,374,RAMASUNDARAM,54,Professor,Male,Ph.D,312,True,05-09-2022,Regular
+2025,IR-I-C-16590,Innovation,375,Ravindhar N V,37,Assistant Professor,Male,M.E.,167,True,11-08-2010,Regular
+2025,IR-I-C-16590,Innovation,376,ROSEKUMARI I,65,Professor,Female,Ph.D,372,True,13-06-2017,Regular
+2025,IR-I-C-16590,Innovation,377,SANGEETHA R,24,Assistant Professor,Female,M.E.,10,True,07-08-2023,Regular
+2025,IR-I-C-16590,Innovation,378,Sasikala K,32,Assistant Professor,Female,M.E.,58,True,14-11-2019,Regular
+2025,IR-I-C-16590,Innovation,379,SAVITHA V,42,Assistant Professor,Female,M.E.,144,True,26-12-2023,Regular
+2025,IR-I-C-16590,Innovation,380,SENTHIKUMAR P,43,Associate Professor,Male,Ph.D,214,True,17-08-2022,Regular
+2025,IR-I-C-16590,Innovation,381,SHARMILA,51,Associate Professor,Female,Ph.D,254,True,29-08-2022,Regular
+2025,IR-I-C-16590,Innovation,382,Sinthia P,37,Associate Professor,Female,Ph.D,204,True,04-06-2012,Regular
+2025,IR-I-C-16590,Innovation,383,SREELAKSHMI S,37,Assistant Professor,Female,M.Tech,10,True,16-11-2023,Regular
+2025,IR-I-C-16590,Innovation,384,SUBASHINI K,24,Assistant Professor,Female,M.E.,12,False,26-10-2023,Regular
+2025,IR-I-C-16590,Innovation,385,SUNDARA,42,Associate Professor,Male,Ph.D,216,True,01-11-2022,Regular
+2025,IR-I-C-16590,Innovation,386,Swedha,29,Assistant Professor,Female,M.E.,49,True,30-11-2019,Regular
+2025,IR-I-C-16590,Innovation,387,THILAGAVATHY S,27,Assistant Professor,Female,M.Tech,18,True,23-02-2023,Regular
+2025,IR-I-C-16590,Innovation,388,Umaiyambika N,36,Assistant Professor,Female,M.Tech,104,True,13-11-2021,Regular
+2025,IR-I-C-16590,Innovation,389,Vasanth Kumar C H,36,Assistant Professor,Male,M.Tech,136,True,29-01-2021,Regular
+2025,IR-I-C-16590,Innovation,390,Vignesh P,34,Assistant Professor,Male,M.E.,131,True,02-08-2021,Regular
+2025,IR-I-C-16590,Innovation,391,VINAYAGAM P,37,Assistant Professor,Male,Ph.D,156,True,17-08-2022,Regular
+2025,IR-I-C-16590,Innovation,392,VINURAJKUMAR S,40,Assistant Professor,Male,Ph.D,144,True,18-07-2022,Regular
+2025,IR-I-C-16590,Innovation,393,YUVARAJ P,44,Assistant Professor,Male,Ph.D,221,True,01-09-2022,Regular
+2025,IR-B-C-16590,SDG,1,ABARNA P S,30,Assistant Professor,Female,M.E.,12,True,04-05-2024,Regular
+2025,IR-B-C-16590,SDG,2,AMSAYAZHI P,32,Assistant Professor,Female,Ph.D,24,True,10-03-2022,Regular
+2025,IR-B-C-16590,SDG,3,ANITHA L,52,Assistant Professor,Female,Ph.D,168,True,30-11-2021,Regular
+2025,IR-B-C-16590,SDG,4,Aparna T K,31,Assistant Professor,Female,Ph.D,50,True,03-05-2021,Regular
+2025,IR-B-C-16590,SDG,5,ARUL DALTON G,51,Associate Professor,Male,Ph.D,216,True,27-09-2023,Regular
+2025,IR-B-C-16590,SDG,6,ARUN PRADEEP,37,Associate Professor,Male,Ph.D,180,True,17-10-2022,Regular
+2025,IR-B-C-16590,SDG,8,BALASINGH S,40,Assistant Professor,Male,Ph.D,222,True,20-10-2022,Regular
+2025,IR-B-C-16590,SDG,9,C SHEEBA JOICE,47,Professor,Female,Ph.D,300,True,04-06-2012,Regular
+2025,IR-B-C-16590,SDG,10,Deepa T,32,Assistant Professor,Female,M.E.,64,True,11-03-2022,Regular
+2025,IR-B-C-16590,SDG,11,DINESH BABU G L,33,Assistant Professor,Male,M.E.,72,True,01-08-2023,Regular
+2025,IR-B-C-16590,SDG,12,ELANGO J,60,Assistant Professor,Male,Ph.D,22,True,11-08-2022,Regular
+2025,IR-B-C-16590,SDG,13,G R RAM PRASATH,36,Assistant Professor,Male,M.E.,111,False,22-06-2015,Regular
+2025,IR-B-C-16590,SDG,14,GAYATHRI,42,Assistant Professor,Female,Ph.D,225,True,23-07-2014,Regular
+2025,IR-B-C-16590,SDG,15,Gurumoorthy G,42,Assistant Professor,Male,M.E.,242,True,27-08-2021,Regular
+2025,IR-B-C-16590,SDG,16,HEMALATHA V,41,Assistant Professor,Female,Ph.D,212,True,19-06-2009,Regular
+2025,IR-B-C-16590,SDG,17,Indhumathi K,40,Associate Professor,Female,Ph.D,151,True,21-01-2019,Regular
+2025,IR-B-C-16590,SDG,18,JAYA T,50,Professor,Female,Ph.D,276,True,27-07-2022,Regular
+2025,IR-B-C-16590,SDG,19,JESILA MOL J,40,Assistant Professor,Female,M.Tech,132,True,11-09-2023,Regular
+2025,IR-B-C-16590,SDG,20,JUDITH REYA M,33,Assistant Professor,Female,M.Tech,21,True,21-06-2023,Regular
+2025,IR-B-C-16590,SDG,21,KANAGAMALLIGA,37,Associate Professor,Female,Ph.D,118,True,01-09-2022,Regular
+2025,IR-B-C-16590,SDG,22,Karthiga V,31,Assistant Professor,Female,M.E.,44,True,04-03-2022,Regular
+2025,IR-B-C-16590,SDG,23,KISHORE MOHAN,51,Associate Professor,Male,Ph.D,276,True,05-04-2022,Regular
+2025,IR-B-C-16590,SDG,24,KUMARAVELU R,49,Associate Professor,Male,Ph.D,162,True,28-02-2022,Regular
+2025,IR-B-C-16590,SDG,25,Lavanya G,44,Assistant Professor,Female,M.E.,156,True,15-12-2021,Regular
+2025,IR-B-C-16590,SDG,26,MAGITHA NIRMALA,44,Assistant Professor,Female,M.E.,114,True,26-04-2022,Regular
+2025,IR-B-C-16590,SDG,27,MANICKAM S,31,Assistant Professor,Male,M.E.,72,True,16-02-2024,Regular
+2025,IR-B-C-16590,SDG,28,Max Savio F,38,Assistant Professor,Male,M.E.,170,True,03-09-2021,Regular
+2025,IR-B-C-16590,SDG,29,MOHANRAJ D,51,Assistant Professor,Male,Ph.D,156,True,04-10-2021,Regular
+2025,IR-B-C-16590,SDG,30,NAGENDRAN K,43,Assistant Professor,Male,M.E.,181,True,22-06-2023,Regular
+2025,IR-B-C-16590,SDG,31,Navaneethan S,36,Assistant Professor,Male,Ph.D,96,True,02-03-2022,Regular
+2025,IR-B-C-16590,SDG,32,PADMA PRIYA K,36,Assistant Professor,Female,M.E.,157,True,01-06-2012,Regular
+2025,IR-B-C-16590,SDG,33,PAVITHRA P,31,Assistant Professor,Female,Ph.D,24,True,08-03-2022,Regular
+2025,IR-B-C-16590,SDG,34,RADHIKA C,35,Assistant Professor,Female,M.E.,24,True,10-08-2022,Regular
+2025,IR-B-C-16590,SDG,35,RAJASEKAR R,34,Assistant Professor,Male,Ph.D,24,True,14-03-2022,Regular
+2025,IR-B-C-16590,SDG,36,RAMASUNDARAM,54,Professor,Male,Ph.D,312,True,05-09-2022,Regular
+2025,IR-B-C-16590,SDG,37,Ravindhar N V,37,Assistant Professor,Male,M.E.,167,True,11-08-2010,Regular
+2025,IR-B-C-16590,SDG,38,ROSEKUMARI I,65,Professor,Female,Ph.D,372,True,13-06-2017,Regular
+2025,IR-B-C-16590,SDG,39,SANGEETHA R,24,Assistant Professor,Female,M.E.,10,True,07-08-2023,Regular
+2025,IR-B-C-16590,SDG,40,Sasikala K,32,Assistant Professor,Female,M.E.,58,True,14-11-2019,Regular
+2025,IR-B-C-16590,SDG,41,SAVITHA V,42,Assistant Professor,Female,M.E.,144,True,26-12-2023,Regular
+2025,IR-B-C-16590,SDG,42,SENTHIKUMAR P,43,Associate Professor,Male,Ph.D,214,True,17-08-2022,Regular
+2025,IR-B-C-16590,SDG,43,SHARMILA,51,Associate Professor,Female,Ph.D,254,True,29-08-2022,Regular
+2025,IR-B-C-16590,SDG,44,Sinthia P,37,Associate Professor,Female,Ph.D,204,True,04-06-2012,Regular
+2025,IR-B-C-16590,SDG,45,SREELAKSHMI S,37,Assistant Professor,Female,M.Tech,10,True,16-11-2023,Regular
+2025,IR-B-C-16590,SDG,46,SUBASHINI K,24,Assistant Professor,Female,M.E.,12,False,26-10-2023,Regular
+2025,IR-B-C-16590,SDG,47,SUNDARA,42,Associate Professor,Male,Ph.D,216,True,01-11-2022,Regular
+2025,IR-B-C-16590,SDG,48,Swedha,29,Assistant Professor,Female,M.E.,49,True,30-11-2019,Regular
+2025,IR-B-C-16590,SDG,49,THILAGAVATHY S,27,Assistant Professor,Female,M.Tech,18,True,23-02-2023,Regular
+2025,IR-B-C-16590,SDG,50,Umaiyambika N,36,Assistant Professor,Female,M.Tech,104,True,13-11-2021,Regular
+2025,IR-B-C-16590,SDG,51,Vasanth Kumar C H,36,Assistant Professor,Male,M.Tech,136,True,29-01-2021,Regular
+2025,IR-B-C-16590,SDG,52,Vignesh P,34,Assistant Professor,Male,M.E.,131,True,02-08-2021,Regular
+2025,IR-B-C-16590,SDG,53,VINAYAGAM P,37,Assistant Professor,Male,Ph.D,156,True,17-08-2022,Regular
+2025,IR-B-C-16590,SDG,54,VINURAJKUMAR S,40,Assistant Professor,Male,Ph.D,144,True,18-07-2022,Regular
+2025,IR-B-C-16590,SDG,55,YUVARAJ P,44,Assistant Professor,Male,Ph.D,221,True,01-09-2022,Regular
+2025,IR-B-C-16590,SDG,56,ABINAYA N G,31,Assistant Professor,Female,M.E.,84,True,16-06-2017,Regular
+2025,IR-B-C-16590,SDG,57,Anancia Grace A,31,Assistant Professor,Female,Ph.D,39,True,16-04-2021,Regular
+2025,IR-B-C-16590,SDG,58,ANIVEL,44,Assistant Professor,Male,Ph.D,252,True,20-07-2020,Regular
+2025,IR-B-C-16590,SDG,59,ARASA KUMAR R,38,Assistant Professor,Male,M.E.,96,True,31-01-2024,Regular
+2025,IR-B-C-16590,SDG,60,ARUL EDWIN RAJ,43,Assistant Professor,Male,Ph.D,192,True,01-09-2022,Regular
+2025,IR-B-C-16590,SDG,61,Arunadevi K,67,Professor,Female,Ph.D,276,True,01-03-2019,Regular
+2025,IR-B-C-16590,SDG,62,BABY SUGNATHI A,40,Associate Professor,Female,Ph.D,132,True,27-06-2017,Regular
+2025,IR-B-C-16590,SDG,63,Balasundaram V,35,Assistant Professor,Male,M.E.,141,True,26-04-2021,Regular
+2025,IR-B-C-16590,SDG,64,Catherine Priya S,28,Assistant Professor,Female,M.E.,30,True,03-01-2022,Regular
+2025,IR-B-C-16590,SDG,65,DEEPAK,50,Assistant Professor,Male,Ph.D,276,True,05-09-2022,Regular
+2025,IR-B-C-16590,SDG,66,DINESH KUMAR K,35,Assistant Professor,Male,M.E.,150,True,01-04-2022,Regular
+2025,IR-B-C-16590,SDG,67,EUNICE JEMIMA,51,Assistant Professor,Female,Ph.D,204,True,26-09-2022,Regular
+2025,IR-B-C-16590,SDG,68,Ganapathi D,35,Assistant Professor,Male,Ph.D,95,True,04-02-2019,Regular
+2025,IR-B-C-16590,SDG,69,GIRUBA M,33,Assistant Professor,Female,Ph.D,82,True,05-09-2022,Regular
+2025,IR-B-C-16590,SDG,70,HARI U,54,Assistant Professor,Male,M.E.,300,True,10-01-2024,Regular
+2025,IR-B-C-16590,SDG,71,Hemamalini A,42,Assistant Professor,Female,M.Tech,217,True,23-06-2008,Regular
+2025,IR-B-C-16590,SDG,72,INDUMATHY T,47,Assistant Professor,Female,M.E.,204,True,07-09-2022,Regular
+2025,IR-B-C-16590,SDG,73,JAYANTHI G,54,Associate Professor,Female,Ph.D,222,True,29-08-2022,Regular
+2025,IR-B-C-16590,SDG,74,JIM ELLIOT C,36,Assistant Professor,Male,M.Tech,108,True,13-06-2022,Regular
+2025,IR-B-C-16590,SDG,75,JYOTHI P,40,Associate Professor,Female,Ph.D,192,True,26-10-2022,Regular
+2025,IR-B-C-16590,SDG,76,Kanagarathinam L,42,Associate Professor,Female,Ph.D,152,True,24-06-2019,Regular
+2025,IR-B-C-16590,SDG,77,KARTHIKA PRIYA,34,Assistant Professor,Female,M.E.,36,True,01-09-2023,Regular
+2025,IR-B-C-16590,SDG,78,KOLLI HIMANTHA,33,Assistant Professor,Male,M.Tech,80,True,14-02-2023,Regular
+2025,IR-B-C-16590,SDG,79,KUMARI AMBE,30,Assistant Professor,Female,Ph.D,12,False,20-03-2023,Regular
+2025,IR-B-C-16590,SDG,80,LOGANATHAN V,48,Assistant Professor,Male,Ph.D,299,True,15-06-2009,Regular
+2025,IR-B-C-16590,SDG,81,Mahalakshmi M,33,Assistant Professor,Female,M.E.,61,True,11-02-2022,Regular
+2025,IR-B-C-16590,SDG,82,MANIMARAN G,52,Professor,Male,Ph.D,346,True,04-09-2008,Regular
+2025,IR-B-C-16590,SDG,83,MEENATCHI K V,35,Assistant Professor,Female,M.E.,12,True,12-05-2023,Regular
+2025,IR-B-C-16590,SDG,84,MONICA D,26,Assistant Professor,Female,M.E.,6,True,15-02-2023,Regular
+2025,IR-B-C-16590,SDG,85,NAJEEM DHEEN A,36,Assistant Professor,Male,M.E.,74,True,24-05-2023,Regular
+2025,IR-B-C-16590,SDG,86,NICI MARX V S,27,Assistant Professor,Female,M.E.,5,True,06-03-2024,Regular
+2025,IR-B-C-16590,SDG,87,PADMA S,33,Assistant Professor,Female,Ph.D,120,True,22-12-2014,Regular
+2025,IR-B-C-16590,SDG,88,Pavithrakannan A,30,Assistant Professor,Male,M.E.,107,True,06-08-2015,Regular
+2025,IR-B-C-16590,SDG,89,PRAKASH R,43,Assistant Professor,Male,M.E.,234,True,22-06-2015,Regular
+2025,IR-B-C-16590,SDG,90,Pugazhvadivu K S,38,Assistant Professor,Female,Ph.D,192,True,03-07-2018,Regular
+2025,IR-B-C-16590,SDG,91,RAJALINGAM S,39,Associate Professor,Male,Ph.D,156,True,01-09-2022,Regular
+2025,IR-B-C-16590,SDG,92,RAMACHANDRAN,39,Associate Professor,Male,Ph.D,150,True,25-09-2023,Regular
+2025,IR-B-C-16590,SDG,93,RASAN U,31,Assistant Professor,Male,M.E.,12,True,01-06-2023,Regular
+2025,IR-B-C-16590,SDG,94,RESMI R NAIR,39,Associate Professor,Female,Ph.D,132,True,01-03-2022,Regular
+2025,IR-B-C-16590,SDG,95,SANGEETHA P,44,Assistant Professor,Female,Ph.D,144,True,22-08-2022,Regular
+2025,IR-B-C-16590,SDG,96,SARAVANAN N,43,Assistant Professor,Male,M.E.,120,True,03-02-2023,Regular
+2025,IR-B-C-16590,SDG,97,SATHYA U,35,Assistant Professor,Female,M.E.,12,True,28-07-2023,Regular
+2025,IR-B-C-16590,SDG,98,SELVI M,53,Professor,Female,Ph.D,333,True,04-06-2012,Regular
+2025,IR-B-C-16590,SDG,99,SHANTHI S,41,Assistant Professor,Female,Ph.D,72,True,09-09-2022,Regular
+2025,IR-B-C-16590,SDG,100,SINDHU G,28,Assistant Professor,Female,M.E.,6,True,10-02-2023,Regular
+2025,IR-B-C-16590,SDG,101,SOWMIYA MANOJ,38,Assistant Professor,Female,M.E.,144,True,09-09-2022,Regular
+2025,IR-B-C-16590,SDG,102,SRIPRIYA,49,Associate Professor,Female,Ph.D,180,True,04-01-2022,Regular
+2025,IR-B-C-16590,SDG,103,Sujatha E,49,Professor,Female,Ph.D,300,True,01-02-2021,Regular
+2025,IR-B-C-16590,SDG,104,Surya S,36,Assistant Professor,Male,M.E.,144,True,01-12-2021,Regular
+2025,IR-B-C-16590,SDG,105,THEERKA,39,Assistant Professor,Female,M.E.,156,True,17-08-2022,Regular
+2025,IR-B-C-16590,SDG,106,Uma Rani V,43,Assistant Professor,Female,Ph.D,248,True,01-06-2021,Regular
+2025,IR-B-C-16590,SDG,107,VARALAKSHMI J,40,Assistant Professor,Female,M.E.,156,True,01-07-2022,Regular
+2025,IR-B-C-16590,SDG,108,VENKATESAN V,34,Assistant Professor,Male,M.E.,91,True,01-02-2024,Regular
+2025,IR-B-C-16590,SDG,109,VIJAYAN P,49,Assistant Professor,Male,Ph.D,256,True,20-10-2022,Regular
+2025,IR-B-C-16590,SDG,110,VINOTHINI T,29,Assistant Professor,Female,M.E.,42,True,27-11-2020,Regular
+2025,IR-B-C-16590,SDG,111,YESUBAI,41,Professor,Female,Ph.D,180,True,04-01-2024,Regular
+2025,IR-B-C-16590,SDG,112,Abinaya G,33,Assistant Professor,Female,M.E.,97,True,04-01-2021,Regular
+2025,IR-B-C-16590,SDG,113,ANAND A,42,Professor,Male,Ph.D,192,True,03-10-2022,Regular
+2025,IR-B-C-16590,SDG,114,Anjaline Jayaprabha,28,Assistant Professor,Female,M.E.,72,True,01-11-2021,Regular
+2025,IR-B-C-16590,SDG,115,ARAVIND T,36,Associate Professor,Male,Ph.D,157,True,08-06-2011,Regular
+2025,IR-B-C-16590,SDG,116,ARUL OLI A,41,Assistant Professor,Female,M.E.,217,True,05-06-2023,Regular
+2025,IR-B-C-16590,SDG,117,ASHA S,53,Associate Professor,Female,Ph.D,339,True,01-06-2017,Regular
+2025,IR-B-C-16590,SDG,118,Bakkiyalakshmi P,44,Associate Professor,Female,Ph.D,210,True,15-07-2019,Regular
+2025,IR-B-C-16590,SDG,119,Baraneedharan P,36,Assistant Professor,Male,Ph.D,36,True,28-07-2021,Regular
+2025,IR-B-C-16590,SDG,120,CHAMUNDEESWA,42,Assistant Professor,Female,Ph.D,180,True,29-07-2022,Regular
+2025,IR-B-C-16590,SDG,121,DELECTA JENIFER,43,Assistant Professor,Female,Ph.D,48,True,13-06-2022,Regular
+2025,IR-B-C-16590,SDG,122,DIVYA PRABHA V,27,Assistant Professor,Female,M.E.,23,True,01-08-2022,Regular
+2025,IR-B-C-16590,SDG,123,Ezhil Arasan I,33,Assistant Professor,Male,M.E.,88,True,16-03-2022,Regular
+2025,IR-B-C-16590,SDG,124,GANAPATHI,41,Associate Professor,Male,Ph.D,160,True,01-09-2022,Regular
+2025,IR-B-C-16590,SDG,125,GOKUL KANNAN K,45,Assistant Professor,Male,Ph.D,192,True,08-08-2022,Regular
+2025,IR-B-C-16590,SDG,126,HEINER A J,32,Assistant Professor,Male,Ph.D,24,True,28-02-2022,Regular
+2025,IR-B-C-16590,SDG,127,HEMAVATHY P,50,Assistant Professor,Female,Ph.D,252,True,04-05-2022,Regular
+2025,IR-B-C-16590,SDG,128,JAGADEESHKUMA,27,Assistant Professor,Male,M.E.,36,False,20-01-2021,Regular
+2025,IR-B-C-16590,SDG,129,Jebajasphin E T,41,Assistant Professor,Female,M.E.,217,True,09-06-2008,Regular
+2025,IR-B-C-16590,SDG,130,JOEL JOHN M,41,Assistant Professor,Male,M.E.,189,True,03-06-2013,Regular
+2025,IR-B-C-16590,SDG,131,KALAIARASI A R,51,Professor,Female,Ph.D,310,True,26-06-2013,Regular
+2025,IR-B-C-16590,SDG,132,Kanchana K,44,Associate Professor,Female,Ph.D,238,True,14-03-2022,Regular
+2025,IR-B-C-16590,SDG,133,Karthika R N,34,Assistant Professor,Female,M.Tech,48,True,30-07-2020,Regular
+2025,IR-B-C-16590,SDG,134,Kripa M Suvarna,38,Associate Professor,Female,Ph.D,99,True,06-07-2020,Regular
+2025,IR-B-C-16590,SDG,135,KUPPAN A,29,Assistant Professor,Male,Ph.D,12,True,02-08-2023,Regular
+2025,IR-B-C-16590,SDG,136,M A Somanathan,34,Assistant Professor,Male,M.E.,132,True,01-04-2019,Regular
+2025,IR-B-C-16590,SDG,137,MAHALAKSHMI P,27,Assistant Professor,Female,M.E.,46,True,18-10-2023,Regular
+2025,IR-B-C-16590,SDG,138,MANIVANNA,48,Professor,Male,Ph.D,264,True,20-09-2022,Regular
+2025,IR-B-C-16590,SDG,139,MERLIN,39,Associate Professor,Female,Ph.D,204,True,21-07-2008,Regular
+2025,IR-B-C-16590,SDG,140,MONICA P,54,Associate Professor,Female,Ph.D,373,True,26-05-2004,Regular
+2025,IR-B-C-16590,SDG,141,NALINIPRIYA G,49,Professor,Female,Ph.D,304,True,14-06-2012,Regular
+2025,IR-B-C-16590,SDG,142,NIRMALA DEVI K,47,Associate Professor,Female,Ph.D,240,True,02-05-2022,Regular
+2025,IR-B-C-16590,SDG,143,PADMAVATHI T,35,Assistant Professor,Female,Ph.D,108,True,07-02-2022,Regular
+2025,IR-B-C-16590,SDG,144,PERIASAMY P,51,Associate Professor,Male,Ph.D,288,True,05-09-2022,Regular
+2025,IR-B-C-16590,SDG,145,AMARNATH P,40,Assistant Professor,Male,M.E.,204,True,06-06-2016,Regular
+2025,IR-B-C-16590,SDG,146,Anishkumar J,43,Assistant Professor,Male,M.E.,235,True,29-12-2006,Regular
+2025,IR-B-C-16590,SDG,147,Anne Dorathy A,48,Assistant Professor,Female,Ph.D,216,True,16-09-2020,Regular
+2025,IR-B-C-16590,SDG,148,ARIVALGAN M,39,Assistant Professor,Male,M.E.,170,False,03-06-2013,Regular
+2025,IR-B-C-16590,SDG,149,ARUN KUMAR K,34,Assistant Professor,Male,M.E.,144,True,03-06-2013,Regular
+2025,IR-B-C-16590,SDG,150,AUGUSTIAN ISAAC,48,Assistant Professor,Female,Ph.D,276,True,31-10-2022,Regular
+2025,IR-B-C-16590,SDG,151,BALAJI N,47,Associate Professor,Male,Ph.D,302,True,08-09-2008,Regular
+2025,IR-B-C-16590,SDG,152,BHUVANESWARI G,45,Professor,Female,Ph.D,252,True,20-07-2022,Regular
+2025,IR-B-C-16590,SDG,153,DEEPA A,43,Assistant Professor,Female,M.Tech,48,True,14-09-2023,Regular
+2025,IR-B-C-16590,SDG,154,DHANDAPANI S,47,Professor,Male,Ph.D,304,True,29-05-2013,Regular
+2025,IR-B-C-16590,SDG,155,DURAIPANDIAN N,56,Professor,Female,Ph.D,360,False,14-06-2021,Regular
+2025,IR-B-C-16590,SDG,156,FRANCIS J,37,Assistant Professor,Male,M.E.,35,True,10-08-2022,Regular
+2025,IR-B-C-16590,SDG,157,GANGADHARAN S,50,Associate Professor,Male,Ph.D,168,True,31-07-2020,Regular
+2025,IR-B-C-16590,SDG,158,Gopinathan P,30,Assistant Professor,Male,M.E.,84,True,30-11-2020,Regular
+2025,IR-B-C-16590,SDG,159,Hemalatha M,30,Assistant Professor,Female,M.Tech,34,True,15-09-2021,Regular
+2025,IR-B-C-16590,SDG,160,IMMANUEL G,43,Assistant Professor,Male,Ph.D,240,True,08-08-2022,Regular
+2025,IR-B-C-16590,SDG,161,JANAKI K,35,Assistant Professor,Female,Ph.D,48,True,24-11-2022,Regular
+2025,IR-B-C-16590,SDG,162,Jennie Bharathi R,41,Assistant Professor,Female,Ph.D,132,True,07-12-2020,Regular
+2025,IR-B-C-16590,SDG,163,JOY PRISCILLA J,47,Professor,Female,Ph.D,304,True,13-08-2001,Regular
+2025,IR-B-C-16590,SDG,164,KALPANA M,44,Associate Professor,Female,M.E.,278,True,08-08-2011,Regular
+2025,IR-B-C-16590,SDG,165,Karthi G,42,Assistant Professor,Male,Ph.D,210,True,28-06-2021,Regular
+2025,IR-B-C-16590,SDG,166,KIRAN KUMAR J,31,Assistant Professor,Male,Ph.D,48,True,05-11-2022,Regular
+2025,IR-B-C-16590,SDG,167,Kumaran S,36,Assistant Professor,Male,Ph.D,145,True,24-06-2019,Regular
+2025,IR-B-C-16590,SDG,168,LATHA R,37,Assistant Professor,Female,Ph.D,60,True,30-08-2022,Regular
+2025,IR-B-C-16590,SDG,169,MADHAN KUMAR,31,Assistant Professor,Male,M.E.,109,True,01-06-2016,Regular
+2025,IR-B-C-16590,SDG,170,MAMATHA A,27,Assistant Professor,Female,M.E.,53,True,15-04-2019,Regular
+2025,IR-B-C-16590,SDG,171,MATHANAVALLI S,30,Assistant Professor,Female,Ph.D,12,True,30-08-2023,Regular
+2025,IR-B-C-16590,SDG,173,MUTHUKUMAR V,49,Professor,Male,Ph.D,310,True,06-09-2008,Regular
+2025,IR-B-C-16590,SDG,174,NARESH G,37,Assistant Professor,Male,M.E.,187,True,17-01-2013,Regular
+2025,IR-B-C-16590,SDG,175,OMANA J,35,Assistant Professor,Female,Ph.D,120,True,24-01-2024,Regular
+2025,IR-B-C-16590,SDG,176,PARIVENTHAN K,45,Associate Professor,Male,Ph.D,250,True,24-08-2011,Regular
+2025,IR-B-C-16590,SDG,177,POONGOTHAI U,36,Assistant Professor,Female,M.E.,36,True,01-06-2021,Regular
+2025,IR-B-C-16590,SDG,178,PRAVEEN KUMAR,34,Assistant Professor,Male,M.E.,57,True,01-06-2021,Regular
+2025,IR-B-C-16590,SDG,179,POTNURI ANITHA,25,Assistant Professor,Female,M.Tech,24,True,01-03-2024,Regular
+2025,IR-B-C-16590,SDG,180,PRAVEENA T,27,Assistant Professor,Female,Ph.D,10,True,14-09-2023,Regular
+2025,IR-B-C-16590,SDG,181,RAJ KUMAR P,62,Professor,Male,Ph.D,432,True,03-08-2002,Regular
+2025,IR-B-C-16590,SDG,182,RAJESH C,34,Associate Professor,Male,M.E.,96,True,29-01-2024,Regular
+2025,IR-B-C-16590,SDG,183,RAMKI C,44,Assistant Professor,Male,Ph.D,23,True,29-08-2022,Regular
+2025,IR-B-C-16590,SDG,184,REKHA K S,37,Assistant Professor,Female,M.E.,96,True,01-07-2022,Regular
+2025,IR-B-C-16590,SDG,185,SAKTHI K,41,Assistant Professor,Female,M.E.,241,True,13-07-2016,Regular
+2025,IR-B-C-16590,SDG,186,Saranya A,36,Assistant Professor,Female,Ph.D,47,True,07-02-2022,Regular
+2025,IR-B-C-16590,SDG,187,SASIKUMAR S,45,Professor,Male,Ph.D,295,True,23-11-2009,Regular
+2025,IR-B-C-16590,SDG,188,SELVAKUMAR R,42,Associate Professor,Male,Ph.D,192,True,17-08-2022,Regular
+2025,IR-B-C-16590,SDG,189,SHAGUL A S,28,Assistant Professor,Female,M.E.,10,True,28-08-2023,Regular
+2025,IR-B-C-16590,SDG,190,SHRUTHI S NAIR,35,Assistant Professor,Female,M.E.,57,True,02-08-2023,Regular
+2025,IR-B-C-16590,SDG,191,SIVAN V,48,Assistant Professor,Male,Ph.D,222,True,14-11-2022,Regular
+2025,IR-B-C-16590,SDG,192,SRIGITHA S NATH,53,Professor,Female,Ph.D,360,True,03-06-2011,Regular
+2025,IR-B-C-16590,SDG,193,SUBASHREE V,36,Assistant Professor,Female,M.E.,112,True,01-09-2022,Regular
+2025,IR-B-C-16590,SDG,194,SURESH S,44,Associate Professor,Male,Ph.D,264,True,28-08-2017,Regular
+2025,IR-B-C-16590,SDG,195,TAMIZHARASI R,43,Assistant Professor,Male,Ph.D,42,True,16-08-2022,Regular
+2025,IR-B-C-16590,SDG,196,THIRUMAVALAVAN,52,Professor,Male,Ph.D,312,True,29-08-2022,Regular
+2025,IR-B-C-16590,SDG,197,Valvil Ori C,38,Assistant Professor,Male,M.E.,103,True,13-12-2021,Regular
+2025,IR-B-C-16590,SDG,198,VELMURUGAN V,36,Assistant Professor,Male,M.E.,171,True,20-06-2011,Regular
+2025,IR-B-C-16590,SDG,199,VIGNESHWARI N,31,Assistant Professor,Female,M.E.,62,True,04-05-2022,Regular
+2025,IR-B-C-16590,SDG,200,Vinod Kumar R,57,Associate Professor,Male,Ph.D,336,True,04-01-2021,Regular
+2025,IR-B-C-16590,SDG,201,VIVEKANAND PA,44,Professor,Male,Ph.D,253,True,15-12-2017,Regular
+2025,IR-B-C-16590,SDG,202,ABIRAMI A,36,Assistant Professor,Female,M.E.,48,True,11-09-2023,Regular
+2025,IR-B-C-16590,SDG,203,Anand S,47,Assistant Professor,Male,Ph.D,168,True,18-06-2018,Regular
+2025,IR-B-C-16590,SDG,204,Ann C V Medona,34,Assistant Professor,Female,M.E.,100,True,06-07-2020,Regular
+2025,IR-B-C-16590,SDG,205,Archana S H,31,Assistant Professor,Female,M.E.,90,True,18-11-2019,Regular
+2025,IR-B-C-16590,SDG,206,Arumparithy G L,37,Assistant Professor,Male,M.S,145,True,02-06-2014,Regular
+2025,IR-B-C-16590,SDG,207,Aswin A,30,Assistant Professor,Male,M.E.,73,True,25-06-2018,Regular
+2025,IR-B-C-16590,SDG,208,Bala Subramanian A,39,Assistant Professor,Male,Ph.D,127,True,02-01-2019,Regular
+2025,IR-B-C-16590,SDG,209,BAVATHARANI C,28,Assistant Professor,Female,Ph.D,24,True,19-01-2022,Regular
+2025,IR-B-C-16590,SDG,210,CHANTHIRASEKAR,56,Professor,Male,Ph.D,216,True,27-07-2022,Regular
+2025,IR-B-C-16590,SDG,211,DHANALAKSHMI J,37,Assistant Professor,Female,M.E.,144,True,02-01-2024,Regular
+2025,IR-B-C-16590,SDG,212,DIVYA S,33,Assistant Professor,Female,M.Tech,12,True,12-03-2023,Regular
+2025,IR-B-C-16590,SDG,213,EZHIL,36,Assistant Professor,Male,M.Tech,180,True,03-12-2019,Regular
+2025,IR-B-C-16590,SDG,214,GANDHIMATHINAT,38,Assistant Professor,Male,M.Tech,156,True,06-06-2022,Regular
+2025,IR-B-C-16590,SDG,215,Gopalarama,46,Professor,Male,Ph.D,269,True,09-07-2018,Regular
+2025,IR-B-C-16590,SDG,216,HELEN R,48,Assistant Professor,Female,Ph.D,276,True,02-05-2022,Regular
+2025,IR-B-C-16590,SDG,217,Ilavarasan S,42,Assistant Professor,Male,M.E.,203,True,11-08-2011,Regular
+2025,IR-B-C-16590,SDG,218,JAINAB ZAREENA,37,Assistant Professor,Female,Ph.D,72,True,03-11-2022,Regular
+2025,IR-B-C-16590,SDG,219,Jeffin Gracewell J,35,Assistant Professor,Male,Ph.D,141,True,21-01-2021,Regular
+2025,IR-B-C-16590,SDG,220,John De Britto C,32,Assistant Professor,Male,M.E.,99,True,11-01-2022,Regular
+2025,IR-B-C-16590,SDG,221,Kalaivani A,36,Assistant Professor,Female,Ph.D,111,True,21-06-2017,Regular
+2025,IR-B-C-16590,SDG,222,Kannan R,38,Assistant Professor,Male,M.E.,166,True,03-01-2022,Regular
+2025,IR-B-C-16590,SDG,223,KAVITHA S,47,Assistant Professor,Female,M.E.,294,True,02-07-2010,Regular
+2025,IR-B-C-16590,SDG,224,KRITHIKA M,26,Assistant Professor,Female,M.E.,10,True,12-06-2024,Regular
+2025,IR-B-C-16590,SDG,225,LAKSHMANAN A R,77,Professor,Male,Ph.D,475,True,12-12-2007,Regular
+2025,IR-B-C-16590,SDG,226,M PRIYA,51,Professor,Female,Ph.D,301,True,01-06-2012,Regular
+2025,IR-B-C-16590,SDG,227,MAHENDRAN K,36,Assistant Professor,Male,M.E.,132,True,21-03-2022,Regular
+2025,IR-B-C-16590,SDG,228,Manonmani A,41,Assistant Professor,Female,Ph.D,186,True,01-06-2012,Regular
+2025,IR-B-C-16590,SDG,229,Mettilda,54,Associate Professor,Female,Ph.D,364,True,04-12-2017,Regular
+2025,IR-B-C-16590,SDG,230,Moorthi M,44,Professor,Male,Ph.D,267,True,17-12-2018,Regular
+2025,IR-B-C-16590,SDG,231,Nandhini R,27,Assistant Professor,Female,M.E.,32,True,13-11-2021,Regular
+2025,IR-B-C-16590,SDG,232,NIVETHITHA M,28,Assistant Professor,Female,M.E.,38,True,13-03-2023,Regular
+2025,IR-B-C-16590,SDG,233,PANDIAN G,36,Assistant Professor,Male,Ph.D,126,True,12-02-2024,Regular
+2025,IR-B-C-16590,SDG,234,PONMATHI JEBA,36,Assistant Professor,Female,M.E.,12,True,01-12-2023,Regular
+2025,IR-B-C-16590,SDG,235,PRADEEP,38,Assistant Professor,Male,Ph.D,72,True,01-08-2022,Regular
+2025,IR-B-C-16590,SDG,236,Premnath K,36,Assistant Professor,Male,M.E.,169,True,26-02-2021,Regular
+2025,IR-B-C-16590,SDG,237,RAJAKRISHNAMM,33,Assistant Professor,Female,M.E.,42,True,15-04-2024,Regular
+2025,IR-B-C-16590,SDG,238,RAJKUMAR E,32,Assistant Professor,Male,M.E.,49,True,01-06-2022,Regular
+2025,IR-B-C-16590,SDG,239,RANJANI A,43,Assistant Professor,Female,M.E.,41,False,15-05-2023,Regular
+2025,IR-B-C-16590,SDG,240,RENJITH,27,Assistant Professor,Male,Ph.D,46,True,20-03-2023,Regular
+2025,IR-B-C-16590,SDG,241,SANGEETHA L,46,Assistant Professor,Female,Ph.D,279,True,02-07-2012,Regular
+2025,IR-B-C-16590,SDG,242,SARAVANAN M P,35,Assistant Professor,Male,Ph.D,132,True,01-02-2022,Regular
+2025,IR-B-C-16590,SDG,243,SATHIYAMURTHI K,39,Assistant Professor,Male,Ph.D,136,True,11-11-2020,Regular
+2025,IR-B-C-16590,SDG,244,Selvanayaki S,44,Assistant Professor,Female,M.Tech,228,True,16-03-2022,Regular
+2025,IR-B-C-16590,SDG,245,SHANMUGA PRIYA,41,Assistant Professor,Female,M.Tech,136,True,10-06-2022,Regular
+2025,IR-B-C-16590,SDG,246,SILAMBARASI C,36,Assistant Professor,Female,M.E.,93,True,01-08-2022,Regular
+2025,IR-B-C-16590,SDG,247,Sivaramakrishnan N,40,Associate Professor,Male,Ph.D,138,True,06-07-2020,Regular
+2025,IR-B-C-16590,SDG,248,Srinivasan T K,37,Assistant Professor,Male,M.E.,121,True,09-01-2017,Regular
+2025,IR-B-C-16590,SDG,249,SUGITHA N,52,Associate Professor,Female,Ph.D,264,True,27-06-2022,Regular
+2025,IR-B-C-16590,SDG,250,SURESHKUMAR K,49,Associate Professor,Male,Ph.D,268,True,11-06-2007,Regular
+2025,IR-B-C-16590,SDG,251,Thamarai Selvan A,44,Assistant Professor,Male,M.E.,241,True,08-07-2019,Regular
+2025,IR-B-C-16590,SDG,252,UMA,43,Assistant Professor,Female,M.E.,99,True,05-06-2015,Regular
+2025,IR-B-C-16590,SDG,253,Vanitha M,45,Associate Professor,Female,Ph.D,272,True,01-06-2018,Regular
+2025,IR-B-C-16590,SDG,254,Venkatesan G,36,Assistant Professor,Male,Ph.D,130,True,04-01-2021,Regular
+2025,IR-B-C-16590,SDG,255,VIJAYA RAJAN V,34,Assistant Professor,Male,M.E.,146,True,10-07-2013,Regular
+2025,IR-B-C-16590,SDG,256,VINOTH KUMAR E,44,Assistant Professor,Male,M.Tech,145,True,05-06-2023,Regular
+2025,IR-B-C-16590,SDG,257,YAMINI ROJA S,33,Assistant Professor,Female,M.E.,91,True,09-01-2023,Regular
+2025,IR-B-C-16590,SDG,258,A SARAVANAN,42,Assistant Professor,Male,Ph.D,180,True,01-06-2017,Regular
+2025,IR-B-C-16590,SDG,259,AMIT KUMAR,39,Assistant Professor,Male,Ph.D,160,False,15-11-2021,Regular
+2025,IR-B-C-16590,SDG,260,Anitha Julian,56,Professor,Female,Ph.D,289,True,08-07-2019,Regular
+2025,IR-B-C-16590,SDG,261,ANUSHA RANI V,32,Assistant Professor,Female,Ph.D,144,True,17-03-2023,Regular
+2025,IR-B-C-16590,SDG,262,Arokia Nerling,33,Assistant Professor,Female,M.E.,140,True,07-12-2020,Regular
+2025,IR-B-C-16590,SDG,263,Arun kumar S,30,Assistant Professor,Male,M.E.,90,True,19-01-2021,Regular
+2025,IR-B-C-16590,SDG,264,AYISHA BEGAM K,41,Assistant Professor,Female,Ph.D,168,False,21-06-2017,Regular
+2025,IR-B-C-16590,SDG,265,BALAJI R,35,Assistant Professor,Male,M.E.,72,True,02-03-2022,Regular
+2025,IR-B-C-16590,SDG,266,C M VELU,64,Professor,Male,Ph.D,444,True,14-03-2024,Regular
+2025,IR-B-C-16590,SDG,267,DEEPA M,38,Assistant Professor,Female,Ph.D,56,True,05-05-2023,Regular
+2025,IR-B-C-16590,SDG,268,DHIVYA,36,Assistant Professor,Female,M.E.,17,True,03-03-2023,Regular
+2025,IR-B-C-16590,SDG,269,Elakkiya A,30,Assistant Professor,Male,M.E.,34,True,13-09-2021,Regular
+2025,IR-B-C-16590,SDG,270,FREEDA,50,Associate Professor,Female,Ph.D,264,True,22-08-2022,Regular
+2025,IR-B-C-16590,SDG,271,GAUTHAMAN B,42,Assistant Professor,Male,M.E.,24,True,06-07-2022,Regular
+2025,IR-B-C-16590,SDG,272,GOWRI GANESH N,53,Associate Professor,Male,Ph.D,300,True,01-08-2022,Regular
+2025,IR-B-C-16590,SDG,273,Hemalatha R,34,Assistant Professor,Male,M.E.,120,True,22-11-2021,Regular
+2025,IR-B-C-16590,SDG,274,Imran Hussain S,33,Assistant Professor,Male,Ph.D,91,True,20-01-2022,Regular
+2025,IR-B-C-16590,SDG,275,JASHIKA K M,26,Assistant Professor,Female,M.E.,23,True,19-09-2022,Regular
+2025,IR-B-C-16590,SDG,276,Jerome Nithin G,31,Assistant Professor,Male,M.E.,85,True,28-06-2017,Regular
+2025,IR-B-C-16590,SDG,277,Joyal Isac S,36,Assistant Professor,Male,M.E.,160,True,03-06-2013,Regular
+2025,IR-B-C-16590,SDG,278,KALPANA S,49,Professor,Female,Ph.D,264,True,17-08-2022,Regular
+2025,IR-B-C-16590,SDG,279,KARTHIGA M,32,Assistant Professor,Female,M.E.,12,True,06-03-2023,Regular
+2025,IR-B-C-16590,SDG,280,KIRUTHIKA S S,42,Assistant Professor,Female,M.E.,108,True,19-07-2023,Regular
+2025,IR-B-C-16590,SDG,281,KUMARAN V,40,Assistant Professor,Male,M.E.,156,True,18-12-2023,Regular
+2025,IR-B-C-16590,SDG,282,LAVANYA G,44,Assistant Professor,Female,Ph.D,156,True,15-12-2021,Regular
+2025,IR-B-C-16590,SDG,283,MADHUMITHA N,36,Assistant Professor,Female,M.Tech,38,True,04-05-2023,Regular
+2025,IR-B-C-16590,SDG,284,MANI S V J,50,Assistant Professor,Male,Ph.D,264,True,27-11-2022,Regular
+2025,IR-B-C-16590,SDG,285,MAUSAM,36,Assistant Professor,Male,Ph.D,23,False,03-08-2022,Regular
+2025,IR-B-C-16590,SDG,286,MOHANA SUNDARI,36,Assistant Professor,Female,Ph.D,144,False,12-12-2022,Regular
+2025,IR-B-C-16590,SDG,287,NAGAPPAN G,43,Professor,Male,Ph.D,268,True,04-07-2009,Regular
+2025,IR-B-C-16590,SDG,288,NAVANEETHA,42,Assistant Professor,Female,Ph.D,212,True,01-03-2022,Regular
+2025,IR-B-C-16590,SDG,289,P MUTHUVEL,37,Associate Professor,Male,Ph.D,120,True,04-03-2024,Regular
+2025,IR-B-C-16590,SDG,290,AKILA P MOHAN,31,Assistant Professor,Female,M.E.,101,True,14-06-2017,Regular
+2025,IR-B-C-16590,SDG,291,ANANDAN V,45,Associate Professor,Male,Ph.D,300,True,26-08-2009,Regular
+2025,IR-B-C-16590,SDG,292,ANNA PALAGAN C,44,Professor,Male,Ph.D,204,True,06-03-2024,Regular
+2025,IR-B-C-16590,SDG,293,ARCHANA T,39,Assistant Professor,Female,M.E.,190,True,14-12-2011,Regular
+2025,IR-B-C-16590,SDG,294,Arumugam T,44,Assistant Professor,Male,M.E.,218,True,18-01-2021,Regular
+2025,IR-B-C-16590,SDG,295,ASWINI J,44,Professor,Female,Ph.D,178,True,11-07-2022,Regular
+2025,IR-B-C-16590,SDG,296,Balachandran S,43,Assistant Professor,Male,M.Tech,174,True,13-09-2021,Regular
+2025,IR-B-C-16590,SDG,297,BHAVADHARANI V,25,Assistant Professor,Female,M.E.,23,True,06-09-2022,Regular
+2025,IR-B-C-16590,SDG,298,Chitra N,43,Assistant Professor,Female,M.Tech,79,True,02-03-2022,Regular
+2025,IR-B-C-16590,SDG,299,DHANANCHEZIYAN,36,Assistant Professor,Male,M.E.,96,True,24-02-2016,Regular
+2025,IR-B-C-16590,SDG,300,DOLLI H,49,Associate Professor,Male,Ph.D,242,True,01-09-2022,Regular
+2025,IR-B-C-16590,SDG,301,Felix Prabhu F,36,Assistant Professor,Male,M.E.,121,True,16-06-2017,Regular
+2025,IR-B-C-16590,SDG,302,GANGA KISHORE,27,Assistant Professor,Male,M.Tech,23,False,17-10-2022,Regular
+2025,IR-B-C-16590,SDG,303,GOPINATH A,32,Assistant Professor,Male,M.E.,123,True,26-11-2021,Regular
+2025,IR-B-C-16590,SDG,304,HEMADHARSANA,39,Assistant Professor,Female,M.E.,12,True,19-07-2023,Regular
+2025,IR-B-C-16590,SDG,305,IMMACULATE JOY,37,Assistant Professor,Female,M.E.,120,True,28-10-2022,Regular
+2025,IR-B-C-16590,SDG,306,JANAKI AAMAL P,39,Assistant Professor,Female,M.E.,48,True,01-11-2023,Regular
+2025,IR-B-C-16590,SDG,307,Jenifa Latha C,57,Professor,Female,Ph.D,387,True,04-01-2021,Regular
+2025,IR-B-C-16590,SDG,308,JOSEPH SATISH V,40,Assistant Professor,Male,Ph.D,24,True,15-06-2022,Regular
+2025,IR-B-C-16590,SDG,309,KALAIVANI C T,40,Assistant Professor,Female,Ph.D,229,True,14-06-2010,Regular
+2025,IR-B-C-16590,SDG,310,KARPAGA PRIYA R,33,Assistant Professor,Female,Ph.D,102,True,17-08-2022,Regular
+2025,IR-B-C-16590,SDG,311,KEERTHIGA G,40,Associate Professor,Female,M.Tech,204,True,06-09-2006,Regular
+2025,IR-B-C-16590,SDG,312,Kumar A,65,Professor,Male,Ph.D,431,True,20-08-2018,Regular
+2025,IR-B-C-16590,SDG,313,LAKSHMI THARA R,39,Assistant Professor,Female,Ph.D,36,False,26-06-2023,Regular
+2025,IR-B-C-16590,SDG,314,MADHAN KUMAR A,39,Assistant Professor,Male,Ph.D,192,True,16-03-2022,Regular
+2025,IR-B-C-16590,SDG,315,MALATHI K,42,Assistant Professor,Female,Ph.D,120,True,20-06-2022,Regular
+2025,IR-B-C-16590,SDG,316,MARY ADLINE,35,Assistant Professor,Female,Ph.D,72,True,13-06-2022,Regular
+2025,IR-B-C-16590,SDG,317,MICHAEL MAHESH,37,Associate Professor,Male,Ph.D,144,True,27-12-2023,Regular
+2025,IR-B-C-16590,SDG,318,Muthu Pandian P,38,Assistant Professor,Male,Ph.D,62,True,13-11-2021,Regular
+2025,IR-B-C-16590,SDG,319,Narendran K,43,Assistant Professor,Male,Ph.D,167,True,02-08-2017,Regular
+2025,IR-B-C-16590,SDG,320,OBED OTTO C,45,Associate Professor,Male,M.E.,262,True,13-06-2005,Regular
+2025,IR-B-C-16590,SDG,321,Panimalar S P,34,Assistant Professor,Female,M.E.,86,True,16-08-2021,Regular
+2025,IR-B-C-16590,SDG,322,PONPRASANNA T,31,Assistant Professor,Male,M.E.,33,True,28-12-2020,Regular
+2025,IR-B-C-16590,SDG,323,Prabakaran M,34,Assistant Professor,Male,M.E.,79,True,05-12-2017,Regular
+2025,IR-B-C-16590,SDG,324,PREMILA S C,47,Assistant Professor,Female,Ph.D,204,True,10-03-2022,Regular
+2025,IR-B-C-16590,SDG,325,RAJA RAJESWARI,44,Professor,Female,Ph.D,274,True,03-06-2013,Regular
+2025,IR-B-C-16590,SDG,326,Raji Pandurangan,46,Assistant Professor,Female,Ph.D,228,True,18-07-2019,Regular
+2025,IR-B-C-16590,SDG,327,Ramyadevi R,44,Associate Professor,Female,Ph.D,274,True,09-08-2021,Regular
+2025,IR-B-C-16590,SDG,328,RENJITH,33,Assistant Professor,Male,Ph.D,36,True,21-03-2022,Regular
+2025,IR-B-C-16590,SDG,329,SAKTHI SWARRUP,38,Professor,Female,Ph.D,66,True,18-04-2024,Regular
+2025,IR-B-C-16590,SDG,330,SARANYA K,34,Assistant Professor,Female,M.E.,18,True,24-01-2024,Regular
+2025,IR-B-C-16590,SDG,331,SATHISH BABU,39,Assistant Professor,Male,Ph.D,132,True,22-08-2022,Regular
+2025,IR-B-C-16590,SDG,332,Selvam R,52,Assistant Professor,Male,Ph.D,357,True,22-07-2019,Regular
+2025,IR-B-C-16590,SDG,333,Shanmathi M,30,Assistant Professor,Female,M.E.,90,True,07-01-2020,Regular
+2025,IR-B-C-16590,SDG,334,Silambarasan M,39,Assistant Professor,Male,Ph.D,177,True,13-11-2021,Regular
+2025,IR-B-C-16590,SDG,335,Sivanandam S,44,Professor,Female,Ph.D,219,True,18-01-2021,Regular
+2025,IR-B-C-16590,SDG,336,Srinivasan C,40,Assistant Professor,Male,M.E.,199,True,01-12-2021,Regular
+2025,IR-B-C-16590,SDG,337,SUBHASHINI R,41,Assistant Professor,Female,Ph.D,36,True,26-08-2022,Regular
+2025,IR-B-C-16590,SDG,338,Suresh T D,38,Assistant Professor,Male,M.E.,196,True,04-07-2013,Regular
+2025,IR-B-C-16590,SDG,339,Tenali Ravikumar,43,Assistant Professor,Male,M.Tech,229,True,06-07-2020,Regular
+2025,IR-B-C-16590,SDG,340,ULAGAMMAI M,42,Associate Professor,Female,Ph.D,241,True,14-06-2007,Regular
+2025,IR-B-C-16590,SDG,341,VANITHA A,51,Associate Professor,Female,Ph.D,156,True,31-05-2022,Regular
+2025,IR-B-C-16590,SDG,342,VENITH VIJAY M,36,Assistant Professor,Male,Ph.D,168,True,06-10-2021,Regular
+2025,IR-B-C-16590,SDG,344,VINODHINI N,31,Assistant Professor,Female,Ph.D,10,True,11-09-2023,Regular
+2025,IR-B-C-16590,SDG,345,Yamini B,42,Assistant Professor,Female,Ph.D,184,True,16-03-2022,Regular
+2025,IR-B-C-16590,SDG,346,PAVAI D,32,Assistant Professor,Female,M.E.,28,True,24-01-2024,Regular
+2025,IR-B-C-16590,SDG,347,POONGULALI E,47,Assistant Professor,Female,M.E.,241,True,09-06-2023,Regular
+2025,IR-B-C-16590,SDG,348,PRAVEEN M,39,Assistant Professor,Male,M.E.,179,True,02-07-2010,Regular
+2025,IR-B-C-16590,SDG,349,Ragesh K T,37,Assistant Professor,Male,M.Tech,100,False,01-09-2020,Regular
+2025,IR-B-C-16590,SDG,350,RAJENDRA,40,Assistant Professor,Male,Ph.D,108,True,01-03-2022,Regular
+2025,IR-B-C-16590,SDG,351,RAMESHKUMAR M,44,Assistant Professor,Male,Ph.D,253,True,11-09-2013,Regular
+2025,IR-B-C-16590,SDG,352,RAVINDHRAN M,43,Professor,Male,Ph.D,160,True,26-08-2021,Regular
+2025,IR-B-C-16590,SDG,353,Rosemitha V,28,Assistant Professor,Female,M.E.,72,True,25-09-2017,Regular
+2025,IR-B-C-16590,SDG,354,SANKAR P,31,Assistant Professor,Male,M.E.,120,True,28-08-2023,Regular
+2025,IR-B-C-16590,SDG,355,Sasikala M,36,Assistant Professor,Female,Ph.D,39,True,15-04-2021,Regular
+2025,IR-B-C-16590,SDG,356,SELLA KUMAR S,38,Assistant Professor,Male,M.E.,184,True,02-07-2010,Regular
+2025,IR-B-C-16590,SDG,357,SENTHIL KUMAR R,49,Professor,Male,Ph.D,339,True,28-07-2003,Regular
+2025,IR-B-C-16590,SDG,358,Shenbagaraman S,56,Assistant Professor,Male,M.Tech,412,True,17-06-2013,Regular
+2025,IR-B-C-16590,SDG,359,SIVAKUMAR T,44,Assistant Professor,Male,Ph.D,144,True,29-08-2022,Regular
+2025,IR-B-C-16590,SDG,360,Sridhar S,31,Assistant Professor,Male,M.E.,104,True,05-07-2018,Regular
+2025,IR-B-C-16590,SDG,361,SUBASHINI T,43,Assistant Professor,Female,M.E.,53,True,15-03-2023,Regular
+2025,IR-B-C-16590,SDG,362,SUNITHA DEVA,45,Assistant Professor,Female,Ph.D,213,True,24-09-2008,Regular
+2025,IR-B-C-16590,SDG,363,TAJUDDIN A,68,Professor,Male,Ph.D,434,True,08-08-2022,Regular
+2025,IR-B-C-16590,SDG,364,THIRUMALAI M,36,Assistant Professor,Male,M.E.,160,True,03-04-2017,Regular
+2025,IR-B-C-16590,SDG,365,V GOMATHI,37,Assistant Professor,Female,M.E.,161,True,03-06-2013,Regular
+2025,IR-B-C-16590,SDG,366,Velmurugan N,48,Assistant Professor,Male,M.E.,292,True,23-08-2007,Regular
+2025,IR-B-C-16590,SDG,367,VIGNESH S,30,Assistant Professor,Male,Ph.D,24,True,27-07-2022,Regular
+2025,IR-B-C-16590,SDG,368,Vinifa R,42,Assistant Professor,Female,Ph.D,203,True,10-08-2020,Regular
+2025,IR-B-C-16590,SDG,369,VISHNU PRIYA K,29,Assistant Professor,Female,M.E.,48,True,03-10-2023,Regular
+2025,IR-B-C-16590,SDG,370,YUVASHREE S,32,Assistant Professor,Female,M.E.,28,True,15-03-2022,Regular
+2025,IR-B-C-16590,SDG,371,PRAVEEN KUMAR,40,Professor,Male,Ph.D,236,True,23-08-2007,Regular
+2025,IR-B-C-16590,SDG,372,R SUGUNA DEVI,44,Assistant Professor,Female,M.E.,163,True,14-03-2024,Regular
+2025,IR-B-C-16590,SDG,373,RAJARAMAN R,58,Professor,Male,Ph.D,286,True,16-08-2022,Regular
+2025,IR-B-C-16590,SDG,374,RAMACHANDRAN,35,Assistant Professor,Male,M.E.,12,True,26-04-2023,Regular
+2025,IR-B-C-16590,SDG,375,RAVI MOHAN R,58,Assistant Professor,Male,Ph.D,168,True,22-08-2022,Regular
+2025,IR-B-C-16590,SDG,376,Rohini M,30,Assistant Professor,Female,M.E.,84,True,24-07-2015,Regular
+2025,IR-B-C-16590,SDG,377,SANGEETHA,33,Assistant Professor,Female,M.E.,6,True,10-02-2023,Regular
+2025,IR-B-C-16590,SDG,378,SARAVANAN T,43,Assistant Professor,Male,M.E.,192,True,01-08-2023,Regular
+2025,IR-B-C-16590,SDG,379,SATYA GOPAL,42,Associate Professor,Male,Ph.D,78,True,29-01-2024,Regular
+2025,IR-B-C-16590,SDG,380,Senthamil Arasu S,30,Assistant Professor,Male,M.E.,40,True,02-03-2022,Regular
+2025,IR-B-C-16590,SDG,381,SHARMILA J,24,Assistant Professor,Female,M.E.,36,True,01-12-2023,Regular
+2025,IR-B-C-16590,SDG,382,SINDHUJA R,35,Assistant Professor,Female,M.E.,7,True,23-01-2023,Regular
+2025,IR-B-C-16590,SDG,383,SRAVYA P R,34,Assistant Professor,Female,Ph.D,24,True,01-02-2022,Regular
+2025,IR-B-C-16590,SDG,384,SUBASHINI,36,Assistant Professor,Female,M.E.,88,True,24-02-2016,Regular
+2025,IR-B-C-16590,SDG,385,Sundar Rajan P,31,Assistant Professor,Male,Ph.D,32,True,13-11-2021,Regular
+2025,IR-B-C-16590,SDG,386,SWARNAMBIGA A,38,Associate Professor,Female,Ph.D,104,True,24-08-2022,Regular
+2025,IR-B-C-16590,SDG,387,Thennarasu S,45,Assistant Professor,Male,Ph.D,144,True,02-07-2018,Regular
+2025,IR-B-C-16590,SDG,388,UMA V,42,Assistant Professor,Male,M.E.,192,True,13-09-2023,Regular
+2025,IR-B-C-16590,SDG,389,VARUN M,38,Assistant Professor,Male,M.E.,149,False,09-12-2020,Regular
+2025,IR-B-C-16590,SDG,390,VIDHYA S,41,Assistant Professor,Female,M.E.,231,True,06-01-2011,Regular
+2025,IR-B-C-16590,SDG,391,VIJAYANAND M,48,Professor,Male,Ph.D,292,True,04-12-2017,Regular
+2025,IR-B-C-16590,SDG,392,VINOTHKUMAR P,36,Assistant Professor,Male,Ph.D,92,True,25-06-2018,Regular
+2025,IR-B-C-16590,SDG,393,Yogeswari S,29,Assistant Professor,Female,M.E.,40,True,22-03-2021,Regular
+2026,IR-E-C-16590,Engineering,1,KALAIARASI A R,53,Professor,Female,Ph.D,322,True,26-06-2013,Regular
+2026,IR-E-C-16590,Engineering,2,MERLIN,41,Associate Professor,Female,Ph.D,216,True,21-07-2008,Regular
+2026,IR-E-C-16590,Engineering,3,ULAGAMMAI M,44,Associate Professor,Female,Ph.D,253,True,14-06-2007,Regular
+2026,IR-E-C-16590,Engineering,4,JOEL JOHN M,43,Assistant Professor,Male,M.E.,201,True,03-06-2013,Regular
+2026,IR-E-C-16590,Engineering,5,SUNITHA DEVA,48,Assistant Professor,Female,Ph.D,225,True,24-09-2008,Regular
+2026,IR-E-C-16590,Engineering,6,BALAJI N,49,Associate Professor,Male,Ph.D,314,True,08-09-2008,Regular
+2026,IR-E-C-16590,Engineering,7,M PRIYA,53,Professor,Female,Ph.D,313,True,01-06-2012,Regular
+2026,IR-E-C-16590,Engineering,8,MADHAN KUMAR,33,Assistant Professor,Male,M.E.,121,True,01-06-2016,Regular
+2026,IR-E-C-16590,Engineering,9,Arunadevi K,69,Professor,Female,Ph.D,288,True,01-03-2019,Regular
+2026,IR-E-C-16590,Engineering,10,C SHEEBA JOICE,49,Professor,Female,Ph.D,312,True,04-06-2012,Regular
+2026,IR-E-C-16590,Engineering,11,SANGEETHA L,48,Assistant Professor,Female,Ph.D,291,True,02-07-2012,Regular
+2026,IR-E-C-16590,Engineering,12,JOY PRISCILLA J,49,Professor,Female,Ph.D,316,True,13-08-2001,Regular
+2026,IR-E-C-16590,Engineering,13,SELLA KUMAR S,40,Assistant Professor,Male,M.E.,196,True,02-07-2010,Regular
+2026,IR-E-C-16590,Engineering,14,SURESHKUMAR K,51,Associate Professor,Male,Ph.D,280,True,11-06-2007,Regular
+2026,IR-E-C-16590,Engineering,15,ANANDAN V,47,Associate Professor,Male,Ph.D,312,True,26-08-2009,Regular
+2026,IR-E-C-16590,Engineering,16,SAKTHI K,43,Assistant Professor,Female,M.E.,253,True,13-07-2016,Regular
+2026,IR-E-C-16590,Engineering,17,V GOMATHI,39,Assistant Professor,Female,M.E.,173,True,03-06-2013,Regular
+2026,IR-E-C-16590,Engineering,18,MUTHUKUMAR V,51,Professor,Male,Ph.D,322,True,06-09-2008,Regular
+2026,IR-E-C-16590,Engineering,19,THIRUMALAI M,38,Assistant Professor,Male,M.E.,172,True,03-04-2017,Regular
+2026,IR-E-C-16590,Engineering,20,ARCHANA T,41,Assistant Professor,Female,M.E.,202,True,14-12-2011,Regular
+2026,IR-E-C-16590,Engineering,21,RAJA RAJESWARI,46,Professor,Female,Ph.D,286,True,03-06-2013,Regular
+2026,IR-E-C-16590,Engineering,22,VIVEKANAND PA,46,Professor,Male,Ph.D,265,True,15-12-2017,Regular
+2026,IR-E-C-16590,Engineering,23,AMARNATH P,42,Assistant Professor,Male,M.E.,216,True,06-06-2016,Regular
+2026,IR-E-C-16590,Engineering,24,LOGANATHAN V,50,Assistant Professor,Male,Ph.D,311,True,15-06-2009,Regular
+2026,IR-E-C-16590,Engineering,25,OBED OTTO C,47,Associate Professor,Male,M.E.,274,True,13-06-2005,Regular
+2026,IR-E-C-16590,Engineering,26,RAMESHKUMAR M,46,Assistant Professor,Male,Ph.D,265,True,11-09-2013,Regular
+2026,IR-E-C-16590,Engineering,27,MANIMARAN G,54,Professor,Male,Ph.D,358,True,04-09-2008,Regular
+2026,IR-E-C-16590,Engineering,28,PADMA S,35,Assistant Professor,Female,Ph.D,132,True,22-12-2014,Regular
+2026,IR-E-C-16590,Engineering,29,DHANDAPANI S,49,Professor,Male,Ph.D,316,True,29-05-2013,Regular
+2026,IR-E-C-16590,Engineering,30,VELMURUGAN V,38,Assistant Professor,Male,M.E.,183,True,20-06-2011,Regular
+2026,IR-E-C-16590,Engineering,31,KAVITHA S,49,Assistant Professor,Female,M.E.,306,True,02-07-2010,Regular
+2026,IR-E-C-16590,Engineering,32,AKILA P MOHAN,33,Assistant Professor,Female,M.E.,113,True,14-06-2017,Regular
+2026,IR-E-C-16590,Engineering,33,SENTHIL KUMAR R,51,Professor,Male,Ph.D,351,True,28-07-2003,Regular
+2026,IR-E-C-16590,Engineering,34,ARUN KUMAR K,36,Assistant Professor,Male,M.E.,156,True,03-06-2013,Regular
+2026,IR-E-C-16590,Engineering,35,NAGAPPAN G,45,Professor,Male,Ph.D,280,True,04-07-2009,Regular
+2026,IR-E-C-16590,Engineering,36,KALPANA M,46,Associate Professor,Female,M.E.,290,True,08-08-2011,Regular
+2026,IR-E-C-16590,Engineering,37,KALAIVANI C T,42,Assistant Professor,Female,Ph.D,241,True,14-06-2010,Regular
+2026,IR-E-C-16590,Engineering,38,SASIKUMAR S,47,Professor,Male,Ph.D,307,True,23-11-2009,Regular
+2026,IR-E-C-16590,Engineering,39,PRAKASH R,45,Assistant Professor,Male,M.E.,246,True,22-06-2015,Regular
+2026,IR-E-C-16590,Engineering,40,ARAVIND T,38,Associate Professor,Male,Ph.D,169,True,08-06-2011,Regular
+2026,IR-E-C-16590,Engineering,41,VIJAYANAND M,50,Professor,Male,Ph.D,304,True,04-12-2017,Regular
+2026,IR-E-C-16590,Engineering,42,SURESH S,46,Associate Professor,Male,Ph.D,276,True,28-08-2017,Regular
+2026,IR-E-C-16590,Engineering,43,SRIGITHA S NATH,55,Professor,Female,Ph.D,372,True,03-06-2011,Regular
+2026,IR-E-C-16590,Engineering,44,PRAVEEN M,41,Assistant Professor,Male,M.E.,191,True,02-07-2010,Regular
+2026,IR-E-C-16590,Engineering,45,NARESH G,39,Assistant Professor,Male,M.E.,199,True,17-01-2013,Regular
+2026,IR-E-C-16590,Engineering,46,GAYATHRI,44,Assistant Professor,Female,Ph.D,237,True,23-07-2014,Regular
+2026,IR-E-C-16590,Engineering,47,HEMALATHA V,43,Assistant Professor,Female,Ph.D,224,True,19-06-2009,Regular
+2026,IR-E-C-16590,Engineering,48,VIDHYA S,43,Assistant Professor,Female,M.E.,243,True,06-01-2011,Regular
+2026,IR-E-C-16590,Engineering,49,PARIVENTHAN K,47,Associate Professor,Male,Ph.D,262,True,24-08-2011,Regular
+2026,IR-E-C-16590,Engineering,50,NALINIPRIYA G,51,Professor,Female,Ph.D,316,True,14-06-2012,Regular
+2026,IR-E-C-16590,Engineering,51,MONICA P,56,Associate Professor,Female,Ph.D,385,True,26-05-2004,Regular
+2026,IR-E-C-16590,Engineering,52,SELVI M,55,Professor,Female,Ph.D,345,True,04-06-2012,Regular
+2026,IR-E-C-16590,Engineering,53,ASHA S,55,Associate Professor,Female,Ph.D,351,True,01-06-2017,Regular
+2026,IR-E-C-16590,Engineering,54,PRAVEEN KUMAR,42,Professor,Male,Ph.D,248,True,23-08-2007,Regular
+2026,IR-E-C-16590,Engineering,55,PADMA PRIYA K,38,Assistant Professor,Female,M.E.,169,True,01-06-2012,Regular
+2026,IR-E-C-16590,Engineering,56,VINOTHKUMAR P,38,Assistant Professor,Male,Ph.D,104,True,25-06-2018,Regular
+2026,IR-E-C-16590,Engineering,57,Selvam R,54,Assistant Professor,Male,Ph.D,369,True,22-07-2019,Regular
+2026,IR-E-C-16590,Engineering,58,Raji Pandurangan,48,Assistant Professor,Female,Ph.D,240,True,18-07-2019,Regular
+2026,IR-E-C-16590,Engineering,59,Kumaran S,38,Assistant Professor,Male,Ph.D,157,True,24-06-2019,Regular
+2026,IR-E-C-16590,Engineering,60,Anitha Julian,58,Professor,Female,Ph.D,301,True,08-07-2019,Regular
+2026,IR-E-C-16590,Engineering,61,Bakkiyalakshmi P,46,Associate Professor,Female,Ph.D,222,True,15-07-2019,Regular
+2026,IR-E-C-16590,Engineering,62,Ganapathi D,37,Assistant Professor,Male,Ph.D,107,True,04-02-2019,Regular
+2026,IR-E-C-16590,Engineering,63,Kanagarathinam L,44,Associate Professor,Female,Ph.D,164,True,24-06-2019,Regular
+2026,IR-E-C-16590,Engineering,64,Moorthi M,46,Professor,Male,Ph.D,279,True,17-12-2018,Regular
+2026,IR-E-C-16590,Engineering,65,Gopalarama,48,Professor,Male,Ph.D,281,True,09-07-2018,Regular
+2026,IR-E-C-16590,Engineering,66,Thennarasu S,47,Assistant Professor,Male,Ph.D,156,True,02-07-2018,Regular
+2026,IR-E-C-16590,Engineering,67,Anand S,49,Assistant Professor,Male,Ph.D,180,True,18-06-2018,Regular
+2026,IR-E-C-16590,Engineering,68,Vanitha M,47,Associate Professor,Female,Ph.D,284,True,01-06-2018,Regular
+2026,IR-E-C-16590,Engineering,69,Ezhil Arasan I,35,Assistant Professor,Male,M.E.,100,True,16-03-2022,Regular
+2026,IR-E-C-16590,Engineering,70,Rohini M,32,Assistant Professor,Female,M.E.,96,True,24-07-2015,Regular
+2026,IR-E-C-16590,Engineering,71,Sridhar S,33,Assistant Professor,Male,M.E.,116,True,05-07-2018,Regular
+2026,IR-E-C-16590,Engineering,72,Gopinathan P,32,Assistant Professor,Male,M.E.,96,True,30-11-2020,Regular
+2026,IR-E-C-16590,Engineering,73,Shanmathi M,32,Assistant Professor,Female,M.E.,102,True,07-01-2020,Regular
+2026,IR-E-C-16590,Engineering,74,Anjaline Jayaprabha,30,Assistant Professor,Female,M.E.,84,True,01-11-2021,Regular
+2026,IR-E-C-16590,Engineering,75,M A Somanathan,36,Assistant Professor,Male,M.E.,144,True,01-04-2019,Regular
+2026,IR-E-C-16590,Engineering,76,Vinifa R,44,Assistant Professor,Female,Ph.D,215,True,10-08-2020,Regular
+2026,IR-E-C-16590,Engineering,77,Venkatesan G,38,Assistant Professor,Male,Ph.D,142,True,04-01-2021,Regular
+2026,IR-E-C-16590,Engineering,78,Abinaya G,35,Assistant Professor,Female,M.E.,109,True,04-01-2021,Regular
+2026,IR-E-C-16590,Engineering,79,Thamarai Selvan A,46,Assistant Professor,Male,M.E.,253,True,08-07-2019,Regular
+2026,IR-E-C-16590,Engineering,80,Ann C V Medona,36,Assistant Professor,Female,M.E.,112,True,06-07-2020,Regular
+2026,IR-E-C-16590,Engineering,81,Tenali Ravikumar,45,Assistant Professor,Male,M.Tech,241,True,06-07-2020,Regular
+2026,IR-E-C-16590,Engineering,82,Sivaramakrishnan N,42,Associate Professor,Male,Ph.D,150,True,06-07-2020,Regular
+2026,IR-E-C-16590,Engineering,83,Karthika R N,36,Assistant Professor,Female,M.Tech,60,True,30-07-2020,Regular
+2026,IR-E-C-16590,Engineering,84,Anne Dorathy A,50,Assistant Professor,Female,Ph.D,228,True,16-09-2020,Regular
+2026,IR-E-C-16590,Engineering,85,Vinod Kumar R,59,Associate Professor,Male,Ph.D,348,True,04-01-2021,Regular
+2026,IR-E-C-16590,Engineering,86,Jenifa Latha C,59,Professor,Female,Ph.D,399,True,04-01-2021,Regular
+2026,IR-E-C-16590,Engineering,87,Sivanandam S,46,Professor,Female,Ph.D,231,True,18-01-2021,Regular
+2026,IR-E-C-16590,Engineering,88,Vasanth Kumar C H,38,Assistant Professor,Male,M.Tech,148,True,29-01-2021,Regular
+2026,IR-E-C-16590,Engineering,89,Sasikala K,34,Assistant Professor,Female,M.E.,70,True,14-11-2019,Regular
+2026,IR-E-C-16590,Engineering,90,Sujatha E,51,Professor,Female,Ph.D,312,True,01-02-2021,Regular
+2026,IR-E-C-16590,Engineering,91,Archana S H,33,Assistant Professor,Female,M.E.,102,True,18-11-2019,Regular
+2026,IR-E-C-16590,Engineering,92,Swedha,31,Assistant Professor,Female,M.E.,61,True,30-11-2019,Regular
+2026,IR-E-C-16590,Engineering,93,Indhumathi K,42,Associate Professor,Female,Ph.D,163,True,21-01-2019,Regular
+2026,IR-E-C-16590,Engineering,94,Premnath K,38,Assistant Professor,Male,M.E.,181,True,26-02-2021,Regular
+2026,IR-E-C-16590,Engineering,95,Arun kumar S,32,Assistant Professor,Male,M.E.,102,True,19-01-2021,Regular
+2026,IR-E-C-16590,Engineering,96,Balasundaram V,37,Assistant Professor,Male,M.E.,153,True,26-04-2021,Regular
+2026,IR-E-C-16590,Engineering,97,Nandhini R,29,Assistant Professor,Female,M.E.,44,True,13-11-2021,Regular
+2026,IR-E-C-16590,Engineering,98,Karthi G,44,Assistant Professor,Male,Ph.D,222,True,28-06-2021,Regular
+2026,IR-E-C-16590,Engineering,99,Selvanayaki S,46,Assistant Professor,Female,M.Tech,240,True,16-03-2022,Regular
+2026,IR-E-C-16590,Engineering,100,Aparna T K,33,Assistant Professor,Female,Ph.D,62,True,03-05-2021,Regular
+2026,IR-E-C-16590,Engineering,101,Kumar A,67,Professor,Male,Ph.D,443,True,20-08-2018,Regular
+2026,IR-E-C-16590,Engineering,102,Bala Subramanian A,41,Assistant Professor,Male,Ph.D,139,True,02-01-2019,Regular
+2026,IR-E-C-16590,Engineering,103,Balachandran S,45,Assistant Professor,Male,M.Tech,186,True,13-09-2021,Regular
+2026,IR-E-C-16590,Engineering,104,Hemalatha M,32,Assistant Professor,Female,M.Tech,46,True,15-09-2021,Regular
+2026,IR-E-C-16590,Engineering,105,Umaiyambika N,38,Assistant Professor,Female,M.Tech,116,True,13-11-2021,Regular
+2026,IR-E-C-16590,Engineering,106,Sundar Rajan P,33,Assistant Professor,Male,Ph.D,44,True,13-11-2021,Regular
+2026,IR-E-C-16590,Engineering,107,Sasikala M,39,Assistant Professor,Female,Ph.D,51,True,15-04-2021,Regular
+2026,IR-E-C-16590,Engineering,109,Muthu Pandian P,41,Assistant Professor,Male,Ph.D,74,True,13-11-2021,Regular
+2026,IR-E-C-16590,Engineering,110,Lavanya G,46,Assistant Professor,Female,M.E.,168,True,15-12-2021,Regular
+2026,IR-E-C-16590,Engineering,111,Yamini B,44,Assistant Professor,Female,Ph.D,196,True,16-03-2022,Regular
+2026,IR-E-C-16590,Engineering,112,Kalaivani A,38,Assistant Professor,Female,Ph.D,123,True,21-06-2017,Regular
+2026,IR-E-C-16590,Engineering,113,Narendran K,45,Assistant Professor,Male,Ph.D,179,True,02-08-2017,Regular
+2026,IR-E-C-16590,Engineering,114,Senthamil Arasu S,32,Assistant Professor,Male,M.E.,52,True,02-03-2022,Regular
+2026,IR-E-C-16590,Engineering,115,Velmurugan N,50,Assistant Professor,Male,M.E.,304,True,23-08-2007,Regular
+2026,IR-E-C-16590,Engineering,116,Ravindhar N V,39,Assistant Professor,Male,M.E.,179,True,11-08-2010,Regular
+2026,IR-E-C-16590,Engineering,117,Uma Rani V,45,Assistant Professor,Female,Ph.D,260,True,01-06-2021,Regular
+2026,IR-E-C-16590,Engineering,118,Ramyadevi R,46,Associate Professor,Female,Ph.D,286,True,09-08-2021,Regular
+2026,IR-E-C-16590,Engineering,120,Surya S,38,Assistant Professor,Male,M.E.,156,True,01-12-2021,Regular
+2026,IR-E-C-16590,Engineering,121,Mahalakshmi M,35,Assistant Professor,Female,M.E.,73,True,11-02-2022,Regular
+2026,IR-E-C-16590,Engineering,122,Pavithrakannan A,32,Assistant Professor,Male,M.E.,119,True,06-08-2015,Regular
+2026,IR-E-C-16590,Engineering,123,Hemamalini A,44,Assistant Professor,Female,M.Tech,229,True,23-06-2008,Regular
+2026,IR-E-C-16590,Engineering,124,Jebajasphin E T,43,Assistant Professor,Female,M.E.,229,True,09-06-2008,Regular
+2026,IR-E-C-16590,Engineering,125,Arokia Nerling,35,Assistant Professor,Female,M.E.,152,True,07-12-2020,Regular
+2026,IR-E-C-16590,Engineering,126,Arumugam T,46,Assistant Professor,Male,M.E.,230,True,18-01-2021,Regular
+2026,IR-E-C-16590,Engineering,127,Baraneedharan P,38,Assistant Professor,Male,Ph.D,48,True,28-07-2021,Regular
+2026,IR-E-C-16590,Engineering,128,Elakkiya A,32,Assistant Professor,Male,M.E.,46,True,13-09-2021,Regular
+2026,IR-E-C-16590,Engineering,129,Valvil Ori C,40,Assistant Professor,Male,M.E.,115,True,13-12-2021,Regular
+2026,IR-E-C-16590,Engineering,130,Kannan R,40,Assistant Professor,Male,M.E.,178,True,03-01-2022,Regular
+2026,IR-E-C-16590,Engineering,131,Imran Hussain S,35,Assistant Professor,Male,Ph.D,103,True,20-01-2022,Regular
+2026,IR-E-C-16590,Engineering,132,Jeffin Gracewell J,37,Assistant Professor,Male,Ph.D,153,True,21-01-2021,Regular
+2026,IR-E-C-16590,Engineering,133,Saranya A,38,Assistant Professor,Female,Ph.D,59,True,07-02-2022,Regular
+2026,IR-E-C-16590,Engineering,134,Navaneethan S,38,Assistant Professor,Male,Ph.D,108,True,02-03-2022,Regular
+2026,IR-E-C-16590,Engineering,135,Chitra N,45,Assistant Professor,Female,M.Tech,91,True,02-03-2022,Regular
+2026,IR-E-C-16590,Engineering,136,Karthiga V,33,Assistant Professor,Female,M.E.,56,True,04-03-2022,Regular
+2026,IR-E-C-16590,Engineering,137,Deepa T,34,Assistant Professor,Female,M.E.,76,True,11-03-2022,Regular
+2026,IR-E-C-16590,Engineering,138,Srinivasan T K,39,Assistant Professor,Male,M.E.,133,True,09-01-2017,Regular
+2026,IR-E-C-16590,Engineering,139,Anishkumar J,45,Assistant Professor,Male,M.E.,247,True,29-12-2006,Regular
+2026,IR-E-C-16590,Engineering,140,Max Savio F,40,Assistant Professor,Male,M.E.,182,True,03-09-2021,Regular
+2026,IR-E-C-16590,Engineering,141,Hemalatha R,36,Assistant Professor,Male,M.E.,132,True,22-11-2021,Regular
+2026,IR-E-C-16590,Engineering,142,John De Britto C,34,Assistant Professor,Male,M.E.,111,True,11-01-2022,Regular
+2026,IR-E-C-16590,Engineering,143,Kanchana K,46,Associate Professor,Female,Ph.D,250,True,14-03-2022,Regular
+2026,IR-E-C-16590,Engineering,144,Suresh T D,40,Assistant Professor,Male,M.E.,208,True,04-07-2013,Regular
+2026,IR-E-C-16590,Engineering,145,Manonmani A,43,Assistant Professor,Female,Ph.D,198,True,01-06-2012,Regular
+2026,IR-E-C-16590,Engineering,146,Prabakaran M,36,Assistant Professor,Male,M.E.,91,True,05-12-2017,Regular
+2026,IR-E-C-16590,Engineering,147,Panimalar S P,36,Assistant Professor,Female,M.E.,98,True,16-08-2021,Regular
+2026,IR-E-C-16590,Engineering,148,Ilavarasan S,44,Assistant Professor,Male,M.E.,215,True,11-08-2011,Regular
+2026,IR-E-C-16590,Engineering,149,Aswin A,32,Assistant Professor,Male,M.E.,85,True,25-06-2018,Regular
+2026,IR-E-C-16590,Engineering,150,Yogeswari S,31,Assistant Professor,Female,M.E.,52,True,22-03-2021,Regular
+2026,IR-E-C-16590,Engineering,151,Vignesh P,36,Assistant Professor,Male,M.E.,143,True,02-08-2021,Regular
+2026,IR-E-C-16590,Engineering,152,Shenbagaraman S,58,Assistant Professor,Male,M.Tech,424,True,17-06-2013,Regular
+2026,IR-E-C-16590,Engineering,153,Jerome Nithin G,33,Assistant Professor,Male,M.E.,97,True,28-06-2017,Regular
+2026,IR-E-C-16590,Engineering,154,Gurumoorthy G,44,Assistant Professor,Male,M.E.,254,True,27-08-2021,Regular
+2026,IR-E-C-16590,Engineering,155,Silambarasan M,41,Assistant Professor,Male,Ph.D,189,True,13-11-2021,Regular
+2026,IR-E-C-16590,Engineering,156,Sinthia P,39,Associate Professor,Female,Ph.D,216,True,04-06-2012,Regular
+2026,IR-E-C-16590,Engineering,157,Mettilda,56,Associate Professor,Female,Ph.D,376,True,04-12-2017,Regular
+2026,IR-E-C-16590,Engineering,158,Joyal Isac S,38,Assistant Professor,Male,M.E.,172,True,03-06-2013,Regular
+2026,IR-E-C-16590,Engineering,159,TAJUDDIN A,70,Professor,Male,Ph.D,446,True,08-08-2022,Regular
+2026,IR-E-C-16590,Engineering,160,DINESH KUMAR K,37,Assistant Professor,Male,M.E.,162,True,01-04-2022,Regular
+2026,IR-E-C-16590,Engineering,161,VARALAKSHMI J,42,Assistant Professor,Female,M.E.,168,True,01-07-2022,Regular
+2026,IR-E-C-16590,Engineering,162,GOWRI GANESH N,55,Associate Professor,Male,Ph.D,312,True,01-08-2022,Regular
+2026,IR-E-C-16590,Engineering,163,MAGITHA NIRMALA,46,Assistant Professor,Female,M.E.,126,True,26-04-2022,Regular
+2026,IR-E-C-16590,Engineering,164,ASWINI J,46,Professor,Female,Ph.D,190,True,11-07-2022,Regular
+2026,IR-E-C-16590,Engineering,165,SILAMBARASI C,38,Assistant Professor,Female,M.E.,105,True,01-08-2022,Regular
+2026,IR-E-C-16590,Engineering,166,SELVAKUMAR R,44,Associate Professor,Male,Ph.D,204,True,17-08-2022,Regular
+2026,IR-E-C-16590,Engineering,167,SWARNAMBIGA A,40,Associate Professor,Female,Ph.D,116,True,24-08-2022,Regular
+2026,IR-E-C-16590,Engineering,168,SENTHIKUMAR P,45,Associate Professor,Male,Ph.D,226,True,17-08-2022,Regular
+2026,IR-E-C-16590,Engineering,169,DOLLI H,51,Associate Professor,Male,Ph.D,254,True,01-09-2022,Regular
+2026,IR-E-C-16590,Engineering,170,THIRUMAVALAVAN,54,Professor,Male,Ph.D,324,True,29-08-2022,Regular
+2026,IR-E-C-16590,Engineering,171,SHARMILA,53,Associate Professor,Female,Ph.D,266,True,29-08-2022,Regular
+2026,IR-E-C-16590,Engineering,172,SHANTHI S,43,Assistant Professor,Female,Ph.D,84,True,09-09-2022,Regular
+2026,IR-E-C-16590,Engineering,173,PRAVEEN KUMAR,36,Assistant Professor,Male,M.E.,69,True,01-06-2021,Regular
+2026,IR-E-C-16590,Engineering,174,GOPINATH A,34,Assistant Professor,Male,M.E.,135,True,26-11-2021,Regular
+2026,IR-E-C-16590,Engineering,175,THEERKA,41,Assistant Professor,Female,M.E.,168,True,17-08-2022,Regular
+2026,IR-E-C-16590,Engineering,176,REKHA K S,39,Assistant Professor,Female,M.E.,108,True,01-07-2022,Regular
+2026,IR-E-C-16590,Engineering,177,JASHIKA K M,28,Assistant Professor,Female,M.E.,35,True,19-09-2022,Regular
+2026,IR-E-C-16590,Engineering,178,KEERTHIGA G,42,Associate Professor,Female,M.Tech,216,True,06-09-2006,Regular
+2026,IR-E-C-16590,Engineering,179,POONGOTHAI U,38,Assistant Professor,Female,M.E.,48,True,01-06-2021,Regular
+2026,IR-E-C-16590,Engineering,180,MAHENDRAN K,38,Assistant Professor,Male,M.E.,144,True,21-03-2022,Regular
+2026,IR-E-C-16590,Engineering,181,NIRMALA DEVI K,49,Associate Professor,Female,Ph.D,252,True,02-05-2022,Regular
+2026,IR-E-C-16590,Engineering,182,VINAYAGAM P,39,Assistant Professor,Male,Ph.D,168,True,17-08-2022,Regular
+2026,IR-E-C-16590,Engineering,183,LATHA R,39,Assistant Professor,Female,Ph.D,72,True,30-08-2022,Regular
+2026,IR-E-C-16590,Engineering,184,SUBASHREE V,38,Assistant Professor,Female,M.E.,124,True,01-09-2022,Regular
+2026,IR-E-C-16590,Engineering,185,KANAGAMALLIGA,39,Associate Professor,Female,Ph.D,130,True,01-09-2022,Regular
+2026,IR-E-C-16590,Engineering,186,ARUL EDWIN RAJ,45,Assistant Professor,Male,Ph.D,204,True,01-09-2022,Regular
+2026,IR-E-C-16590,Engineering,187,SOWMIYA MANOJ,40,Assistant Professor,Female,M.E.,156,True,09-09-2022,Regular
+2026,IR-E-C-16590,Engineering,188,IMMACULATE JOY,39,Assistant Professor,Female,M.E.,132,True,28-10-2022,Regular
+2026,IR-E-C-16590,Engineering,189,KARPAGA PRIYA R,35,Assistant Professor,Female,Ph.D,114,True,17-08-2022,Regular
+2026,IR-E-C-16590,Engineering,190,RAJALINGAM S,41,Associate Professor,Male,Ph.D,168,True,01-09-2022,Regular
+2026,IR-E-C-16590,Engineering,191,YUVARAJ P,46,Assistant Professor,Male,Ph.D,233,True,01-09-2022,Regular
+2026,IR-E-C-16590,Engineering,192,FREEDA,52,Associate Professor,Female,Ph.D,276,True,22-08-2022,Regular
+2026,IR-E-C-16590,Engineering,193,SUBHASHINI R,43,Assistant Professor,Female,Ph.D,48,True,26-08-2022,Regular
+2026,IR-E-C-16590,Engineering,194,KIRAN KUMAR J,33,Assistant Professor,Male,Ph.D,60,True,05-11-2022,Regular
+2026,IR-E-C-16590,Engineering,195,TAMIZHARASI R,45,Assistant Professor,Male,Ph.D,54,True,16-08-2022,Regular
+2026,IR-E-C-16590,Engineering,196,RAJARAMAN R,60,Professor,Male,Ph.D,298,True,16-08-2022,Regular
+2026,IR-E-C-16590,Engineering,197,SIVAN V,50,Assistant Professor,Male,Ph.D,234,True,14-11-2022,Regular
+2026,IR-E-C-16590,Engineering,198,JANAKI K,38,Assistant Professor,Female,Ph.D,60,True,24-11-2022,Regular
+2026,IR-E-C-16590,Engineering,199,VIGNESH S,32,Assistant Professor,Male,Ph.D,36,True,27-07-2022,Regular
+2026,IR-E-C-16590,Engineering,200,RADHIKA C,37,Assistant Professor,Female,M.E.,36,True,10-08-2022,Regular
+2026,IR-E-C-16590,Engineering,201,FRANCIS J,39,Assistant Professor,Male,M.E.,47,True,10-08-2022,Regular
+2026,IR-E-C-16590,Engineering,202,VIGNESHWARI N,33,Assistant Professor,Female,M.E.,74,True,04-05-2022,Regular
+2026,IR-E-C-16590,Engineering,203,INDUMATHY T,49,Assistant Professor,Female,M.E.,216,True,07-09-2022,Regular
+2026,IR-E-C-16590,Engineering,204,LAKSHMANAN A R,79,Professor,Male,Ph.D,487,True,12-12-2007,Regular
+2026,IR-E-C-16590,Engineering,205,KALPANA S,51,Professor,Female,Ph.D,276,True,17-08-2022,Regular
+2026,IR-E-C-16590,Engineering,206,RAMKI C,46,Assistant Professor,Male,Ph.D,35,True,29-08-2022,Regular
+2026,IR-E-C-16590,Engineering,207,SIVAKUMAR T,46,Assistant Professor,Male,Ph.D,156,True,29-08-2022,Regular
+2026,IR-E-C-16590,Engineering,208,GIRUBA M,35,Assistant Professor,Female,Ph.D,94,True,05-09-2022,Regular
+2026,IR-E-C-16590,Engineering,209,LAVANYA G,46,Assistant Professor,Female,Ph.D,168,True,15-12-2021,Regular
+2026,IR-E-C-16590,Engineering,210,RAJKUMAR E,34,Assistant Professor,Male,M.E.,61,True,01-06-2022,Regular
+2026,IR-E-C-16590,Engineering,211,SATHIYAMURTHI K,41,Assistant Professor,Male,Ph.D,148,True,11-11-2020,Regular
+2026,IR-E-C-16590,Engineering,212,VENITH VIJAY M,38,Assistant Professor,Male,Ph.D,180,True,06-10-2021,Regular
+2026,IR-E-C-16590,Engineering,213,MOHANRAJ D,53,Assistant Professor,Male,Ph.D,168,True,04-10-2021,Regular
+2026,IR-E-C-16590,Engineering,214,ANITHA L,54,Assistant Professor,Female,Ph.D,180,True,30-11-2021,Regular
+2026,IR-E-C-16590,Engineering,215,JYOTHI P,42,Associate Professor,Female,Ph.D,204,True,26-10-2022,Regular
+2026,IR-E-C-16590,Engineering,216,VINOTHINI T,31,Assistant Professor,Female,M.E.,54,True,27-11-2020,Regular
+2026,IR-E-C-16590,Engineering,217,BALAJI R,37,Assistant Professor,Male,M.E.,84,True,02-03-2022,Regular
+2026,IR-E-C-16590,Engineering,219,GANDHIMATHINAT,41,Assistant Professor,Male,M.Tech,168,True,06-06-2022,Regular
+2026,IR-E-C-16590,Engineering,220,GAUTHAMAN B,44,Assistant Professor,Male,M.E.,36,True,06-07-2022,Regular
+2026,IR-E-C-16590,Engineering,221,DELECTA JENIFER,45,Assistant Professor,Female,Ph.D,60,True,13-06-2022,Regular
+2026,IR-E-C-16590,Engineering,222,SUGITHA N,54,Associate Professor,Female,Ph.D,276,True,27-06-2022,Regular
+2026,IR-E-C-16590,Engineering,223,SRIPRIYA,51,Associate Professor,Female,Ph.D,192,True,04-01-2022,Regular
+2026,IR-E-C-16590,Engineering,224,BAVATHARANI C,30,Assistant Professor,Female,Ph.D,36,True,19-01-2022,Regular
+2026,IR-E-C-16590,Engineering,225,SRAVYA P R,36,Assistant Professor,Female,Ph.D,36,True,01-02-2022,Regular
+2026,IR-E-C-16590,Engineering,226,SARAVANAN M P,37,Assistant Professor,Male,Ph.D,144,True,01-02-2022,Regular
+2026,IR-E-C-16590,Engineering,227,PADMAVATHI T,37,Assistant Professor,Female,Ph.D,120,True,07-02-2022,Regular
+2026,IR-E-C-16590,Engineering,228,KUMARAVELU R,51,Associate Professor,Male,Ph.D,174,True,28-02-2022,Regular
+2026,IR-E-C-16590,Engineering,229,HEINER A J,34,Assistant Professor,Male,Ph.D,36,True,28-02-2022,Regular
+2026,IR-E-C-16590,Engineering,230,RAJENDRA,42,Assistant Professor,Male,Ph.D,120,True,01-03-2022,Regular
+2026,IR-E-C-16590,Engineering,231,NAVANEETHA,44,Assistant Professor,Female,Ph.D,224,True,01-03-2022,Regular
+2026,IR-E-C-16590,Engineering,232,RESMI R NAIR,41,Associate Professor,Female,Ph.D,144,True,01-03-2022,Regular
+2026,IR-E-C-16590,Engineering,233,PAVITHRA P,33,Assistant Professor,Female,Ph.D,36,True,08-03-2022,Regular
+2026,IR-E-C-16590,Engineering,234,RAJASEKAR R,36,Assistant Professor,Male,Ph.D,36,True,14-03-2022,Regular
+2026,IR-E-C-16590,Engineering,235,AMSAYAZHI P,34,Assistant Professor,Female,Ph.D,36,True,10-03-2022,Regular
+2026,IR-E-C-16590,Engineering,236,PREMILA S C,49,Assistant Professor,Female,Ph.D,216,True,10-03-2022,Regular
+2026,IR-E-C-16590,Engineering,237,MADHAN KUMAR A,41,Assistant Professor,Male,Ph.D,204,True,16-03-2022,Regular
+2026,IR-E-C-16590,Engineering,238,ANUSHA RANI V,34,Assistant Professor,Female,Ph.D,156,True,17-03-2023,Regular
+2026,IR-E-C-16590,Engineering,239,HELEN R,50,Assistant Professor,Female,Ph.D,288,True,02-05-2022,Regular
+2026,IR-E-C-16590,Engineering,240,HEMAVATHY P,52,Assistant Professor,Female,Ph.D,264,True,04-05-2022,Regular
+2026,IR-E-C-16590,Engineering,241,VANITHA A,53,Associate Professor,Female,Ph.D,168,True,31-05-2022,Regular
+2026,IR-E-C-16590,Engineering,242,MARY ADLINE,37,Assistant Professor,Female,Ph.D,84,True,13-06-2022,Regular
+2026,IR-E-C-16590,Engineering,243,JOSEPH SATISH V,42,Assistant Professor,Male,Ph.D,36,True,15-06-2022,Regular
+2026,IR-E-C-16590,Engineering,244,MALATHI K,44,Assistant Professor,Female,Ph.D,132,True,20-06-2022,Regular
+2026,IR-E-C-16590,Engineering,245,JAYANTHI G,56,Associate Professor,Female,Ph.D,234,True,29-08-2022,Regular
+2026,IR-E-C-16590,Engineering,246,JAYA T,52,Professor,Female,Ph.D,288,True,27-07-2022,Regular
+2026,IR-E-C-16590,Engineering,247,BHUVANESWARI G,47,Professor,Female,Ph.D,264,True,20-07-2022,Regular
+2026,IR-E-C-16590,Engineering,248,CHANTHIRASEKAR,58,Professor,Male,Ph.D,228,True,27-07-2022,Regular
+2026,IR-E-C-16590,Engineering,249,GOKUL KANNAN K,47,Assistant Professor,Male,Ph.D,204,True,08-08-2022,Regular
+2026,IR-E-C-16590,Engineering,250,IMMANUEL G,45,Assistant Professor,Male,Ph.D,252,True,08-08-2022,Regular
+2026,IR-E-C-16590,Engineering,251,ELANGO J,62,Assistant Professor,Male,Ph.D,34,True,11-08-2022,Regular
+2026,IR-E-C-16590,Engineering,252,RAVI MOHAN R,60,Assistant Professor,Male,Ph.D,180,True,22-08-2022,Regular
+2026,IR-E-C-16590,Engineering,253,SANGEETHA P,46,Assistant Professor,Female,Ph.D,156,True,22-08-2022,Regular
+2026,IR-E-C-16590,Engineering,254,SATHISH BABU,41,Assistant Professor,Male,Ph.D,144,True,22-08-2022,Regular
+2026,IR-E-C-16590,Engineering,255,RAMASUNDARAM,56,Professor,Male,Ph.D,324,True,05-09-2022,Regular
+2026,IR-E-C-16590,Engineering,256,PERIASAMY P,53,Associate Professor,Male,Ph.D,300,True,05-09-2022,Regular
+2026,IR-E-C-16590,Engineering,257,EUNICE JEMIMA,53,Assistant Professor,Female,Ph.D,216,True,26-09-2022,Regular
+2026,IR-E-C-16590,Engineering,258,ARUN PRADEEP,39,Associate Professor,Male,Ph.D,192,True,17-10-2022,Regular
+2026,IR-E-C-16590,Engineering,259,VIJAYAN P,51,Assistant Professor,Male,Ph.D,268,True,20-10-2022,Regular
+2026,IR-E-C-16590,Engineering,260,AUGUSTIAN ISAAC,50,Assistant Professor,Female,Ph.D,288,True,31-10-2022,Regular
+2026,IR-E-C-16590,Engineering,261,SUNDARA,44,Associate Professor,Male,Ph.D,228,True,01-11-2022,Regular
+2026,IR-E-C-16590,Engineering,262,JAINAB ZAREENA,39,Assistant Professor,Female,Ph.D,84,True,03-11-2022,Regular
+2026,IR-E-C-16590,Engineering,263,MANI S V J,52,Assistant Professor,Male,Ph.D,276,True,27-11-2022,Regular
+2026,IR-E-C-16590,Engineering,264,ANAND A,44,Professor,Male,Ph.D,204,True,03-10-2022,Regular
+2026,IR-E-C-16590,Engineering,265,YAMINI ROJA S,35,Assistant Professor,Female,M.E.,103,True,09-01-2023,Regular
+2026,IR-E-C-16590,Engineering,266,SINDHUJA R,37,Assistant Professor,Female,M.E.,19,True,23-01-2023,Regular
+2026,IR-E-C-16590,Engineering,267,SARAVANAN N,46,Assistant Professor,Male,M.E.,132,True,03-02-2023,Regular
+2026,IR-E-C-16590,Engineering,268,SINDHU G,30,Assistant Professor,Female,M.E.,18,True,10-02-2023,Regular
+2026,IR-E-C-16590,Engineering,269,SANGEETHA,35,Assistant Professor,Female,M.E.,18,True,10-02-2023,Regular
+2026,IR-E-C-16590,Engineering,270,KOLLI HIMANTHA,35,Assistant Professor,Male,M.Tech,92,True,14-02-2023,Regular
+2026,IR-E-C-16590,Engineering,271,MONICA D,29,Assistant Professor,Female,M.E.,18,True,15-02-2023,Regular
+2026,IR-E-C-16590,Engineering,272,THILAGAVATHY S,30,Assistant Professor,Female,M.Tech,30,True,23-02-2023,Regular
+2026,IR-E-C-16590,Engineering,273,DHIVYA,39,Assistant Professor,Female,M.E.,29,True,03-03-2023,Regular
+2026,IR-E-C-16590,Engineering,274,KARTHIGA M,34,Assistant Professor,Female,M.E.,24,True,06-03-2023,Regular
+2026,IR-E-C-16590,Engineering,275,SUBASHINI T,46,Assistant Professor,Female,M.E.,65,True,15-03-2023,Regular
+2026,IR-E-C-16590,Engineering,276,RAMACHANDRAN,37,Assistant Professor,Male,M.E.,24,True,26-04-2023,Regular
+2026,IR-E-C-16590,Engineering,277,MADHUMITHA N,39,Assistant Professor,Female,M.Tech,50,True,04-05-2023,Regular
+2026,IR-E-C-16590,Engineering,278,DEEPA M,40,Assistant Professor,Female,Ph.D,68,True,05-05-2023,Regular
+2026,IR-E-C-16590,Engineering,279,NAGENDRAN K,45,Assistant Professor,Male,M.E.,193,True,22-06-2023,Regular
+2026,IR-E-C-16590,Engineering,280,ARUL OLI A,43,Assistant Professor,Female,M.E.,229,True,05-06-2023,Regular
+2026,IR-E-C-16590,Engineering,281,VINOTH KUMAR E,46,Assistant Professor,Male,M.Tech,157,True,05-06-2023,Regular
+2026,IR-E-C-16590,Engineering,282,POONGULALI E,49,Assistant Professor,Female,M.E.,253,True,09-06-2023,Regular
+2026,IR-E-C-16590,Engineering,283,JUDITH REYA M,36,Assistant Professor,Female,M.Tech,33,True,21-06-2023,Regular
+2026,IR-E-C-16590,Engineering,284,KIRUTHIKA S S,45,Assistant Professor,Female,M.E.,120,True,19-07-2023,Regular
+2026,IR-E-C-16590,Engineering,285,HEMADHARSANA,41,Assistant Professor,Female,M.E.,24,True,19-07-2023,Regular
+2026,IR-E-C-16590,Engineering,286,SATHYA U,37,Assistant Professor,Female,M.E.,24,True,28-07-2023,Regular
+2026,IR-E-C-16590,Engineering,287,SARAVANAN T,45,Assistant Professor,Male,M.E.,204,True,01-08-2023,Regular
+2026,IR-E-C-16590,Engineering,288,DINESH BABU G L,35,Assistant Professor,Male,M.E.,84,True,01-08-2023,Regular
+2026,IR-E-C-16590,Engineering,289,KUPPAN A,32,Assistant Professor,Male,Ph.D,24,True,02-08-2023,Regular
+2026,IR-E-C-16590,Engineering,290,SHRUTHI S NAIR,38,Assistant Professor,Female,M.E.,69,True,02-08-2023,Regular
+2026,IR-E-C-16590,Engineering,291,SANGEETHA R,26,Assistant Professor,Female,M.E.,22,True,07-08-2023,Regular
+2026,IR-E-C-16590,Engineering,292,SANKAR P,33,Assistant Professor,Male,M.E.,132,True,28-08-2023,Regular
+2026,IR-E-C-16590,Engineering,293,SHAGUL A S,30,Assistant Professor,Female,M.E.,22,True,28-08-2023,Regular
+2026,IR-E-C-16590,Engineering,294,MATHANAVALLI S,33,Assistant Professor,Female,Ph.D,24,True,30-08-2023,Regular
+2026,IR-E-C-16590,Engineering,295,KARTHIKA PRIYA,37,Assistant Professor,Female,M.E.,48,True,01-09-2023,Regular
+2026,IR-E-C-16590,Engineering,296,JESILA MOL J,42,Assistant Professor,Female,M.Tech,144,True,11-09-2023,Regular
+2026,IR-E-C-16590,Engineering,297,VINODHINI N,34,Assistant Professor,Female,Ph.D,22,True,11-09-2023,Regular
+2026,IR-E-C-16590,Engineering,298,UMA V,44,Assistant Professor,Male,M.E.,204,True,13-09-2023,Regular
+2026,IR-E-C-16590,Engineering,299,DEEPA A,45,Assistant Professor,Female,M.Tech,60,True,14-09-2023,Regular
+2026,IR-E-C-16590,Engineering,300,PRAVEENA T,30,Assistant Professor,Female,Ph.D,22,True,14-09-2023,Regular
+2026,IR-E-C-16590,Engineering,301,RAMACHANDRAN,41,Associate Professor,Male,Ph.D,162,True,25-09-2023,Regular
+2026,IR-E-C-16590,Engineering,302,ARUL DALTON G,53,Associate Professor,Male,Ph.D,228,True,27-09-2023,Regular
+2026,IR-E-C-16590,Engineering,303,VISHNU PRIYA K,32,Assistant Professor,Female,M.E.,60,True,03-10-2023,Regular
+2026,IR-E-C-16590,Engineering,304,JANAKI AAMAL P,42,Assistant Professor,Female,M.E.,60,True,01-11-2023,Regular
+2026,IR-E-C-16590,Engineering,305,SREELAKSHMI S,39,Assistant Professor,Female,M.Tech,22,True,16-11-2023,Regular
+2026,IR-E-C-16590,Engineering,306,SHARMILA J,27,Assistant Professor,Female,M.E.,48,True,01-12-2023,Regular
+2026,IR-E-C-16590,Engineering,307,PONMATHI JEBA,39,Assistant Professor,Female,M.E.,24,True,01-12-2023,Regular
+2026,IR-E-C-16590,Engineering,308,SAVITHA V,44,Assistant Professor,Female,M.E.,156,True,26-12-2023,Regular
+2026,IR-E-C-16590,Engineering,309,MICHAEL MAHESH,39,Associate Professor,Male,Ph.D,156,True,27-12-2023,Regular
+2026,IR-E-C-16590,Engineering,310,DHANALAKSHMI J,39,Assistant Professor,Female,M.E.,156,True,02-01-2024,Regular
+2026,IR-E-C-16590,Engineering,311,YESUBAI,43,Professor,Female,Ph.D,192,True,04-01-2024,Regular
+2026,IR-E-C-16590,Engineering,312,HARI U,56,Assistant Professor,Male,M.E.,312,True,10-01-2024,Regular
+2026,IR-E-C-16590,Engineering,313,OMANA J,37,Assistant Professor,Female,Ph.D,132,True,24-01-2024,Regular
+2026,IR-E-C-16590,Engineering,314,SARANYA K,37,Assistant Professor,Female,M.E.,30,True,24-01-2024,Regular
+2026,IR-E-C-16590,Engineering,315,PAVAI D,34,Assistant Professor,Female,M.E.,40,True,24-01-2024,Regular
+2026,IR-E-C-16590,Engineering,316,SATYA GOPAL,44,Associate Professor,Male,Ph.D,90,True,29-01-2024,Regular
+2026,IR-E-C-16590,Engineering,317,RAJESH C,36,Associate Professor,Male,M.E.,108,True,29-01-2024,Regular
+2026,IR-E-C-16590,Engineering,318,ARASA KUMAR R,41,Assistant Professor,Male,M.E.,108,True,31-01-2024,Regular
+2026,IR-E-C-16590,Engineering,319,PANDIAN G,39,Assistant Professor,Male,Ph.D,138,True,12-02-2024,Regular
+2026,IR-E-C-16590,Engineering,320,MANICKAM S,34,Assistant Professor,Male,M.E.,84,True,16-02-2024,Regular
+2026,IR-E-C-16590,Engineering,321,VENKATESAN V,36,Assistant Professor,Male,M.E.,103,True,01-02-2024,Regular
+2026,IR-E-C-16590,Engineering,322,POTNURI ANITHA,27,Assistant Professor,Female,M.Tech,36,True,01-03-2024,Regular
+2026,IR-E-C-16590,Engineering,323,P MUTHUVEL,39,Associate Professor,Male,Ph.D,132,True,04-03-2024,Regular
+2026,IR-E-C-16590,Engineering,324,ANNA PALAGAN C,47,Professor,Male,Ph.D,216,True,06-03-2024,Regular
+2026,IR-E-C-16590,Engineering,325,NICI MARX V S,30,Assistant Professor,Female,M.E.,17,True,06-03-2024,Regular
+2026,IR-E-C-16590,Engineering,326,R SUGUNA DEVI,46,Assistant Professor,Female,M.E.,175,True,14-03-2024,Regular
+2026,IR-E-C-16590,Engineering,327,C M VELU,66,Professor,Male,Ph.D,456,True,14-03-2024,Regular
+2026,IR-E-C-16590,Engineering,328,RAJAKRISHNAMM,35,Assistant Professor,Female,M.E.,54,True,15-04-2024,Regular
+2026,IR-E-C-16590,Engineering,329,SAKTHI SWARRUP,41,Professor,Female,Ph.D,78,True,18-04-2024,Regular
+2026,IR-E-C-16590,Engineering,330,ROSEKUMARI I,67,Professor,Female,Ph.D,384,True,13-06-2017,Regular
+2026,IR-E-C-16590,Engineering,331,A SARAVANAN,44,Assistant Professor,Male,Ph.D,192,True,01-06-2017,Regular
+2026,IR-E-C-16590,Engineering,332,RAVINDHRAN M,45,Professor,Male,Ph.D,172,True,26-08-2021,Regular
+2026,IR-E-C-16590,Engineering,333,UMA,46,Assistant Professor,Female,M.E.,111,True,05-06-2015,Regular
+2026,IR-E-C-16590,Engineering,334,MEENATCHI K V,38,Assistant Professor,Female,M.E.,24,True,12-05-2023,Regular
+2026,IR-E-C-16590,Engineering,335,BALASINGH S,42,Assistant Professor,Male,Ph.D,234,True,20-10-2022,Regular
+2026,IR-E-C-16590,Engineering,336,NIVETHITHA M,30,Assistant Professor,Female,M.E.,50,True,13-03-2023,Regular
+2026,IR-E-C-16590,Engineering,337,ANIVEL,46,Assistant Professor,Male,Ph.D,264,True,20-07-2020,Regular
+2026,IR-E-C-16590,Engineering,338,RASAN U,34,Assistant Professor,Male,M.E.,24,True,01-06-2023,Regular
+2026,IR-E-C-16590,Engineering,339,MAMATHA A,30,Assistant Professor,Female,M.E.,65,True,15-04-2019,Regular
+2026,IR-E-C-16590,Engineering,340,PONPRASANNA T,33,Assistant Professor,Male,M.E.,45,True,28-12-2020,Regular
+2026,IR-E-C-16590,Engineering,341,DHANANCHEZIYAN,38,Assistant Professor,Male,M.E.,108,True,24-02-2016,Regular
+2026,IR-E-C-16590,Engineering,342,SUBASHINI,39,Assistant Professor,Female,M.E.,100,True,24-02-2016,Regular
+2026,IR-E-C-16590,Engineering,343,SHANMUGA PRIYA,43,Assistant Professor,Female,M.Tech,148,True,10-06-2022,Regular
+2026,IR-E-C-16590,Engineering,344,Ganapathy Raman,42,Associate Professor,Male,Ph.D,172,True,01-09-2022,Regular
+2026,IR-E-C-16590,Engineering,345,Rohini N,42,Assistant Professor,Female,M.E.,162,True,15-03-2010,Regular
+2026,IR-E-C-16590,Engineering,346,RAJESWARI J,27,Assistant Professor,Female,M.Tech,17,True,08-05-2024,Regular
+2026,IR-E-C-16590,Engineering,347,CHAMUNDESWARI,54,Professor,Female,Ph.D,324,True,22-05-2024,Regular
+2026,IR-E-C-16590,Engineering,348,JERUSHA D,31,Assistant Professor,Female,Ph.D,15,True,06-05-2024,Regular
+2026,IR-E-C-16590,Engineering,349,SRIDEVI B,35,Assistant Professor,Female,Ph.D,101,True,24-05-2024,Regular
+2026,IR-E-C-16590,Engineering,350,VARALAKHSMI S,46,Assistant Professor,Female,Ph.D,273,True,31-05-2024,Regular
+2026,IR-E-C-16590,Engineering,351,CATHERIEN TC,29,Assistant Professor,Female,Ph.D,31,True,03-06-2024,Regular
+2026,IR-E-C-16590,Engineering,352,SHIKHA,34,Assistant Professor,Female,M.Tech,35,True,03-06-2024,Regular
+2026,IR-E-C-16590,Engineering,353,LAKSHMI C,37,Associate Professor,Female,Ph.D,140,True,03-06-2024,Regular
+2026,IR-E-C-16590,Engineering,354,VASANTHA S,56,Professor,Female,Ph.D,358,True,03-06-2024,Regular
+2026,IR-E-C-16590,Engineering,355,BANUPRIYA P,41,Assistant Professor,Female,M.E.,90,True,03-06-2024,Regular
+2026,IR-E-C-16590,Engineering,356,SHALINI P,54,Assistant Professor,Female,Ph.D,245,True,03-06-2024,Regular
+2026,IR-E-C-16590,Engineering,357,GANESAN ALIAS,38,Assistant Professor,Male,Ph.D,183,True,05-06-2024,Regular
+2026,IR-E-C-16590,Engineering,358,KAUSALYA K,43,Assistant Professor,Female,M.E.,195,True,06-06-2024,Regular
+2026,IR-E-C-16590,Engineering,359,KARTHICK KK,48,Assistant Professor,Male,Ph.D,297,True,10-06-2024,Regular
+2026,IR-E-C-16590,Engineering,360,Ramar V,40,Associate Professor,Male,Ph.D,164,True,10-06-2024,Regular
+2026,IR-E-C-16590,Engineering,361,Alagumani S,44,Associate Professor,Female,Ph.D,143,True,10-06-2024,Regular
+2026,IR-E-C-16590,Engineering,362,Vimalnath V,38,Assistant Professor,Male,Ph.D,138,True,12-06-2024,Regular
+2026,IR-E-C-16590,Engineering,363,Shobana M,45,Professor,Female,Ph.D,105,True,12-06-2024,Regular
+2026,IR-E-C-16590,Engineering,364,Poovannan E,42,Assistant Professor,Male,Ph.D,154,True,13-06-2024,Regular
+2026,IR-E-C-16590,Engineering,365,Yashini P,24,Assistant Professor,Female,M.E.,14,True,24-06-2024,Regular
+2026,IR-E-C-16590,Engineering,366,Hema R,46,Associate Professor,Female,Ph.D,232,True,27-06-2024,Regular
+2026,IR-E-C-16590,Engineering,367,Kumaran U,56,Associate Professor,Male,Ph.D,272,True,01-07-2024,Regular
+2026,IR-E-C-16590,Engineering,368,Sunitha T,41,Assistant Professor,Female,M.E.,203,True,03-07-2024,Regular
+2026,IR-E-C-16590,Engineering,369,Karthik S,30,Assistant Professor,Male,M.Tech,79,True,03-07-2024,Regular
+2026,IR-E-C-16590,Engineering,370,Berlin Magthalin R,33,Assistant Professor,Female,M.E.,71,True,03-07-2024,Regular
+2026,IR-E-C-16590,Engineering,371,Priyanga G,26,Assistant Professor,Female,M.Tech,17,True,03-07-2024,Regular
+2026,IR-E-C-16590,Engineering,372,Renugadevi R,38,Assistant Professor,Female,Ph.D,168,True,04-07-2024,Regular
+2026,IR-E-C-16590,Engineering,373,Rajarajachozhan C,39,Assistant Professor,Male,Ph.D,151,True,10-07-2024,Regular
+2026,IR-E-C-16590,Engineering,374,Vinoth Raj R,44,Associate Professor,Male,Ph.D,128,True,10-07-2024,Regular
+2026,IR-E-C-16590,Engineering,375,Krishnamoorthy J,38,Assistant Professor,Male,M.E.,146,True,15-07-2024,Regular
+2026,IR-E-C-16590,Engineering,376,Kaladevi R,48,Professor,Female,Ph.D,268,True,18-07-2024,Regular
+2026,IR-E-C-16590,Engineering,377,Karthiga G,41,Assistant Professor,Female,M.E.,201,True,18-07-2024,Regular
+2026,IR-E-C-16590,Engineering,378,Catherine Rex S,48,Assistant Professor,Female,Ph.D,130,True,31-07-2024,Regular
+2026,IR-E-C-16590,Engineering,379,Sandhyaa S,30,Assistant Professor,Female,M.E.,12,True,01-08-2024,Regular
+2026,IR-E-C-16590,Engineering,380,Dayanidhy M,42,Assistant Professor,Male,M.E.,130,True,01-08-2024,Regular
+2026,IR-E-C-16590,Engineering,381,Pradeep R,34,Assistant Professor,Male,M.E.,141,True,19-08-2024,Regular
+2026,IR-E-C-16590,Engineering,382,Satya Priya K,30,Assistant Professor,Female,M.E.,57,True,29-08-2024,Regular
+2026,IR-E-C-16590,Engineering,383,Bharathi A,28,Assistant Professor,Female,M.E.,35,True,09-02-2024,Regular
+2026,IR-E-C-16590,Engineering,384,Prabha M,43,Assistant Professor,Female,Ph.D,126,True,09-09-2024,Regular
+2026,IR-E-C-16590,Engineering,385,Paramesh J,50,Associate Professor,Male,Ph.D,304,True,09-09-2024,Regular
+2026,IR-E-C-16590,Engineering,386,Shobhanaa E,37,Assistant Professor,Female,M.E.,125,True,23-09-2024,Regular
+2026,IR-E-C-16590,Engineering,387,Revathy D,30,Assistant Professor,Female,M.E.,97,True,18-09-2017,Regular
+2026,IR-E-C-16590,Engineering,388,Ranjith R,37,Assistant Professor,Male,M.E.,37,True,12-09-2022,Regular
+2026,IR-E-C-16590,Engineering,389,Elangovan D,55,Assistant Professor,Male,M.E.,25,True,30-09-2024,Regular
+2026,IR-E-C-16590,Engineering,390,Manikandan S P,40,Assistant Professor,Male,Ph.D,25,True,04-10-2024,Regular
+2026,IR-E-C-16590,Engineering,391,Nandhini S,36,Assistant Professor,Female,M.E.,124,True,07-10-2024,Regular
+2026,IR-E-C-16590,Engineering,392,Shanmugupriya G,33,Assistant Professor,Female,M.E.,98,True,28-10-2024,Regular
+2026,IR-E-C-16590,Engineering,393,Ramesh Kumar S,39,Assistant Professor,Male,M.E.,118,True,15-12-2024,Regular
+2026,IR-E-C-16590,Engineering,394,Nithya S,44,Associate Professor,Female,Ph.D,240,True,07-11-2024,Regular
+2026,IR-E-C-16590,Engineering,395,Jayaseelan V,47,Associate Professor,Male,Ph.D,240,True,06-11-2024,Regular
+2026,IR-E-C-16590,Engineering,396,Vaigundamoorthi M,44,Associate Professor,Male,Ph.D,240,True,06-11-2024,Regular
+2026,IR-E-C-16590,Engineering,397,Kanchan Devi,39,Assistant Professor,Female,Ph.D,120,True,29-11-2024,Regular
+2026,IR-E-C-16590,Engineering,398,Lavanya J,39,Assistant Professor,Female,Ph.D,136,True,29-11-2024,Regular
+2026,IR-E-C-16590,Engineering,399,Senthil Kumar A,43,Assistant Professor,Male,Ph.D,121,True,13-11-2024,Regular
+2026,IR-E-C-16590,Engineering,400,Sriram K,32,Assistant Professor,Male,M.E.,99,True,04-12-2024,Regular
+2026,IR-E-C-16590,Engineering,401,Jegadeswari G,35,Assistant Professor,Female,Ph.D,119,True,05-12-2024,Regular
+2026,IR-E-C-16590,Engineering,402,Sabura Banu U,50,Professor,Female,Ph.D,145,True,26-12-2024,Regular
+2026,IR-E-C-16590,Engineering,403,Rohini G,46,Professor,Female,Ph.D,144,True,27-12-2024,Regular
+2026,IR-E-C-16590,Engineering,404,Kartheesan S,36,Assistant Professor,Male,Ph.D,117,True,26-12-2024,Regular
+2026,IR-E-C-16590,Engineering,405,Radha M,43,Assistant Professor,Female,Ph.D,144,True,27-12-2024,Regular
+2026,IR-E-C-16590,Engineering,406,Bhaskaran S,42,Assistant Professor,Male,Ph.D,132,True,03-12-2024,Regular
+2026,IR-E-C-16590,Engineering,407,Selva Ganapathy M,37,Associate Professor,Male,Ph.D,134,True,03-12-2024,Regular
+2026,IR-E-C-16590,Engineering,408,Sridhar R,49,Professor,Male,Ph.D,260,False,03-12-2024,Regular

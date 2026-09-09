@@ -1,0 +1,1032 @@
+                                                                                           National Institutional Ranking Framework
+                                                                                                         Ministry of Education
+                                                                                                          Government of India
+                                                                                             Welcome to Data Capturing System: INNOVATION
+Submitted Institute Data for NIRF'2025'
+Institute Name: SAVEETHA ENGINEERING COLLEGE [IR-I-C-16590]
+
+Sanctioned (Approved) Intake
+        Academic Year                            2023-24                              2022-23                              2021-22                               2020-21                                  2019-20                             2018-19
+
+UG [4 Years Program(s)]            1500                                 1260                                  1260                                1260                                     -                                      -
+
+PG [2 Year Program(s)]             144                                  144                                   -                                   -                                        -                                      -
+
+
+
+Total Actual Student Strength (Program(s) Offered by Your Institution)
+ (All programs       No. of Male         No. of Female      Total Students       Within State       Outside State           Outside        Economically             Socially        No. of students        No. of students     No. of students   No. of students
+  of all years)       Students             Students                            (Including male     (Including male          Country          Backward             Challenged          receiving full         receiving full     receiving full     who are not
+                                                                                  & female)           & female)         (Including male   (Including male        (SC+ST+OBC             tuition fee            tuition fee        tuition fee     receiving full
+                                                                                                                           & female)         & female)          Including male      reimbursement          reimbursement       reimbursement        tuition fee
+                                                                                                                                                                   & female)         from the State        from Institution   from the Private   reimbursement
+                                                                                                                                                                                       and Central               Funds              Bodies
+                                                                                                                                                                                      Government
+
+UG [4 Years        3464              1541                   5005               4471               534                  0                  320                   3520                1835                   1162               0                  843
+Program(s)]
+
+PG [2 Year         109               82                     191                185                6                    0                  9                     147                 0                      37                 0                  119
+Program(s)]
+
+
+
+Start up recognized by DPIIT/startup India
+                              Name of Venture                                                             Year of recognition by DPIIT/startup India                                                  DPIIT/Start up India Registration No.
+
+NA                                                                                    NA                                                                                   NA
+
+
+
+Startups which have got VC investment in previous 3 years
+       Name of startups                         DPIIT No.                        Amount received                      Organisation Name           Year of receiving VC investment                 Achievement Level                    Type of Investment
+
+NA                                 NA                                   0                                     NA                                  Select Year                              Select Level                           NA
+
+
+
+Seed Funding
+     Name of the Start-up                       DPIIT No.                     Seed funding received(in               Name of Government                Year of Receiving the Fund                 Achievement Level                    Type of Investment
+                                                                                      Rupees)                     Organization providing Seed
+                                                                                                                            Funding
+
+NA                                 NA                                   0                                     NA                                  Select Year                              Select Level                           NA
+
+
+
+FDI investment in previous 3 years
+       Name of startups                         DPIIT No.                    FDI investment received(in               Organization Name                  Year of receiving FDI                    Achievement Level                    Type of Investment
+                                                                                      Rupees)                                                                 investment
+
+NA                                 NA                                   0                                     NA                                  -Select-                                 --Select Level--                       NA
+
+
+
+Innovation grant received from govt. organization in previous 3 years
+  Name of Government organisation from which grant is                        Name of the Program or Scheme                     Amount of Grant received                                   Year of receiving grant
+                      received
+
+Tamilnadu Skill Development Corporation                         Niral Thiruvizha 1.0 Hackathon                       110000                                            2023-24
+
+
+
+Patents
+                         Calendar year                                                      2023                                          2022                                                     2021
+
+No. of Patents Published                                        138                                                  18                                                17
+
+No. of Patents Granted                                          0                                                    4                                                 2
+
+
+
+Patents Commercialized & Technology Transferred
+                         Calendar year                                                      2023                                          2022                                                     2021
+
+Patents Commercialized & Technology Transferred                 0                                                    0                                                 0
+
+Income from Technology Transferred(in Rupees).                  0                                                    0                                                 0
+
+
+
+Innovations at various stages of Technology Readiness Level
+                     Name of the Start-up                                                 DPIIT No.                                Innovation Name                                         Stage of technology
+
+NA                                                              NA                                                   NA                                                -Select-
+
+
+
+Ventures/startups grown to turnover of 50 lacs
+                                   Name of startups                                                             DPIIT No.                                                         Company's Turnover
+
+NA                                                                                   NA                                                               0
+
+
+
+Alumni that are Founders of Forbes/Fortune 500 companies
+              Name of the Alumni                                Program passed from                          Year of passing                      Founder of company                  Year in which company appeared in Forbes /
+                                                                                                                                                                                                      Fortune 500
+
+NA                                                    0                                               0                               0                                              0
+
+
+
+Pre-incubation Activities
+                         Financial Year                                                   2023-24                                      2022-23                                                   2021-22
+
+Number of participants in Pre-incubation activities             80                                                   72                                                60
+
+Expenditure on pre-incubation activities                        354000                                               312000                                            284000
+
+
+
+Incubation Activities
+                         Financial Year                                                   2023-24                                      2022-23                                                   2021-22
+
+Number of participants Incubated                                0                                                    0                                                 0
+
+Expenditure on incubation activities                            0                                                    0                                                 0
+
+Income generated by institution through incubation activities   0                                                    0                                                 0
+FDP
+      Academic year                  Title of Course               Program Coordinator(PC)          Contact Details of(PC)              No.of Participants                    Expenditure                  Program Start Date                 Program End Date
+
+2022-23                       Social Advances in Wireless       Dr Kumaran S                   9994958058                       145                                 7000                              2023-02-14                      2023-02-18
+                              System and Emerging
+                              Technologies
+
+2022-23                       Cyber Security Global             Dr Jennie Bharathi             7871784886                       125                                 10000                             2023-02-01                      2023-02-11
+                              Hacktivism, Defence               Dr Vanitha M
+                              Mechanism and Digital
+                              Forensics
+
+2022-23                       Road Map for Paradigm Shift       Dr Sheeba C Joice              9840515829                       80                                  10000                             2023-10-23                      2023-10-28
+                              in Higher Education
+
+2023-24                       Driving Industrial Excellence     Dr. Renjith Krishnan           Renjith                          139                                 0                                 2023-11-20                      2023-11-25
+                              with Modern Mechanical                                           krishnan@saveetha.ac.in
+                              Engineering Innovations
+
+2023-24                       Sustainable Lighting Design       DR.S.KAVITHA ,                 9444533061 , 9597727988          45                                  10000                             2024-01-31                      2024-02-04
+                              in Modern Industry Using          Dr.R.KARPAGA PRIYA
+                              DIALux Evo
+
+2022-23                       IEEE Sponsored- Advanced          Dr.M.Moorthi                   +91 98410 99062                  99                                  142727                            2022-12-26                      2022-12-30
+                              Greencomputing Technology
+                              in Healthcare
+
+2023-24                       Advanced Research in              Dr.M.Moorthi                   +91 98410 99062                  120                                 0                                 2024-01-20                      2024-02-02
+                              Biomedical Engineering
+
+
+
+Academic Courses in Innovation, Entrepreneurship and IPR
+          Academic year                     Title of Course                          Course Code                      Type of Course                    Level of Course(UG/PG/PhD)                  Course Offering                         Total Credit Score
+                                                                                                                                                                                              Department/Centre/ UnitName
+
+2023-24                            INTELLECTUAL PROPERTY                 19ME531                              Elective Course                         UG                                     Mechanical Engineering               3
+                                   RIGHTS
+
+2023-24                            Entrepreneurship and Small            19CS570                              Elective Course                         UG                                     Computer Science Engineering         3
+                                   Business Development
+
+2023-24                            Professional Readiness for            19CS532                              Elective Course                         UG                                     Computer Science Engineering         3
+                                   Innovation, Employability and
+                                   Entrepreneurship
+
+2023-24                            Entrepreneurship Development          19ME532                              Elective Course                         UG                                     Mechanical Engineering               3
+
+2023-24                            Medical Innovation and                19BM522                              Elective Course                         UG                                     Bio Medical Engineering              3
+                                   Entrepreneurship
+
+2023-24                            Entrepreneurship Development          19AG101                              Core Course                             UG                                     Agricultural Engineering             3
+                                   and Business Management
+
+
+
+Faculty Details
+       Srno                 Name                       Age                Designation               Gender              Qualification              Experience (In       Currently working           Joining Date             Leaving Date          Association type
+                                                                                                                                                     Months)             with institution?
+
+1                     Abinaya G              33                       Assistant Professor    Female                 M.E.                      97                        Yes                     04-01-2021              --                       Regular
+
+2                     ANAND A                42                       Professor              Male                   Ph.D                      192                       Yes                     03-10-2022              --                       Regular
+
+3                     Anjaline Jayaprabha    28                       Assistant Professor    Female                 M.E.                      72                        Yes                     01-11-2021              --                       Regular
+                      A
+
+4                     ARAVIND T              36                       Associate Professor    Male                   Ph.D                      157                       Yes                     08-06-2011              --                       Regular
+5    ARUL OLI A         41   Assistant Professor   Female   M.E.     217   Yes   05-06-2023   --           Regular
+
+6    ASHA S             53   Associate Professor   Female   Ph.D     339   Yes   01-06-2017   --           Regular
+
+7    Bakkiyalakshmi P   44   Associate Professor   Female   Ph.D     210   Yes   15-07-2019   --           Regular
+
+8    Baraneedharan P    36   Assistant Professor   Male     Ph.D     36    Yes   28-07-2021   --           Regular
+
+9    CHAMUNDEESWA       42   Assistant Professor   Female   Ph.D     180   Yes   29-07-2022   --           Regular
+     RI G
+
+10   DELECTA JENIFER    43   Assistant Professor   Female   Ph.D     48    Yes   13-06-2022   --           Regular
+     R
+
+11   DIVYA PRABHA V     27   Assistant Professor   Female   M.E.     23    Yes   01-08-2022   --           Regular
+
+12   Ezhil Arasan I     33   Assistant Professor   Male     M.E.     88    Yes   16-03-2022   --           Regular
+
+13   GANAPATHI          41   Associate Professor   Male     Ph.D     160   Yes   01-09-2022   --           Regular
+     RAMAN R
+
+14   GOKUL KANNAN K     45   Assistant Professor   Male     Ph.D     192   Yes   08-08-2022   --           Regular
+
+15   HEINER A J         32   Assistant Professor   Male     Ph.D     24    Yes   28-02-2022   --           Regular
+
+16   HEMAVATHY P        50   Assistant Professor   Female   Ph.D     252   Yes   04-05-2022   --           Regular
+
+17   JAGADEESHKUMA      27   Assistant Professor   Male     M.E.     36    No    20-01-2021   30-07-2024   Regular
+     RK
+
+18   Jebajasphin E T    41   Assistant Professor   Female   M.E.     217   Yes   09-06-2008   --           Regular
+
+19   JOEL JOHN M        41   Assistant Professor   Male     M.E.     189   Yes   03-06-2013   --           Regular
+
+20   KALAIARASI A R     51   Professor             Female   Ph.D     310   Yes   26-06-2013   --           Regular
+
+21   Kanchana K         44   Associate Professor   Female   Ph.D     238   Yes   14-03-2022   --           Regular
+
+22   Karthika R N       34   Assistant Professor   Female   M.Tech   48    Yes   30-07-2020   --           Regular
+
+23   Kripa M Suvarna    38   Associate Professor   Female   Ph.D     99    Yes   06-07-2020   --           Regular
+
+24   KUPPAN A           29   Assistant Professor   Male     Ph.D     12    Yes   02-08-2023   --           Regular
+
+25   M A Somanathan     34   Assistant Professor   Male     M.E.     132   Yes   01-04-2019   --           Regular
+
+26   MAHALAKSHMI P      27   Assistant Professor   Female   M.E.     46    Yes   18-10-2023   --           Regular
+
+27   MANIVANNA          48   Professor             Male     Ph.D     264   Yes   20-09-2022   --           Regular
+     BOOPATHI A
+
+28   MERLIN             39   Associate Professor   Female   Ph.D     204   Yes   21-07-2008   --           Regular
+     INBAMALAR T
+
+29   MONICA P           54   Associate Professor   Female   Ph.D     373   Yes   26-05-2004   --           Regular
+     SURESH
+
+30   NALINIPRIYA G      49   Professor             Female   Ph.D     304   Yes   14-06-2012   --           Regular
+
+31   NIRMALA DEVI K     47   Associate Professor   Female   Ph.D     240   Yes   02-05-2022   --           Regular
+
+32   PADMAVATHI T       35   Assistant Professor   Female   Ph.D     108   Yes   07-02-2022   --           Regular
+
+33   PERIASAMY P        51   Associate Professor   Male     Ph.D     288   Yes   05-09-2022   --           Regular
+
+34   PRADEEP            38   Assistant Professor   Male     Ph.D     72    Yes   01-08-2022   --           Regular
+     NARAYANAN S
+35   Premnath K           36   Assistant Professor   Male     M.E.     169   Yes   26-02-2021   --           Regular
+
+36   RAJAKRISHNAMM        33   Assistant Professor   Female   M.E.     42    Yes   15-04-2024   --           Regular
+     AL A
+
+37   RAJKUMAR E           32   Assistant Professor   Male     M.E.     49    Yes   01-06-2022   --           Regular
+
+38   RANJANI A            43   Assistant Professor   Female   M.E.     41    No    15-05-2023   16-12-2023   Regular
+
+39   RENJITH              27   Assistant Professor   Male     Ph.D     46    Yes   20-03-2023   --           Regular
+     KRISHNAN
+
+40   SANGEETHA L          46   Assistant Professor   Female   Ph.D     279   Yes   02-07-2012   --           Regular
+
+41   SARAVANAN M P        35   Assistant Professor   Male     Ph.D     132   Yes   01-02-2022   --           Regular
+
+42   SATHIYAMURTHI K      39   Assistant Professor   Male     Ph.D     136   Yes   11-11-2020   --           Regular
+
+43   Selvanayaki S        44   Assistant Professor   Female   M.Tech   228   Yes   16-03-2022   --           Regular
+
+44   SHANMUGA PRIYA       41   Assistant Professor   Female   M.Tech   136   Yes   10-06-2022   --           Regular
+     S
+
+45   SILAMBARASI C        36   Assistant Professor   Female   M.E.     93    Yes   01-08-2022   --           Regular
+
+46   Sivaramakrishnan N   40   Associate Professor   Male     Ph.D     138   Yes   06-07-2020   --           Regular
+
+47   Srinivasan T K       37   Assistant Professor   Male     M.E.     121   Yes   09-01-2017   --           Regular
+
+48   SUGITHA N            52   Associate Professor   Female   Ph.D     264   Yes   27-06-2022   --           Regular
+
+49   SURESHKUMAR K        49   Associate Professor   Male     Ph.D     268   Yes   11-06-2007   --           Regular
+
+50   Thamarai Selvan A    44   Assistant Professor   Male     M.E.     241   Yes   08-07-2019   --           Regular
+
+51   UMA                  43   Assistant Professor   Female   M.E.     99    Yes   05-06-2015   --           Regular
+     MAHESHWARI
+
+52   Vanitha M            45   Associate Professor   Female   Ph.D     272   Yes   01-06-2018   --           Regular
+
+53   Venkatesan G         36   Assistant Professor   Male     Ph.D     130   Yes   04-01-2021   --           Regular
+
+54   VIJAYA RAJAN V       34   Assistant Professor   Male     M.E.     146   Yes   10-07-2013   --           Regular
+
+55   VINOTH KUMAR E       44   Assistant Professor   Male     M.Tech   145   Yes   05-06-2023   --           Regular
+     S
+
+56   YAMINI ROJA S        33   Assistant Professor   Female   M.E.     91    Yes   09-01-2023   --           Regular
+
+57   AKILA P MOHAN        31   Assistant Professor   Female   M.E.     101   Yes   14-06-2017   --           Regular
+
+58   ANANDAN V            45   Associate Professor   Male     Ph.D     300   Yes   26-08-2009   --           Regular
+
+59   ANNA PALAGAN C       44   Professor             Male     Ph.D     204   Yes   06-03-2024   --           Regular
+
+60   ARCHANA T            39   Assistant Professor   Female   M.E.     190   Yes   14-12-2011   --           Regular
+
+61   Arumugam T           44   Assistant Professor   Male     M.E.     218   Yes   18-01-2021   --           Regular
+
+62   ASWINI J             44   Professor             Female   Ph.D     178   Yes   11-07-2022   --           Regular
+
+63   Balachandran S       43   Assistant Professor   Male     M.Tech   174   Yes   13-09-2021   --           Regular
+
+64   BHAVADHARANI V       25   Assistant Professor   Female   M.E.     23    Yes   06-09-2022   --           Regular
+
+65   Chitra N             43   Assistant Professor   Female   M.Tech   79    Yes   02-03-2022   --           Regular
+66   DHANANCHEZIYAN    36   Assistant Professor   Male     M.E.     96    Yes   24-02-2016   --           Regular
+     J
+
+67   DOLLI H           49   Associate Professor   Male     Ph.D     242   Yes   01-09-2022   --           Regular
+
+68   Felix Prabhu F    36   Assistant Professor   Male     M.E.     121   Yes   16-06-2017   --           Regular
+
+69   GANGA KISHORE     27   Assistant Professor   Male     M.Tech   23    No    17-10-2022   22-12-2023   Regular
+     S
+
+70   GOPINATH A        32   Assistant Professor   Male     M.E.     123   Yes   26-11-2021   --           Regular
+
+71   HEMADHARSANA      39   Assistant Professor   Female   M.E.     12    Yes   19-07-2023   --           Regular
+     S
+
+72   IMMACULATE JOY    37   Assistant Professor   Female   M.E.     120   Yes   28-10-2022   --           Regular
+     S
+
+73   JANAKI AAMAL P    39   Assistant Professor   Female   M.E.     48    Yes   01-11-2023   --           Regular
+
+74   Jenifa Latha C    57   Professor             Female   Ph.D     387   Yes   04-01-2021   --           Regular
+
+75   JOSEPH SATISH V   40   Assistant Professor   Male     Ph.D     24    Yes   15-06-2022   --           Regular
+
+76   KALAIVANI C T     40   Assistant Professor   Female   Ph.D     229   Yes   14-06-2010   --           Regular
+
+77   KARPAGA PRIYA R   33   Assistant Professor   Female   Ph.D     102   Yes   17-08-2022   --           Regular
+
+78   KEERTHIGA G       40   Associate Professor   Female   M.Tech   204   Yes   06-09-2006   --           Regular
+
+79   Kumar A           65   Professor             Male     Ph.D     431   Yes   20-08-2018   --           Regular
+
+80   LAKSHMI THARA R   39   Assistant Professor   Female   Ph.D     36    No    26-06-2023   29-09-2023   Regular
+
+81   MADHAN KUMAR A    39   Assistant Professor   Male     Ph.D     192   Yes   16-03-2022   --           Regular
+
+82   MALATHI K         42   Assistant Professor   Female   Ph.D     120   Yes   20-06-2022   --           Regular
+
+83   MARY ADLINE       35   Assistant Professor   Female   Ph.D     72    Yes   13-06-2022   --           Regular
+     PRIYA M
+
+84   MICHAEL MAHESH    37   Associate Professor   Male     Ph.D     144   Yes   27-12-2023   --           Regular
+     K
+
+85   Muthu Pandian P   38   Assistant Professor   Male     Ph.D     62    Yes   13-11-2021   --           Regular
+
+86   Narendran K       43   Assistant Professor   Male     Ph.D     167   Yes   02-08-2017   --           Regular
+
+87   OBED OTTO C       45   Associate Professor   Male     M.E.     262   Yes   13-06-2005   --           Regular
+
+88   Panimalar S P     34   Assistant Professor   Female   M.E.     86    Yes   16-08-2021   --           Regular
+
+89   PONPRASANNA T     31   Assistant Professor   Male     M.E.     33    Yes   28-12-2020   --           Regular
+
+90   PRAVEEN KUMAR     34   Assistant Professor   Male     M.E.     57    Yes   01-06-2021   --           Regular
+     S
+
+91   R SUGUNA DEVI     44   Assistant Professor   Female   M.E.     163   Yes   14-03-2024   --           Regular
+
+92   RAJARAMAN R       58   Professor             Male     Ph.D     286   Yes   16-08-2022   --           Regular
+
+93   RAMACHANDRAN      35   Assistant Professor   Male     M.E.     12    Yes   26-04-2023   --           Regular
+     V
+
+94   RAVI MOHAN R      58   Assistant Professor   Male     Ph.D     168   Yes   22-08-2022   --           Regular
+
+95   Rohini M          30   Assistant Professor   Female   M.E.     84    Yes   24-07-2015   --           Regular
+96    SANGEETHA           33   Assistant Professor   Female   M.E.   6     Yes   10-02-2023   --           Regular
+      PRIYA M
+
+97    SARAVANAN T         43   Assistant Professor   Male     M.E.   192   Yes   01-08-2023   --           Regular
+
+98    SATYA GOPAL         42   Associate Professor   Male     Ph.D   78    Yes   29-01-2024   --           Regular
+      DINDA D
+
+99    Senthamil Arasu S   30   Assistant Professor   Male     M.E.   40    Yes   02-03-2022   --           Regular
+
+100   SHARMILA J          24   Assistant Professor   Female   M.E.   36    Yes   01-12-2023   --           Regular
+
+101   SINDHUJA R          35   Assistant Professor   Female   M.E.   7     Yes   23-01-2023   --           Regular
+
+102   SRAVYA P R          34   Assistant Professor   Female   Ph.D   24    Yes   01-02-2022   --           Regular
+
+103   SUBASHINI           36   Assistant Professor   Female   M.E.   88    Yes   24-02-2016   --           Regular
+
+104   Sundar Rajan P      31   Assistant Professor   Male     Ph.D   32    Yes   13-11-2021   --           Regular
+
+105   SWARNAMBIGA A       38   Associate Professor   Female   Ph.D   104   Yes   24-08-2022   --           Regular
+
+106   Thennarasu S        45   Assistant Professor   Male     Ph.D   144   Yes   02-07-2018   --           Regular
+
+107   UMA V               42   Assistant Professor   Male     M.E.   192   Yes   13-09-2023   --           Regular
+
+108   VARUN M             38   Assistant Professor   Male     M.E.   149   No    09-12-2020   30-11-2023   Regular
+
+109   VIDHYA S            41   Assistant Professor   Female   M.E.   231   Yes   06-01-2011   --           Regular
+
+110   VIJAYANAND M        48   Professor             Male     Ph.D   292   Yes   04-12-2017   --           Regular
+
+111   VINOTHKUMAR P       36   Assistant Professor   Male     Ph.D   92    Yes   25-06-2018   --           Regular
+
+112   Yogeswari S         29   Assistant Professor   Female   M.E.   40    Yes   22-03-2021   --           Regular
+
+113   A SARAVANAN         42   Assistant Professor   Male     Ph.D   180   Yes   01-06-2017   --           Regular
+
+114   AMIT KUMAR          39   Assistant Professor   Male     Ph.D   160   No    15-11-2021   30-12-2023   Regular
+      VARSHANEY
+
+115   Anitha Julian       56   Professor             Female   Ph.D   289   Yes   08-07-2019   --           Regular
+
+116   ANUSHA RANI V       32   Assistant Professor   Female   Ph.D   144   Yes   17-03-2023   --           Regular
+
+117   Arokia Nerling      33   Assistant Professor   Female   M.E.   140   Yes   07-12-2020   --           Regular
+      Rasoni G
+
+118   Arun kumar S        30   Assistant Professor   Male     M.E.   90    Yes   19-01-2021   --           Regular
+
+119   AYISHA BEGAM K      41   Assistant Professor   Female   Ph.D   168   No    21-06-2017   01-07-2023   Regular
+
+120   BALAJI R            35   Assistant Professor   Male     M.E.   72    Yes   02-03-2022   --           Regular
+
+121   C M VELU            64   Professor             Male     Ph.D   444   Yes   14-03-2024   --           Regular
+
+122   DEEPA M             38   Assistant Professor   Female   Ph.D   56    Yes   05-05-2023   --           Regular
+
+123   DHIVYA              36   Assistant Professor   Female   M.E.   17    Yes   03-03-2023   --           Regular
+      DHARSHINI S
+
+124   Elakkiya A          30   Assistant Professor   Male     M.E.   34    Yes   13-09-2021   --           Regular
+
+125   FREEDA              50   Associate Professor   Female   Ph.D   264   Yes   22-08-2022   --           Regular
+      RAJAKUMARI
+
+126   GAUTHAMAN B         42   Assistant Professor   Male     M.E.   24    Yes   06-07-2022   --           Regular
+127   GOWRI GANESH N       53   Associate Professor   Male     Ph.D     300   Yes   01-08-2022   --           Regular
+      S
+
+128   Hemalatha R          34   Assistant Professor   Male     M.E.     120   Yes   22-11-2021   --           Regular
+
+129   Imran Hussain S      33   Assistant Professor   Male     Ph.D     91    Yes   20-01-2022   --           Regular
+
+130   JASHIKA K M          26   Assistant Professor   Female   M.E.     23    Yes   19-09-2022   --           Regular
+
+131   Jerome Nithin G      31   Assistant Professor   Male     M.E.     85    Yes   28-06-2017   --           Regular
+
+132   Joyal Isac S         36   Assistant Professor   Male     M.E.     160   Yes   03-06-2013   --           Regular
+
+133   KALPANA S            49   Professor             Female   Ph.D     264   Yes   17-08-2022   --           Regular
+
+134   KARTHIGA M           32   Assistant Professor   Female   M.E.     12    Yes   06-03-2023   --           Regular
+
+135   KIRUTHIKA S S        42   Assistant Professor   Female   M.E.     108   Yes   19-07-2023   --           Regular
+
+136   KUMARAN V            40   Assistant Professor   Male     M.E.     156   Yes   18-12-2023   --           Regular
+
+137   LAVANYA G            44   Assistant Professor   Female   Ph.D     156   Yes   15-12-2021   --           Regular
+
+138   MADHUMITHA N         36   Assistant Professor   Female   M.Tech   38    Yes   04-05-2023   --           Regular
+
+139   MANI S V J           50   Assistant Professor   Male     Ph.D     264   Yes   27-11-2022   --           Regular
+
+140   MAUSAM               36   Assistant Professor   Male     Ph.D     23    No    03-08-2022   25-01-2024   Regular
+      CHOUKSEY
+
+141   MOHANA SUNDARI       36   Assistant Professor   Female   Ph.D     144   No    12-12-2022   31-08-2023   Regular
+      V
+
+142   NAGAPPAN G           43   Professor             Male     Ph.D     268   Yes   04-07-2009   --           Regular
+
+143   NAVANEETHA           42   Assistant Professor   Female   Ph.D     212   Yes   01-03-2022   --           Regular
+      VELAMMAL M
+
+144   P MUTHUVEL           37   Associate Professor   Male     Ph.D     120   Yes   04-03-2024   --           Regular
+
+145   ABIRAMI A            36   Assistant Professor   Female   M.E.     48    Yes   11-09-2023   --           Regular
+
+146   Anand S              47   Assistant Professor   Male     Ph.D     168   Yes   18-06-2018   --           Regular
+
+147   Ann C V Medona       34   Assistant Professor   Female   M.E.     100   Yes   06-07-2020   --           Regular
+
+148   Archana S H          31   Assistant Professor   Female   M.E.     90    Yes   18-11-2019   --           Regular
+
+149   Arumparithy G L      37   Assistant Professor   Male     M.S      145   Yes   02-06-2014   --           Regular
+
+150   Aswin A              30   Assistant Professor   Male     M.E.     73    Yes   25-06-2018   --           Regular
+
+151   Bala Subramanian A   39   Assistant Professor   Male     Ph.D     127   Yes   02-01-2019   --           Regular
+
+152   BAVATHARANI C        28   Assistant Professor   Female   Ph.D     24    Yes   19-01-2022   --           Regular
+
+153   CHANTHIRASEKAR       56   Professor             Male     Ph.D     216   Yes   27-07-2022   --           Regular
+      AN K
+
+154   DHANALAKSHMI J       37   Assistant Professor   Female   M.E.     144   Yes   02-01-2024   --           Regular
+
+155   DIVYA S              33   Assistant Professor   Female   M.Tech   12    Yes   12-03-2023   --           Regular
+
+156   EZHIL                36   Assistant Professor   Male     M.Tech   180   Yes   03-12-2019   --           Regular
+      VENUSWARAN R R
+157   GANDHIMATHINAT       38   Assistant Professor   Male     M.Tech   156   Yes   06-06-2022   --   Regular
+      HAN A
+
+158   Gopalarama           46   Professor             Male     Ph.D     269   Yes   09-07-2018   --   Regular
+      Subramaniam G
+
+159   HELEN R              48   Assistant Professor   Female   Ph.D     276   Yes   02-05-2022   --   Regular
+
+160   Ilavarasan S         42   Assistant Professor   Male     M.E.     203   Yes   11-08-2011   --   Regular
+
+161   JAINAB ZAREENA       37   Assistant Professor   Female   Ph.D     72    Yes   03-11-2022   --   Regular
+      S
+
+162   Jeffin Gracewell J   35   Assistant Professor   Male     Ph.D     141   Yes   21-01-2021   --   Regular
+
+163   John De Britto C     32   Assistant Professor   Male     M.E.     99    Yes   11-01-2022   --   Regular
+
+164   Kalaivani A          36   Assistant Professor   Female   Ph.D     111   Yes   21-06-2017   --   Regular
+
+165   Kannan R             38   Assistant Professor   Male     M.E.     166   Yes   03-01-2022   --   Regular
+
+166   KAVITHA S            47   Assistant Professor   Female   M.E.     294   Yes   02-07-2010   --   Regular
+
+167   KRITHIKA M           26   Assistant Professor   Female   M.E.     10    Yes   12-06-2024   --   Regular
+
+168   LAKSHMANAN A R       77   Professor             Male     Ph.D     475   Yes   12-12-2007   --   Regular
+
+169   M PRIYA              51   Professor             Female   Ph.D     301   Yes   01-06-2012   --   Regular
+
+170   MAHENDRAN K          36   Assistant Professor   Male     M.E.     132   Yes   21-03-2022   --   Regular
+
+171   Manonmani A          41   Assistant Professor   Female   Ph.D     186   Yes   01-06-2012   --   Regular
+
+172   Mettilda             54   Associate Professor   Female   Ph.D     364   Yes   04-12-2017   --   Regular
+
+173   Moorthi M            44   Professor             Male     Ph.D     267   Yes   17-12-2018   --   Regular
+
+174   Nandhini R           27   Assistant Professor   Female   M.E.     32    Yes   13-11-2021   --   Regular
+
+175   NIVETHITHA M         28   Assistant Professor   Female   M.E.     38    Yes   13-03-2023   --   Regular
+
+176   PANDIAN G            36   Assistant Professor   Male     Ph.D     126   Yes   12-02-2024   --   Regular
+
+177   PONMATHI JEBA        36   Assistant Professor   Female   M.E.     12    Yes   01-12-2023   --   Regular
+      KIRUBA P
+
+178   Prabakaran M         34   Assistant Professor   Male     M.E.     79    Yes   05-12-2017   --   Regular
+
+179   PREMILA S C          47   Assistant Professor   Female   Ph.D     204   Yes   10-03-2022   --   Regular
+
+180   RAJA RAJESWARI       44   Professor             Female   Ph.D     274   Yes   03-06-2013   --   Regular
+      N
+
+181   Raji Pandurangan     46   Assistant Professor   Female   Ph.D     228   Yes   18-07-2019   --   Regular
+
+182   Ramyadevi R          44   Associate Professor   Female   Ph.D     274   Yes   09-08-2021   --   Regular
+
+183   RENJITH              33   Assistant Professor   Male     Ph.D     36    Yes   21-03-2022   --   Regular
+      KRISHNAN
+
+184   SAKTHI SWARRUP       38   Professor             Female   Ph.D     66    Yes   18-04-2024   --   Regular
+      J
+
+185   SARANYA K            34   Assistant Professor   Female   M.E.     18    Yes   24-01-2024   --   Regular
+
+186   SATHISH BABU         39   Assistant Professor   Male     Ph.D     132   Yes   22-08-2022   --   Regular
+187   Selvam R           52   Assistant Professor   Male     Ph.D     357   Yes   22-07-2019   --   Regular
+
+188   Shanmathi M        30   Assistant Professor   Female   M.E.     90    Yes   07-01-2020   --   Regular
+
+189   Silambarasan M     39   Assistant Professor   Male     Ph.D     177   Yes   13-11-2021   --   Regular
+
+190   Sivanandam S       44   Professor             Female   Ph.D     219   Yes   18-01-2021   --   Regular
+
+191   Srinivasan C       40   Assistant Professor   Male     M.E.     199   Yes   01-12-2021   --   Regular
+
+192   SUBHASHINI R       41   Assistant Professor   Female   Ph.D     36    Yes   26-08-2022   --   Regular
+
+193   Suresh T D         38   Assistant Professor   Male     M.E.     196   Yes   04-07-2013   --   Regular
+
+194   Tenali Ravikumar   43   Assistant Professor   Male     M.Tech   229   Yes   06-07-2020   --   Regular
+
+195   ULAGAMMAI M        42   Associate Professor   Female   Ph.D     241   Yes   14-06-2007   --   Regular
+
+196   VANITHA A          51   Associate Professor   Female   Ph.D     156   Yes   31-05-2022   --   Regular
+
+197   VENITH VIJAY M     36   Assistant Professor   Male     Ph.D     168   Yes   06-10-2021   --   Regular
+
+198   Vijaya             48   Dean / Principal /    Female   Ph.D     264   Yes   10-08-2021   --   Regular
+      Chamundeeswari V        Director / Vice
+                              Chancellor
+
+199   VINODHINI N        31   Assistant Professor   Female   Ph.D     10    Yes   11-09-2023   --   Regular
+
+200   Yamini B           42   Assistant Professor   Female   Ph.D     184   Yes   16-03-2022   --   Regular
+
+201   POTNURI ANITHA     25   Assistant Professor   Female   M.Tech   24    Yes   01-03-2024   --   Regular
+
+202   PRAVEENA T         27   Assistant Professor   Female   Ph.D     10    Yes   14-09-2023   --   Regular
+
+203   RAJ KUMAR P        62   Professor             Male     Ph.D     432   Yes   03-08-2002   --   Regular
+
+204   RAJESH C           34   Associate Professor   Male     M.E.     96    Yes   29-01-2024   --   Regular
+
+205   RAMKI C            44   Assistant Professor   Male     Ph.D     23    Yes   29-08-2022   --   Regular
+
+206   REKHA K S          37   Assistant Professor   Female   M.E.     96    Yes   01-07-2022   --   Regular
+
+207   SAKTHI K           41   Assistant Professor   Female   M.E.     241   Yes   13-07-2016   --   Regular
+
+208   Saranya A          36   Assistant Professor   Female   Ph.D     47    Yes   07-02-2022   --   Regular
+
+209   SASIKUMAR S        45   Professor             Male     Ph.D     295   Yes   23-11-2009   --   Regular
+
+210   SELVAKUMAR R       42   Associate Professor   Male     Ph.D     192   Yes   17-08-2022   --   Regular
+
+211   SHAGUL A S         28   Assistant Professor   Female   M.E.     10    Yes   28-08-2023   --   Regular
+
+212   SHRUTHI S NAIR     35   Assistant Professor   Female   M.E.     57    Yes   02-08-2023   --   Regular
+
+213   SIVAN V            48   Assistant Professor   Male     Ph.D     222   Yes   14-11-2022   --   Regular
+
+214   SRIGITHA S NATH    53   Professor             Female   Ph.D     360   Yes   03-06-2011   --   Regular
+
+215   SUBASHREE V        36   Assistant Professor   Female   M.E.     112   Yes   01-09-2022   --   Regular
+
+216   SURESH S           44   Associate Professor   Male     Ph.D     264   Yes   28-08-2017   --   Regular
+
+217   TAMIZHARASI R      43   Assistant Professor   Male     Ph.D     42    Yes   16-08-2022   --   Regular
+
+218   THIRUMAVALAVAN     52   Professor             Male     Ph.D     312   Yes   29-08-2022   --   Regular
+      M
+219   Valvil Ori C        38   Assistant Professor   Male     M.E.     103   Yes   13-12-2021   --           Regular
+
+220   VELMURUGAN V        36   Assistant Professor   Male     M.E.     171   Yes   20-06-2011   --           Regular
+
+221   VIGNESHWARI N       31   Assistant Professor   Female   M.E.     62    Yes   04-05-2022   --           Regular
+
+222   Vinod Kumar R       57   Associate Professor   Male     Ph.D     336   Yes   04-01-2021   --           Regular
+
+223   VIVEKANAND PA       44   Professor             Male     Ph.D     253   Yes   15-12-2017   --           Regular
+
+224   ABINAYA N G         31   Assistant Professor   Female   M.E.     84    Yes   16-06-2017   --           Regular
+
+225   Anancia Grace A     31   Assistant Professor   Female   Ph.D     39    Yes   16-04-2021   --           Regular
+
+226   ANIVEL              44   Assistant Professor   Male     Ph.D     252   Yes   20-07-2020   --           Regular
+      SAMBASIVAM
+
+227   ARASA KUMAR R       38   Assistant Professor   Male     M.E.     96    Yes   31-01-2024   --           Regular
+
+228   ARUL EDWIN RAJ      43   Assistant Professor   Male     Ph.D     192   Yes   01-09-2022   --           Regular
+      A
+
+229   Arunadevi K         67   Professor             Female   Ph.D     276   Yes   01-03-2019   --           Regular
+
+230   BABY SUGNATHI A     40   Associate Professor   Female   Ph.D     132   Yes   27-06-2017   --           Regular
+      R
+
+231   Balasundaram V      35   Assistant Professor   Male     M.E.     141   Yes   26-04-2021   --           Regular
+
+232   Catherine Priya S   28   Assistant Professor   Female   M.E.     30    Yes   03-01-2022   --           Regular
+
+233   DEEPAK              50   Assistant Professor   Male     Ph.D     276   Yes   05-09-2022   --           Regular
+      RAJAGOPALAN
+
+234   DINESH KUMAR K      35   Assistant Professor   Male     M.E.     150   Yes   01-04-2022   --           Regular
+      S
+
+235   EUNICE JEMIMA       51   Assistant Professor   Female   Ph.D     204   Yes   26-09-2022   --           Regular
+      PETER
+
+236   Ganapathi D         35   Assistant Professor   Male     Ph.D     95    Yes   04-02-2019   --           Regular
+
+237   GIRUBA M            33   Assistant Professor   Female   Ph.D     82    Yes   05-09-2022   --           Regular
+
+238   HARI U              54   Assistant Professor   Male     M.E.     300   Yes   10-01-2024   --           Regular
+
+239   Hemamalini A        42   Assistant Professor   Female   M.Tech   217   Yes   23-06-2008   --           Regular
+
+240   INDUMATHY T         47   Assistant Professor   Female   M.E.     204   Yes   07-09-2022   --           Regular
+
+241   JAYANTHI G          54   Associate Professor   Female   Ph.D     222   Yes   29-08-2022   --           Regular
+
+242   JIM ELLIOT C        36   Assistant Professor   Male     M.Tech   108   Yes   13-06-2022   --           Regular
+
+243   JYOTHI P            40   Associate Professor   Female   Ph.D     192   Yes   26-10-2022   --           Regular
+
+244   Kanagarathinam L    42   Associate Professor   Female   Ph.D     152   Yes   24-06-2019   --           Regular
+
+245   KARTHIKA PRIYA      34   Assistant Professor   Female   M.E.     36    Yes   01-09-2023   --           Regular
+      DHARSHINI G
+
+246   KOLLI HIMANTHA      33   Assistant Professor   Male     M.Tech   80    Yes   14-02-2023   --           Regular
+      RAO
+
+247   KUMARI AMBE         30   Assistant Professor   Female   Ph.D     12    No    20-03-2023   07-07-2023   Regular
+      VERMA
+
+248   LOGANATHAN V        48   Assistant Professor   Male     Ph.D     299   Yes   15-06-2009   --           Regular
+249   Mahalakshmi M      33   Assistant Professor   Female   M.E.   61    Yes   11-02-2022   --   Regular
+
+250   MANIMARAN G        52   Professor             Male     Ph.D   346   Yes   04-09-2008   --   Regular
+
+251   MEENATCHI K V      35   Assistant Professor   Female   M.E.   12    Yes   12-05-2023   --   Regular
+
+252   MONICA D           26   Assistant Professor   Female   M.E.   6     Yes   15-02-2023   --   Regular
+
+253   NAJEEM DHEEN A     36   Assistant Professor   Male     M.E.   74    Yes   24-05-2023   --   Regular
+
+254   NICI MARX V S      27   Assistant Professor   Female   M.E.   5     Yes   06-03-2024   --   Regular
+
+255   PADMA S            33   Assistant Professor   Female   Ph.D   120   Yes   22-12-2014   --   Regular
+
+256   Pavithrakannan A   30   Assistant Professor   Male     M.E.   107   Yes   06-08-2015   --   Regular
+
+257   PRAKASH R          43   Assistant Professor   Male     M.E.   234   Yes   22-06-2015   --   Regular
+
+258   Pugazhvadivu K S   38   Assistant Professor   Female   Ph.D   192   Yes   03-07-2018   --   Regular
+
+259   RAJALINGAM S       39   Associate Professor   Male     Ph.D   156   Yes   01-09-2022   --   Regular
+
+260   RAMACHANDRAN       39   Associate Professor   Male     Ph.D   150   Yes   25-09-2023   --   Regular
+      A
+
+261   RASAN U            31   Assistant Professor   Male     M.E.   12    Yes   01-06-2023   --   Regular
+
+262   RESMI R NAIR       39   Associate Professor   Female   Ph.D   132   Yes   01-03-2022   --   Regular
+
+263   SANGEETHA P        44   Assistant Professor   Female   Ph.D   144   Yes   22-08-2022   --   Regular
+
+264   SARAVANAN N        43   Assistant Professor   Male     M.E.   120   Yes   03-02-2023   --   Regular
+
+265   SATHYA U           35   Assistant Professor   Female   M.E.   12    Yes   28-07-2023   --   Regular
+
+266   SELVI M            53   Professor             Female   Ph.D   333   Yes   04-06-2012   --   Regular
+
+267   SHANTHI S          41   Assistant Professor   Female   Ph.D   72    Yes   09-09-2022   --   Regular
+
+268   SINDHU G           28   Assistant Professor   Female   M.E.   6     Yes   10-02-2023   --   Regular
+
+269   SOWMIYA MANOJ      38   Assistant Professor   Female   M.E.   144   Yes   09-09-2022   --   Regular
+      M
+
+270   SRIPRIYA           49   Associate Professor   Female   Ph.D   180   Yes   04-01-2022   --   Regular
+      RANGANATHAN
+
+271   Sujatha E          49   Professor             Female   Ph.D   300   Yes   01-02-2021   --   Regular
+
+272   Surya S            36   Assistant Professor   Male     M.E.   144   Yes   01-12-2021   --   Regular
+
+273   THEERKA            39   Assistant Professor   Female   M.E.   156   Yes   17-08-2022   --   Regular
+      DHARSHINI S
+
+274   Uma Rani V         43   Assistant Professor   Female   Ph.D   248   Yes   01-06-2021   --   Regular
+
+275   VARALAKSHMI J      40   Assistant Professor   Female   M.E.   156   Yes   01-07-2022   --   Regular
+
+276   VENKATESAN V       34   Assistant Professor   Male     M.E.   91    Yes   01-02-2024   --   Regular
+
+277   VIJAYAN P          49   Assistant Professor   Male     Ph.D   256   Yes   20-10-2022   --   Regular
+
+278   VINOTHINI T        29   Assistant Professor   Female   M.E.   42    Yes   27-11-2020   --   Regular
+
+279   YESUBAI            41   Professor             Female   Ph.D   180   Yes   04-01-2024   --   Regular
+      RUBAVATHI C
+280   ABARNA P S        30   Assistant Professor   Female   M.E.     12    Yes   04-05-2024   --           Regular
+
+281   AMSAYAZHI P       32   Assistant Professor   Female   Ph.D     24    Yes   10-03-2022   --           Regular
+
+282   ANITHA L          52   Assistant Professor   Female   Ph.D     168   Yes   30-11-2021   --           Regular
+
+283   Aparna T K        31   Assistant Professor   Female   Ph.D     50    Yes   03-05-2021   --           Regular
+
+284   ARUL DALTON G     51   Associate Professor   Male     Ph.D     216   Yes   27-09-2023   --           Regular
+
+285   ARUN PRADEEP      37   Associate Professor   Male     Ph.D     180   Yes   17-10-2022   --           Regular
+
+286   BABY SALINI J R   31   Assistant Professor   Female   Ph.D           No    25-11-2022   25-06-2023   Regular
+
+287   BALASINGH S       40   Assistant Professor   Male     Ph.D     222   Yes   20-10-2022   --           Regular
+
+288   C SHEEBA JOICE    47   Professor             Female   Ph.D     300   Yes   04-06-2012   --           Regular
+
+289   Deepa T           32   Assistant Professor   Female   M.E.     64    Yes   11-03-2022   --           Regular
+
+290   DINESH BABU G L   33   Assistant Professor   Male     M.E.     72    Yes   01-08-2023   --           Regular
+
+291   ELANGO J          60   Assistant Professor   Male     Ph.D     22    Yes   11-08-2022   --           Regular
+
+292   G R RAM PRASATH   36   Assistant Professor   Male     M.E.     111   No    22-06-2015   29-06-2024   Regular
+
+293   GAYATHRI          42   Assistant Professor   Female   Ph.D     225   Yes   23-07-2014   --           Regular
+      LAKSHMI M
+
+294   Gurumoorthy G     42   Assistant Professor   Male     M.E.     242   Yes   27-08-2021   --           Regular
+
+295   HEMALATHA V       41   Assistant Professor   Female   Ph.D     212   Yes   19-06-2009   --           Regular
+
+296   Indhumathi K      40   Associate Professor   Female   Ph.D     151   Yes   21-01-2019   --           Regular
+
+297   JAYA T            50   Professor             Female   Ph.D     276   Yes   27-07-2022   --           Regular
+
+298   JESILA MOL J      40   Assistant Professor   Female   M.Tech   132   Yes   11-09-2023   --           Regular
+
+299   JUDITH REYA M     33   Assistant Professor   Female   M.Tech   21    Yes   21-06-2023   --           Regular
+
+300   KANAGAMALLIGA     37   Associate Professor   Female   Ph.D     118   Yes   01-09-2022   --           Regular
+      S
+
+301   Karthiga V        31   Assistant Professor   Female   M.E.     44    Yes   04-03-2022   --           Regular
+
+302   KISHORE MOHAN     51   Associate Professor   Male     Ph.D     276   Yes   05-04-2022   --           Regular
+      KB
+
+303   KUMARAVELU R      49   Associate Professor   Male     Ph.D     162   Yes   28-02-2022   --           Regular
+
+304   Lavanya G         44   Assistant Professor   Female   M.E.     156   Yes   15-12-2021   --           Regular
+
+305   MAGITHA NIRMALA   44   Assistant Professor   Female   M.E.     114   Yes   26-04-2022   --           Regular
+      TENNYSON
+
+306   MANICKAM S        31   Assistant Professor   Male     M.E.     72    Yes   16-02-2024   --           Regular
+
+307   Max Savio F       38   Assistant Professor   Male     M.E.     170   Yes   03-09-2021   --           Regular
+
+308   MOHANRAJ D        51   Assistant Professor   Male     Ph.D     156   Yes   04-10-2021   --           Regular
+
+309   NAGENDRAN K       43   Assistant Professor   Male     M.E.     181   Yes   22-06-2023   --           Regular
+
+310   Navaneethan S     36   Assistant Professor   Male     Ph.D     96    Yes   02-03-2022   --           Regular
+
+311   PADMA PRIYA K     36   Assistant Professor   Female   M.E.     157   Yes   01-06-2012   --           Regular
+312   PAVITHRA P          31   Assistant Professor   Female   Ph.D     24    Yes   08-03-2022   --           Regular
+
+313   AMARNATH P          40   Assistant Professor   Male     M.E.     204   Yes   06-06-2016   --           Regular
+
+314   Anishkumar J        43   Assistant Professor   Male     M.E.     235   Yes   29-12-2006   --           Regular
+
+315   Anne Dorathy A      48   Assistant Professor   Female   Ph.D     216   Yes   16-09-2020   --           Regular
+
+316   ARIVALGAN M         39   Assistant Professor   Male     M.E.     170   No    03-06-2013   07-05-2024   Regular
+
+317   ARUN KUMAR K        34   Assistant Professor   Male     M.E.     144   Yes   03-06-2013   --           Regular
+
+318   AUGUSTIAN ISAAC     48   Assistant Professor   Female   Ph.D     276   Yes   31-10-2022   --           Regular
+      R
+
+319   BALAJI N            47   Associate Professor   Male     Ph.D     302   Yes   08-09-2008   --           Regular
+
+320   BHUVANESWARI G      45   Professor             Female   Ph.D     252   Yes   20-07-2022   --           Regular
+
+321   DEEPA A             43   Assistant Professor   Female   M.Tech   48    Yes   14-09-2023   --           Regular
+
+322   DHANDAPANI S        47   Professor             Male     Ph.D     304   Yes   29-05-2013   --           Regular
+
+323   DURAIPANDIAN N      56   Professor             Female   Ph.D     360   No    14-06-2021   13-02-2024   Regular
+
+324   FRANCIS J           37   Assistant Professor   Male     M.E.     35    Yes   10-08-2022   --           Regular
+
+325   GANGADHARAN S       50   Associate Professor   Male     Ph.D     168   Yes   31-07-2020   --           Regular
+
+326   Gopinathan P        30   Assistant Professor   Male     M.E.     84    Yes   30-11-2020   --           Regular
+
+327   Hemalatha M         30   Assistant Professor   Female   M.Tech   34    Yes   15-09-2021   --           Regular
+
+328   IMMANUEL G          43   Assistant Professor   Male     Ph.D     240   Yes   08-08-2022   --           Regular
+
+329   JANAKI K            35   Assistant Professor   Female   Ph.D     48    Yes   24-11-2022   --           Regular
+
+330   Jennie Bharathi R   41   Assistant Professor   Female   Ph.D     132   Yes   07-12-2020   --           Regular
+
+331   JOY PRISCILLA J     47   Professor             Female   Ph.D     304   Yes   13-08-2001   --           Regular
+
+332   KALPANA M           44   Associate Professor   Female   M.E.     278   Yes   08-08-2011   --           Regular
+
+333   Karthi G            42   Assistant Professor   Male     Ph.D     210   Yes   28-06-2021   --           Regular
+
+334   KIRAN KUMAR J       31   Assistant Professor   Male     Ph.D     48    Yes   05-11-2022   --           Regular
+
+335   Kumaran S           36   Assistant Professor   Male     Ph.D     145   Yes   24-06-2019   --           Regular
+
+336   LATHA R             37   Assistant Professor   Female   Ph.D     60    Yes   30-08-2022   --           Regular
+
+337   MADHAN KUMAR        31   Assistant Professor   Male     M.E.     109   Yes   01-06-2016   --           Regular
+      M
+
+338   MAMATHA A           27   Assistant Professor   Female   M.E.     53    Yes   15-04-2019   --           Regular
+
+339   MATHANAVALLI S      30   Assistant Professor   Female   Ph.D     12    Yes   30-08-2023   --           Regular
+
+340   Mohamad Ali B       33   Assistant Professor   Male     Ph.D           No    13-11-2021   26-12-2022   Regular
+
+341   MUTHUKUMAR V        49   Professor             Male     Ph.D     310   Yes   06-09-2008   --           Regular
+
+342   NARESH G            37   Assistant Professor   Male     M.E.     187   Yes   17-01-2013   --           Regular
+
+343   OMANA J             35   Assistant Professor   Female   Ph.D     120   Yes   24-01-2024   --           Regular
+
+344   PARIVENTHAN K       45   Associate Professor   Male     Ph.D     250   Yes   24-08-2011   --           Regular
+345   POONGOTHAI U      36   Assistant Professor   Female   M.E.     36    Yes   01-06-2021   --           Regular
+
+346   PRAVEEN KUMAR     40   Professor             Male     Ph.D     236   Yes   23-08-2007   --           Regular
+      S
+
+347   PAVAI D           32   Assistant Professor   Female   M.E.     28    Yes   24-01-2024   --           Regular
+
+348   POONGULALI E      47   Assistant Professor   Female   M.E.     241   Yes   09-06-2023   --           Regular
+
+349   PRAVEEN M         39   Assistant Professor   Male     M.E.     179   Yes   02-07-2010   --           Regular
+
+350   Ragesh K T        37   Assistant Professor   Male     M.Tech   100   No    01-09-2020   24-05-2024   Regular
+
+351   RAJENDRA          40   Assistant Professor   Male     Ph.D     108   Yes   01-03-2022   --           Regular
+      THILAHAR C
+
+352   RAMESHKUMAR M     44   Assistant Professor   Male     Ph.D     253   Yes   11-09-2013   --           Regular
+
+353   RAVINDHRAN M      43   Professor             Male     Ph.D     160   Yes   26-08-2021   --           Regular
+
+354   Rosemitha V       28   Assistant Professor   Female   M.E.     72    Yes   25-09-2017   --           Regular
+
+355   SANKAR P          31   Assistant Professor   Male     M.E.     120   Yes   28-08-2023   --           Regular
+
+356   Sasikala M        36   Assistant Professor   Female   Ph.D     39    Yes   15-04-2021   --           Regular
+
+357   SELLA KUMAR S     38   Assistant Professor   Male     M.E.     184   Yes   02-07-2010   --           Regular
+
+358   SENTHIL KUMAR R   49   Professor             Male     Ph.D     339   Yes   28-07-2003   --           Regular
+
+359   Shenbagaraman S   56   Assistant Professor   Male     M.Tech   412   Yes   17-06-2013   --           Regular
+
+360   SIVAKUMAR T       44   Assistant Professor   Male     Ph.D     144   Yes   29-08-2022   --           Regular
+
+361   Sridhar S         31   Assistant Professor   Male     M.E.     104   Yes   05-07-2018   --           Regular
+
+362   SUBASHINI T       43   Assistant Professor   Female   M.E.     53    Yes   15-03-2023   --           Regular
+
+363   SUNITHA DEVA      45   Assistant Professor   Female   Ph.D     213   Yes   24-09-2008   --           Regular
+      KUMARI D
+
+364   TAJUDDIN A        68   Professor             Male     Ph.D     434   Yes   08-08-2022   --           Regular
+
+365   THIRUMALAI M      36   Assistant Professor   Male     M.E.     160   Yes   03-04-2017   --           Regular
+
+366   V GOMATHI         37   Assistant Professor   Female   M.E.     161   Yes   03-06-2013   --           Regular
+
+367   Velmurugan N      48   Assistant Professor   Male     M.E.     292   Yes   23-08-2007   --           Regular
+
+368   VIGNESH S         30   Assistant Professor   Male     Ph.D     24    Yes   27-07-2022   --           Regular
+
+369   Vinifa R          42   Assistant Professor   Female   Ph.D     203   Yes   10-08-2020   --           Regular
+
+370   VISHNU PRIYA K    29   Assistant Professor   Female   M.E.     48    Yes   03-10-2023   --           Regular
+
+371   YUVASHREE S       32   Assistant Professor   Female   M.E.     28    Yes   15-03-2022   --           Regular
+
+372   RADHIKA C         35   Assistant Professor   Female   M.E.     24    Yes   10-08-2022   --           Regular
+
+373   RAJASEKAR R       34   Assistant Professor   Male     Ph.D     24    Yes   14-03-2022   --           Regular
+
+374   RAMASUNDARAM      54   Professor             Male     Ph.D     312   Yes   05-09-2022   --           Regular
+      G
+
+375   Ravindhar N V     37   Assistant Professor   Male     M.E.     167   Yes   11-08-2010   --           Regular
+
+376   ROSEKUMARI I      65   Professor             Female   Ph.D     372   Yes   13-06-2017   --           Regular
+377   SANGEETHA R         24   Assistant Professor   Female   M.E.     10    Yes   07-08-2023   --           Regular
+
+378   Sasikala K          32   Assistant Professor   Female   M.E.     58    Yes   14-11-2019   --           Regular
+
+379   SAVITHA V           42   Assistant Professor   Female   M.E.     144   Yes   26-12-2023   --           Regular
+
+380   SENTHIKUMAR P       43   Associate Professor   Male     Ph.D     214   Yes   17-08-2022   --           Regular
+
+381   SHARMILA            51   Associate Professor   Female   Ph.D     254   Yes   29-08-2022   --           Regular
+      QUEENTHY
+
+382   Sinthia P           37   Associate Professor   Female   Ph.D     204   Yes   04-06-2012   --           Regular
+
+383   SREELAKSHMI S       37   Assistant Professor   Female   M.Tech   10    Yes   16-11-2023   --           Regular
+
+384   SUBASHINI K         24   Assistant Professor   Female   M.E.     12    No    26-10-2023   25-04-2024   Regular
+
+385   SUNDARA             42   Associate Professor   Male     Ph.D     216   Yes   01-11-2022   --           Regular
+      VADIVEL P
+
+386   Swedha              29   Assistant Professor   Female   M.E.     49    Yes   30-11-2019   --           Regular
+
+387   THILAGAVATHY S      27   Assistant Professor   Female   M.Tech   18    Yes   23-02-2023   --           Regular
+
+388   Umaiyambika N       36   Assistant Professor   Female   M.Tech   104   Yes   13-11-2021   --           Regular
+
+389   Vasanth Kumar C H   36   Assistant Professor   Male     M.Tech   136   Yes   29-01-2021   --           Regular
+
+390   Vignesh P           34   Assistant Professor   Male     M.E.     131   Yes   02-08-2021   --           Regular
+
+391   VINAYAGAM P         37   Assistant Professor   Male     Ph.D     156   Yes   17-08-2022   --           Regular
+
+392   VINURAJKUMAR S      40   Assistant Professor   Male     Ph.D     144   Yes   18-07-2022   --           Regular
+
+393   YUVARAJ P           44   Assistant Professor   Male     Ph.D     221   Yes   01-09-2022   --           Regular
+
