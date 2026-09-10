@@ -261,56 +261,201 @@ def footer(canvas, d):
 
 # ---------------- story ----------------
 doc = SimpleDocTemplate(str(OUT), pagesize=A4, leftMargin=1.8 * cm, rightMargin=1.8 * cm, topMargin=1.6 * cm, bottomMargin=1.9 * cm,
-                        title="NIRF Analytics — Saveetha Engineering College: position, drivers and the 2026 outlook", author="NIRF Analytics project")
+                        title="NIRF Analytics — Saveetha Engineering College", author="NIRF Analytics project")
 S = []
-cut25 = float(cut.loc[2025]); cut23 = float(cut.loc[2023]); cut24 = float(cut.loc[2024])
+applied = dict(con.execute("SELECT year, COUNT(*) FROM participants WHERE category='Engineering' GROUP BY year").fetchall())
+simats = {y: (rk, sc) for y, rk, sc in con.execute("SELECT year, rank, score FROM rankings WHERE institute_id='IR-E-I-1441' AND category='Engineering'").fetchall()}
+sec_band = {y: b for y, b in con.execute("SELECT year, band FROM rank_bands WHERE name_key LIKE 'saveetha engineering%' AND category='Engineering'").fetchall()}
+sec_rank = {y: (rk, sc) for y, rk, sc in con.execute("SELECT year, rank, score FROM rankings WHERE name_key LIKE 'saveetha engineering%' AND category='Engineering'").fetchall()}
+sub = pd.read_sql("SELECT * FROM submissions WHERE institute_id='IR-E-C-16590' ORDER BY year", con).set_index("year")
 
+# ---- cover page body
 S += [Spacer(1, 11.8 * cm)]
-S += [tiles([("Band 201-300", "NIRF 2025 Engineering placement; also 201-300 in 2024. Source: nirfindia.org band pages", CORAL),
-             (f"≈ {e26['total_est']:.0f}", "Estimated score of the college's 2026 filing. Source: score model on the saveetha.ac.in filing", SKY),
-             (f"{thr['100']:.0f}", "Forecast score at rank 100 in 2026. Source: trend of 2020-25 cut-offs, nirfindia.org", GOLD),
-             (f"{100 * bp[s['most_likely_band']]:.0f}% · {s['most_likely_band']}", "Most likely 2026 band and its probability. Source: Monte-Carlo forecast", TEAL)])]
+S += [tiles([("Band 201-300", "NIRF 2025 result, Engineering. Same band in 2024. [NIRF band pages]", CORAL),
+             (f"≈ {e26['total_est']:.0f}", "Estimated score of the college's 2026 filing [score model]", SKY),
+             (f"{thr['100']:.0f}", "Score forecast for rank 100 in 2026 [2026 forecast]", GOLD),
+             (f"{100 * bp[s['most_likely_band']]:.0f}% · {s['most_likely_band']}", "Most likely band for 2026 [2026 forecast]", TEAL)])]
 S += [fig("cutoff", 16.8 * cm)]
-S += [p("The blue line is the lowest score inside the top 100 each year. The solid red dots are the college's two published scores; the hollow ones are model estimates for its last two filings.", SMALL),
-      Paragraph("Sources: S1 NIRF ranking tables (cut-off = score at rank 100; the college's 2017 and 2019 rows); S6/S7 the college's 2025 and 2026 filings; S8 score model. Full list in section 12.",
-                ParagraphStyle("src0", parent=SMALL, fontSize=7.4, leading=9.5, textColor=C("#6B7A90")))]
+S += [p("Blue line: the score needed to be ranked 100 each year. Red dots: the college's two published scores. Open circles: our estimates of its last two filings.", SMALL),
+      src("rank", "model", extra="Cut-off = lowest score in the top 100 of each year's Engineering table.")]
 S += [PageBreak()]
 
-# 1 summary
-S += [section("1", "Summary of findings")]
-S += [p(f"Saveetha Engineering College was ranked <b>91 in 2017</b> (score 36.88) and <b>124 in 2019</b> (score 34.14) in NIRF's Engineering category.{ev('rank', '2017 and 2019 tables')} "
-        f"In 2024 and 2025 it was placed in the <b>201-300 band</b>.{ev('band', '2024, 2025')} NIRF publishes no scores for band placements, so the college's actual "
-        f"parameter scores for those years are not public; the estimates in this report come from a model described in section 6.", LEAD)]
-S += [p(f"<b>The cut-off has risen every year since 2019.</b> The lowest score inside the top 100 was {cut23:.2f} in 2023, {cut24:.2f} in 2024 and {cut25:.2f} in 2025.{ev('rank', 'score at rank 100')} "
-        f"A linear trend on 2020-2025 gives about {thr['100']:.1f} for 2026.{ev('pred', 'thresholds')} The college's filings are estimated at {e25['total_est']:.1f} (2025) and "
-        f"{e26['total_est']:.1f} (2026).{ev('model', 'saveetha_estimates')} The 2025 estimate falls inside the band NIRF actually published, which is one check on the model.")]
-S += [p(f"<b>The gap is concentrated in research.</b> The estimated Research and Professional Practice score (RPC) for the 2026 filing is {e26['rpc']:.1f}; institutes ranked 76-100 in 2025 "
-        f"average {t76['rpc']:.1f}.{ev('ana', 'tier_profile_2025')} In the filings themselves: 12 PhDs awarded per year against a tier median of 24; 61 full-time PhD scholars against 163; "
-        f"about Rs 30 lakh a year of sponsored research against Rs 3.7 crore.{ev('sec26')}{ev('pdf', '2025 top-100 medians')} Placement (97%), on-time graduation (81%) and women students (33%) "
-        f"are at or above the 76-100 tier medians (70%, 87%, 25%).{ev('sec26')}{ev('ana', 'raw_profile_2025')}")]
-S += [p(f"<b>2026 outlook.</b> The most likely outcome is the <b>{s['most_likely_band']} band</b> ({100 * bp[s['most_likely_band']]:.0f}% of simulations); top 100 in "
-        f"{100 * bp['top 100']:.0f}% of simulations; top 200 in {100 * top200:.0f}%.{ev('pred', 'band_probabilities')} The range is wide because two inputs are unobservable (section 8).")]
-S += [callout("Ranked by the model's estimate of value: PhDs awarded (12 → 80 a year: +3.7 points), operating spend per student (Rs 1.1 L → 2 L: +2.0), full-time PhD scholars "
-              "(61 → 200: +1.4), median UG salary (Rs 5.5 L → 10 L: +1.4), sponsored research (Rs 30 L → 10 Cr a year: +1.0). Each figure is one change applied alone to the 2026 filing; "
-              "publications and citations are not in the data and are not counted here.", col=CORAL, label="Levers with the largest estimated effect  [2026 forecast, what_if_levers]")]
-S += [p("<b>What this report is based on.</b> Every NIRF Engineering result since 2017, the raw data PDFs of 704 institute submissions, NIRF's methodology documents for 2023-25, "
-        "the college's own 2025 and 2026 filings, a model fitted on 700 institute-years, and a 2026 forecast. Section 12 lists each source with its location.")]
+# ---- 1 what the numbers say
+S += [section("1", "What the numbers say")]
+pts = [
+    f"Saveetha Engineering College is in the <b>201-300 band</b> of the NIRF Engineering ranking in both 2024 and 2025. NIRF gives no score for bands.{ev('band')}",
+    f"The score needed for rank 100 rises every year: <b>41.93</b> in 2023, <b>43.95</b> in 2024, <b>45.55</b> in 2025. Our forecast for 2026 is about <b>{thr['100']:.0f}</b>.{ev('rank')}{ev('pred')}",
+    f"The college's own filings are worth about <b>{e25['total_est']:.0f}</b> (2025) and <b>{e26['total_est']:.0f}</b> (2026) by our model. The 2025 estimate falls inside the band NIRF actually published, a good sign the model reads the data correctly.{ev('model')}",
+    f"The college is <b>{s['gap_to_top100']:.0f} points</b> short of the 2026 rank-100 line. About <b>{wgap['rpc']:.0f} of those points</b> come from one parameter: Research (RPC).{ev('ana')}",
+    f"Behind the research gap: <b>12 PhDs a year</b> against 24 for institutes ranked 76-100, <b>61 full-time PhD scholars</b> against 163, and <b>Rs 30 lakh</b> of sponsored research a year against Rs 3.7 crore.{ev('sec26')}{ev('pdf')}",
+    f"Placements (97%), graduating on time (81%) and women students (33%) are already at or above the 76-100 tier.{ev('sec26')}{ev('pdf')}",
+    f"For 2026 the most likely result is the <b>{s['most_likely_band']} band</b> ({100 * bp[s['most_likely_band']]:.0f}%). Top 200: {100 * top200:.0f}%. Top 100: {100 * bp['top 100']:.0f}%.{ev('pred')}",
+]
+for i, t_ in enumerate(pts, 1):
+    S += [Table([[Paragraph(f"<font color='white'><b>{i}</b></font>", ParagraphStyle("pn", parent=BODY, fontSize=11, alignment=TA_CENTER)), Paragraph(t_, ParagraphStyle("pt", parent=BODY, spaceAfter=0))]],
+                colWidths=[0.8 * cm, 16.5 * cm], style=TableStyle([("BACKGROUND", (0, 0), (0, 0), C([NAVY, SKY, CORAL, GOLD, TEAL, PLUM, NAVY][i - 1])), ("VALIGN", (0, 0), (-1, -1), "TOP"),
+                                                                    ("TOPPADDING", (0, 0), (-1, -1), 5), ("BOTTOMPADDING", (0, 0), (-1, -1), 5), ("LEFTPADDING", (1, 0), (1, 0), 8)])), Spacer(1, 3)]
+S += [callout("Every square bracket is a source. Section 10 lists where each one lives, with the exact web address or file.", col=NAVY)]
 S += [PageBreak()]
 
-# 2 NIRF
-S += [section("2", "How NIRF scores an engineering institution", SKY)]
-S += [p(f"NIRF is the Ministry of Education's annual ranking, run since 2016 with the National Board of Accreditation as ranking agency.{ev('meth', 'section 4.1')} Institutions apply "
-        f"voluntarily and upload their own data; publication, citation and patent counts come from third-party databases.{ev('meth', 'section 3.5')} Each institution receives a score out of 100 "
-        f"from five parameters with fixed weights:{ev('meth', 'summary table')}")]
+# ---- 2 the last three years
+rows = [["Year", "Institutions that applied (Engineering)", "Score at rank 100", "Score at rank 1", "Saveetha Engineering College", "Saveetha Institute (the deemed university)"]]
+for y in (2023, 2024, 2025):
+    g = r[(r.year == y) & (r["rank"] <= 100)]
+    sec_txt = f"Band {sec_band[y]}" if y in sec_band else "Applied; not in the top 300" if y in applied else "Did not apply"
+    rows.append([str(y), f"{applied[y]:,}", f"{g.score.min():.2f}", f"{g.score.max():.2f}", f"<b>{sec_txt}</b>", f"Rank {simats[y][0]} ({simats[y][1]:.2f})"])
+S += [KeepTogether([section("2", "2023, 2024 and 2025 at a glance", CORAL), table(rows, widths=[1.2 * cm, 3.4 * cm, 2.4 * cm, 2.2 * cm, 4.0 * cm, 4.1 * cm], align="CENTER", headcol=CORAL)]),
+      src("rank", "band", extra="'Applied' counts come from the participant list on each year's page. The last column is a different institution, shown only to avoid confusion.")]
+S += [p("In 2023 the college applied but was not placed in any published list (NIRF published ranks 1-100 and bands to 200 that year). In 2024 and 2025 it was placed in the 201-300 band, "
+        "which NIRF introduced in 2024 with 100 and 99 institutions respectively. Because bands carry no score, everything about the college's own numbers in this report is an estimate from its filings.")]
+chg = [["What the college reported", "2025 filing", "2026 filing"],
+       ["Students (UG + PG)", f"{sub.loc[2025, 'students_total']:,.0f}", f"{sub.loc[2026, 'students_total']:,.0f}"],
+       ["Full-time faculty", f"{sub.loc[2025, 'faculty_parsed']:,.0f}", f"{sub.loc[2026, 'faculty_parsed']:,.0f}"],
+       ["Full-time PhD scholars", f"{sub.loc[2025, 'phd_pursuing_ft']:,.0f}", f"{sub.loc[2026, 'phd_pursuing_ft']:,.0f}"],
+       ["PhDs awarded per year (3-year average)", f"{sub.loc[2025, 'phd_grad_3y_avg']:,.0f}", f"{sub.loc[2026, 'phd_grad_3y_avg']:,.0f}"],
+       ["Graduating on time", f"{100 * sub.loc[2025, 'graduation_rate']:.0f}%", f"{100 * sub.loc[2026, 'graduation_rate']:.0f}%"],
+       ["Placed", f"{100 * sub.loc[2025, 'placement_rate']:.0f}%", f"{100 * sub.loc[2026, 'placement_rate']:.0f}%"],
+       ["Median UG salary", inr(sub.loc[2025, 'median_salary_ug']), inr(sub.loc[2026, 'median_salary_ug'])],
+       ["Operating spend per student", inr(sub.loc[2025, 'opex_per_student']), inr(sub.loc[2026, 'opex_per_student'])],
+       ["Sponsored research per year", inr(sub.loc[2025, 'sponsored_amount_3y_avg']), inr(sub.loc[2026, 'sponsored_amount_3y_avg'])],
+       ["Patents published (3 years)", f"{sub.loc[2025, 'patents_published_3y']:,.0f}", f"{sub.loc[2026, 'patents_published_3y']:,.0f}"],
+       ["Estimated total score (our model)", f"<b>{e25['total_est']:.1f}</b>", f"<b>{e26['total_est']:.1f}</b>"]]
+S += [KeepTogether([p("What changed between the two filings", H2), table(chg, widths=[8 * cm, 4.6 * cm, 4.6 * cm], align="CENTER", headcol=CORAL), src("sec25", "sec26", "model")])]
+
+# ---- 3 how NIRF scores
+S += [section("3", "How NIRF scores an engineering institution", SKY)]
+S += [p(f"Every institution gets a score out of 100. It is built from five parameters, each scored out of 100 and then weighted:{ev('meth', 'summary table')}")]
 S += [Table([[Paragraph(f"Total  =  <font color='{SKY}'><b>0.30 × TLR</b></font>  +  <font color='{CORAL}'><b>0.30 × RPC</b></font>  +  <font color='{TEAL}'><b>0.20 × GO</b></font>  +  <font color='{GOLD}'><b>0.10 × OI</b></font>  +  <font color='{PLUM}'><b>0.10 × PR</b></font>",
                           ParagraphStyle("f", parent=BODY, alignment=TA_CENTER, fontSize=11.5, leading=15))]], colWidths=[17.3 * cm],
              style=TableStyle([("BACKGROUND", (0, 0), (-1, -1), C("#F6F8FB")), ("TOPPADDING", (0, 0), (-1, -1), 8), ("BOTTOMPADDING", (0, 0), (-1, -1), 8)])), Spacer(1, 8)]
+cards = [("TLR", "Teaching, Learning & Resources", "0.30", "How many students and faculty you have, how many faculty hold a PhD, and how much money you spend per student."),
+         ("RPC", "Research & Professional Practice", "0.30", "Publications and citations per faculty, patents, and income from research projects and consultancy."),
+         ("GO", "Graduation Outcomes", "0.20", "Share of students placed or in higher studies, share graduating on time, median salary, and PhDs awarded."),
+         ("OI", "Outreach & Inclusivity", "0.10", "Students from other states and countries, women students and faculty, fee-reimbursed students, facilities for the disabled."),
+         ("PR", "Perception", "0.10", "A survey of employers and academics. Not based on submitted data.")]
+crow = [["Parameter", "Weight", "What counts"]]
+for code, nm, wt, what in cards:
+    crow.append([f"<font color='{PCOL[code.lower()]}'><b>{code}</b></font>  {nm}", wt, what])
+t = table(crow, widths=[5.6 * cm, 1.5 * cm, 10.2 * cm], headcol=SKY)
+t.setStyle(TableStyle([("BACKGROUND", (0, i), (0, i), C(TINT[PCOL[c[0].lower()]])) for i, c in enumerate(cards, start=1)]))
+S += [t, src("meth", extra="Weights from the 2025 Engineering summary table; 'what counts' paraphrases the sub-parameters, which are listed with marks and formulas in Appendix A.")]
+S += [callout("Two things that confuse people. Only the top 100 get a numeric rank; everyone below is placed in a band with no score. And <b>Saveetha Engineering College</b> "
+              "(Sriperumbudur, NIRF id IR-E-C-16590) is a different NIRF entity from <b>Saveetha Institute of Medical and Technical Sciences</b> (Chennai, a deemed university, rank 45 in 2025).", col=GOLD, label="Worth knowing")]
+
+# ---- 4 record
+S += [section("4", "The college's NIRF record, 2017 to 2025", CORAL)]
+hrows = [["Year", "Category", "Result", "Total", "TLR", "RPC", "GO", "OI", "PR"]]
+for _, h in hist.iterrows():
+    pos = f"Rank {int(h.rank_or_band_low)}" if h.status == "ranked" else f"Band {int(h.rank_or_band_low)}-{int(h.rank_or_band_high)}"
+    fm = lambda v: "–" if pd.isna(v) else f"{v:.2f}"
+    hrows.append([str(int(h.year)), h.category, pos, fm(h.score), fm(h.tlr), fm(h.rpc), fm(h["go"]), fm(h.oi), fm(h.pr)])
+S += [table(hrows, widths=[1.3 * cm, 2.4 * cm, 2.8 * cm, 1.5 * cm, 1.5 * cm, 1.5 * cm, 1.5 * cm, 1.5 * cm, 1.5 * cm], align="CENTER", headcol=CORAL),
+      src("rank", "band", extra="A dash means NIRF published no score. The college also applied in 2021, 2022 and 2023 without being placed in a published list.")]
+S += [p("The two years with published scores tell the same story as today: TLR, GO and OI were reasonable, <b>RPC was 4.7 and 3.0</b>, and Perception was close to zero.")]
+S += [KeepTogether([fig("compare", 16 * cm), src("model", "ana", extra="Coloured bars are model estimates from the 2026 filing; grey bars are averages of published 2025 scores.")])]
+
+# ---- 5 vs top 100
+prof = pd.DataFrame(A["raw_profile_2025"]).set_index("metric")
+show = ["students_per_faculty", "phd_pursuing_ft", "phd_grad_3y_avg", "graduation_rate", "placement_rate", "median_salary_ug", "opex_per_student", "sponsored_amount_3y_avg", "women_students_pct", "outside_state_pct"]
+lab = {"students_per_faculty": "Students per faculty", "phd_pursuing_ft": "Full-time PhD scholars", "phd_grad_3y_avg": "PhDs awarded per year", "graduation_rate": "Graduating on time",
+       "placement_rate": "Placed", "median_salary_ug": "Median UG salary", "opex_per_student": "Operating spend per student", "sponsored_amount_3y_avg": "Sponsored research per year",
+       "women_students_pct": "Women students", "outside_state_pct": "Students from other states"}
+money = {"median_salary_ug", "opex_per_student", "sponsored_amount_3y_avg"}; pct = {"graduation_rate", "placement_rate"}
+weak = {"phd_pursuing_ft", "phd_grad_3y_avg", "median_salary_ug", "opex_per_student", "sponsored_amount_3y_avg", "outside_state_pct"}
+def fmtv(v, k):
+    if pd.isna(v): return "–"
+    if k in money: return inr(v)
+    if k in pct: return f"{100 * v:.0f}%"
+    if k in ("women_students_pct", "outside_state_pct"): return f"{v:.0f}%"
+    return f"{v:,.1f}" if v % 1 else f"{v:,.0f}"
+prows = [["", "Top 10 (median)", "Rank 76-100 (median)", "Saveetha, 2026 filing"]]
+for k in show:
+    rw = prof.loc[k]
+    prows.append([lab[k], fmtv(rw.top10_median, k), fmtv(rw.rank76_100_median, k), f"<font color='{CORAL if k in weak else TEAL}'><b>{fmtv(rw.saveetha_2026_filing, k)}</b></font>"])
+S += [KeepTogether([section("5", "The college next to the top 100, in plain numbers", TEAL), table(prows, widths=[5.5 * cm, 3.6 * cm, 4 * cm, 4.2 * cm], align="CENTER", headcol=TEAL)]),
+      src("pdf", "sec26", "ana", extra="Medians over the 2025 top-100 institutes' own NIRF PDFs. Red = well below the 76-100 tier; green = at or above it.")]
+S += [p("The pattern is simple. Everything about research, PhDs and money per student is red. Everything about students, placements and inclusion is green. "
+        f"Put through the scoring weights, that is where the {s['gap_to_top100']:.0f}-point gap comes from:{ev('ana')}")]
+grows = [["Parameter", "Rank 90-100 average", "Saveetha (estimate)", "Points lost after weighting"]]
+for k in ["tlr", "rpc", "go", "oi", "pr"]:
+    est_v = e26["pr_assumed"] if k == "pr" else e26[k]
+    grows.append([f"<font color='{PCOL[k]}'><b>{k.upper()}</b></font>", f"{est_v + gap[k]:.1f}", f"{est_v:.1f}", f"<font color='{CORAL if wgap[k] > 1 else INK}'><b>{wgap[k]:+.1f}</b></font>"])
+S += [table(grows, widths=[3 * cm, 4.5 * cm, 4.5 * cm, 5.3 * cm], align="CENTER", headcol=TEAL), src("ana", "model", extra="PR for the college is an assumption (median of private colleges ranked 60-100), not an estimate from data.")]
+
+# ---- 6 2026
+S += [KeepTogether([section("6", "The 2026 outlook", PLUM), fig("bands", 15.5 * cm)])]
+S += [src("pred", extra="20,000 simulations of the 2026 filing through the score model, with model error and an unknown Perception score, placed against the forecast thresholds.")]
+S += [tiles([(f"{s['total_score']['median']}", f"Estimated total. Likely range {s['total_score']['p10']} to {s['total_score']['p90']}", PLUM),
+             (f"≈ rank {s['expected_rank']}", "Expected position", SKY),
+             (f"{100 * top200:.0f}%", "Chance of the top 200", TEAL),
+             (f"{s['gap_to_top100']:.1f} pts", f"Gap to the top 100 (needs about {thr['100']:.0f})", CORAL)])]
+trows = [["Rank in 2026", "100", "150", "200", "250", "300"], ["Score needed (forecast)"] + [f"{thr[k]:.1f}" for k in ["100", "150", "200", "250", "300"]]]
+S += [table(trows, align="CENTER", zebra=False, headcol=PLUM), src("pred", extra="Rank-100 line extended from the 2020-25 trend; the shape below rank 100 comes from 2019-22, when NIRF published 200 ranks.")]
+S += [p("The range is wide on purpose. Two things cannot be seen in any data: the Perception survey, and publication counts, which are 75 of Research's 100 marks. "
+        "If the college's publication record is strong, the real result sits towards the top of the range.")]
+
+# ---- 7 levers
+S += [KeepTogether([section("7", "What moves the score", CORAL), fig("levers", 16 * cm)])]
+S += [src("pred", extra="Each bar is one change applied alone to the 2026 filing, re-scored by the model. Publications are not included because the PDFs do not contain them.")]
+S += [Paragraph(x_, BUL, bulletText="•") for x_ in [
+    "<b>PhDs awarded</b> is the largest single lever: 12 → 40 a year adds about 2.2 points, 12 → 80 about 3.7. Awards lag enrolment by three to four years, so scholar intake now decides the 2029-30 filings.",
+    "<b>Operating spend per student</b>: Rs 1.1 lakh → Rs 2 lakh adds about 2.0. NIRF counts labs, e-resources and equipment, not buildings.",
+    "<b>Full-time PhD scholars</b>: 61 → 200 adds about 1.4.",
+    "<b>Median salary</b>: Rs 5.5 lakh → Rs 8 lakh adds 0.8; → Rs 10 lakh adds 1.4. It is the median, so the middle of the batch matters more than a few high offers.",
+    "<b>Sponsored research</b>: Rs 30 lakh → Rs 10 crore a year adds about 1.0.",
+    "<b>Students from other states</b>: 7.6% → 20% adds about 0.3.",
+    "<b>Publications and citations</b> are not in this chart because they are not in the data, yet they are 75 of RPC's 100 marks. The rank 76-100 tier averages RPC 30 against the college's estimated 13.",
+]]
+
+# ---- 8 how it was done
+S += [KeepTogether([section("8", "How this was done", GOLD), fig("architecture", 16.6 * cm)])]
+S += [p("Scripts download the public data from nirfindia.org and the college's website, turn the web tables and PDFs into clean rows, and store them in one database file. "
+        "A model learns how NIRF turns raw numbers into scores from 700 institutes where both are known, then scores the college's own filings. "
+        "A second model forecasts 2026. A web app shows all of it, lets staff type in live numbers, and has an AI assistant that answers questions from the data. "
+        "One command re-runs everything when NIRF 2026 is published.")]
+S += [p("How accurate is the model?", H2)]
+mrows = [["Parameter", "Institutes used", "Share of variation explained (R²)", "Typical error"]]
+for k, v in mp.items():
+    mrows.append([f"<font color='{PCOL[k]}'><b>{k.upper()}</b></font>", str(v["n"]), f"{v['cv_r2']:.2f}", f"{v['cv_mae']:.1f} points"])
+S += [table(mrows, widths=[3 * cm, 3.5 * cm, 6 * cm, 4.8 * cm], align="CENTER", headcol=GOLD),
+      src("model", extra=f"Tested by hiding each institute and predicting it from the others. Combined with the published Perception score, the model reproduces published totals within {M['total_score_fit']['mae']} points on average.")]
+S += [callout("The college's scores are <b>estimates</b>, not NIRF figures. Research is the least certain because publications are not in the PDFs. Perception is a survey and is treated as an assumption. "
+              "The forecast assumes NIRF keeps the 2025 rules.", col=GOLD, label="Keep in mind")]
+
+# ---- 9 app
+arows = [["Page", "What it is for"],
+         ["Home", "The band, the cut-off trend, the 2026 forecast, and how the top 100 earns its points"],
+         ["Top 100 Explorer", "Every ranked Engineering institute 2017-2025, its parameter scores and the raw numbers it submitted"],
+         ["Saveetha Position", "The college's history, estimated scores, and the gap against the tiers and Tamil Nadu peers"],
+         ["Gap & What-If", "Sliders for every lever; the model re-scores instantly"],
+         ["Prediction 2026", "Thresholds, band probabilities and model accuracy"],
+         ["Live Data Entry", "Staff type in this year's numbers; they are kept with date and name, and the model re-scores with them"],
+         ["Ask the Data", "An AI assistant that queries the database, reads the methodology, and can check nirfindia.org live. It shows every query it ran."]]
+S += [KeepTogether([section("9", "The app", TEAL), table(arows, widths=[3.4 * cm, 13.9 * cm], headcol=TEAL)])]
+S += [p("Run it with <font face='Courier'>./run.sh</font> and open http://localhost:8501. Refresh everything after NIRF 2026 with <font face='Courier'>./pipeline.sh</font>.")]
+
+# ---- 10 sources
+S += [KeepTogether([section("10", "Sources and evidence", NAVY), p("Every square bracket in this report points to one of these. Web addresses were fetched between 8 and 10 September 2026; copies of every page and PDF are kept unchanged under data/raw so any figure can be checked.")])]
+srows = [["Tag", "What it is", "Where"],
+         ["NIRF ranking tables", "Engineering (and Overall, College, University) tables 2017-2025 with rank, total and the five parameter scores", "https://www.nirfindia.org/Rankings/&lt;year&gt;/EngineeringRanking.html"],
+         ["NIRF band pages", "Institutes placed in 101-150, 151-200, 201-300 (no scores)", "https://www.nirfindia.org/Rankings/&lt;year&gt;/EngineeringRanking150.html, …200.html, …300.html"],
+         ["institute PDFs", "The data each ranked institute submitted (704 PDFs: top 100 for 2023-25, top 200 for 2021-22)", "https://www.nirfindia.org/nirfpdfcdn/&lt;year&gt;/pdf/Engineering/&lt;institute id&gt;.pdf"],
+         ["NIRF 2025 methodology", "Official parameters, marks, weights and formulas (also 2023 and 2024 versions)", "https://www.nirfindia.org/nirfpdfcdn/2025/framework/Engineering.pdf"],
+         ["2025 filing", "The college's NIRF 2025 Engineering submission", "https://saveetha.ac.in/nirf-documents-2024/ → Engineering-1.pdf"],
+         ["2026 filing", "The college's NIRF 2026 Engineering submission (uploaded February 2026)", "https://saveetha.ac.in → NIRF → SAVEETHA-ENGINEERING-COLLEGE20260216-.pdf"],
+         ["score model", "Estimated parameter scores and accuracy", "models/score_model.py → data/processed/model_report.json"],
+         ["2026 forecast", "Thresholds, band probabilities, levers", "models/predict_2026.py → data/processed/prediction_2026.json"],
+         ["analysis.json", "Cut-offs, tier profiles, medians, gap table", "analysis/analyze.py → data/processed/analysis.json"],
+         ["database", "All of the above in one file", "db/nirf.db (tables: rankings, rank_bands, participants, submissions, methodology, documents, faculty, predictions, saveetha_live)"]]
+S += [table(srows, widths=[3.2 * cm, 6.3 * cm, 7.8 * cm])]
+
+# ---- appendix
+S += [section("A", "Appendix: sub-parameters and formulas", MUTED)]
 meth = pd.read_sql("SELECT parameter, parameter_weight, sub_parameter, sub_code, marks FROM methodology WHERE year=2025 AND category='Engineering'", con)
 _order = {"TLR": 0, "RPC": 1, "GO": 2, "OI": 3, "PR": 4}
 _sub = ["SS", "FSR", "FQE", "FRU", "PU", "QP", "IPR", "FPPP", "GPH", "GUE", "GMS", "GPHD", "RD", "WD", "ESCS", "PCS", "PR"]
 meth["_k"] = meth.parameter.map(_order) * 100 + meth.sub_code.map(lambda c: _sub.index(c) if c in _sub else 99)
 meth = meth.sort_values("_k")
-names = {"TLR": "Teaching, Learning & Resources", "RPC": "Research & Professional Practice", "GO": "Graduation Outcomes", "OI": "Outreach & Inclusivity", "PR": "Perception"}
 plain = {"SS": "Number of students, incl. PhD scholars", "FSR": "Faculty-student ratio; 1:15 earns full marks", "FQE": "Share of faculty with a PhD, and the experience mix",
          "FRU": "Money spent per student, capital and operating", "PU": "Publications per faculty (Scopus / Web of Science)", "QP": "Citations and top-25% papers per faculty",
          "IPR": "Patents published and granted", "FPPP": "Research funding and consultancy income", "GPH": "Share placed plus share going to higher studies",
@@ -319,211 +464,24 @@ plain = {"SS": "Number of students, incl. PhD scholars", "FSR": "Faculty-student
          "PCS": "Facilities for physically challenged students", "PR": "A survey of employers and academics"}
 rows = [["Parameter", "Sub-parameter", "Marks", "In plain words"]]
 for _, m in meth.iterrows():
-    rows.append([f"<font color='{PCOL[m.parameter.lower()]}'><b>{m.parameter}</b></font> · {names[m.parameter]} (weight {m.parameter_weight:.2f})",
-                 f"{m.sub_parameter} <font color='{MUTED}'>({m.sub_code})</font>", str(m.marks), plain.get(m.sub_code, "")])
-t = table(rows, widths=[4.7 * cm, 5.4 * cm, 1.2 * cm, 6.0 * cm])
+    rows.append([f"<font color='{PCOL[m.parameter.lower()]}'><b>{m.parameter}</b></font> (weight {m.parameter_weight:.2f})", f"{m.sub_parameter} <font color='{MUTED}'>({m.sub_code})</font>", str(m.marks), plain.get(m.sub_code, "")])
+t = table(rows, widths=[3.6 * cm, 6.2 * cm, 1.2 * cm, 6.3 * cm])
 t.setStyle(TableStyle([("BACKGROUND", (0, i), (0, i), C(TINT[PCOL[m.parameter.lower()]])) for i, (_, m) in enumerate(meth.iterrows(), start=1)]))
-S += [t, src("meth", extra="Marks and weights as printed in the 'Summary of Ranking Parameters and Weightages – 2025 (Engineering)' table; plain-words column is our paraphrase.")]
+S += [t, src("meth", extra="Marks as printed in the 2025 Engineering methodology.")]
 S += [tech("Formulas as printed in the 2025 Engineering methodology. FSR = 30 × [15 × (F/N)], F = full-time faculty, N = students incl. PhD scholars; zero below 1:50. "
            "FQE = 10 × (FRA/95) for the PhD share plus up to 10 for an even spread over ≤8, 8-15 and >15 years of experience. FRU = 7.5 × f(BC) + 22.5 × f(BO) on capital and operating spend per student. "
            "PU = 35 × f(P/FRQ) − 5 × f(Pret); QP = 20 × f(CC/FRQ) + 20 × f(TOP25P/P) − 5 × f(Cret); the −5 terms for retracted work are new in 2025. IPR = 10 × f(patents granted) + 5 × f(patents published). "
            "GPH = 40 × (Np/100 + Nhs/100). GUE = 15 × min(Ng/80, 1). GMS = 25 × f(median salary). GPHD = 20 × f(PhDs graduated). RD = 25 × (share from other states) + 5 × (share from abroad). "
-           "WD = 15 × (women students %/50) + 15 × (women faculty %/20). ESCS = 20 × f(fee-reimbursed %). The f( ) functions are described in the document as 'to be determined by NIRF' and are not published.")]
-S += [callout("Only the top 100 receive a numeric rank; institutions below are listed in bands (101-150, 151-200, 201-300) without scores [NIRF band pages]. "
-              "<b>Saveetha Engineering College</b> (Sriperumbudur, NIRF id IR-E-C-16590) and <b>Saveetha Institute of Medical and Technical Sciences</b> (Chennai, IR-E-I-1441, rank 45 in 2025) "
-              "are separate NIRF entities [NIRF 2025 Engineering table; the college's filing header]. This report covers the college only.", col=GOLD, label="Two points of definition")]
-
-# 3 history
-S += [section("3", "The college's NIRF record", CORAL)]
-hrows = [["Year", "Category", "Position", "Total", "TLR", "RPC", "GO", "OI", "PR"]]
-for _, h in hist.iterrows():
-    pos = f"Rank {int(h.rank_or_band_low)}" if h.status == "ranked" else f"Band {int(h.rank_or_band_low)}-{int(h.rank_or_band_high)}"
-    fm = lambda v: "–" if pd.isna(v) else f"{v:.2f}"
-    hrows.append([str(int(h.year)), h.category, pos, fm(h.score), fm(h.tlr), fm(h.rpc), fm(h["go"]), fm(h.oi), fm(h.pr)])
-S += [table(hrows, widths=[1.3 * cm, 2.4 * cm, 2.8 * cm, 1.5 * cm, 1.5 * cm, 1.5 * cm, 1.5 * cm, 1.5 * cm, 1.5 * cm], align="CENTER")]
-S += [src("rank", "band", extra="'–' = no score published (band placement). 2021-2023: the college appears in the participant lists but not in the ranked lists or bands. "
-                                 "In 2020 NIRF published 200 numeric ranks, so the page labelled '101-150' holds 201-250; the table reflects that.")]
-S += [p("What the last two filings are worth, by the model", H2)]
-erows = [["Filing", "TLR", "RPC", "GO", "OI", "PR (assumed)", "Estimated total", "Rank-100 score that year"]]
-for e_ in sec_est:
-    erows.append([str(e_["year"]), f"{e_['tlr']:.1f}", f"{e_['rpc']:.1f}", f"{e_['go']:.1f}", f"{e_['oi']:.1f}", f"{e_['pr_assumed']:.1f}", f"<b>{e_['total_est']:.1f}</b>", f"{cut25:.2f}" if e_["year"] == 2025 else f"≈ {thr['100']:.1f} (forecast)"])
-S += [table(erows, align="CENTER")]
-S += [src("model", "sec25", "sec26", extra="PR is not in the filing; the value shown is the median Perception score of private colleges ranked 60-100 in 2025 [NIRF ranking tables].")]
-S += [p(f"The 2025 filing's estimate ({e25['total_est']:.1f}) lies within the 201-300 band that NIRF announced for the college in 2025; the model was not given that information. "
-        f"Between the two filings the reported numbers moved: on-time graduation 61% → 81%, placement 92% → 97%, operating spend per student Rs 80,210 → Rs 1,10,595, PhDs awarded 9 → 12 a year.{ev('sec25')}{ev('sec26')}")]
-S += [KeepTogether([fig("compare", 16 * cm), p("Estimated parameters for the college's 2026 filing (coloured) beside the 2025 averages of institutes ranked 76-100 and 1-10.", SMALL),
-                    src("model", "ana", extra="Tier averages from tier_profile_2025.")])]
-
-# 4 data
-S += [section("4", "Data collected", TEAL)]
-counts = {t_: con.execute(f"SELECT COUNT(*) FROM {t_}").fetchone()[0] for t_ in ("rankings", "rank_bands", "participants", "submissions", "faculty", "methodology", "documents")}
-drows = [["Source", "What it gives", "Size", "Where"],
-         ["NIRF ranking pages", "Engineering, Overall, College and University lists 2017-2025: rank, total and the five parameter scores (Engineering ranks 1-200 for 2019-22)", f"{counts['rankings']:,} rows", "nirfindia.org/Rankings/<year>/EngineeringRanking.html"],
-         ["NIRF band pages", "Institutions placed in 101-150 / 151-200 / 201-300, no scores", f"{counts['rank_bands']:,} rows", "…/EngineeringRanking150.html, 200, 300"],
-         ["NIRF participant lists", "Every institution that applied, per year and category", f"{counts['participants']:,} rows", "…/EngineeringRankingALL.html"],
-         ["Per-institute data PDFs", "Each ranked institute's submitted data: intake, enrolment by gender/state/category, placements, median salary, higher studies, PhDs, capital and operating spend, sponsored research, consultancy, patents, facilities. Top 100 for 2023-25; top 200 for 2021-22", f"{counts['submissions']:,} PDFs", "nirfindia.org/nirfpdfcdn/<year>/pdf/Engineering/<id>.pdf"],
-         ["NIRF methodology PDFs", "Definitions, marks and formulas for 2023, 2024, 2025 (Engineering, Overall, College)", f"{counts['methodology']} rows", "nirfindia.org/nirfpdfcdn/<year>/framework/<category>.pdf"],
-         ["College's own filings", "NIRF 2025 Engineering, Innovation and SDG filings and the NIRF 2026 Engineering filing, incl. the full faculty list", "4 PDFs · 1,575 faculty rows", "saveetha.ac.in/nirf-documents-2024/"],
-         ["Full text of the above", "Indexed for the AI assistant", f"{counts['documents']} documents", "db/nirf.db, table documents"]]
-S += [table(drows, widths=[3.1 * cm, 7.2 * cm, 2.2 * cm, 4.8 * cm], headcol=TEAL), src("db", extra="Row counts are live from the database at build time.")]
-S += [tech("Data handling. The 2016 pages on nirfindia.org return the 2017 tables (identical content, title 'India Rankings 2017'), so 2016 is dropped. In years with 200 numeric ranks the pages labelled "
-           "'101-150' and '151-200' hold ranks 201-250 and 251-300 (no overlap with the ranked list), and are relabelled. Band pages carry no institute IDs, so band rows are linked to institutions by a normalised name key. "
-           "PDFs are converted with pdftotext -layout and parsed with regular expressions; every numeric field the model uses has over 96% coverage across the 704 PDFs. Faculty lists appear only in the college's own PDFs.")]
-prof = pd.DataFrame(A["raw_profile_2025"]).set_index("metric")
-show = ["students_total", "faculty_entered", "students_per_faculty", "phd_pursuing_ft", "phd_grad_3y_avg", "graduation_rate", "placement_rate", "median_salary_ug",
-        "capex_per_student", "opex_per_student", "sponsored_amount_3y_avg", "consultancy_amount_3y_avg", "women_students_pct", "outside_state_pct"]
-lab = {"students_total": "Students (UG+PG)", "faculty_entered": "Faculty", "students_per_faculty": "Students per faculty", "phd_pursuing_ft": "Full-time PhD scholars",
-       "phd_grad_3y_avg": "PhDs awarded / year (3-yr avg)", "graduation_rate": "Graduating on time", "placement_rate": "Placed", "median_salary_ug": "Median UG salary",
-       "capex_per_student": "Capital spend / student (3-yr avg)", "opex_per_student": "Operating spend / student (3-yr avg)", "sponsored_amount_3y_avg": "Sponsored research / yr (3-yr avg)",
-       "consultancy_amount_3y_avg": "Consultancy / yr (3-yr avg)", "women_students_pct": "Women students", "outside_state_pct": "Students from other states"}
-money = {"median_salary_ug", "capex_per_student", "opex_per_student", "sponsored_amount_3y_avg", "consultancy_amount_3y_avg"}; pct = {"graduation_rate", "placement_rate"}
-def fmtv(v, k):
-    if pd.isna(v): return "–"
-    if k in money: return inr(v)
-    if k in pct: return f"{100 * v:.0f}%"
-    if k in ("women_students_pct", "outside_state_pct"): return f"{v:.0f}%"
-    return f"{v:,.1f}" if v % 1 else f"{v:,.0f}"
-prows = [["Metric", "Top 10 (median)", "Rank 76-100 (median)", "Colleges in top 100 (median)", "College, 2025 filing", "College, 2026 filing"]]
-for k in show:
-    rw = prof.loc[k]; v26 = fmtv(rw.saveetha_2026_filing, k)
-    below = (not pd.isna(rw.saveetha_2026_filing)) and (not pd.isna(rw.rank76_100_median)) and (rw.saveetha_2026_filing < rw.rank76_100_median) and k != "students_per_faculty"
-    prows.append([lab[k], fmtv(rw.top10_median, k), fmtv(rw.rank76_100_median, k), fmtv(rw.colleges_top100_median, k), fmtv(rw.saveetha_2025_filing, k),
-                  f"<font color='{CORAL if below else TEAL}'><b>{v26}</b></font>"])
-S += [KeepTogether([p("The college's raw numbers beside the 2025 top 100", H2), table(prows, widths=[4.2 * cm, 2.6 * cm, 2.8 * cm, 2.8 * cm, 2.5 * cm, 2.5 * cm], align="CENTER", headcol=TEAL),
-                    src("pdf", "sec25", "sec26", "ana", extra=f"<font color='{CORAL}'>Red</font> = 2026 filing below the rank 76-100 median; <font color='{TEAL}'>green</font> = at or above it. Medians over the 100 institutes ranked in 2025.")])]
-
-# 5 architecture
-S += [KeepTogether([section("5", "How the system works", GOLD), fig("architecture", 16.8 * cm)])]
-S += [p("Scripts fetch the public data (1) and turn web tables and PDFs into clean rows (2), which are stored in one database file (3). The models (4) are fitted on the 700 institute-years "
-        "where both the raw submission and the published score are known, then applied to the college's filings. The analysis step (5) produces the comparisons in this report, and the app (6) "
-        "presents them, accepts live numbers from staff, and answers questions through an AI assistant that shows the queries it runs.")]
-S += [tech("Stack: Python 3.13; requests + BeautifulSoup for scraping; poppler pdftotext + regex for PDF parsing; pandas; SQLite; XGBoost and scikit-learn for models; Streamlit + Plotly for the app; "
-           "rank-bm25 for document retrieval; Groq (gpt-oss-120b) as the chat model with Gemini as fallback, both on free tiers. "
-           "Layout: scraper/ (4 scripts) · models/ (score_model.py, predict_2026.py, artifacts/) · analysis/analyze.py · app/ (Home.py, common.py, pages/1-6, rag/) · "
-           "data/raw (html, pdf, pdf_text, methodology, saveetha) · data/processed (CSV + JSON) · db/nirf.db · docs/.")]
-
-# 6 model
-S += [section("6", "The scoring model", CORAL)]
-S += [p(f"<b>Why a model is needed.</b> NIRF publishes the formula but not the normalisation functions f( ) that turn a raw number into marks.{ev('meth', 'e.g. SS: f to be determined by NIRF')} "
-        "Without them a score cannot be computed from raw data.")]
-S += [p("<b>Approach.</b> For 700 institute-years (Engineering, ranks 1-200 in 2021-22 and 1-100 in 2023-25) both sides are known: the raw submission and the parameter scores NIRF published. "
-        f"One model per parameter is fitted on exactly the inputs the methodology lists for that parameter, then applied to the college's filings.{ev('model', 'features per parameter')}")]
-S += [p("<b>Choice of method.</b> Gradient-boosted trees (XGBoost) with monotone constraints. Trees capture the saturating shape the methodology implies (a ratio of 1:15 earns full FSR marks; "
-        "more does not add). Monotone constraints require the fitted function to move in the direction the methodology states (more placements cannot reduce GO; more spend cannot reduce TLR), "
-        f"which removes spurious patterns and keeps what-if results consistent. A linear model on the same inputs reached R² of about 0.5 in our tests; a neural network would need far more rows.")]
-mrows = [["Parameter", "Rows", "Cross-validated R²", "Typical error (MAE)", "Largest contributors (gain share)"]]
-for k, v in mp.items():
-    mrows.append([f"<font color='{PCOL[k]}'><b>{k.upper()}</b></font>", str(v["n"]), f"{v['cv_r2']:.2f}", f"{v['cv_mae']:.1f} pts", ", ".join(f"{a.replace('_', ' ')} ({b:.0%})" for a, b in list(v["importance"].items())[:3])])
-S += [table(mrows, widths=[2 * cm, 1.4 * cm, 3.2 * cm, 2.9 * cm, 7.7 * cm]), src("model", extra="5-fold cross-validation grouped by institute, so an institute's other years are never in its training fold.")]
-S += [p(f"With the published Perception score added, the four estimates reproduce published totals with a mean absolute error of <b>{M['total_score_fit']['mae']} points</b> (R² {M['total_score_fit']['r2']}) on the training rows.{ev('model', 'total_score_fit')}", SMALL)]
-S += [callout("Publications and citations carry 75 of RPC's 100 marks and are not in the submission PDFs, so RPC is inferred from PhD output, funding and faculty size; it has the largest error. "
-              "Perception is a survey and cannot be modelled from data; the forecast treats it as an uncertainty drawn from private colleges ranked 60-100 in 2025 (median 11.9, 10th-90th percentile 3.8-48.8). "
-              "The model is trained on institutes ranked 1-200 and is most reliable in that range, which is where the college's 2026 filing is estimated to sit.", col=GOLD, label="Known limits  [model_report.json, prediction_2026.json]")]
-
-# 7 results
-S += [KeepTogether([section("7", "The 2025 field", SKY), fig("tiers", 16 * cm)])]
-S += [p(f"RPC and Perception rise steeply with rank; TLR, GO and OI are flatter. The 2025 top 100 contained {A['type_mix']['2025']['University']} universities, "
-        f"{A['type_mix']['2025']['College']} colleges and {A['type_mix']['2025']['Institute (deemed / national importance)']} deemed or national institutes; colleges numbered 12 in 2023 and 9 in 2025.", SMALL),
-      src("rank", "ana", extra="Type from the NIRF id (U / C / I); tier averages from tier_profile_2025.")]
-tn = pd.DataFrame(A["tamil_nadu_2025"])
-tnrows = [["Rank", "Tamil Nadu institutions in the 2025 Engineering top 100", "Type", "Total", "RPC"]]
-for x_ in tn.to_dict("records"):
-    nm = f"<font color='{CORAL}'><b>{x_['name']}</b></font>" if x_["type_label"] == "College" else x_["name"]
-    tnrows.append([str(int(x_["rank"])), nm, x_["type_label"].split(" ")[0], f"{x_['score']:.2f}", f"{x_['rpc']:.1f}"])
-S += [table(tnrows, widths=[1.3 * cm, 9.6 * cm, 2.2 * cm, 1.8 * cm, 1.8 * cm]), src("rank", extra="2025 Engineering table filtered to state = Tamil Nadu. Colleges (id IR-E-C-…) in red.")]
-S += [p("Three of the fourteen are colleges: SSN (rank 47, RPC 44.0), PSG Tech (67, RPC 26.3) and Sri Krishna CET (100, RPC 22.4). Their RPC values bracket what a college at the cut-off carries.", SMALL)]
-grows = [["Parameter", "Rank 90-100 average (2025)", "College, 2026 filing (est.)", "Difference", "× weight = points"]]
-for k in ["tlr", "rpc", "go", "oi", "pr"]:
-    est_v = e26["pr_assumed"] if k == "pr" else e26[k]
-    grows.append([f"<font color='{PCOL[k]}'><b>{k.upper()}</b></font>", f"{est_v + gap[k]:.1f}", f"{est_v:.1f}", f"{gap[k]:+.1f}", f"<font color='{CORAL if wgap[k] > 1 else INK}'><b>{wgap[k]:+.2f}</b></font>"])
-S += [KeepTogether([p("Where the weighted points are", H2), table(grows, align="CENTER"), src("ana", "model", extra="saveetha_gap_vs_rank90_100_avg and saveetha_weighted_gap_by_param; weights from the 2025 methodology.")])]
-S += [p(f"RPC accounts for {wgap['rpc']:.1f} of the {sum(v for v in wgap.values() if v > 0):.1f} weighted points between the college's estimate and the rank 90-100 average; TLR and OI (students from other states) account for most of the rest; GO is close to level.", SMALL)]
-
-# 8 prediction
-S += [KeepTogether([section("8", "The 2026 forecast", PLUM), fig("bands", 15.5 * cm)])]
-S += [tiles([(f"{s['total_score']['median']}", f"Median estimated total; 10th-90th percentile {s['total_score']['p10']}-{s['total_score']['p90']}", PLUM),
-             (f"≈ rank {s['expected_rank']}", "Median total placed on the 2026 threshold curve", SKY),
-             (f"{100 * top200:.0f}%", "Share of simulations inside the top 200", TEAL),
-             (f"{s['gap_to_top100']:.1f} pts", f"Median total vs forecast rank-100 score ({thr['100']:.1f})", CORAL)])]
-trows = [["Rank in 2026", "100", "125", "150", "175", "200", "250", "300"], ["Forecast score at that rank"] + [f"{thr[k]:.1f}" for k in ["100", "125", "150", "175", "200", "250", "300"]]]
-S += [table(trows, align="CENTER", zebra=False, headcol=PLUM), src("pred", extra="thresholds.forecast_2026.")]
-S += [tech("Method. (a) Thresholds: linear trend of the rank-100 score over 2020-2025 (+1.5 a year, residual s.d. 0.5); the ratio of the score at rank k to the score at rank 100 is taken from 2019-22, "
-           "when NIRF published 200 ranks, and extrapolated to 300 on a log-rank scale. (b) The college: parameter estimates from the score model on the 2026 filing; 20,000 Monte-Carlo draws add each "
-           "parameter model's cross-validated RMSE, a Perception score sampled from private colleges ranked 60-100 in 2025, and the threshold trend's residual; each draw is assigned a band. "
-           f"(c) Other institutions: a ridge regression on previous score, parameters and two-year momentum predicts each 2025 top-100 institute's 2026 score. Trained on ≤2024 and tested on 2025 it has MAE {val['mae']} "
-           f"against {val['naive_mae_no_change']} for a no-change assumption, and Spearman {val['rank_spearman_top100']} against the actual 2025 order [prediction_2026.json, top100_model_validation].")]
-S += [p("<b>Reading the probabilities.</b> The spread comes mainly from two inputs the data does not contain: the Perception survey and the publication counts behind RPC. "
-        "Strong Scopus output would move the college's true score towards the upper end of the range; the model cannot see it either way.")]
-
-# 9 levers
-S += [KeepTogether([section("9", "What moves the score", CORAL), fig("levers", 16 * cm)])]
-S += [p("Each bar is one change applied alone to the 2026 filing with everything else unchanged, scored through the same model. Effects are approximately additive.", SMALL), src("pred", extra="what_if_levers; each lever re-scores the filing with a single field changed.")]
-S += [p("Observations, with the methodology reference for each", H2)]
-S += [Paragraph(x_, BUL, bulletText="•") for x_ in [
-    "<b>PhDs awarded</b> is the largest single lever: 12 → 40 a year is worth about +2.2, 12 → 80 about +3.7. GPHD carries 20 marks of GO; PhD scholars also count in SS (TLR), and PhD output "
-    "is the strongest predictor of RPC in the model (60% of gain). Awards lag enrolment by three to four years; 61 → 200 full-time scholars is worth +1.4 on its own.",
-    "<b>Publications and citations</b> carry 75 of RPC's 100 marks [methodology] and are not observed here. Institutes ranked 76-100 average RPC 29.8 against the college's estimated 13.4. "
-    "NIRF 2025 introduced a deduction for retracted papers (−5 × f(Pret), −5 × f(Cret)).",
-    "<b>Operating and capital spend per student</b>: FRU is 30 marks of TLR. Rs 1.1 L → Rs 2 L operating spend per student is worth about +2.0; Rs 18k → Rs 60k capital spend about +0.8. "
-    "The methodology excludes buildings from capital spend and hostels from operating spend.",
-    "<b>Median UG salary</b>: GMS is 25 marks of GO. Rs 5.5 L → Rs 8 L is +0.8; → Rs 10 L is +1.4. The metric is the median of placed graduates, not the highest offer.",
-    "<b>Sponsored research and consultancy</b>: FPPP is 10 marks of RPC. Rs 30 L → Rs 10 Cr a year of sponsored research is about +1.0 in the model.",
-    "<b>Students from other states</b>: RD is 30 marks of OI. The college reports 7.6% against a tier median of 57%; 7.6% → 20% is worth about +0.3.",
-    "<b>Already at or above the tier</b> in the 2026 filing: placement 97%, on-time graduation 81%, women students 33%, full fee reimbursement 52%.",
-]]
-S += [callout(f"The difference between the college's median estimate ({s['total_score']['median']}) and the forecast rank-100 score ({thr['100']:.1f}) is {s['gap_to_top100']:.1f} points, and the rank-100 score "
-              "has been rising about 1.5 points a year. Combining the levers above at the mid-range values (PhDs → 40 a year, operating spend → Rs 2 L, salary → Rs 8 L, scholars → 200) adds an estimated "
-              "6-8 points by the model, before any effect from publications.", col=TEAL, label="Putting the numbers together  [prediction_2026.json]")]
-
-# 10 app
-S += [section("10", "The app, and where things live", TEAL)]
-arows = [["Page", "What it shows"],
-         ["Home", "The college's band, the cut-off trend, the 2026 forecast, and how the top 100 earns its points"],
-         ["Top 100 Explorer", "Every ranked Engineering institute 2017-2025: filter by year, state, type; parameter scores, the weighted 'score anatomy', the raw numbers each institute submitted, and any institute's history"],
-         ["Saveetha Position", "The college's NIRF history, estimated parameter scores, the gap table, raw numbers against the tiers, and the paths of Tamil Nadu colleges in the top 100"],
-         ["Gap & What-If", "A slider for every lever. The model re-scores instantly and shows the implied 2026 band"],
-         ["Prediction 2026", "Forecast thresholds, band probabilities, model accuracy, and the projected 2026 order of the 2025 top 100"],
-         ["Live Data Entry", "Staff enter current-year numbers (placements, salary, PhDs, spend, Scopus counts). Entries are time-stamped and kept; the model re-scores with the live values"],
-         ["Ask the Data", "An AI assistant that writes database queries, reads the methodology and the 700 submissions, and can fetch nirfindia.org live. It displays the queries it ran so answers can be checked"]]
-S += [table(arows, widths=[3.4 * cm, 13.9 * cm], headcol=TEAL)]
-S += [p("<b>Running it.</b> <font face='Courier'>./run.sh</font>, then open http://localhost:8501. After NIRF 2026 is published, <font face='Courier'>./pipeline.sh</font> re-runs every step and this report can be rebuilt with <font face='Courier'>python docs/build_report.py</font>.")]
-S += [p("Folder structure", H2)]
-S += [Table([[Paragraph("""<b>scraper/</b>   scrape_rankings.py · download_pdfs.py · parse_pdfs.py · build_db.py — collect and store<br/>
-<b>models/</b>    score_model.py (fits the f curves) · predict_2026.py (forecast) · artifacts/ (trained model)<br/>
-<b>analysis/</b>  analyze.py — cut-offs, tiers, movers, peers, gap → data/processed/analysis.json<br/>
-<b>app/</b>       Home.py · common.py · pages/1-6 · rag/index.py (document search) · rag/chat.py (AI assistant)<br/>
-<b>data/raw/</b>  html/ pdf/ pdf_text/ methodology/ saveetha/ — everything downloaded, untouched, kept for audit<br/>
-<b>data/processed/</b>  rankings.csv · submissions.csv · faculty.csv · analysis.json · prediction_2026.json · model_report.json<br/>
-<b>db/nirf.db</b>   the one database file (SQLite); any SQL tool can open it<br/>
-<b>docs/</b>      this report and the script that builds it · <b>README.md</b> · <b>.env</b> (API keys, never shared) · <b>run.sh</b> · <b>pipeline.sh</b>""", CODE)]],
-            colWidths=[17.3 * cm], style=TableStyle([("BACKGROUND", (0, 0), (-1, -1), C("#F6F8FB")), ("LINEBEFORE", (0, 0), (0, 0), 3, C(TEAL)), ("LEFTPADDING", (0, 0), (-1, -1), 10), ("TOPPADDING", (0, 0), (-1, -1), 8), ("BOTTOMPADDING", (0, 0), (-1, -1), 8)]))]
-
-# 11 caveats
-S += [section("11", "Caveats", GOLD)]
-S += [Paragraph(x_, BUL, bulletText="•") for x_ in [
-    "The college's parameter scores for 2020-2025 are <b>model estimates</b>; NIRF has not published them. They are calibrated on 700 institute-years and the 2025 estimate agrees with the published band, but they are not official figures. "
-    "The accurate phrasing is 'estimated at about 13', not 'our RPC is 13'.",
-    "Publications, citations and Perception are not in the data. They are the main sources of uncertainty and are reported as ranges.",
-    "The 2026 forecast assumes the 2025 methodology is unchanged. NIRF has changed weights and sub-parameters before (e.g. the 2025 retraction penalty); the pipeline re-reads the methodology PDF each year.",
-    "The AI assistant can misstate wording. It displays the database queries it ran; figures that matter should be checked against the dashboard or this report.",
-]]
-
-# 12 sources
-S += [section("12", "Sources and evidence", NAVY)]
-S += [p("Every figure in this report traces to one of the following. Raw downloads are kept unchanged under data/raw/ so any number can be re-checked.")]
-srows = [["#", "Source", "Location", "Used for"],
-         ["S1", "NIRF Engineering ranking tables, 2017-2025", "https://www.nirfindia.org/Rankings/&lt;year&gt;/EngineeringRanking.html (also Overall, College, University)", "Ranks, totals, TLR/RPC/GO/OI/PR; cut-offs; tier averages; the college's 2017 and 2019 rows"],
-         ["S2", "NIRF rank-band pages", "…/EngineeringRanking150.html, …200.html, …300.html per year", "The college's 2018, 2020, 2024, 2025 band placements"],
-         ["S3", "NIRF participant lists", "…/EngineeringRankingALL.html per year", "Years the college applied"],
-         ["S4", "Per-institute data PDFs (704)", "https://www.nirfindia.org/nirfpdfcdn/&lt;year&gt;/pdf/Engineering/&lt;institute id&gt;.pdf", "Raw submissions of ranked institutes: model training data; top-100 medians"],
-         ["S5", "NIRF methodology documents 2023-2025", "https://www.nirfindia.org/nirfpdfcdn/&lt;year&gt;/framework/Engineering.pdf (and Overall.pdf, College.pdf)", "Weights, sub-parameter marks, formulas quoted in section 2"],
-         ["S6", "College's NIRF 2025 filings", "https://saveetha.ac.in/nirf-documents-2024/ → Engineering-1.pdf, Innovation.pdf, SDG-1.pdf", "2025 raw numbers and faculty list"],
-         ["S7", "College's NIRF 2026 filing", "https://saveetha.ac.in/wp-content/uploads/2026/02/SAVEETHA-ENGINEERING-COLLEGE20260216-.pdf", "2026 raw numbers; basis of the 2026 estimate and forecast"],
-         ["S8", "Score model output", "data/processed/model_report.json (models/score_model.py)", "Cross-validation results; the college's estimated parameter scores"],
-         ["S9", "Forecast output", "data/processed/prediction_2026.json (models/predict_2026.py)", "Thresholds, band probabilities, lever values, top-100 model validation"],
-         ["S10", "Analysis output", "data/processed/analysis.json (analysis/analyze.py)", "Tier profiles, raw-number medians, gap decomposition, Tamil Nadu list"],
-         ["S11", "Database", "db/nirf.db (scraper/build_db.py)", "All of S1-S7 as tables; row counts in section 4"]]
-S += [table(srows, widths=[0.9 * cm, 4.2 * cm, 6.6 * cm, 5.6 * cm]), src("db", extra="Report built by docs/build_report.py; every number is read from S8-S11 at build time, not typed in.")]
+           "WD = 15 × (women students %/50) + 15 × (women faculty %/20). ESCS = 20 × f(fee-reimbursed %). The f( ) curves are NIRF's own normalisation and are not published; the score model learns them from data.")]
+S += [tech("Model detail. One gradient-boosting model (XGBoost) per parameter, trained on 700 institute-years (ranks 1-200, 2021-25) with monotone constraints so that a better input can never lower a score. "
+           "Inputs per parameter follow the methodology (TLR: students, PhD scholars, faculty per student, spend per student; RPC: PhDs awarded, sponsored and consultancy income, faculty size; "
+           "GO: placed-or-higher-studies share, on-time graduation, median salary, PhDs awarded; OI: out-of-state share, women share, fee-reimbursed share, disability facilities). "
+           f"Grouped 5-fold cross-validation. 2026 forecast: linear trend of the rank-100 cut-off since 2020 (+{P['thresholds']['trend_slope_per_year']} per year), score-vs-rank shape from 2019-22, "
+           f"20,000 Monte-Carlo draws over model error and Perception; a ridge model on previous-year scores projects the rest of the field (validated on 2025: error {val['mae']} points).")]
+grows2 = [["Term", "Meaning"], ["NIRF", "National Institutional Ranking Framework, the Ministry of Education's ranking"], ["Band", "A range such as 201-300 used instead of a rank for institutes below 100; no score is published"],
+          ["Cut-off", "The lowest score inside the top 100 in a given year"], ["Filing", "The data form an institution uploads to NIRF, published as a PDF"],
+          ["Estimate", "A score computed by our model, not by NIRF"], ["R²", "Share of the variation the model explains; 1.0 is perfect"]]
+S += [KeepTogether([p("Glossary", H2), table(grows2, widths=[3 * cm, 14.3 * cm], headcol=MUTED)])]
 
 doc.build(S, onFirstPage=cover, onLaterPages=footer)
 print("wrote", OUT, OUT.stat().st_size // 1024, "KB")
