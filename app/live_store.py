@@ -50,6 +50,10 @@ def db_url() -> str | None:
             url = ""
     if not url or "[YOUR-PASSWORD]" in url or not url.startswith(("postgresql://", "postgres://")):
         return None
+    # Supabase prints the password as [PLACEHOLDER]; people often keep the brackets when pasting.
+    m = re.match(r"^(postgres(?:ql)?://[^:]+:)\[([A-Za-z0-9]+)\](@.*)$", url)
+    if m:
+        url = m.group(1) + m.group(2) + m.group(3)
     return url
 
 
@@ -137,8 +141,10 @@ def _read(sql_pg: str, sql_lite: str) -> pd.DataFrame:
     try:
         ensure_schema()
         if backend() == "supabase":
-            with _pg() as con:
-                return pd.read_sql(sql_pg, con)
+            with _pg() as con, con.cursor() as cur:
+                cur.execute(sql_pg)
+                cols = [d.name for d in cur.description]
+                return pd.DataFrame(cur.fetchall(), columns=cols)
         with _sqlite() as con:
             return pd.read_sql(sql_lite, con)
     except Exception as e:  # noqa: BLE001 - never take the dashboard down over the live table
