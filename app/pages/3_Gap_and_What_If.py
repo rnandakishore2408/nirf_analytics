@@ -29,12 +29,13 @@ st.markdown(f"Baseline = the numbers in Saveetha's **NIRF {int(base.year.iloc[0]
 
 live = live_metrics()
 use_live = st.toggle("Start from staff-entered live values where available", value=not live.empty)
-b = base.copy()
+from score_model import apply_live
 if use_live and not live.empty:
-    for _, row in live.iterrows():
-        if row.metric in b.columns:
-            b.loc[0, row.metric] = row.value
-    st.caption("Live values applied: " + ", ".join(f"{m}={v:g}" for m, v in zip(live.metric, live.value) if m in b.columns))
+    b, applied = apply_live(base, live)
+    if applied:
+        st.caption("Live values applied: " + ", ".join(sorted(applied)))
+else:
+    b = base.copy()
 
 st.subheader("Levers")
 c1, c2, c3 = st.columns(3)
@@ -44,6 +45,12 @@ with c1:
     phd_grad = st.slider("PhDs graduated per year (3-yr avg)", 0, 150, int(b.phd_grad_3y_avg.iloc[0] or 0), 1)
     spons = st.slider("Sponsored research per year (₹ lakh)", 0, 2000, int((b.sponsored_amount_3y_avg.iloc[0] or 0) / 1e5), 10)
     cons = st.slider("Consultancy per year (₹ lakh)", 0, 1000, int((b.consultancy_amount_3y_avg.iloc[0] or 0) / 1e5), 5)
+    _p0 = b.get("publications_3y", pd.Series([float("nan")])).iloc[0]
+    _c0 = b.get("citations_3y", pd.Series([float("nan")])).iloc[0]
+    pubs = st.slider("Publications, last 3 years (Scopus/WoS)", 0, 6000, int(_p0) if pd.notna(_p0) else 0, 25,
+                     help="35 of RPC's 100 marks. Enter the college's real figure on the Live Data page so this starts from the truth.")
+    cites = st.slider("Citations, last 3 years", 0, 60000, int(_c0) if pd.notna(_c0) else 0, 250,
+                      help="40 of RPC's 100 marks, scored per faculty member.")
 with c2:
     st.markdown("**Money & faculty**")
     opex = st.slider("Operating spend per student per year (₹ thousand)", 20, 600, int((b.opex_per_student.iloc[0] or 0) / 1e3), 5)
@@ -66,6 +73,8 @@ w["opex_per_student"], w["capex_per_student"], w["faculty_parsed"], w["faculty_e
 w["median_salary_ug"], w["placed_or_hs_rate"], w["graduation_rate"] = salary * 1e5, placed / 100, grad / 100
 w["outside_state_pct"], w["women_students_pct"], w["full_fee_reimb_pct"] = out_state, women, fee
 w["sponsored_projects_3y"] = max(int(b.sponsored_projects_3y.iloc[0] or 0), int(spons / 5))
+w["publications_3y"] = pubs if pubs > 0 else float("nan")
+w["citations_3y"] = cites if cites > 0 else float("nan")
 
 p0 = sm.predict_params(b).iloc[0]
 p1 = sm.predict_params(w).iloc[0]
@@ -102,9 +111,9 @@ if not lev.empty:
                        plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)")
     fig2.update_xaxes(gridcolor="rgba(128,128,128,.15)")
     st.plotly_chart(fig2, use_container_width=True)
-st.info("Caveat: the model learns from institutes that are already in the top 200, so it is most reliable inside that range. Publications and citations "
-        "(75 of RPC's 100 marks) are not in the PDFs, so RPC is estimated from PhD output, funding and faculty size; a Scopus-based publication push "
-        "will add points the model cannot see. Use the Live Data page to record publication counts so future versions can include them.")
+st.info("Caveat: the model learns from institutes already ranked in the top 200, so it is most reliable inside that range. Publications and citations "
+        "(75 of RPC's 100 marks) are absent from NIRF's PDFs, so peer figures come from OpenAlex; the college's own are not catalogued there, which is why "
+        "entering them on the Live Data page matters. With the sliders at zero the model falls back to estimating research from PhD output, funding and faculty size.")
 
 with st.expander("What drives each estimated parameter (feature contributions for the baseline)"):
     for p in ("tlr", "rpc", "go", "oi"):

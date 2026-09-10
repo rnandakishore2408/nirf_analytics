@@ -92,6 +92,7 @@
       }
     }
   },
+  "uses_publications": false,
   "total_score_fit": {
     "mae": 2.05,
     "r2": 0.952

@@ -17,6 +17,9 @@ ok, msg = live_store.health()
 st.caption(("🟢 " if ok else "🔴 ") + live_store.describe() + ("" if ok else f"  ·  problem: {msg}"))
 st.markdown("Enter the figures the college tracks internally (same definitions as the NIRF data-capture form). Every entry is time-stamped and kept, "
             "so you can see the trend and the model re-scores with the latest values. Leave a field blank to keep the filed value.")
+st.info("**Publications and citations matter most.** They carry 75 of the 100 marks in the Research parameter and are the largest "
+        "single source of uncertainty in our estimate. NIRF's public PDFs omit them, and this college is not catalogued in the open "
+        "publication databases we use for peer institutes, so the figures you enter here are the only reliable source we have.", icon="🔬")
 
 METRICS = [
     ("students_total", "Total students enrolled (UG+PG, all years)", "count"),
@@ -38,8 +41,8 @@ METRICS = [
     ("consultancy_amount_3y_avg", "Consultancy received per year (₹, 3-yr avg)", "inr"),
     ("patents_published_3y", "Patents published (last 3 years)", "count"),
     ("patents_granted_3y", "Patents granted (last 3 years)", "count"),
-    ("scopus_publications_3y", "Scopus-indexed publications (last 3 years) — not in the PDF, tracked for future model versions", "count"),
-    ("scopus_citations_3y", "Citations (last 3 years)", "count"),
+    ("scopus_publications_3y", "Publications, last 3 years (Scopus/WoS) — 35 of RPC's 100 marks", "count"),
+    ("scopus_citations_3y", "Citations, last 3 years — 40 of RPC's 100 marks", "count"),
     ("retracted_papers_3y", "Retracted papers (last 3 years) — NIRF 2025+ negative marking", "count"),
     ("women_students_pct", "Women students (%)", "pct"),
     ("outside_state_pct", "Students from other states (%)", "pct"),
@@ -94,18 +97,10 @@ sm = model()
 live = live_metrics()
 if live.empty:
     st.info("No live values yet — the estimate below uses the filed numbers.")
-w = base.copy()
-for _, r in live.iterrows():
-    if r.metric in w.columns:
-        w.loc[0, r.metric] = r.value
-# derived fields staff may have updated indirectly
-if "students_total" in w and w.students_total.iloc[0]:
-    if "students_female" in w and pd.notna(w.students_female.iloc[0]):
-        w["women_students_pct"] = 100 * w.students_female / w.students_total
-    if "students_outside_state" in w and pd.notna(w.students_outside_state.iloc[0]):
-        w["outside_state_pct"] = 100 * w.students_outside_state / w.students_total
-if {"graduated_total", "placed_total"} <= set(w.columns) and w.graduated_total.iloc[0]:
-    w["placed_or_hs_rate"] = (w.placed_total.fillna(0) + w.higher_studies_total.fillna(0)) / w.graduated_total
+from score_model import apply_live
+w, applied = apply_live(base, live)
+if applied:
+    st.caption("Live values applied to the estimate below: " + ", ".join(sorted(applied)))
 p0 = sm.predict_params(base).iloc[0]; p1 = sm.predict_params(w).iloc[0]
 pr = load_json("prediction_2026.json").get("saveetha", {}).get("pr_assumption", {}).get("median", 5.0)
 t0 = sum(p0[p] * WEIGHTS[p] for p in ("tlr", "rpc", "go", "oi")) + WEIGHTS["pr"] * pr
