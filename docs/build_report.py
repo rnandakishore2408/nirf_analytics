@@ -350,7 +350,7 @@ for _, h in hist.iterrows():
     fm = lambda v: "–" if pd.isna(v) else f"{v:.2f}"
     hrows.append([str(int(h.year)), h.category, pos, fm(h.score), fm(h.tlr), fm(h.rpc), fm(h["go"]), fm(h.oi), fm(h.pr)])
 S += [table(hrows, widths=[1.3 * cm, 2.4 * cm, 2.8 * cm, 1.5 * cm, 1.5 * cm, 1.5 * cm, 1.5 * cm, 1.5 * cm, 1.5 * cm], align="CENTER", headcol=CORAL),
-      src("rank", "band", extra="A dash means NIRF published no score. The college also applied in 2021, 2022 and 2023 without being placed in a published list.")]
+      src("rank", "band", extra="A dash means NIRF published no score. The college also applied in 2022 and 2023 without being placed in a published list.")]
 S += [p("The two years with published scores tell the same story as today: TLR, GO and OI were reasonable, <b>RPC was 4.7 and 3.0</b>, and Perception was close to zero.")]
 S += [KeepTogether([fig("compare", 16 * cm), src("model", "ana", extra="Coloured bars are model estimates from the 2026 filing; grey bars are averages of published 2025 scores.")])]
 

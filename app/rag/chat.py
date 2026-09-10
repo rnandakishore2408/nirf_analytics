@@ -56,7 +56,7 @@ Important facts to keep straight:
 - "Saveetha Engineering College" (IR-E-C-16590, a college in Sriperumbudur) is NOT "Saveetha Institute of
   Medical and Technical Sciences" (IR-E-I-1441, a deemed university in Chennai ranked ~45). Never mix them up.
 - Saveetha Engineering College: rank 91 (2017), band 101-150 (2018), rank 124 (2019), band 201-250 (2020),
-  unranked 2021-2023, band 201-300 (2024, 2025). NIRF publishes no scores for band placements; its
+  band 201-250 (2021), not placed in 2022-2023, band 201-300 (2024, 2025). NIRF publishes no scores for band placements; its
   TLR/RPC/GO/OI estimates come from our calibrated model, so say "estimated".
 - The five parameters and their official names: TLR = Teaching, Learning & Resources; RPC (NIRF also writes RP) =
   Research and Professional Practice; GO = Graduation Outcomes; OI = Outreach and Inclusivity; PR = Perception.
