@@ -62,10 +62,9 @@ def saveetha_history() -> pd.DataFrame:
 
 
 def live_metrics() -> pd.DataFrame:
-    """Latest staff-entered value per metric (not cached: changes as staff type)."""
-    with connect() as con:
-        return pd.read_sql("SELECT metric, value, academic_year, entered_at, entered_by, note FROM saveetha_live "
-                           "WHERE id IN (SELECT MAX(id) FROM saveetha_live GROUP BY metric) ORDER BY metric", con)
+    """Latest staff-entered value per metric (Supabase when configured, else the local file)."""
+    import live_store
+    return live_store.latest_metrics()
 
 
 def fmt_inr(x: float) -> str:

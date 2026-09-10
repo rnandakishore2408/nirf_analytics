@@ -143,8 +143,13 @@ def get_saveetha_status() -> str:
     out = {}
     con = sqlite3.connect(f"file:{DB}?mode=ro", uri=True)
     out["history"] = [dict(zip(["year", "category", "status", "low", "high", "score", "tlr", "rpc", "go", "oi", "pr"], r)) for r in con.execute("SELECT * FROM v_saveetha_history")]
-    out["live_metrics"] = [dict(zip(["metric", "value", "academic_year", "entered_at", "entered_by", "note"], r)) for r in con.execute(
-        "SELECT metric, value, academic_year, entered_at, entered_by, note FROM saveetha_live WHERE id IN (SELECT MAX(id) FROM saveetha_live GROUP BY metric)")]
+    try:
+        sys.path.insert(0, str(ROOT / "app"))
+        import live_store
+        out["live_metrics"] = live_store.latest_metrics().to_dict(orient="records")
+    except Exception as e:  # noqa: BLE001
+        out["live_metrics"] = []
+        out["live_metrics_error"] = str(e)[:120]
     con.close()
     for name, keys in (("prediction_2026.json", ["thresholds", "saveetha", "what_if_levers", "top100_model_validation"]),
                        ("model_report.json", ["params", "saveetha_estimates", "total_score_fit"]),

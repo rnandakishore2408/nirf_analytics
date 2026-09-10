@@ -7,11 +7,14 @@ from datetime import datetime
 import pandas as pd
 import streamlit as st
 
-from common import SEC_ID, WEIGHTS, card, connect, fmt_inr, inject_css, live_metrics, load_json, submissions
+import live_store
+from common import SEC_ID, WEIGHTS, card, fmt_inr, inject_css, live_metrics, load_json, submissions
 
 st.set_page_config(page_title="Live Data Entry", page_icon="📝", layout="wide")
 inject_css()
 st.title("Live data — Saveetha's current numbers")
+ok, msg = live_store.health()
+st.caption(("🟢 " if ok else "🔴 ") + live_store.describe() + ("" if ok else f"  ·  problem: {msg}"))
 st.markdown("Enter the figures the college tracks internally (same definitions as the NIRF data-capture form). Every entry is time-stamped and kept, "
             "so you can see the trend and the model re-scores with the latest values. Leave a field blank to keep the filed value.")
 
@@ -69,11 +72,13 @@ if ok:
     if not rows:
         st.warning("Nothing to save — fill at least one field.")
     else:
-        with connect() as con:
-            con.executemany("INSERT INTO saveetha_live (entered_by, academic_year, metric, value, note) VALUES (?,?,?,?,?)", rows)
-            con.commit()
-        st.success(f"Saved {len(rows)} value(s). The what-if page and the chatbot now see them.")
-        st.rerun()
+        try:
+            n = live_store.add_entries(rows)
+            st.success(f"Saved {n} value(s) to {live_store.backend()}. The what-if page and the chatbot now see them.")
+            st.cache_data.clear()
+            st.rerun()
+        except Exception as e:  # noqa: BLE001
+            st.error(f"Could not save: {e}")
 
 st.divider()
 st.subheader("Instant re-score with live values")
@@ -114,7 +119,7 @@ with k5:
 
 st.divider()
 st.subheader("Entry history")
-hist = pd.read_sql("SELECT entered_at, entered_by, academic_year, metric, value, note FROM saveetha_live ORDER BY id DESC LIMIT 500", connect())
+hist = live_store.history(500)
 if hist.empty:
     st.caption("No entries yet.")
 else:
@@ -122,6 +127,6 @@ else:
     st.download_button("Download history CSV", hist.to_csv(index=False).encode(), "saveetha_live_history.csv", "text/csv")
     with st.expander("Delete the most recent entry (mistakes)"):
         if st.button("Delete last entry"):
-            with connect() as con:
-                con.execute("DELETE FROM saveetha_live WHERE id=(SELECT MAX(id) FROM saveetha_live)"); con.commit()
+            live_store.delete_last()
+            st.cache_data.clear()
             st.rerun()

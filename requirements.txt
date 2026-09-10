@@ -12,3 +12,4 @@ plotly
 rank-bm25
 python-dotenv
 openai
+psycopg[binary]
