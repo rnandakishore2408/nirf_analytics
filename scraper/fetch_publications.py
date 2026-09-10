@@ -44,18 +44,37 @@ MANUAL: dict[str, str | None] = {
 MIN_SIMILARITY = 0.55  # reject a candidate whose name is not recognisably the same institution
 
 
-def _get(path: str, params: dict, tries: int = 3):
+class BudgetExhausted(RuntimeError):
+    """OpenAlex's free daily budget is spent. Stop cleanly; the caches make a later re-run cheap."""
+
+
+class LookupFailed(RuntimeError):
+    """The request did not succeed. NEVER record this as 'institute not in OpenAlex'."""
+
+
+def _get(path: str, params: dict, tries: int = 4):
+    """Return the parsed body, or raise. A failure is never silently turned into 'no result',
+    because that is what previously poisoned the cache with false 'not found' entries."""
+    last = ""
     for i in range(tries):
         try:
             r = requests.get(f"{API}/{path}", params=params, headers=HEADERS, timeout=45)
             if r.status_code == 200:
                 return r.json()
+            last = f"HTTP {r.status_code}"
             if r.status_code == 429:
-                time.sleep(5 * (i + 1))
-        except requests.RequestException:
-            pass
-        time.sleep(1.5 * (i + 1))
-    return None
+                body = r.text[:200]
+                if "budget" in body.lower():
+                    retry = r.headers.get("retry-after", "?")
+                    raise BudgetExhausted(f"daily budget spent; retry-after {retry}s")
+                time.sleep(8 * (i + 1))
+                continue
+        except BudgetExhausted:
+            raise
+        except requests.RequestException as e:
+            last = str(e)[:120]
+        time.sleep(2 * (i + 1))
+    raise LookupFailed(last or "unknown error")
 
 
 def clean(name: str) -> str:
@@ -85,8 +104,9 @@ def match_institution(name: str, cache: dict) -> str | None:
     if name in cache:
         return cache[name]
     js = _get("institutions", {"search": clean(name), "per-page": 10, "filter": "country_code:IN"})
+    # reaching here means the API answered; only now is "no match" a real finding worth caching
     best = None
-    if js and js.get("results"):
+    if js.get("results"):
         # OpenAlex often holds an empty duplicate entry that outranks the real one, so score every
         # candidate: it must actually have works, and its name must be recognisably the same place.
         cands = [(similarity(name, c["display_name"]), c.get("works_count", 0), c["id"].split("/")[-1], c["display_name"])
@@ -107,9 +127,8 @@ def counts_by_year(inst_id: str, cache: dict) -> dict[int, tuple[int, int]]:
         return {int(k): tuple(v) for k, v in cache[inst_id].items()}
     js = _get(f"institutions/{inst_id}", {})
     out = {}
-    if js:
-        for row in js.get("counts_by_year", []):
-            out[int(row["year"])] = (int(row.get("works_count", 0)), int(row.get("cited_by_count", 0)))
+    for row in js.get("counts_by_year", []):
+        out[int(row["year"])] = (int(row.get("works_count", 0)), int(row.get("cited_by_count", 0)))
     cache[inst_id] = {str(k): list(v) for k, v in out.items()}
     time.sleep(0.12)
     return out
@@ -124,13 +143,23 @@ def main(years: list[int], max_rank: int = 200) -> None:
     counts_cache_path = ROOT / "data" / "processed" / "openalex_counts.json"
     counts_cache = json.loads(counts_cache_path.read_text()) if counts_cache_path.exists() else {}
 
-    rows, unmatched = [], []
+    rows, unmatched, failed = [], [], []
+    stopped_early = None
     for i, rec in enumerate(todo.itertuples(), 1):
-        oid = match_institution(rec.name, ids_cache)
-        if not oid:
-            unmatched.append(rec.name)
+        try:
+            oid = match_institution(rec.name, ids_cache)
+            if not oid:
+                unmatched.append(rec.name)
+                continue
+            by_year = counts_by_year(oid, counts_cache)
+        except BudgetExhausted as e:
+            stopped_early = str(e)
+            print(f"\n  stopping at {i}/{len(todo)}: {e}")
+            print("  progress is cached; re-run this script after the reset to continue where it left off.")
+            break
+        except LookupFailed as e:
+            failed.append((rec.name, str(e)))
             continue
-        by_year = counts_by_year(oid, counts_cache)
         window = range(rec.year - 4, rec.year - 1)  # NIRF 2025 -> 2021, 2022, 2023
         pubs = sum(by_year.get(y, (0, 0))[0] for y in window)
         cites = sum(by_year.get(y, (0, 0))[1] for y in window)
@@ -151,7 +180,14 @@ def main(years: list[int], max_rank: int = 200) -> None:
         print("coverage by year:")
         for y in cov.index:
             print(f"  {y}: {cov[y]}/{tot[y]} ({100 * cov[y] / tot[y]:.0f}%)")
-    print(f"unmatched institutes ({len(set(unmatched))}): {sorted(set(unmatched))[:8]}")
+    print(f"genuinely not in OpenAlex ({len(set(unmatched))}): {sorted(set(unmatched))[:6]}")
+    if failed:
+        print(f"lookup failed, NOT cached, will retry next run ({len(set(n for n, _ in failed))}): "
+              f"{sorted(set(n for n, _ in failed))[:6]}")
+    if stopped_early:
+        print(f"\nINCOMPLETE - {stopped_early}. Re-run to finish.")
+    else:
+        print("\ncomplete.")
 
 
 if __name__ == "__main__":

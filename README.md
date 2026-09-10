@@ -14,6 +14,8 @@ What is inside:
 | **Analysis** | `analysis/analyze.py` → `data/processed/analysis.json`: cut-offs, tier profiles, movers, Tamil Nadu peers, raw-data profile vs Saveetha, gap decomposition |
 | **App** | Streamlit dashboard (6 pages) incl. **Live Data Entry** for college staff and **Ask the Data**, an AI analyst (Groq gpt-oss-120b, then Groq Qwen 3.8, then Gemini 3.1 Flash Lite; both free tiers) with tools: read-only SQL, BM25 search over all documents, live web fetch (nirfindia.org), Saveetha status |
 
+**Start here:** [docs/HANDOVER.md](docs/HANDOVER.md) — current findings, credentials, open items and known limits.
+
 ## Run
 
 ```bash
@@ -54,6 +56,6 @@ db/nirf.db
 ## Caveats
 
 - NIRF's normalisation functions f() are unpublished; parameter scores for Saveetha are model estimates, most reliable inside the top-200 range the model was trained on.
-- Publications and citations (75 of RPC's 100 marks) are not in the PDFs; RPC is estimated from PhD output, funding and faculty size. Record Scopus counts on the Live Data page so future model versions can use them.
+- Publications and citations (75 of RPC's 100 marks) are not in NIRF's PDFs. Peer figures come from OpenAlex via `scraper/fetch_publications.py`, but coverage is incomplete, so a guard in `models/score_model.py` currently keeps those features switched off. See docs/HANDOVER.md section 6.
 - Perception is a survey; it is treated as an uncertainty (drawn from private colleges ranked 60-100).
 - The 2016 pages on nirfindia.org serve the 2017 tables; they are dropped. In years with 200 numeric ranks (2019-22) the "101-150"/"151-200" band pages actually hold 201-250/251-300 and are relabelled.
