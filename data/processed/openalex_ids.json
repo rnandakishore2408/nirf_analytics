@@ -2,11 +2,23 @@
  "Aligarh Muslim University": "I171210897",
  "Amity University": "I191972202",
  "Amrita Vishwa Vidyapeetham": "I81556334",
+ "Anna University": {
+  "id": "I33585257",
+  "matched_name": "Anna University, Chennai",
+  "score": 0.9,
+  "works": 43042
+ },
  "Annamalai University": "I197081775",
  "Atal Bihari Vajpayee Indian Institute of Information Technology and Management": "I9747756",
  "Banasthali Vidyapith": "I102117144",
  "Birla Institute of Technology": "I115715567",
  "Birla Institute of Technology & Science -Pilani": "I74796645",
+ "Centurion  University  of Technology and Management": {
+  "id": "I47639616",
+  "matched_name": "Centurion University of Technology and Management",
+  "score": 1.0,
+  "works": 5970
+ },
  "Chaitanya Bharathi Institute of Technology": "I134892692",
  "Chandigarh University": "I101407740",
  "Chitkara University": "I74319210",
@@ -16,8 +28,38 @@
  "Delhi Technological University": "I863896202",
  "Dhirubhai Ambani Institute of Information and Communication Technology": "I98389781",
  "Dr. B. R. Ambedkar National Institute of Technology": "I70971781",
+ "Dr. Vishwanath Karad MIT World Peace University": {
+  "id": "I4210088227",
+  "matched_name": "MIT World Peace University",
+  "score": 0.9,
+  "works": 6735
+ },
+ "G.L.Bajaj Institute of Technology and Management": {
+  "id": "I4405263758",
+  "matched_name": "G.L. Bajaj Institute of Technology and Management Greater Noida",
+  "score": 0.9,
+  "works": 1159
+ },
+ "Galgotias University": {
+  "id": "I155125381",
+  "matched_name": "Galgotias University",
+  "score": 1.0,
+  "works": 15936
+ },
  "Graphic Era University": "I60054993",
  "Guru Gobind Singh Indraprastha University": "I105454292",
+ "Guru Nanak Dev University": {
+  "id": "I165682329",
+  "matched_name": "Guru Nanak Dev University",
+  "score": 1.0,
+  "works": 18324
+ },
+ "Hindustan Institute of Technology and Science (HITS)": {
+  "id": "I43663321",
+  "matched_name": "Hindustan Institute of Technology and Science",
+  "score": 1.0,
+  "works": 10907
+ },
  "Indian Institute of Engineering Science and Technology": "I98365261",
  "Indian Institute of Information Technology Allahabad": "I26072440",
  "Indian Institute of Information Technology Guwahati": "I4210089896",
@@ -39,17 +81,65 @@
  "Indian Institute of Technology Patna": "I132153292",
  "Indian Institute of Technology Roorkee": "I154851008",
  "Indian Institute of Technology Ropar": "I119241673",
+ "Indian Institute of Technology, Bombay": {
+  "id": "I162827531",
+  "matched_name": "Indian Institute of Technology Bombay",
+  "score": 1.0,
+  "works": 67151
+ },
+ "Indian Institute of Technology, Delhi": {
+  "id": "I68891433",
+  "matched_name": "Indian Institute of Technology Delhi",
+  "score": 1.0,
+  "works": 73692
+ },
+ "Indian Institute of Technology, Kharagpur": {
+  "id": "I145894827",
+  "matched_name": "Indian Institute of Technology Kharagpur",
+  "score": 1.0,
+  "works": 73173
+ },
+ "Indian Institute of Technology, Mandi": {
+  "id": "I9579091",
+  "matched_name": "Indian Institute of Technology Mandi",
+  "score": 1.0,
+  "works": 8918
+ },
+ "Indian Institute of Technology, Roorkee": {
+  "id": "I154851008",
+  "matched_name": "Indian Institute of Technology Roorkee",
+  "score": 1.0,
+  "works": 53210
+ },
  "Indira Gandhi Delhi Technical University for Women": "I4210143260",
  "Indraprastha Institute of Information Technology, Delhi": "I119939252",
  "Institute of Chemical Technology": "I167751958",
  "Institute of Engineering & Management": "I864998749",
  "International Institute of Information Technology Bangalore": "I181514455",
+ "International Institute of Information Technology Bhubaneswar": {
+  "id": "I4210097016",
+  "matched_name": "International Institute of Information Technology",
+  "score": 0.9,
+  "works": 1919
+ },
  "International Institute of Information Technology Hyderabad": "I64189192",
+ "JSS Science and Technology University": {
+  "id": "I4210137436",
+  "matched_name": "JSS Science and Technology University",
+  "score": 1.0,
+  "works": 3138
+ },
  "Jadavpur University": "I170979836",
  "Jamia Millia Islamia": "I59475050",
  "Jawaharlal Nehru Technological University": "I142809039",
  "Jaypee Institute of Information Technology": "I154970844",
  "Jaypee University of Information Technology": "I153954893",
+ "KLE Technological University": {
+  "id": "I3132975163",
+  "matched_name": "KLE Technological University",
+  "score": 1.0,
+  "works": 6824
+ },
  "Kalasalingam Academy of Research and Education": "I98499257",
  "Karunya Institute of Technology and Sciences": "I119668213",
  "Koneru Lakshmaiah Education Foundation University (K L College of Engineering)": "I875944469",
@@ -78,8 +168,20 @@
  "National Institute of Technology Tiruchirappalli": "I122964287",
  "National Institute of Technology Warangal": "I121750182",
  "National Institute of Technology, Jamshedpur": "I187761245",
+ "National Institute of Technology, Tiruchirappalli": {
+  "id": "I122964287",
+  "matched_name": "National Institute of Technology Tiruchirappalli",
+  "score": 1.0,
+  "works": 23275
+ },
  "Netaji Subhas University of Technology (NSUT)": "I36090812",
  "Nirma University": "I165831266",
+ "North Eastern Regional Institute of Science & Technology": {
+  "id": "I160302567",
+  "matched_name": "North Eastern Regional Institute of Science and Technology",
+  "score": 1.0,
+  "works": 3284
+ },
  "PES University": "I196608512",
  "PSG Institute of Technology and Applied Research": "I4210109528",
  "Pandit Deendayal Petroleum University": "I33586908",
@@ -89,18 +191,60 @@
  "Sant Longowal Institute of Engineering & Technology": "I63568130",
  "Sardar Vallabhbhai National Institute of Technology": "I42014448",
  "Sathyabama Institute of Science and Technology": "I43814544",
+ "Saveetha Institute of Medical and Technical Sciences": {
+  "id": "I85461943",
+  "matched_name": "Saveetha University",
+  "score": 0.9,
+  "works": 64754
+ },
+ "Sharda University": {
+  "id": "I74885063",
+  "matched_name": "Sharda University",
+  "score": 1.0,
+  "works": 15907
+ },
+ "Shoolini University of Biotechnology and Management Sciences": {
+  "id": "I4210133311",
+  "matched_name": "Shoolini University",
+  "score": 0.9,
+  "works": 6427
+ },
  "Shri Mata Vaishno Devi University": "I59179055",
  "Siddaganga Institute of Technology": "I4387153738",
  "Siksha `O` Anusandhan": "I193073490",
  "Sri Sivasubramaniya Nadar College of Engineering": "I916357946",
+ "Sri Venkateswara University": {
+  "id": "I170558118",
+  "matched_name": "Sri Venkateswara University",
+  "score": 1.0,
+  "works": 18380
+ },
  "Tezpur University": "I126601174",
  "Thapar Institute of Engineering and Technology": "I162030827",
  "The Northcap University": "I129798099",
+ "Thiagarajar College of Engineering": {
+  "id": "I21234101",
+  "matched_name": "Thiagarajar College of Engineering",
+  "score": 1.0,
+  "works": 314
+ },
  "University College of Engineering": "I142253595",
  "University of Petroleum and Energy Studies": "I5847235",
+ "Vallurupalli Nageswara Rao Vignana Jyothi Institute of Engineering and Technology": {
+  "id": "I4405263215",
+  "matched_name": "Vallurupalli Nageswara Rao Vignana Jyothi Institute of Engineering and Technology",
+  "score": 1.0,
+  "works": 247
+ },
  "Veer Surendra Sai University of Technology": "I185065464",
  "Vel Tech Rangarajan Dr. Sagunthala R & D Institute of Science and Technology": "I1330855593",
  "Vellore Institute of Technology": "I876193797",
+ "Vels Institute of Science, Technology & Advanced Studies (VISTAS)": {
+  "id": "I138876546",
+  "matched_name": "Vels University",
+  "score": 1.0,
+  "works": 9892
+ },
  "Visvesvaraya National Institute of Technology": "I167153416",
  "Visvesvaraya Technological University": "I65674248"
 }

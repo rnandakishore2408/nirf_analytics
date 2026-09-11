@@ -136,17 +136,28 @@ def match_institution(name: str, cache: dict) -> str | None:
         return _as_id(cache[name])
     js = _get("institutions", {"search": clean(name), "per-page": 10, "filter": "country_code:IN"})
     # reaching here means the API answered; only now is "no match" a real finding worth caching
-    best = None
-    if js.get("results"):
-        # OpenAlex often holds an empty duplicate entry that outranks the real one, so score every
-        # candidate: it must actually have works, and its name must be recognisably the same place.
-        cands = [(similarity(name, c["display_name"]), c.get("works_count", 0), c["id"].split("/")[-1], c["display_name"])
-                 for c in js["results"] if c.get("works_count", 0) >= MIN_WORKS]
-        cands = [c for c in cands if c[0] >= MIN_SIMILARITY]
-        if cands:
-            cands.sort(key=lambda t: (-t[0], -t[1]))
-            sc, works, oid, disp = cands[0]
-            best = {"id": oid, "matched_name": disp, "works": works, "score": round(sc, 2)}
+    results = js.get("results", [])
+    # OpenAlex often holds an empty duplicate entry that outranks the real one, so score every
+    # candidate: it must actually have works, and its name must be recognisably the same place.
+    scored = [(similarity(name, c["display_name"]), c.get("works_count", 0), c["id"].split("/")[-1], c["display_name"])
+              for c in results]
+    enough_works = [c for c in scored if c[1] >= MIN_WORKS]
+    cands = [c for c in enough_works if c[0] >= MIN_SIMILARITY]
+    if cands:
+        cands.sort(key=lambda t: (-t[0], -t[1]))
+        sc, works, oid, disp = cands[0]
+        best = {"id": oid, "matched_name": disp, "works": works, "score": round(sc, 2)}
+    else:
+        # record WHY, so an absence can be judged later without spending another request
+        if not results:
+            why = "search returned nothing"
+        elif not enough_works:
+            why = f"all {len(results)} candidates below the {MIN_WORKS}-works floor"
+        else:
+            why = f"best name score {max(c[0] for c in enough_works):.2f} < {MIN_SIMILARITY}"
+        best = {"id": None, "reason": why,
+                "near_misses": [{"name": d, "works": w, "score": round(sc, 2)}
+                                for sc, w, _, d in sorted(scored, key=lambda t: -t[0])[:3]]}
     cache[name] = best
     IDS.write_text(json.dumps(cache, indent=1, sort_keys=True))
     time.sleep(0.12)

@@ -16,6 +16,7 @@ year,institute_id,name,openalex_id,publications_3y,citations_3y,source
 2021,IR-E-U-0308,Institute of Chemical Technology,I167751958,2118,59585,openalex
 2021,IR-E-U-0436,Amrita Vishwa Vidyapeetham,I81556334,5328,84252,openalex
 2021,IR-E-U-0575,Jadavpur University,I170979836,6497,118958,openalex
+2021,IR-E-U-0439,Anna University,I33585257,6504,139190,openalex
 2021,IR-E-U-0378,Indian Institute of Technology Ropar,I119241673,1236,29739,openalex
 2021,IR-E-U-0357,National Institute of Technology Rourkela,I16292982,4178,97970,openalex
 2021,IR-E-U-0064,Indian Institute of Technology Patna,I132153292,1647,37321,openalex
@@ -80,6 +81,7 @@ year,institute_id,name,openalex_id,publications_3y,citations_3y,source
 2021,IR-E-U-0522,Jaypee Institute of Information Technology,I154970844,1687,26690,openalex
 2021,IR-E-U-0163,The Northcap University,I129798099,579,8851,openalex
 2021,IR-E-C-1297,Siddaganga Institute of Technology,I4387153738,572,11337,openalex
+2021,IR-E-U-0190,Shoolini University of Biotechnology and Management Sciences,I4210133311,557,32197,openalex
 2021,IR-E-U-0056,Tezpur University,I126601174,1665,37281,openalex
 2021,IR-E-U-0460,Karunya Institute of Technology and Sciences,I119668213,1538,28014,openalex
 2021,IR-E-U-0267,Atal Bihari Vajpayee Indian Institute of Information Technology and Management,I9747756,862,12221,openalex
@@ -91,6 +93,8 @@ year,institute_id,name,openalex_id,publications_3y,citations_3y,source
 2021,IR-E-U-0143,Maharaja Sayajirao University of Baroda,I110116418,1347,21989,openalex
 2021,IR-E-U-0169,Manav Rachna International Institute of Research & Studies,I55016150,831,9430,openalex
 2021,IR-E-U-0382,Punjab Technical University,I94616015,1625,25738,openalex
+2021,IR-E-I-1441,Saveetha Institute of Medical and Technical Sciences,I85461943,2230,42304,openalex
+2021,IR-E-U-0491,"Vels Institute of Science, Technology & Advanced Studies (VISTAS)",I138876546,993,11393,openalex
 2021,IR-E-U-0507,Dayalbagh Educational Institute,I178254495,356,8389,openalex
 2021,IR-E-U-0186,Jaypee University of Information Technology,I153954893,881,20055,openalex
 2021,IR-E-C-50605,PSG Institute of Technology and Applied Research,I4210109528,1682,28227,openalex
@@ -107,3 +111,35 @@ year,institute_id,name,openalex_id,publications_3y,citations_3y,source
 2021,IR-E-U-0443,Annamalai University,I197081775,3329,39102,openalex
 2021,IR-E-U-0535,Rajiv Gandhi Institute of Petroleum Technology,I98210582,229,5125,openalex
 2021,IR-E-C-6192,Institute of Engineering & Management,I864998749,466,19480,openalex
+2021,IR-E-U-0454,Hindustan Institute of Technology and Science (HITS),I43663321,1254,21761,openalex
+2021,IR-E-U-0376,Guru Nanak Dev University,I165682329,2687,69841,openalex
+2021,IR-E-U-0643,Galgotias University,I155125381,853,14389,openalex
+2021,IR-E-U-0541,Sharda University,I74885063,934,14215,openalex
+2021,IR-E-U-0854,KLE Technological University,I3132975163,766,12921,openalex
+2021,IR-E-U-0046,North Eastern Regional Institute of Science & Technology,I160302567,554,12117,openalex
+2021,IR-E-U-0353,Centurion  University  of Technology and Management,I47639616,252,2305,openalex
+2021,IR-E-C-1412,JSS Science and Technology University,I4210137436,403,4122,openalex
+2021,IR-E-I-1033,International Institute of Information Technology Bhubaneswar,I4210097016,393,6843,openalex
+2021,IR-E-C-46239,G.L.Bajaj Institute of Technology and Management,I4405263758,109,1261,openalex
+2021,IR-E-U-0037,Sri Venkateswara University,I170558118,2112,31972,openalex
+2022,IR-E-U-0456,Indian Institute of Technology Madras,I24676775,10907,244167,openalex
+2022,IR-E-I-1074,"Indian Institute of Technology, Delhi",I68891433,11048,244925,openalex
+2022,IR-E-U-0306,"Indian Institute of Technology, Bombay",I162827531,10477,219339,openalex
+2022,IR-E-I-1075,Indian Institute of Technology Kanpur,I94234084,7051,150183,openalex
+2022,IR-E-U-0573,"Indian Institute of Technology, Kharagpur",I145894827,10549,254972,openalex
+2022,IR-E-U-0560,"Indian Institute of Technology, Roorkee",I154851008,7589,175360,openalex
+2022,IR-E-U-0053,Indian Institute of Technology Guwahati,I1317621060,6590,156053,openalex
+2022,IR-E-U-0467,"National Institute of Technology, Tiruchirappalli",I122964287,4052,89474,openalex
+2022,IR-E-U-0013,Indian Institute of Technology Hyderabad,I65181880,4023,118871,openalex
+2022,IR-E-U-0575,Jadavpur University,I170979836,6808,118083,openalex
+2022,IR-E-U-0490,Vellore Institute of Technology,I876193797,13098,265357,openalex
+2022,IR-E-U-0701,Indian Institute of Technology (Banaras Hindu University) Varanasi,I56404289,3322,74761,openalex
+2022,IR-E-U-0205,Indian Institute of Technology (Indian School of Mines),I56404289,3322,74761,openalex
+2022,IR-E-U-0357,National Institute of Technology Rourkela,I16292982,4667,101966,openalex
+2022,IR-E-U-0273,Indian Institute of Technology Indore,I64295750,3317,84484,openalex
+2022,IR-E-U-0439,Anna University,I33585257,6992,154384,openalex
+2022,IR-E-U-0308,Institute of Chemical Technology,I167751958,2196,62059,openalex
+2022,IR-E-U-0436,Amrita Vishwa Vidyapeetham,I81556334,5861,87899,openalex
+2022,IR-E-U-0184,"Indian Institute of Technology, Mandi",I9579091,1743,34457,openalex
+2022,IR-E-U-0025,National Institute of Technology Warangal,I121750182,3130,58835,openalex
+2022,IR-E-U-0378,Indian Institute of Technology Ropar,I119241673,1486,32389,openalex
