@@ -42,6 +42,7 @@ MANUAL: dict[str, str | None] = {
     "PSG College of Technology": None,             # OpenAlex entry exists but holds no works
 }
 MIN_SIMILARITY = 0.55  # reject a candidate whose name is not recognisably the same institution
+MIN_WORKS = 200        # OpenAlex holds near-empty duplicate records; a top-200 institute has far more
 
 
 class BudgetExhausted(RuntimeError):
@@ -85,16 +86,46 @@ def clean(name: str) -> str:
     return re.sub(r"\s+", " ", n).strip()
 
 
-def _norm(s: str) -> str:
-    """Reduce a name to its distinctive words so two spellings can be compared."""
+GENERIC = ("the of and a deemed to be university universities institute institutes institution college "
+           "colleges technology technological science sciences national engineering research academy "
+           "school education educational higher advanced studies centre center for").split()
+
+
+def _tokens(s: str) -> set[str]:
+    """The distinctive words of an institution name, with the filler removed."""
     s = re.sub(r"\(.*?\)", " ", s.lower())
     s = re.sub(r"[^a-z0-9 ]", " ", s)
-    s = re.sub(r"\b(the|of|and|a|deemed|to|be|university|institute|college|technology|science|sciences|national)\b", " ", s)
-    return re.sub(r"\s+", " ", s).strip()
+    return {w for w in s.split() if w not in GENERIC and len(w) > 1}
+
+
+def _norm(s: str) -> str:
+    return " ".join(sorted(_tokens(s)))
 
 
 def similarity(a: str, b: str) -> float:
-    return SequenceMatcher(None, _norm(a), _norm(b)).ratio()
+    """How confidently two names refer to the same institution.
+
+    Plain string similarity fails badly here in both directions: 'Anna University' scored 0.50
+    against 'Anna University, Chennai' and was thrown away, while 'College of Engineering, Pune'
+    scored 0.63 against 'Jaihind College of Engineering' and was wrongly accepted. Comparing the
+    distinctive words instead fixes both: a shared distinctive word is what actually identifies a
+    place, and no shared distinctive word means it is a different one.
+    """
+    ta, tb = _tokens(a), _tokens(b)
+    if not ta or not tb:
+        return SequenceMatcher(None, a.lower(), b.lower()).ratio()
+    shared = ta & tb
+    if not shared:
+        return 0.0
+    coverage = len(shared) / min(len(ta), len(tb))
+    return max(0.9 * coverage, SequenceMatcher(None, _norm(a), _norm(b)).ratio())
+
+
+def _as_id(entry) -> str | None:
+    """Cache entries are either a bare id (older runs) or a dict recording what was matched."""
+    if isinstance(entry, dict):
+        return entry.get("id")
+    return entry
 
 
 def match_institution(name: str, cache: dict) -> str | None:
@@ -102,7 +133,7 @@ def match_institution(name: str, cache: dict) -> str | None:
     if name in MANUAL:
         return MANUAL[name]
     if name in cache:
-        return cache[name]
+        return _as_id(cache[name])
     js = _get("institutions", {"search": clean(name), "per-page": 10, "filter": "country_code:IN"})
     # reaching here means the API answered; only now is "no match" a real finding worth caching
     best = None
@@ -110,15 +141,16 @@ def match_institution(name: str, cache: dict) -> str | None:
         # OpenAlex often holds an empty duplicate entry that outranks the real one, so score every
         # candidate: it must actually have works, and its name must be recognisably the same place.
         cands = [(similarity(name, c["display_name"]), c.get("works_count", 0), c["id"].split("/")[-1], c["display_name"])
-                 for c in js["results"] if c.get("works_count", 0) > 0]
+                 for c in js["results"] if c.get("works_count", 0) >= MIN_WORKS]
         cands = [c for c in cands if c[0] >= MIN_SIMILARITY]
         if cands:
             cands.sort(key=lambda t: (-t[0], -t[1]))
-            best = cands[0][2]
+            sc, works, oid, disp = cands[0]
+            best = {"id": oid, "matched_name": disp, "works": works, "score": round(sc, 2)}
     cache[name] = best
     IDS.write_text(json.dumps(cache, indent=1, sort_keys=True))
     time.sleep(0.12)
-    return best
+    return _as_id(best)
 
 
 def counts_by_year(inst_id: str, cache: dict) -> dict[int, tuple[int, int]]:
