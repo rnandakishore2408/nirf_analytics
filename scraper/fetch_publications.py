@@ -102,6 +102,23 @@ def _norm(s: str) -> str:
     return " ".join(sorted(_tokens(s)))
 
 
+def _acronyms(s: str) -> set[str]:
+    """Acronyms an institution is plausibly known by.
+
+    Indian institutions are routinely listed under their initials: OpenAlex files Kalinga Institute
+    of Industrial Technology as 'KIIT University' and Shanmugha Arts Science Technology & Research
+    Academy as 'SASTRA University'. Comparing words alone never matches those.
+    """
+    words = re.sub(r"[^a-z0-9 ]", " ", s.lower()).split()
+    skip_short = {"of", "the", "for", "in", "at"}
+    out = set()
+    full = "".join(w[0] for w in words if w)
+    core = "".join(w[0] for w in words if w and w not in skip_short)
+    no_filler = "".join(w[0] for w in words if w and w not in skip_short and w != "and")
+    out.update(x for x in (full, core, no_filler) if len(x) >= 3)
+    return out
+
+
 def similarity(a: str, b: str) -> float:
     """How confidently two names refer to the same institution.
 
@@ -112,6 +129,14 @@ def similarity(a: str, b: str) -> float:
     place, and no shared distinctive word means it is a different one.
     """
     ta, tb = _tokens(a), _tokens(b)
+    # one side may be written out in full and the other as its initials
+    aa, ab = _acronyms(a), _acronyms(b)
+    if aa & tb or ab & ta:
+        return 0.95
+    # an acronym may carry a trailing initial the short form drops: DIT vs DITU
+    if any(x.startswith(t) for x in ab for t in ta if len(t) >= 3) or \
+       any(x.startswith(t) for x in aa for t in tb if len(t) >= 3):
+        return 0.9
     if not ta or not tb:
         return SequenceMatcher(None, a.lower(), b.lower()).ratio()
     shared = ta & tb
