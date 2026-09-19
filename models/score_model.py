@@ -110,15 +110,17 @@ def apply_live(base: pd.DataFrame, live: pd.DataFrame) -> tuple[pd.DataFrame, li
         if col:
             d.loc[0, col] = float(r["value"])
             used.append(r["metric"])
-    # keep the percentage/rate fields consistent with any counts that were entered
+    # keep the percentage/rate fields consistent with any counts that were entered; only when a count was
+    # actually entered, so an unrelated entry never re-derives (and slightly shifts) a filed percentage
+    entered = set(used)
     tot = d.get("students_total", pd.Series([np.nan])).iloc[0]
     if tot and not pd.isna(tot):
-        if "students_female" in d and pd.notna(d.students_female.iloc[0]):
+        if {"students_female", "students_total"} & entered and "students_female" in d and pd.notna(d.students_female.iloc[0]):
             d.loc[0, "women_students_pct"] = 100 * d.students_female.iloc[0] / tot
-        if "students_outside_state" in d and pd.notna(d.students_outside_state.iloc[0]):
+        if {"students_outside_state", "students_total"} & entered and "students_outside_state" in d and pd.notna(d.students_outside_state.iloc[0]):
             d.loc[0, "outside_state_pct"] = 100 * d.students_outside_state.iloc[0] / tot
     grad = d.get("graduated_total", pd.Series([np.nan])).iloc[0]
-    if grad and not pd.isna(grad):
+    if grad and not pd.isna(grad) and {"graduated_total", "placed_total", "higher_studies_total"} & entered:
         placed = d.get("placed_total", pd.Series([0])).iloc[0] or 0
         hs = d.get("higher_studies_total", pd.Series([0])).iloc[0] or 0
         d.loc[0, "placement_rate"] = placed / grad
@@ -173,15 +175,28 @@ def training_frame(con: sqlite3.Connection) -> pd.DataFrame:
     return engineer(df)
 
 
-def fit_param(df: pd.DataFrame, target: str, feats: dict[str, int], seed: int = 7) -> tuple[xgb.XGBRegressor, dict]:
-    X = df[list(feats)].astype(float)
-    y = df[target].astype(float)
-    groups = df["institute_id"]
-    params = dict(
+def xgb_params(feats: dict[str, int], seed: int = 7) -> dict:
+    return dict(
         n_estimators=400, max_depth=3, learning_rate=0.04, subsample=0.9, colsample_bytree=0.9,
         min_child_weight=4, reg_lambda=2.0, monotone_constraints=tuple(feats.values()),
         objective="reg:squarederror", random_state=seed,
     )
+
+
+def oof_predictions(df: pd.DataFrame, target: str, feats: dict[str, int], n_splits: int = 5) -> np.ndarray:
+    """Out-of-fold predictions, grouped by institute so a college's other years never leak."""
+    X, y = df[list(feats)].astype(float), df[target].astype(float)
+    preds = np.zeros(len(df))
+    for tr, te in GroupKFold(n_splits=n_splits).split(X, y, df["institute_id"]):
+        preds[te] = xgb.XGBRegressor(**xgb_params(feats)).fit(X.iloc[tr], y.iloc[tr]).predict(X.iloc[te])
+    return preds
+
+
+def fit_param(df: pd.DataFrame, target: str, feats: dict[str, int], seed: int = 7) -> tuple[xgb.XGBRegressor, dict]:
+    X = df[list(feats)].astype(float)
+    y = df[target].astype(float)
+    groups = df["institute_id"]
+    params = xgb_params(feats, seed)
     # grouped CV by institute so the same college's other years never leak
     preds = np.zeros(len(df))
     for tr, te in GroupKFold(n_splits=5).split(X, y, groups):
@@ -202,13 +217,118 @@ def fit_param(df: pd.DataFrame, target: str, feats: dict[str, int], seed: int = 
     return model, report
 
 
+# ---------- publications: a validated adjustment on top of the research model ----------
+# The RPC model above cannot use publications (see publications_usable). The institute-years that do
+# have them (OpenAlex) still support something narrower: the RPC model implicitly assumes a college
+# publishes like a typical institute with the same funding, PhD and faculty profile. When its real
+# counts are known, RPC is shifted by how far they sit above or below that expectation. The shift is
+# fitted on the RPC model's out-of-fold errors, so it only claims what publications add beyond the
+# other inputs, and it is zero when the counts equal the expectation.
+PUB_PROFILE = ["log_sponsored_amount", "log_consultancy_amount", "log_phd_grad", "log_phd_ft", "log_faculty"]
+
+
+def research_output_index(pubs, cites):
+    """Log publications and citations, weighted by NIRF's own mark split (PU 35, QP 40)."""
+    return (35 * np.log1p(np.asarray(pubs, dtype=float)) + 40 * np.log1p(np.asarray(cites, dtype=float))) / 75
+
+
+def pub_profile(d: pd.DataFrame) -> np.ndarray:
+    """Profile matrix for an engineer()-ed frame: the inputs that predict how much a college publishes."""
+    lg = lambda c: np.log1p(pd.to_numeric(d[c], errors="coerce").fillna(0).clip(lower=0).astype(float))  # noqa: E731
+    return np.c_[d["log_sponsored_amount"].fillna(0), d["log_consultancy_amount"].fillna(0),
+                 lg("phd_grad_3y_avg"), lg("phd_pursuing_ft"), lg("faculty_entered")]
+
+
+def fit_pub_adjustment(df: pd.DataFrame, rpc_feats: dict[str, int]) -> dict | None:
+    """Fit E[output | profile] and the RPC shift per unit of output above it; validate with nested CV."""
+    has = df["publications_3y"].notna().values & df["citations_3y"].notna().values if "publications_3y" in df else None
+    if has is None or has.sum() < 100:
+        print("publication adjustment: fewer than 100 institute-years with publication data, not fitted")
+        return None
+    y = df["rpc"].astype(float).values
+    R = research_output_index(df["publications_3y"].values, df["citations_3y"].values)
+    Z = pub_profile(df)
+
+    def fit(idx: np.ndarray, oof: np.ndarray) -> tuple[np.ndarray, float]:
+        A = np.c_[np.ones(len(idx)), Z[idx]]
+        coef = np.linalg.lstsq(A, R[idx], rcond=None)[0]
+        rr = R[idx] - A @ coef
+        beta = float(np.linalg.lstsq(rr[:, None], y[idx] - oof[idx], rcond=None)[0][0])
+        return coef, beta
+
+    def shift(coef: np.ndarray, beta: float, idx: np.ndarray) -> np.ndarray:
+        return beta * (R[idx] - np.c_[np.ones(len(idx)), Z[idx]] @ coef)
+
+    # nested validation: outer folds score held-out institutes; inner folds give honest RPC-model errors
+    outer = oof_predictions(df, "rpc", rpc_feats)
+    adjusted = np.full(len(df), np.nan)
+    for tr, te in GroupKFold(n_splits=5).split(Z, y, df["institute_id"]):
+        sub = df.iloc[tr].reset_index(drop=True)
+        inner = np.zeros(len(df))
+        inner[tr] = oof_predictions(sub, "rpc", rpc_feats, n_splits=4)
+        tr_p, te_p = tr[has[tr]], te[has[te]]
+        coef, beta = fit(tr_p, inner)
+        adjusted[te_p] = outer[te_p] + shift(coef, beta, te_p)
+    rows = np.where(has)[0]
+    low = rows[df["rank"].values[rows] > 100]
+    err = lambda p, i: y[i] - np.clip(p[i], 0, 100)  # noqa: E731
+    coef, beta = fit(rows, outer)
+    ratio = (df["citations_3y"] / df["publications_3y"].replace(0, np.nan))[df["rank"] > 100].median()
+    out = {
+        "n": int(has.sum()), "n_rank_over_100": int(len(low)),
+        "profile": PUB_PROFILE, "coef": [round(float(c), 6) for c in coef], "beta": round(beta, 4),
+        "cites_per_paper_rank_over_100": round(float(ratio), 2),
+        "cv_rmse_without": round(float(np.sqrt((err(outer, rows) ** 2).mean())), 2),
+        "cv_rmse_with": round(float(np.sqrt((err(adjusted, rows) ** 2).mean())), 2),
+        "cv_bias_rank_over_100_with": round(float(err(adjusted, low).mean()), 2),
+        "source": "OpenAlex works and citations, 3-year sums",
+    }
+    print(f"publication adjustment: n={out['n']} beta={beta:.2f}  RPC CV RMSE {out['cv_rmse_without']} -> "
+          f"{out['cv_rmse_with']} on those rows, bias for ranks >100 {out['cv_bias_rank_over_100_with']:+.2f}")
+    return out
+
+
+def expected_output(adj: dict, d_row: pd.DataFrame) -> float:
+    """Research-output index a typical institute with this profile would have."""
+    return float((np.c_[np.ones(1), pub_profile(d_row)[:1]] @ np.asarray(adj["coef"]))[0])
+
+
+def pubs_for_index(adj: dict, r: float) -> float:
+    """Invert research_output_index at the typical citations-per-paper ratio (bisection; it is monotone)."""
+    k = adj["cites_per_paper_rank_over_100"]
+    lo, hi = 0.0, 1e6
+    for _ in range(80):
+        mid = (lo + hi) / 2
+        lo, hi = (mid, hi) if research_output_index(mid, k * mid) < r else (lo, mid)
+    return lo
+
+
+def fq_marks(phd_pct: float, faculty: float, students: float) -> float:
+    """NIRF 2025 FQ (part of TLR): 10 x FRA/95, capped at 10. FRA is PhD faculty as a % of the larger of
+    actual faculty and the faculty a 1:15 ratio requires."""
+    required = max(float(faculty or 0), float(students or 0) / 15)
+    if required <= 0:
+        return 0.0
+    fra = 100 * (phd_pct / 100) * float(faculty or 0) / required
+    return 10 * min(fra, 95) / 95
+
+
+def retraction_deduction(retracted: float, pubs: float) -> float:
+    """NIRF 2025: PU = 35 f(P/FRQ) - 5 f(Pret). NIRF has not published f for retractions; we assume the
+    full 5 marks are lost when retractions reach 1% of the papers, in proportion below that."""
+    if not retracted or retracted <= 0:
+        return 0.0
+    return 5 * min(1.0, retracted / max(1.0, 0.01 * max(pubs, 0)))
+
+
 class ScoreModel:
     """Bundle of per-parameter models + the published weights, with explain()."""
 
     def __init__(self, models: dict[str, xgb.XGBRegressor], weights: dict[str, float], report: dict,
-                 features: dict[str, dict[str, int]] | None = None):
+                 features: dict[str, dict[str, int]] | None = None, pub_adj: dict | None = None):
         self.models, self.weights, self.report = models, weights, report
         self.features = features or {k: dict(v) for k, v in PARAM_FEATURES.items()}
+        self.pub_adj = pub_adj
 
     def predict_params(self, raw: pd.DataFrame) -> pd.DataFrame:
         d = engineer(raw)
@@ -256,7 +376,9 @@ def main() -> None:
               + ", ".join(f"{k}={v:.2f}" for k, v in list(rep["importance"].items())[:3]))
     # construct through the importable module so the pickle references score_model.ScoreModel, not __main__
     import importlib
-    sm = importlib.import_module("score_model").ScoreModel(models, weights, report, feature_set)
+    pub_adj = fit_pub_adjustment(df, feature_set["rpc"])
+    report["publication_adjustment"] = pub_adj
+    sm = importlib.import_module("score_model").ScoreModel(models, weights, report, feature_set, pub_adj)
     # sanity: reproduced total for the training rows
     pp = sm.predict_params(df)
     tot = sm.total(pp, df["pr"])
@@ -266,7 +388,7 @@ def main() -> None:
     sm.save(ART / "score_model.joblib")
 
     # score Saveetha Engineering College from its own submissions (2025 and 2026 filings)
-    sec = pd.read_sql(f"SELECT * FROM submissions WHERE institute_id='{SEC_ID}' AND category='Engineering' ORDER BY year", con)
+    sec = pd.read_sql("SELECT * FROM submissions WHERE institute_id=? AND category='Engineering' ORDER BY year", con, params=(SEC_ID,))
     if len(sec):
         est = sm.predict_params(sec)
         est.insert(0, "year", sec["year"].values)

@@ -1,6 +1,7 @@
 """Shared helpers for the Streamlit app: DB access, cached loaders, constants, styling."""
 from __future__ import annotations
 
+import html
 import json
 import sqlite3
 import sys
@@ -61,10 +62,68 @@ def saveetha_history() -> pd.DataFrame:
     return q("SELECT * FROM v_saveetha_history")
 
 
+@st.cache_data(ttl=60, show_spinner=False)
 def live_metrics() -> pd.DataFrame:
-    """Latest staff-entered value per metric (Supabase when configured, else the local file)."""
+    """Latest staff-entered value per metric (Supabase when configured, else the local file).
+    Cached for a minute; saving or deleting an entry clears the cache immediately."""
     import live_store
     return live_store.latest_metrics()
+
+
+@st.cache_data(ttl=30, show_spinner=False)
+def store_health() -> tuple[bool, str]:
+    import live_store
+    return live_store.health()
+
+
+@st.cache_resource(show_spinner=False)
+def model():
+    from score_model import ScoreModel
+    return ScoreModel.load()
+
+
+def sec_base() -> pd.DataFrame:
+    """The college's latest NIRF filing, one row."""
+    sub = submissions()
+    return sub[sub.institute_id == SEC_ID].sort_values("year").tail(1).reset_index(drop=True)
+
+
+def base_phd_pct() -> float | None:
+    v = sec_base().get("faculty_phd_pct", pd.Series([None])).iloc[0]
+    return float(v) if v is not None and pd.notna(v) else None
+
+
+@st.cache_data(ttl=60, show_spinner=False)
+def live_state() -> dict:
+    """Estimate + 2026 forecast from the filing plus the latest staff entries. Everything that shows the
+    college's score reads this, so every page agrees. `has_live` is False when nobody has entered data;
+    the forecast then equals the saved one in prediction_2026.json."""
+    import live_estimate as LE
+    live = live_metrics()
+    sm = model()
+    est = LE.estimate(sm, sec_base(), live, base_phd_pct())
+    thr = load_json("prediction_2026.json")["thresholds"]
+    fc = LE.forecast(est["params"], est["sd"], sm.weights, thr, LE.pr_pool_from(rankings()))
+    last = None
+    if not live.empty:
+        last = pd.to_datetime(live.entered_at, utc=True, errors="coerce").max()
+    return {"has_live": not live.empty, "estimate": est, "forecast": fc, "n_metrics": int(len(live)),
+            "last_entry": None if last is None or pd.isna(last) else last.strftime("%d %b %Y, %H:%M UTC")}
+
+
+def clear_live_caches() -> None:
+    live_metrics.clear()
+    live_state.clear()
+
+
+def csv_safe(df: pd.DataFrame) -> bytes:
+    """CSV export that spreadsheet programs will not execute: text cells starting with = + - @ (or a tab/CR)
+    are prefixed with an apostrophe, the standard defence against formula injection."""
+    out = df.copy()
+    for c in out.columns:
+        if out[c].dtype == object or pd.api.types.is_string_dtype(out[c]):
+            out[c] = out[c].map(lambda v: "'" + v if isinstance(v, str) and v[:1] in ("=", "+", "-", "@", "\t", "\r") else v)
+    return out.to_csv(index=False).encode()
 
 
 def fmt_inr(x: float) -> str:
@@ -93,5 +152,6 @@ def inject_css() -> None:
 
 
 def card(label: str, value: str, sub: str = "") -> None:
-    st.markdown(f'<div class="metric-card"><div class="label">{label}</div><div class="value">{value}</div><div class="sub">{sub}</div></div>',
+    e = lambda x: html.escape(str(x))  # noqa: E731 - values are ours, but never render unescaped text as HTML
+    st.markdown(f'<div class="metric-card"><div class="label">{e(label)}</div><div class="value">{e(value)}</div><div class="sub">{e(sub)}</div></div>',
                 unsafe_allow_html=True)

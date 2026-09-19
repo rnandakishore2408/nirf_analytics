@@ -4,38 +4,39 @@ import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 
-from common import C_PARAM, C_PRIMARY, PARAMS, SEC_ID, WEIGHTS, card, fmt_inr, inject_css, live_metrics, load_json, submissions
+from common import C_PRIMARY, WEIGHTS, card, live_metrics, live_state, load_json, model, sec_base  # isort: skip
 
-st.set_page_config(page_title="Gap & What-If", page_icon="🧮", layout="wide")
-inject_css()
-st.title("Gap & What-If — what moves Saveetha's score")
+import live_estimate as LE
+from score_model import apply_live
 
-
-@st.cache_resource
-def model():
-    from score_model import ScoreModel
-    return ScoreModel.load()
-
+st.title("Gap & What-If: what moves Saveetha's score")
 
 sm = model()
-sub = submissions()
-base = sub[sub.institute_id == SEC_ID].sort_values("year").tail(1).reset_index(drop=True)
+base = sec_base()
 pred = load_json("prediction_2026.json")
-cut26 = pred.get("thresholds", {}).get("forecast_2026", {}).get("100", 47.0)
+thr = pred.get("thresholds", {})
+cut26 = thr.get("forecast_2026", {}).get("100", 47.0)
 cut25 = 45.55
 
-st.markdown(f"Baseline = the numbers in Saveetha's **NIRF {int(base.year.iloc[0])} filing**. Move the sliders to the values the college can realistically "
-            f"reach and watch the estimated parameter scores and total move. Targets: **{cut25}** (2025 cut-off) and **≈{cut26}** (2026 forecast).")
+st.markdown(f"Baseline = the numbers in Saveetha's **NIRF {int(base.year.iloc[0])} filing**, plus staff entries if you choose. Move the sliders "
+            f"to the values the college can realistically reach and watch the estimated parameter scores and total move. Targets: "
+            f"**{cut25}** (2025 cut-off) and **≈{cut26}** (2026 forecast).")
 
 live = live_metrics()
-use_live = st.toggle("Start from staff-entered live values where available", value=not live.empty)
-from score_model import apply_live
+use_live = st.toggle("Start from the latest staff entries where available", value=not live.empty, disabled=live.empty,
+                     help="Nothing has been entered on the Live Data page yet." if live.empty else None)
+live_map = dict(zip(live.metric, live.value)) if not live.empty else {}
 if use_live and not live.empty:
     b, applied = apply_live(base, live)
+    est = live_state()["estimate"]
     if applied:
-        st.caption("Live values applied: " + ", ".join(sorted(applied)))
+        st.caption("Staff entries applied: " + ", ".join(LE.METRIC_BY_KEY[k].label if k in LE.METRIC_BY_KEY else k for k in sorted(est["applied"])))
 else:
     b = base.copy()
+    est = LE.estimate(sm, base, None, None)
+    live_map = {}
+# adjustments that come from NIRF formulas rather than the sliders (faculty PhD %, retractions)
+extra = {"tlr": est["adjustments"]["tlr_faculty_phd"], "rpc": est["adjustments"]["rpc_retractions"], "go": 0.0, "oi": 0.0}
 
 st.subheader("Levers")
 c1, c2, c3 = st.columns(3)
@@ -45,12 +46,13 @@ with c1:
     phd_grad = st.slider("PhDs graduated per year (3-yr avg)", 0, 150, int(b.phd_grad_3y_avg.iloc[0] or 0), 1)
     spons = st.slider("Sponsored research per year (₹ lakh)", 0, 2000, int((b.sponsored_amount_3y_avg.iloc[0] or 0) / 1e5), 10)
     cons = st.slider("Consultancy per year (₹ lakh)", 0, 1000, int((b.consultancy_amount_3y_avg.iloc[0] or 0) / 1e5), 5)
-    _p0 = b.get("publications_3y", pd.Series([float("nan")])).iloc[0]
-    _c0 = b.get("citations_3y", pd.Series([float("nan")])).iloc[0]
-    pubs = st.slider("Publications, last 3 years (Scopus/WoS)", 0, 6000, int(_p0) if pd.notna(_p0) else 0, 25,
-                     help="35 of RPC's 100 marks. Enter the college's real figure on the Live Data page so this starts from the truth.")
-    cites = st.slider("Citations, last 3 years", 0, 60000, int(_c0) if pd.notna(_c0) else 0, 250,
-                      help="40 of RPC's 100 marks, scored per faculty member.")
+    _p0, _c0 = live_map.get("scopus_publications_3y"), live_map.get("scopus_citations_3y")
+    typical = LE.implied_publications(sm, base)
+    pubs = st.slider("Publications, last 3 years (0 = not known)", 0, 6000, min(int(_p0), 6000) if _p0 else 0, 25,
+                     help="35 of RPC's 100 marks. At 0 the estimate assumes a typical institute with this profile"
+                          + (f" (about {typical:,.0f} papers)" if typical else "") + ". Enter the real figure on the Live Data page.")
+    cites = st.slider("Citations received, last 3 years (0 = not known)", 0, 100000, min(int(_c0), 100000) if _c0 else 0, 250,
+                      help="40 of RPC's 100 marks. At 0 with publications set, a typical 16.75 citations per paper is assumed.")
 with c2:
     st.markdown("**Money & faculty**")
     opex = st.slider("Operating spend per student per year (₹ thousand)", 20, 600, int((b.opex_per_student.iloc[0] or 0) / 1e3), 5)
@@ -73,24 +75,26 @@ w["opex_per_student"], w["capex_per_student"], w["faculty_parsed"], w["faculty_e
 w["median_salary_ug"], w["placed_or_hs_rate"], w["graduation_rate"] = salary * 1e5, placed / 100, grad / 100
 w["outside_state_pct"], w["women_students_pct"], w["full_fee_reimb_pct"] = out_state, women, fee
 w["sponsored_projects_3y"] = max(int(b.sponsored_projects_3y.iloc[0] or 0), int(spons / 5))
-w["publications_3y"] = pubs if pubs > 0 else float("nan")
-w["citations_3y"] = cites if cites > 0 else float("nan")
-
-p0 = sm.predict_params(b).iloc[0]
-p1 = sm.predict_params(w).iloc[0]
+p0 = pd.Series(est["params"])
+p1 = sm.predict_params(w).iloc[0].astype(float)
+shift, _, _ = LE.pub_shift(sm, base, float(pubs) if pubs > 0 else None, float(cites) if cites > 0 else None)
+p1["rpc"] += shift
+for k_ in ("tlr", "rpc", "go", "oi"):
+    p1[k_] = min(100.0, max(0.0, p1[k_] + extra[k_]))
 t0 = float(sum(p0[p] * WEIGHTS[p] for p in ("tlr", "rpc", "go", "oi")) + WEIGHTS["pr"] * pr)
 t1 = float(sum(p1[p] * WEIGHTS[p] for p in ("tlr", "rpc", "go", "oi")) + WEIGHTS["pr"] * pr)
 
 st.divider()
 k1, k2, k3, k4 = st.columns(4)
 with k1:
-    card("Baseline estimated total", f"{t0:.1f}", "from the filing (+ chosen PR)")
+    card("Baseline estimated total", f"{t0:.1f}", ("filing + staff entries" if use_live and live_map else "from the filing") + " (+ chosen PR)")
 with k2:
     card("What-if estimated total", f"{t1:.1f}", f"{t1 - t0:+.1f} points")
 with k3:
     card("Gap to 2026 forecast cut-off", f"{cut26 - t1:+.1f}", "negative = inside the top 100")
 with k4:
-    band = "top 100" if t1 >= cut26 else "101-150" if t1 >= cut26 * 0.903 else "151-200" if t1 >= cut26 * 0.836 else "201-250" if t1 >= cut26 * 0.787 else "251-300" if t1 >= cut26 * 0.745 else "below 300"
+    rt = {int(k_): v for k_, v in thr.get("ratio_to_rank100", {"150": 0.903, "200": 0.836, "250": 0.787, "300": 0.745}).items()}
+    band = "top 100" if t1 >= cut26 else "101-150" if t1 >= cut26 * rt[150] else "151-200" if t1 >= cut26 * rt[200] else "201-250" if t1 >= cut26 * rt[250] else "251-300" if t1 >= cut26 * rt[300] else "below 300"
     card("Implied 2026 band", band, "using the forecast threshold curve")
 
 fig = go.Figure()
@@ -100,7 +104,7 @@ fig.add_trace(go.Bar(name="What-if", x=x, y=[p1[p] for p in ("tlr", "rpc", "go",
 fig.update_layout(barmode="group", height=360, margin=dict(l=10, r=10, t=20, b=10), yaxis=dict(range=[0, 100], title="Estimated parameter score"),
                   legend=dict(orientation="h", y=1.12), bargap=0.3, plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)")
 fig.update_yaxes(gridcolor="rgba(128,128,128,.15)")
-st.plotly_chart(fig, use_container_width=True)
+st.plotly_chart(fig, width="stretch")
 
 st.subheader("What each single change is worth (from the 2026 filing)")
 lev = pd.DataFrame(pred.get("what_if_levers", []))
@@ -110,12 +114,14 @@ if not lev.empty:
     fig2.update_layout(height=460, margin=dict(l=10, r=40, t=10, b=10), xaxis_title="Estimated change in total score (points)", yaxis=dict(autorange="reversed"),
                        plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)")
     fig2.update_xaxes(gridcolor="rgba(128,128,128,.15)")
-    st.plotly_chart(fig2, use_container_width=True)
+    st.plotly_chart(fig2, width="stretch")
 st.info("Caveat: the model learns from institutes already ranked in the top 200, so it is most reliable inside that range. Publications and citations "
-        "(75 of RPC's 100 marks) are absent from NIRF's PDFs, so peer figures come from OpenAlex; the college's own are not catalogued there, which is why "
-        "entering them on the Live Data page matters. With the sliders at zero the model falls back to estimating research from PhD output, funding and faculty size.")
+        "(75 of RPC's 100 marks) are absent from NIRF's PDFs, so peer figures come from OpenAlex (215 institute-years); the college's own are not "
+        "catalogued there, which is why entering them on the Live Data page matters. With the sliders at zero the estimate assumes the college "
+        "publishes like a typical institute with its funding, PhD and faculty profile.")
 
 with st.expander("What drives each estimated parameter (feature contributions for the baseline)"):
     for p in ("tlr", "rpc", "go", "oi"):
-        c = sm.contributions(b, p).iloc[0].drop("baseline").sort_values()
-        st.markdown(f"**{p.upper()}** = baseline {sm.contributions(b, p).iloc[0]['baseline']:.1f} " + " ".join(f"{'+' if v >= 0 else ''}{v:.1f} ({k})" for k, v in c.items()))
+        row = sm.contributions(b, p).iloc[0]
+        c = row.drop("baseline").sort_values()
+        st.markdown(f"**{p.upper()}** = baseline {row['baseline']:.1f} " + " ".join(f"{'+' if v >= 0 else ''}{v:.1f} ({k})" for k, v in c.items()))

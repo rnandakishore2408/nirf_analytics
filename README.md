@@ -8,11 +8,13 @@ What is inside:
 | Layer | What |
 |---|---|
 | **Data** | Rankings 2017-2025 for Engineering / Overall / College / University (scores for TLR, RPC, GO, OI, PR + total + rank), rank-band pages (101-300), all participants; the raw **data-submission PDF** of every Engineering institute ranked 1-100 in 2023-25 and 1-200 in 2021-22 (704 PDFs → intake, enrolment, diversity, placements, median salary, PhDs, expenditure, research funding); NIRF methodology PDFs 2023-25; Saveetha's own 2025 (Engineering, Innovation, SDG) and 2026 filings from saveetha.ac.in |
-| **Database** | `db/nirf.db` (SQLite): `institutions`, `rankings`, `rank_bands`, `participants`, `submissions`, `faculty`, `methodology`, `documents` (full text for RAG), `saveetha_live` (staff entries), `predictions`; views `v_engineering_top100`, `v_saveetha_history` |
+| **Database** | `db/nirf.db` (SQLite, read-only reference data): `institutions`, `rankings`, `rank_bands`, `participants`, `submissions`, `faculty`, `methodology`, `documents` (full text for RAG), `predictions`; views `v_engineering_top100`, `v_saveetha_history`. Staff entries and accounts live separately: Supabase when deployed, `db/local_store.db` locally (`app/live_store.py`) |
 | **Model** | `models/score_model.py` — monotone gradient boosting per parameter, learns NIRF's hidden normalisation f() from 700 institute-years (raw data → published TLR/RPC/GO/OI). Grouped 5-fold CV R² ≈ 0.73 / 0.78 / 0.82 / 0.74 |
 | **Forecast** | `models/predict_2026.py` — 2026 cut-off thresholds (rank 100…300), projected 2026 order of the 2025 top-100 (ridge, validated on 2025: MAE 1.36 vs 1.62 naive), Saveetha's 2026 score distribution and band probabilities (Monte Carlo over model error and the unknown Perception score), single-lever what-ifs |
 | **Analysis** | `analysis/analyze.py` → `data/processed/analysis.json`: cut-offs, tier profiles, movers, Tamil Nadu peers, raw-data profile vs Saveetha, gap decomposition |
-| **App** | Streamlit dashboard (6 pages) incl. **Live Data Entry** for college staff and **Ask the Data**, an AI analyst (Groq gpt-oss-120b, then Groq Qwen 3.8, then Gemini 3.1 Flash Lite; both free tiers) with tools: read-only SQL, BM25 search over all documents, live web fetch (nirfindia.org), Saveetha status |
+| **Live re-scoring** | `models/live_estimate.py` — staff entries (publications, citations, PhD scholars, faculty PhD %, placements, spend, …) → re-estimated TLR/RPC/GO/OI → 2026 forecast re-run on every page. Publications use a validated adjustment (RPC error 9.72 → 8.62 on 215 institute-years); faculty PhD % uses NIRF's published FQ formula |
+| **App** | Streamlit dashboard behind a staff sign-in (no sign-up; accounts issued with `scripts/manage_users.py`): 7 pages incl. **Live Data Entry** and **Ask the Data**, an AI analyst (Groq gpt-oss-120b, then Groq Qwen 3.8, then Gemini 3.1 Flash Lite; all free tiers) with tools: read-only SQL, BM25 search over all documents, live web fetch (public sites only), Saveetha status |
+| **Tests** | `tests/` — 105 automated tests (sign-in and lock-outs, attack attempts, scoring rules, full browser-level flows); `scripts/load_test.py` stress-tests a running server. Results: [docs/TEST_REPORT.md](docs/TEST_REPORT.md) |
 
 **Start here:** [docs/HANDOVER.md](docs/HANDOVER.md) — current findings, credentials, open items and known limits.
 
@@ -23,8 +25,11 @@ What is inside:
 uv venv .venv && uv pip install --python .venv/bin/python -r requirements.txt   # or: python -m venv .venv && .venv/bin/pip install -r requirements.txt
 cp .env.example .env                    # paste GROQ_API_KEY (free, console.groq.com) and optionally GEMINI_API_KEY (free, aistudio.google.com) for the chatbot page
 
-./run.sh                                # dashboard on http://localhost:8501
+./run.sh                                # dashboard on http://localhost:8501 (sign in with an account below)
 ./pipeline.sh                           # re-scrape / re-parse / rebuild DB / retrain / re-forecast (≈15-30 min, network-bound)
+
+python scripts/manage_users.py add <username> "<Display name>" [--role admin]   # accounts: add / reset / disable / enable / list / events
+uv pip install --python .venv/bin/python -r requirements-dev.txt && .venv/bin/python -m pytest   # run the test suite
 ```
 
 Requires `pdftotext` (poppler-utils) for PDF parsing.
@@ -41,10 +46,13 @@ Requires `pdftotext` (poppler-utils) for PDF parsing.
 ## Layout
 
 ```
-scraper/    scrape_rankings.py  download_pdfs.py  parse_pdfs.py  build_db.py
-models/     score_model.py  predict_2026.py  artifacts/score_model.joblib
+scraper/    scrape_rankings.py  download_pdfs.py  parse_pdfs.py  build_db.py  fetch_publications.py
+models/     score_model.py  live_estimate.py  predict_2026.py  artifacts/score_model.joblib
 analysis/   analyze.py
-app/        Home.py  common.py  pages/1-6  rag/index.py (BM25)  rag/chat.py (Groq/Gemini tool loop)
+app/        Home.py (sign-in gate + navigation)  auth.py  live_store.py  common.py  views/*.py
+            rag/index.py (BM25)  rag/chat.py (Groq/Gemini tool loop)
+scripts/    manage_users.py  load_test.py
+tests/      test_auth.py  test_security.py  test_model.py  test_app.py
 data/raw/   html/ pdf/ pdf_text/ methodology/ saveetha/         data/processed/  *.csv *.json
 db/nirf.db
 ```
@@ -56,6 +64,6 @@ db/nirf.db
 ## Caveats
 
 - NIRF's normalisation functions f() are unpublished; parameter scores for Saveetha are model estimates, most reliable inside the top-200 range the model was trained on.
-- Publications and citations (75 of RPC's 100 marks) are not in NIRF's PDFs. Peer figures come from OpenAlex via `scraper/fetch_publications.py`, but coverage is incomplete, so a guard in `models/score_model.py` currently keeps those features switched off. See docs/HANDOVER.md section 6.
+- Publications and citations (75 of RPC's 100 marks) are not in NIRF's PDFs. Peer figures come from OpenAlex (215 institute-years). Coverage is too narrow to put them inside the main model, so they enter as a validated adjustment once staff enter the college's own counts. See docs/HANDOVER.md section 6.
 - Perception is a survey; it is treated as an uncertainty (drawn from private colleges ranked 60-100).
 - The 2016 pages on nirfindia.org serve the 2017 tables; they are dropped. In years with 200 numeric ranks (2019-22) the "101-150"/"151-200" band pages actually hold 201-250/251-300 and are relabelled.

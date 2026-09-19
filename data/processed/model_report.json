@@ -93,6 +93,31 @@
     }
   },
   "uses_publications": false,
+  "publication_adjustment": {
+    "n": 215,
+    "n_rank_over_100": 53,
+    "profile": [
+      "log_sponsored_amount",
+      "log_consultancy_amount",
+      "log_phd_grad",
+      "log_phd_ft",
+      "log_faculty"
+    ],
+    "coef": [
+      5.766691,
+      -0.010244,
+      -0.018165,
+      0.351946,
+      0.294846,
+      0.149903
+    ],
+    "beta": 4.3178,
+    "cites_per_paper_rank_over_100": 16.75,
+    "cv_rmse_without": 9.72,
+    "cv_rmse_with": 8.62,
+    "cv_bias_rank_over_100_with": 0.13,
+    "source": "OpenAlex works and citations, 3-year sums"
+  },
   "total_score_fit": {
     "mae": 2.05,
     "r2": 0.952

@@ -1,0 +1,7 @@
+# Tests, security checks and the PDF reports (not needed by the hosted app)
+-r requirements.txt
+pytest==9.1.1
+pip-audit
+bandit
+pyflakes
+reportlab==5.0.1

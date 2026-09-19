@@ -1,6 +1,6 @@
 # Handover — NIRF Analytics for Saveetha Engineering College
 
-Last updated: 10 September 2026
+Last updated: 19 September 2026
 
 Client: **Saveetha Engineering College**, Sriperumbudur, Tamil Nadu. NIRF id `IR-E-C-16590`.
 Not to be confused with **Saveetha Institute of Medical and Technical Sciences** (`IR-E-I-1441`),
@@ -43,20 +43,41 @@ Full year-by-year record, verified live against nirfindia.org:
 ## 3. Running it
 
 ```bash
-./run.sh          # dashboard at http://localhost:8501
+./run.sh          # dashboard at http://localhost:8501 (staff sign-in required)
 ./pipeline.sh     # re-scrape, re-parse, rebuild, retrain, re-forecast (30-60 min, network bound)
 python docs/build_report.py    # rebuild the staff PDF
+.venv/bin/python -m pytest     # 105 tests (needs requirements-dev.txt)
 ```
 
-Requires `pdftotext` (poppler-utils). Dependencies live in `.venv`; `requirements.txt` lists them.
+Requires `pdftotext` (poppler-utils). Dependencies live in `.venv`; `requirements.txt` lists them
+(pinned), `requirements-dev.txt` adds the test and report tools.
+
+### Accounts (no sign-up)
+
+Accounts are created by the administrator and handed out. The script writes to the same database as the
+app (Supabase when `SUPABASE_DB_URL` is in `.env`), so a new account works on the hosted site at once.
+
+```bash
+python scripts/manage_users.py add <username> "<Display name>" [--role admin]   # prints a random password once
+python scripts/manage_users.py reset <username>      # new random password
+python scripts/manage_users.py disable <username>    # signs them out within 5 minutes
+python scripts/manage_users.py list
+python scripts/manage_users.py events [<username>]   # recent sign-in attempts
+```
+
+Existing accounts: `nandakishore` (admin) and `saveetha.staff` (staff). Staff can change their own
+password on the *My account* page. Staff can remove only their own entries; admins can remove any.
+Removed entries stay in the audit trail.
 
 ## 4. Layout
 
 ```
 scraper/    scrape_rankings.py · download_pdfs.py · parse_pdfs.py · build_db.py · fetch_publications.py
-models/     score_model.py (learns NIRF's hidden curves) · predict_2026.py · artifacts/
+models/     score_model.py (learns NIRF's hidden curves) · live_estimate.py (staff entries -> forecast) · predict_2026.py · artifacts/
 analysis/   analyze.py -> data/processed/analysis.json
-app/        Home.py · common.py · live_store.py · pages/1-6 · rag/index.py · rag/chat.py
+app/        Home.py (sign-in gate) · auth.py · live_store.py · common.py · views/*.py · rag/index.py · rag/chat.py
+scripts/    manage_users.py · load_test.py
+tests/      pytest suite (see docs/TEST_REPORT.md)
 data/raw/   html/ pdf/ pdf_text/ methodology/ saveetha/   (everything downloaded, kept for audit)
 data/processed/   CSVs + analysis.json, prediction_2026.json, model_report.json, publications.csv
 db/nirf.db  the single SQLite database
@@ -76,48 +97,56 @@ All in `.env`, which is git-ignored and must never be committed or pasted into c
 The chatbot tries Groq `openai/gpt-oss-120b`, then Groq `qwen/qwen3.8-27b`, then Gemini
 `gemini-3.1-flash-lite`. Override any of them in `.env` if a model is retired.
 
-`app/live_store.py` writes staff entries to Supabase when the connection string is present and to the
-local SQLite file otherwise, so the app works either way. Supabase free projects pause after about a
-week of inactivity; one click in their dashboard wakes it.
+`app/live_store.py` writes staff entries, accounts and the sign-in log to Supabase when the connection
+string is present, and to `db/local_store.db` (git-ignored) otherwise. `db/nirf.db` is never written by
+the app. On Supabase the tables have row-level security on and no grants to the public API roles; this
+is applied automatically at start-up. Supabase free projects pause after about a week of inactivity;
+one click in their dashboard wakes it.
 
-## 6. Open item: publication data
+On Streamlit Community Cloud the same three keys go in the app's **Secrets** box, in TOML form:
 
-**Status: incomplete, deliberately not in use.**
+```toml
+GROQ_API_KEY = "..."
+GEMINI_API_KEY = "..."
+SUPABASE_DB_URL = "postgresql://..."
+```
+
+## 6. Publication data and live re-scoring
 
 Publications and citations are 75 of the 100 marks in the Research parameter and appear nowhere in
-NIRF's public PDFs. We fetch them for peer institutes from OpenAlex (free, no key).
+NIRF's public PDFs. Peer counts come from OpenAlex (free): 215 institute-years so far, with 53 of them
+ranked 101-200.
 
-What happened on 10 September: a parallel fetch exhausted OpenAlex's free daily budget. Two problems
-followed, both now fixed.
+That is still too narrow to put publications inside the main model: the coverage guard in
+`models/score_model.py` (`publications_usable`) keeps them out, and the headline estimates are unchanged.
+They are used instead as a **validated adjustment** (`fit_pub_adjustment`):
 
-1. While the budget was spent, every request failed, and the code recorded 195 institutes as
-   "not in OpenAlex" when they were simply unreachable. Those false entries were purged.
-   `scraper/fetch_publications.py` now raises `LookupFailed` instead of caching a miss, and
-   `BudgetExhausted` stops the run cleanly with a message.
-2. Only 36 institutes were collected and they were nearly all elite (median NIRF rank 19, 7 to 52
-   papers per faculty). Trained on that, the model pushed a modest college's Research score to near
-   zero, because Saveetha's real rate sits below anything the model had seen. Entering honest data
-   would have made the estimate worse.
+- The Research model implicitly assumes the college publishes like a typical institute with its funding,
+  PhD and faculty profile (about 960 papers over three years for the 2026 filing).
+- When staff enter the real counts, Research moves by how far they sit above or below that. The size of
+  the move is fitted on the model's own out-of-sample errors, so it only claims what publications add.
+- Tested on institutes the fit never saw, it cuts Research error from 9.72 to 8.62 points, with no bias
+  for institutes ranked 101-200.
 
-`models/score_model.py` now has a coverage guard (`publications_usable`, `MIN_PUB_COVERAGE`,
-`MIN_PUB_LOW_RANK_ROWS`). It refuses the publication features unless coverage is broad enough to
-include institutes like the client, and prints why. Today it reports 21% coverage with 3 rows outside
-the top 50, and trains exactly as it did before. **No current number is affected by this work.**
+`models/live_estimate.py` turns staff entries into new parameter estimates and re-runs the 2026 Monte
+Carlo with the same code as `predict_2026.py`. With no entries it reproduces the saved forecast exactly.
+Every page and the chatbot read the same result.
 
-A scheduled task, `nirf-fetch-publications`, runs at 09:00 on 11 September to finish the fetch
-sequentially, retrain, and re-check. It will only adopt the new features if a sanity test shows a
-modest college's Research score rises with more papers rather than collapsing.
+| Entry | What it moves |
+|---|---|
+| Publications, citations | Research (adjustment above); a missing one is assumed at 16.75 citations per paper |
+| Retracted papers | Research, up to −5 (NIRF's rule; the scale is unpublished, full deduction assumed at 1% of papers) |
+| Faculty with PhD % | Teaching, through NIRF's published FQ formula (up to 10 marks) |
+| PhD scholars, PhDs awarded, faculty, students, placements, salary, spend, funding, diversity | Through the trained model |
+| Patents, part-time PhD scholars | Recorded only: no peer data to fit a scale |
 
-To run it by hand instead:
+The college itself is **not catalogued in OpenAlex**, so its own counts must come from staff (Scopus).
+To extend the peer data when the OpenAlex daily quota allows:
 
 ```bash
 .venv/bin/python scraper/fetch_publications.py 2021,2022,2023,2024,2025 200
 .venv/bin/python models/score_model.py
 ```
-
-The college itself is **not catalogued in OpenAlex** under any name variant tried, so its own
-publication counts must come from staff through the Live Data page. That page flags them as the
-highest-value entry.
 
 ## 7. Known limits, to state whenever quoting numbers
 
@@ -132,13 +161,23 @@ highest-value entry.
 - NIRF's site has two traps, both handled: the 2016 pages serve 2017 data, and in years with 200
   numeric ranks the pages labelled 101-150 and 151-200 actually hold 201-250 and 251-300.
 
-## 8. Next steps
+## 8. Hosting (free) and next steps
 
-1. Let the scheduled fetch complete, then judge whether publication features are usable.
-2. Get the college's own Scopus publication and citation counts for the last three years. This is the
-   single highest-value input; it would replace the weakest part of the model with real data.
-3. Deploy to Streamlit Community Cloud for a public link: sign in at share.streamlit.io with the
-   GitHub account, pick the repository, set the main file to `app/Home.py`, and paste the three
-   secrets from `.env` into the Secrets box.
+Hosting on Streamlit Community Cloud, done once:
+
+1. Sign in at https://share.streamlit.io with the GitHub account `rnandakishore2408`.
+2. **Create app** → repository `rnandakishore2408/nirf_analytics`, branch `main`, main file `app/Home.py`.
+3. **Advanced settings** → Python 3.13, and paste the three secrets from section 5 in TOML form.
+4. Deploy. `packages.txt` installs `pdftotext`; `requirements.txt` installs pinned versions.
+5. Open the link and sign in. Give staff the link plus their username and password.
+
+The free host sleeps after a period without visitors; the first visit then takes up to a minute.
+
+Next steps:
+
+1. Staff enter the college's Scopus publication and citation counts for the last three years. This is
+   the single highest-value input.
+2. Extend the OpenAlex peer data when quota allows (section 6).
+3. Re-run `./pipeline.sh` when NIRF 2026 results are published.
 
 Repository: https://github.com/rnandakishore2408/nirf_analytics

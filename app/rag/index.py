@@ -5,7 +5,7 @@ JSON. BM25 over ~600-token chunks; no external services needed.
 from __future__ import annotations
 
 import json
-import pickle
+import pickle  # nosec B403 - only for the index this module builds itself (git-ignored cache)
 import re
 import sqlite3
 from pathlib import Path
@@ -35,7 +35,7 @@ def _chunks(text: str, meta: dict) -> list[dict]:
 def build(force: bool = False) -> dict:
     if CACHE.exists() and not force:
         with open(CACHE, "rb") as f:
-            return pickle.load(f)
+            return pickle.load(f)  # nosec B301 - self-generated file, never user-supplied
     con = sqlite3.connect(DB)
     docs = []
     for doc_id, doc_type, year, cat, inst, title, text in con.execute(

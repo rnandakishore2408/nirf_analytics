@@ -25,12 +25,12 @@ from sklearn.linear_model import Ridge
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "models"))
-from score_model import PARAM_FEATURES, ScoreModel  # noqa: E402
+from live_estimate import forecast, pr_pool_from  # noqa: E402
+from score_model import ScoreModel  # noqa: E402
 
 DB = ROOT / "db" / "nirf.db"
 SEC_ID = "IR-E-C-16590"
 TARGET = 2026
-RNG = np.random.default_rng(42)
 
 
 def thresholds(r: pd.DataFrame) -> dict:
@@ -96,50 +96,22 @@ def top100_forecast(r: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
 
 
 def saveetha_forecast(con: sqlite3.Connection, sm: ScoreModel, thr: dict, r: pd.DataFrame) -> dict:
-    sec = pd.read_sql(f"SELECT * FROM submissions WHERE institute_id='{SEC_ID}' AND category='Engineering' ORDER BY year", con)
+    sec = pd.read_sql("SELECT * FROM submissions WHERE institute_id=? AND category='Engineering' ORDER BY year", con, params=(SEC_ID,))
     row = sec[sec.year == TARGET]
     if row.empty:
         row = sec.tail(1)
     est = sm.predict_params(row).iloc[0]
-    rep = sm.report["params"]
-    # Perception: unknown. Saveetha's own published PR: 5.64 (2017), 0.41 (2019). Private colleges ranked
-    # 60-100 in 2025: use their distribution.
-    pr_pool = r[(r.year == 2025) & (r["rank"].between(60, 100)) & r.institute_id.str.contains("-C-")].pr.values
-    n = 20000
-    sims = {}
-    for p in ("tlr", "rpc", "go", "oi"):
-        sims[p] = np.clip(est[p] + RNG.normal(0, rep[p]["cv_rmse"], n), 0, 100)
-    pr = RNG.choice(pr_pool, n) if len(pr_pool) else RNG.uniform(0.5, 12, n)
-    total = sum(sims[p] * sm.weights[p] for p in sims) + sm.weights["pr"] * pr
-    f = thr["forecast_2026"]
-    # thresholds also uncertain: add the trend residual
-    f100 = f[100] + RNG.normal(0, thr["trend_resid_sd"], n)
-    ratios = thr["ratio_to_rank100"]
-    bands = {"top 100": (total >= f100).mean(),
-             "101-150": ((total < f100) & (total >= f100 * ratios[150])).mean(),
-             "151-200": ((total < f100 * ratios[150]) & (total >= f100 * ratios[200])).mean(),
-             "201-250": ((total < f100 * ratios[200]) & (total >= f100 * ratios[250])).mean(),
-             "251-300": ((total < f100 * ratios[250]) & (total >= f100 * ratios[300])).mean(),
-             "below 300": (total < f100 * ratios[300]).mean()}
-    # expected rank: interpolate on the 2026 threshold curve
-    ks = np.array([100, 125, 150, 175, 200, 250, 300]); sc = np.array([f[k] for k in ks])
-    exp_rank = float(np.interp(-np.median(total), -sc, ks))
-    most_likely = max(bands, key=bands.get)
-    return {
-        "institute_id": SEC_ID, "name": "Saveetha Engineering College", "submission_year_used": int(row.year.iloc[0]),
-        "param_estimates": {p: round(float(est[p]), 2) for p in ("tlr", "rpc", "go", "oi")},
-        "pr_assumption": {"median": round(float(np.median(pr)), 2), "p10": round(float(np.percentile(pr, 10)), 2), "p90": round(float(np.percentile(pr, 90)), 2)},
-        "total_score": {"median": round(float(np.median(total)), 2), "p10": round(float(np.percentile(total, 10)), 2), "p90": round(float(np.percentile(total, 90)), 2)},
-        "expected_rank": int(round(exp_rank)), "most_likely_band": most_likely,
-        "band_probabilities": {k: round(float(v), 3) for k, v in bands.items()},
-        "gap_to_top100": round(float(f[100] - np.median(total)), 2),
-        "gap_to_top200": round(float(f[200] - np.median(total)), 2),
-    }
+    sd = {p: sm.report["params"][p]["cv_rmse"] for p in ("tlr", "rpc", "go", "oi")}
+    # Perception: unknown. Saveetha's own published PR: 5.64 (2017), 0.41 (2019). Draw it from private
+    # colleges ranked 60-100 in 2025. The Monte Carlo lives in live_estimate.forecast so the app's live
+    # re-forecast and this file always agree.
+    out = forecast({p: float(est[p]) for p in sd}, sd, sm.weights, thr, pr_pool_from(r))
+    return {"institute_id": SEC_ID, "name": "Saveetha Engineering College", "submission_year_used": int(row.year.iloc[0]), **out}
 
 
 def what_if_levers(con: sqlite3.Connection, sm: ScoreModel, base_total: float) -> list[dict]:
     """Single-lever what-ifs on the 2026 submission: what each realistic improvement is worth."""
-    sec = pd.read_sql(f"SELECT * FROM submissions WHERE institute_id='{SEC_ID}' AND category='Engineering' ORDER BY year DESC LIMIT 1", con)
+    sec = pd.read_sql("SELECT * FROM submissions WHERE institute_id=? AND category='Engineering' ORDER BY year DESC LIMIT 1", con, params=(SEC_ID,))
     pr = 5.0
     def total_of(df):
         p = sm.predict_params(df); return float(sm.total(p, pr).iloc[0])

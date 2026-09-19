@@ -4,10 +4,8 @@ import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 
-from common import C_MUTED, C_PARAM, C_PRIMARY, PARAMS, SEC_ID, card, fmt_inr, inject_css, load_json, rankings, saveetha_history, submissions
+from common import C_PRIMARY, PARAMS, fmt_inr, live_state, load_json, rankings, saveetha_history
 
-st.set_page_config(page_title="Saveetha Position", page_icon="🎯", layout="wide")
-inject_css()
 st.title("Saveetha Engineering College — where we stand")
 
 r = rankings()
@@ -21,7 +19,7 @@ h = hist.copy()
 h["position"] = h.apply(lambda x: f"Rank {int(x.rank_or_band_low)}" if x.status == "ranked" else f"Band {int(x.rank_or_band_low)}-{int(x.rank_or_band_high)}", axis=1)
 h["note"] = h.category.where(h.category != "Engineering", "")
 cols = ["year", "category", "position", "score"] + PARAMS
-st.dataframe(h[cols].style.format({p: "{:.2f}" for p in PARAMS + ["score"]}, na_rep="– (not published for bands)"), hide_index=True, use_container_width=True)
+st.dataframe(h[cols].style.format({p: "{:.2f}" for p in PARAMS + ["score"]}, na_rep="– (not published for bands)"), hide_index=True, width="stretch")
 part = pd.DataFrame(an.get("saveetha_participation", []))
 if not part.empty:
     yrs = ", ".join(f"{int(y)} ({','.join(g.category)})" for y, g in part.groupby("year"))
@@ -35,11 +33,16 @@ with c1:
                 "(model fitted on 700 institute-years with published scores; see Prediction page for accuracy).")
     if not est.empty:
         show = est.rename(columns={"pr_assumed": "pr (assumed)", "total_est": "total (est.)"})
-        st.dataframe(show.style.format("{:.1f}", subset=[c for c in show if c != "year"]), hide_index=True, use_container_width=True)
+        st.dataframe(show.style.format("{:.1f}", subset=[c for c in show if c != "year"]), hide_index=True, width="stretch")
+    state = live_state()
+    if state["has_live"]:
+        e_ = state["estimate"]["params"]
+        st.markdown("**With the latest staff entries:** " + " · ".join(f"{k.upper()} {v:.1f}" for k, v in e_.items())
+                    + f" · 2026 total ≈ {state['forecast']['total_score']['median']:.1f}")
     gap = an.get("saveetha_gap_vs_rank90_100_avg", {})
     wgap = an.get("saveetha_weighted_gap_by_param", {})
     if gap:
-        st.markdown(f"**Gap to the 2025 rank 90-100 average** (weighted points lost): "
+        st.markdown("**Gap to the 2025 rank 90-100 average** (weighted points lost): "
                     + " · ".join(f"{p.upper()} {gap[p]:+.1f} → {wgap[p]:+.2f} pts" for p in PARAMS))
         st.markdown(f"Total gap to the 2025 cut-off: **{an.get('saveetha_gap_total_vs_2025_cutoff', '–')} points**.")
 with c2:
@@ -57,7 +60,7 @@ with c2:
         fig.update_layout(barmode="group", height=380, margin=dict(l=10, r=10, t=10, b=10), yaxis=dict(range=[0, 100], title="Parameter score"),
                           legend=dict(orientation="h", y=1.12), bargap=0.25, plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)")
         fig.update_yaxes(gridcolor="rgba(128,128,128,.15)")
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width="stretch")
         st.caption("Research (RPC) is the whole story: Saveetha ≈ 13 vs ≈ 30 for the 76-100 tier. That alone is ~5 weighted points, i.e. most of the gap.")
 
 st.divider()
@@ -77,7 +80,7 @@ if not prof.empty:
     disp = prof.copy()
     for c in disp.columns[1:]:
         disp[c] = [fmt(v, m) for v, m in zip(disp[c], disp.metric)]
-    st.dataframe(disp, hide_index=True, use_container_width=True, height=620)
+    st.dataframe(disp, hide_index=True, width="stretch", height=620)
     st.markdown(
         """
 **Reading the table**
@@ -104,8 +107,8 @@ if paths:
     fig.update_layout(height=420, margin=dict(l=10, r=10, t=10, b=10), yaxis_title="Total score", xaxis=dict(dtick=1), legend=dict(orientation="v", x=1.01),
                       plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)")
     fig.update_yaxes(gridcolor="rgba(128,128,128,.15)")
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
     with st.expander("Parameter detail for each peer"):
         for n, rows in paths.items():
             st.markdown(f"**{n}**")
-            st.dataframe(pd.DataFrame(rows).style.format({p: "{:.1f}" for p in PARAMS + ["score"]}), hide_index=True, use_container_width=True)
+            st.dataframe(pd.DataFrame(rows).style.format({p: "{:.1f}" for p in PARAMS + ["score"]}), hide_index=True, width="stretch")

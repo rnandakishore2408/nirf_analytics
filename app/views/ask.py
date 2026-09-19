@@ -5,16 +5,25 @@ import json
 
 import streamlit as st
 
-from common import inject_css
+import auth
 from rag import chat as rag_chat
 
-st.set_page_config(page_title="Ask the Data", page_icon="💬", layout="wide")
-inject_css()
-st.title("Ask the Data — NIRF analyst")
+MAX_PROMPT_CHARS = 2000
+MAX_HISTORY_MESSAGES = 30          # older turns are dropped from what is sent to the model
+PER_HOUR, PER_DAY = 40, 200        # questions per user; protects the free API quotas
+
+user = auth.current_user(st.session_state)
+if not user:
+    st.stop()
+
+safe_markdown = rag_chat.safe_markdown
+
+
+st.title("Ask the Data: NIRF analyst")
 
 if not rag_chat.has_credentials():
-    st.error("No API key found. Open the file `.env` in the project folder and paste your Groq key after `GROQ_API_KEY=` "
-             "(and optionally a Gemini key after `GEMINI_API_KEY=`), then restart the app. Both are free; the rest of the dashboard works without them.")
+    st.error("The AI assistant is not configured (no API key). The rest of the dashboard works without it; ask the administrator to add "
+             "GROQ_API_KEY or GEMINI_API_KEY to the app's secrets.")
     st.stop()
 
 st.caption(f"Providers (free tiers): {rag_chat.provider_label()} · tools: SQL over the NIRF database, document search (methodology + 700 submissions), live web fetch, Saveetha status")
@@ -41,14 +50,21 @@ for role, text, events in st.session_state.display:
                 for name, args, out in events:
                     st.markdown(f"**{name}** `{json.dumps(args)[:300]}`")
                     st.code(out[:1200], language="json")
-        st.markdown(text)
+        st.markdown(safe_markdown(text) if role == "assistant" else text)
 
 if st.session_state.display and st.button("Clear conversation"):
     st.session_state.chat, st.session_state.display = [], []
     st.rerun()
 
-prompt = st.chat_input("Ask about rankings, formulas, Saveetha's position, or tell me to check nirfindia.org…")
+prompt = st.chat_input("Ask about rankings, formulas, Saveetha's position, or tell me to check nirfindia.org…", max_chars=MAX_PROMPT_CHARS)
+if prompt and not (auth.allow(user["username"], "chat-hour", PER_HOUR, 3600) and auth.allow(user["username"], "chat-day", PER_DAY, 86400)):
+    st.warning(f"Question limit reached ({PER_HOUR} per hour, {PER_DAY} per day per user) to keep the free AI quota available. Please try later.")
+    prompt = None
 if prompt:
+    prompt = prompt[:MAX_PROMPT_CHARS]
+    st.session_state.chat = st.session_state.chat[-MAX_HISTORY_MESSAGES:]
+    while st.session_state.chat and st.session_state.chat[0].get("role") != "user":
+        st.session_state.chat.pop(0)  # never start the history on a dangling tool result
     st.session_state.chat.append({"role": "user", "content": prompt})
     st.session_state.display.append(("user", prompt, []))
     with st.chat_message("user"):
@@ -65,7 +81,8 @@ if prompt:
             answer, st.session_state.chat = rag_chat.run_turn(st.session_state.chat, on_tool=on_tool)
             status.update(label=f"Done · {len(events)} tool call(s)", state="complete")
         except Exception as e:  # noqa: BLE001
-            answer = f"Error talking to the model: {e}"
+            print(f"chat turn failed with {type(e).__name__}: {str(e)[:300]}")
+            answer = "Sorry, the AI service did not respond. Please try again in a minute."
             status.update(label="Failed", state="error")
-        st.markdown(answer)
+        st.markdown(safe_markdown(answer))
     st.session_state.display.append(("assistant", answer, events))

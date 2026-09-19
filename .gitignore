@@ -12,3 +12,8 @@ app/rag/bm25_index.pkl
 docs/img/
 # OS
 .DS_Store
+
+# local mutable data (staff entries, accounts) - never commit
+db/local_store.db
+db/local_store.db-*
+.pytest_cache/
