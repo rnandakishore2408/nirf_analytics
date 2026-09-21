@@ -1,10 +1,23 @@
 # Handover — NIRF Analytics for Saveetha Engineering College
 
-Last updated: 19 September 2026
+Last updated: 21 September 2026
 
 Client: **Saveetha Engineering College**, Sriperumbudur, Tamil Nadu. NIRF id `IR-E-C-16590`.
 Not to be confused with **Saveetha Institute of Medical and Technical Sciences** (`IR-E-I-1441`),
 a deemed university in Chennai ranked 45 in 2025. They are separate NIRF entities.
+
+## Status at a glance (21 September 2026)
+
+| | |
+|---|---|
+| Live site | https://saveetha-nirf.streamlit.app (Streamlit Community Cloud, free) |
+| Deploys | Automatically, 1-2 minutes after every push to `main` on GitHub |
+| Database for staff entries and accounts | Supabase (free, Mumbai region), tables locked down with row-level security |
+| Accounts | `saveetha.admin` (admin), `saveetha.staff` (staff); passwords are never stored in this repository |
+| Staff entries | None yet: all test entries were removed on 21 September, so the site shows the filing-only forecast |
+| Tests | 105 passing (`.venv/bin/python -m pytest`) |
+| In-app help | *Help & Guide* page (`app/views/guide.py`): steps, every field, every message, chatbot limits |
+| Instructions for coding assistants | [AGENTS.md](../AGENTS.md) at the repository root |
 
 ---
 
@@ -171,7 +184,17 @@ Hosting on Streamlit Community Cloud, done once:
 4. Deploy. `packages.txt` installs `pdftotext`; `requirements.txt` installs pinned versions.
 5. Open the link and sign in. Give staff the link plus their username and password.
 
-The free host sleeps after a period without visitors; the first visit then takes up to a minute.
+Done on 21 September 2026: the app is live at https://saveetha-nirf.streamlit.app with the three
+secrets set. To change a secret later: open the site → **Manage app** (bottom right) → ⋮ → **Settings** →
+**Secrets**; the app restarts by itself.
+
+Free-plan pauses (normal, no data is lost):
+
+- **Streamlit** puts the app to sleep after about 12 hours without visitors. The visitor sees *"This app
+  has gone to sleep"*, clicks *"Yes, get this app back up!"* and waits 30-60 seconds.
+- **Supabase** pauses the database after about 7 days without activity. The site still opens, but saving
+  fails with *"Could not save right now"* and the Live Data page shows a red dot. Fix: supabase.com →
+  the project → **Restore project**, wait two minutes.
 
 Next steps:
 

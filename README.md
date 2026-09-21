@@ -16,7 +16,9 @@ What is inside:
 | **App** | Streamlit dashboard behind a staff sign-in (no sign-up; accounts issued with `scripts/manage_users.py`): 7 pages incl. **Live Data Entry** and **Ask the Data**, an AI analyst (Groq gpt-oss-120b, then Groq Qwen 3.8, then Gemini 3.1 Flash Lite; all free tiers) with tools: read-only SQL, BM25 search over all documents, live web fetch (public sites only), Saveetha status |
 | **Tests** | `tests/` — 105 automated tests (sign-in and lock-outs, attack attempts, scoring rules, full browser-level flows); `scripts/load_test.py` stress-tests a running server. Results: [docs/TEST_REPORT.md](docs/TEST_REPORT.md) |
 
-**Start here:** [docs/HANDOVER.md](docs/HANDOVER.md) — current findings, credentials, open items and known limits.
+**Start here:** [docs/HANDOVER.md](docs/HANDOVER.md) — current findings, credentials, open items and known limits. Coding assistants: read [AGENTS.md](AGENTS.md) first.
+
+**Live:** https://saveetha-nirf.streamlit.app (staff sign-in).
 
 ## Run
 
