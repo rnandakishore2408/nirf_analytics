@@ -11,7 +11,7 @@ import live_store
 
 APP = str(Path(__file__).resolve().parents[1] / "app" / "Home.py")
 PAGES = ["views/overview.py", "views/explorer.py", "views/position.py", "views/what_if.py", "views/prediction.py",
-         "views/live_entry.py", "views/ask.py", "views/account.py"]
+         "views/live_entry.py", "views/ask.py", "views/account.py", "views/guide.py"]
 
 
 def fresh() -> AppTest:

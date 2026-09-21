@@ -59,7 +59,8 @@ else:
             st.Page("views/live_entry.py", title="Live Data Entry", icon="📝", url_path="live-data"),
             st.Page("views/ask.py", title="Ask the Data", icon="💬", url_path="ask"),
         ],
-        "Account": [st.Page("views/account.py", title="My account", icon="👤", url_path="account")],
+        "Account": [st.Page("views/account.py", title="My account", icon="👤", url_path="account"),
+                    st.Page("views/guide.py", title="Help & Guide", icon="📘", url_path="help")],
     }
     pg = st.navigation(pages)
     with st.sidebar:

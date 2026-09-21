@@ -38,6 +38,11 @@ load_dotenv(ROOT / ".env")
 DB = ROOT / "db" / "nirf.db"
 SEC_ID = "IR-E-C-16590"
 
+# limits for the Ask the Data page (also quoted on the Help page)
+MAX_PROMPT_CHARS = 2000            # characters per question
+MAX_HISTORY_MESSAGES = 30          # older turns are dropped from what is sent to the model
+PER_HOUR, PER_DAY = 40, 200        # questions per user; protects the free API quotas
+
 PROVIDERS = {
     "groq": {"env": "GROQ_API_KEY", "base_url": "https://api.groq.com/openai/v1",
              "model": os.getenv("GROQ_MODEL", "openai/gpt-oss-120b")},

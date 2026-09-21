@@ -8,9 +8,8 @@ import streamlit as st
 import auth
 from rag import chat as rag_chat
 
-MAX_PROMPT_CHARS = 2000
-MAX_HISTORY_MESSAGES = 30          # older turns are dropped from what is sent to the model
-PER_HOUR, PER_DAY = 40, 200        # questions per user; protects the free API quotas
+MAX_PROMPT_CHARS, MAX_HISTORY_MESSAGES = rag_chat.MAX_PROMPT_CHARS, rag_chat.MAX_HISTORY_MESSAGES
+PER_HOUR, PER_DAY = rag_chat.PER_HOUR, rag_chat.PER_DAY
 
 user = auth.current_user(st.session_state)
 if not user:

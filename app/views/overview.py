@@ -86,5 +86,6 @@ st.markdown(
 | **Prediction 2026** | Forecast cut-offs, projected top-100 order, Saveetha's band probabilities and the most valuable levers |
 | **Live Data Entry** | Staff enter current-year numbers (publications, PhD scholars, placements…); the estimate and the 2026 forecast on every page update immediately |
 | **Ask the Data** | Chat with an AI analyst that queries the database, reads the methodology, and can scrape nirfindia.org for updates |
+| **Help & Guide** | Step-by-step instructions, what every field and message means, and the Ask the Data limits |
 """
 )
