@@ -65,7 +65,7 @@ python scripts/manage_users.py list
 python scripts/manage_users.py events [<username>]   # recent sign-in attempts
 ```
 
-Existing accounts: `nandakishore` (admin) and `saveetha.staff` (staff). Staff can change their own
+Existing accounts: `saveetha.admin` (admin) and `saveetha.staff` (staff). Staff can change their own
 password on the *My account* page. Staff can remove only their own entries; admins can remove any.
 Removed entries stay in the audit trail.
 
